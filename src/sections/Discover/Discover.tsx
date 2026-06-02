@@ -64,7 +64,7 @@ export function DiscoverLanghe() {
             spaceBetween={189}
             grabCursor
             initialSlide={1}
-            className="overflow-visible">
+            className="discover-swiper overflow-visible">
             {langheSlides.map((slide) => (
               <SwiperSlide key={slide.title}>
                 <div className="text-center">

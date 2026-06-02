@@ -1,3 +1,8 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+
 type Stay = {
   title: string;
   subtitle?: string;
@@ -57,6 +62,13 @@ const stays: Stay[] = [
   },
 ];
 
+const momentSlides = [
+  '/images/stays/moment-left.png',
+  '/images/stays/moment-right.png',
+  '/images/stays/moment-left.png',
+  '/images/stays/moment-right.png',
+];
+
 type StayCardProps = {
   stay: Stay;
   imageFirst?: boolean;
@@ -104,7 +116,7 @@ export function SignatureStays() {
     <section className="bg-[#2C3654] pb-24">
       <div className="mx-auto w-full max-w-8xl px-0">
         {/* TOP HERO */}
-        <div className="relative h-[100vh]">
+        {/* <div className="relative h-[100vh]">
           <img
             src="/images/stays/moment-left.png"
             alt="moment at scarpa villas"
@@ -118,6 +130,39 @@ export function SignatureStays() {
           />
 
           <div className="absolute inset-0 flex items-center justify-center">
+            <h2 className="font-serif text-[70px] leading-[72px] uppercase tracking-[0.2em] text-white">
+              Moments At Scarpa Villas
+            </h2>
+          </div>
+        </div> */}
+
+        {/* TOP HERO */}
+        <div className="relative h-[100vh] overflow-hidden">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={2}
+            spaceBetween={0}
+            loop
+            speed={1200}
+            allowTouchMove
+            grabCursor
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            className="h-full w-full">
+            {momentSlides.map((image, index) => (
+              <SwiperSlide key={`${image}-${index}`}>
+                <img
+                  src={image}
+                  alt="moment at scarpa villas"
+                  className="h-full w-full object-cover"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
             <h2 className="font-serif text-[70px] leading-[72px] uppercase tracking-[0.2em] text-white">
               Moments At Scarpa Villas
             </h2>
