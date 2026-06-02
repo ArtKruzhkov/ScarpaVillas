@@ -149,7 +149,7 @@ export function VillaGallery() {
 
             {/* BUTTON */}
             <motion.a
-              href="/"
+              href={process.env.PUBLIC_URL || '/'}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.35 }}

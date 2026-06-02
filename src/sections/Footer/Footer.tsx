@@ -133,11 +133,15 @@ export function Footer() {
           </p>
 
           <div className="text-[18px] font-sans leading-[32px] text-white/50 flex gap-2">
-            <a href="/" className="hover:text-white transition-colors duration-300">
+            <a
+              href={process.env.PUBLIC_URL || '/'}
+              className="hover:text-white transition-colors duration-300">
               Cookie Policy
             </a>
             <span>|</span>
-            <a href="/" className="hover:text-white transition-colors duration-300">
+            <a
+              href={process.env.PUBLIC_URL || '/'}
+              className="hover:text-white transition-colors duration-300">
               Privacy Policy
             </a>
           </div>
