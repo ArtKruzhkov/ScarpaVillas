@@ -96,7 +96,7 @@ export function Hero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero/hero-section.png"
+          src="images/hero/hero-section.png"
           alt="Scarpa Villas"
           className="h-full w-full object-cover"
         />
@@ -114,7 +114,7 @@ export function Hero() {
         <div className="flex max-w-[900px] flex-col items-center text-center">
           {/* ICON */}
           <img
-            src="/images/hero/logo-hero.png"
+            src="images/hero/logo-hero.png"
             alt="Scarpa Villas"
             className="w-[72px] sm:w-[358px]"
           />
