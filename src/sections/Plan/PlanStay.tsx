@@ -3,7 +3,7 @@ export function PlanStay() {
     <section id="plan" className="relative h-[1210px] w-full overflow-hidden">
       {/* IMAGE */}
       <img
-        src="/images/plan/plan-stay.png"
+        src="images/plan/plan-stay.png"
         alt="Scarpa Villas at night"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -24,7 +24,7 @@ export function PlanStay() {
         </p>
 
         <a
-          href="/"
+          href={process.env.PUBLIC_URL || '/'}
           className="mt-[11.5rem] inline-flex border-[3px] border-white px-[131px] py-[12px] font-sans text-[32px] font-semibold uppercase leading-[60px] tracking-[0.1em] text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-[#2C3654]">
           Plan Your Stay
         </a>

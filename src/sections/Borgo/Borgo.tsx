@@ -9,7 +9,7 @@ export function Borgo() {
       <div className="relative  w-full">
         {/* IMAGE */}
         <img
-          src="/images/borgo/borgo-hero.png"
+          src="images/borgo/borgo-hero.png"
           alt="The Borgo"
           className=" h-auto w-full object-cover"
         />
@@ -39,7 +39,7 @@ export function Borgo() {
 
           {/* BUTTON */}
           <a
-            href="/"
+            href={process.env.PUBLIC_URL || '/'}
             className="mt-12 border-[3px] border-[#2C3654] px-[48px] py-[18px] font-sans text-[32px] font-bold uppercase tracking-[0.1em] text-[#2C3654] transition-all duration-300 hover:bg-[#2C3654] hover:text-white">
             Discover The Entire Borgo
           </a>

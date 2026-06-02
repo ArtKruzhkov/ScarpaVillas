@@ -13,26 +13,26 @@ const villaSlides: VillaGalleryItem[] = [
     id: 'tettineive',
     name: 'Villa Tettineive',
     description: 'A refined home base for exploration — and a gentle return at the end of the day.',
-    image: '/images/gallery/tettineive.png',
+    image: 'images/gallery/tettineive.png',
   },
   {
     id: 'la-bogliona',
     name: 'Villa La Bogliona',
     description: 'A welcoming villa designed for comfort, conversation, and easy gatherings.',
-    image: '/images/gallery/bogliona.png',
+    image: 'images/gallery/bogliona.png',
   },
   {
     id: 'i-bricchi',
     name: 'Villa I Bricchi',
     description: 'A hillside vantage for long mornings, vineyard light, and unhurried evenings.',
-    image: '/images/gallery/bricchi.png',
+    image: 'images/gallery/bricchi.png',
   },
   {
     id: 'tettimora',
     name: 'Villa Tettimora',
     description:
       'An intimate retreat for quiet evenings, close company, and the beauty of the Langhe all around.',
-    image: '/images/gallery/tettimora.png',
+    image: 'images/gallery/tettimora.png',
   },
 ];
 

@@ -56,7 +56,7 @@ export function Gallery() {
         <div className="relative">
           {/* IMAGE */}
           <img
-            src="/images/gallery/gallery-hero.png"
+            src="images/gallery/gallery-hero.png"
             alt="Scarpa Villas"
             className="h-auto w-full object-cover"
           />

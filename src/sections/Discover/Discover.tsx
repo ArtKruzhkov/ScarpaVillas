@@ -15,20 +15,20 @@ const langheSlides: LangheSlide[] = [
     subtitle: 'A JOURNEY THROUGH BAROLO HISTORY',
     description:
       'Discover the heritage of the region through historic villages and cultural landmarks.',
-    image: '/images/discover/village-museum.png',
+    image: 'images/discover/village-museum.png',
   },
   {
     title: 'La Morra Belvedere',
     subtitle: 'THE MOST ICONIC PANORAMIC VIEW IN THE LANGHE',
     description:
       'Endless vineyards unfolding beneath you, where the landscape of Barolo reveals itself at a glance.',
-    image: '/images/discover/la-morra.png',
+    image: 'images/discover/la-morra.png',
   },
   {
     title: 'Alba & White Truffle Culture',
     subtitle: 'THE HOME OF WHITE TRUFFLES',
     description: 'Experience the culinary traditions that made Alba famous around the world.',
-    image: '/images/discover/truffle.png',
+    image: 'images/discover/truffle.png',
   },
 ];
 

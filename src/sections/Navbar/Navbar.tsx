@@ -44,10 +44,10 @@ export function Navbar() {
           {/* LOGO */}
           <div className="flex justify-center px-20">
             <a
-              href="/"
+              href={process.env.PUBLIC_URL || '/'}
               className="flex flex-col items-center justify-center text-center leading-none">
               <img
-                src="/images/nav/logo.png"
+                src="images/nav/logo.png"
                 alt="Scarpa Villas"
                 className="w-[120px] sm:w-[140px]"
               />

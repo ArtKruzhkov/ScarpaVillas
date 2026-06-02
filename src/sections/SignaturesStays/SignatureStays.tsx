@@ -18,7 +18,7 @@ const stays: Stay[] = [
     title: 'Signature Stays',
     description:
       'Curated stays designed to help you experience Barolo at its fullest — without having to plan every detail. Each programme brings together wine, gastronomy, and the rhythm of the region into a seamless, thoughtfully crafted stay.',
-    image: '/images/stays/signature-stays.png',
+    image: 'images/stays/signature-stays.png',
   },
   {
     title: 'Taste of Langhe',
@@ -28,7 +28,7 @@ const stays: Stay[] = [
     nights: 5,
     startMonth: 'January',
     endMonth: 'May',
-    image: '/images/stays/taste-of-langhe.png',
+    image: 'images/stays/taste-of-langhe.png',
   },
   {
     title: 'The Lux Retreat',
@@ -38,7 +38,7 @@ const stays: Stay[] = [
     nights: 3,
     startMonth: 'January',
     endMonth: 'April',
-    image: '/images/stays/lux-retreat.png',
+    image: 'images/stays/lux-retreat.png',
   },
   {
     title: 'Autumn Gems',
@@ -48,7 +48,7 @@ const stays: Stay[] = [
     nights: 5,
     startMonth: 'October',
     endMonth: 'November',
-    image: '/images/stays/autumn-gems.png',
+    image: 'images/stays/autumn-gems.png',
   },
   {
     title: 'Piemonte Escape',
@@ -58,15 +58,15 @@ const stays: Stay[] = [
     nights: 7,
     startMonth: 'January',
     endMonth: 'May',
-    image: '/images/stays/piemonte-escape.png',
+    image: 'images/stays/piemonte-escape.png',
   },
 ];
 
 const momentSlides = [
-  '/images/stays/moment-left.png',
-  '/images/stays/moment-right.png',
-  '/images/stays/moment-left.png',
-  '/images/stays/moment-right.png',
+  'images/stays/moment-left.png',
+  'images/stays/moment-right.png',
+  'images/stays/moment-left.png',
+  'images/stays/moment-right.png',
 ];
 
 type StayCardProps = {

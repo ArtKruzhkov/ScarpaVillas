@@ -36,9 +36,9 @@ export function Footer() {
 
           {/* CENTER */}
           <div className="mx-auto flex flex-col items-center text-center">
-            <a href="/" className="block">
+            <a href={process.env.PUBLIC_URL || '/'} className="block">
               <img
-                src="/images/footer/logo_footer.png"
+                src="images/footer/logo_footer.png"
                 alt="Scarpa Villas"
                 className="w-[192px] h-auto"
               />

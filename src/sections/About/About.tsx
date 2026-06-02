@@ -70,7 +70,7 @@ export function About() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
         <img
-          src="/images/about/about-hero.png"
+          src="images/about/about-hero.png"
           alt="Scarpa Villas Landscape"
           className="h-full w-full object-cover"
         />
