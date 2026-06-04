@@ -15,8 +15,8 @@ const villas: Villa[] = [
     name: 'TETTIMORA',
     href: '#',
     position: {
-      top: '41.5%',
-      left: '22%',
+      top: '41%',
+      left: '23%',
       height: '150px',
     },
   },
@@ -24,8 +24,8 @@ const villas: Villa[] = [
     name: 'I BRICCHI',
     href: '#',
     position: {
-      top: '27.5%',
-      left: '37%',
+      top: '27%',
+      left: '38.5%',
       height: '140px',
     },
   },
@@ -33,8 +33,8 @@ const villas: Villa[] = [
     name: 'LA BOGLIONA',
     href: '#',
     position: {
-      top: '35%',
-      left: '50.5%',
+      top: '34.5%',
+      left: '51.5%',
       height: '150px',
     },
   },
@@ -42,8 +42,8 @@ const villas: Villa[] = [
     name: 'TETTINEIVE',
     href: '#',
     position: {
-      top: '49%',
-      left: '66%',
+      top: '48.5%',
+      left: '67%',
       height: '140px',
     },
   },
@@ -66,11 +66,11 @@ export function Gallery() {
 
           {/* TITLE */}
           <div className="absolute left-1/2 top-12 z-20 -translate-x-1/2 text-center w-max">
-            <p className="font-serif font-medium text-[54px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+            <p className="font-serif font-medium text-[50px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
               Four Villas
             </p>
 
-            <h2 className="mt-1 font-serif font-medium text-[54px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+            <h2 className="mt-2 font-serif font-medium text-[50px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
               Four Ways To Live Barolo
             </h2>
           </div>
