@@ -36,7 +36,7 @@ const langheSlides: LangheSlide[] = [
 
 export function DiscoverLanghe() {
   return (
-    <section id="discover" className="scroll-mt-[86px] overflow-hidden bg-white py-28">
+    <section id="discover" className="scroll-mt-[86px] overflow-hidden bg-white py-24">
       <div className="mx-auto px-0">
         {/* HEADER */}
 
@@ -75,15 +75,15 @@ export function DiscoverLanghe() {
                     className="mx-auto h-[602px] w-full object-cover"
                   />
 
-                  <h3 className="mt-4 font-serif text-[46px] leading-[80px] tracking-[0.05em] text-[#2C3654]">
+                  <h3 className="mt-2 font-serif text-[42px] leading-[80px] tracking-[0.05em] text-[#2C3654]">
                     {slide.title}
                   </h3>
 
-                  <p className="mt-2 text-[20px] font-sans font-semibold leading-[32px] uppercase tracking-[0.1em] text-[#C09A60]">
+                  <p className="text-[20px] font-sans font-semibold leading-[32px] uppercase tracking-[0.1em] text-[#C09A60]">
                     {slide.subtitle}
                   </p>
 
-                  <p className="mx-auto mt-2 text-[20px] font-sans leading-[32px] text-[#2C3654] px-12">
+                  <p className="mx-auto mt-2 text-[21px] font-sans leading-[32px] text-[#2C3654] px-12">
                     {slide.description}
                   </p>
                 </div>
