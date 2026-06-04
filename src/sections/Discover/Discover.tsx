@@ -65,7 +65,7 @@ export function DiscoverLanghe() {
             spaceBetween={189}
             grabCursor
             initialSlide={1}
-            className="discover-swiper overflow-visible section-height">
+            className="discover-swiper overflow-visible">
             {langheSlides.map((slide) => (
               <SwiperSlide key={slide.title}>
                 <div className="text-center">
@@ -75,15 +75,15 @@ export function DiscoverLanghe() {
                     className="mx-auto h-[602px] w-full object-cover"
                   />
 
-                  <h3 className="mt-8 font-serif text-[58px] leading-[80px] tracking-[0.05em] text-[#2C3654]">
+                  <h3 className="mt-4 font-serif text-[46px] leading-[80px] tracking-[0.05em] text-[#2C3654]">
                     {slide.title}
                   </h3>
 
-                  <p className="mt-4 text-[23px] font-sans font-semibold leading-[32px] uppercase tracking-[0.1em] text-[#C09A60]">
+                  <p className="mt-2 text-[20px] font-sans font-semibold leading-[32px] uppercase tracking-[0.1em] text-[#C09A60]">
                     {slide.subtitle}
                   </p>
 
-                  <p className="mx-auto mt-6 text-[24px] font-sans leading-[32px] text-[#2C3654] px-12">
+                  <p className="mx-auto mt-2 text-[20px] font-sans leading-[32px] text-[#2C3654] px-12">
                     {slide.description}
                   </p>
                 </div>
