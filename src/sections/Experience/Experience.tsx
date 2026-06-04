@@ -5,7 +5,7 @@ export function Experience() {
   return (
     <section className="bg-white py-20">
       <Container>
-        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[504px_minmax(0,1fr)] lg:items-start px-6">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[504px_minmax(0,1fr)] lg:items-center px-6">
           {/* LEFT CONTENT */}
           <div className="max-w-[504px]">
             <h2 className="font-serif text-[34px] leading-[70px] tracking-[0.05em] text-[#2C3654]">

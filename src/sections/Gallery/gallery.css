@@ -1,0 +1,90 @@
+.villa-tettimora {
+  top: 41%;
+  left: 23%;
+}
+
+.villa-bricchi {
+  top: 27%;
+  left: 38.5%;
+}
+
+.villa-bogliona {
+  top: 34.5%;
+  left: 51.5%;
+}
+
+.villa-tettineive {
+  top: 48.5%;
+  left: 67%;
+}
+
+@media (max-width: 1820px) {
+  .villa-tettimora {
+    top: 43.5%;
+    left: 20.5%;
+  }
+
+  .villa-tettineive {
+    top: 45.5%;
+    left: 67%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .villa-tettimora {
+    top: 41%;
+    left: 18%;
+  }
+
+  .villa-bricchi {
+    top: 26%;
+    left: 37%;
+  }
+
+  .villa-bogliona {
+    top: 33%;
+    left: 53%;
+  }
+
+  .villa-tettineive {
+    top: 46.5%;
+    left: 71.5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .villa-tettimora {
+    top: 41.5%;
+    left: 11%;
+  }
+
+  .villa-tettineive {
+    top: 46.5%;
+    left: 76%;
+  }
+}
+
+.villa-label {
+  background: #f4f1ea;
+  padding: 4px 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #2f3b63;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1440px) {
+  .villa-label {
+    font-size: 16px;
+    padding: 4px 20px;
+    letter-spacing: 0.15em;
+  }
+}
+
+.villa-label:hover {
+  background: #ffffff;
+}

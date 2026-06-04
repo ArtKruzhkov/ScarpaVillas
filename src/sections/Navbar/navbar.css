@@ -9,6 +9,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 1320px) {
+  .nav-link {
+    font-size: 11px;
+  }
+}
+
 .nav-link::after {
   content: '';
 
@@ -33,4 +39,28 @@
 
 .nav-link.active::after {
   transform: scaleX(1);
+}
+
+@media (max-width: 1320px) {
+  .stay_header_link {
+    font-size: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.language-switcher {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2c3654;
+}
+
+@media (max-width: 1320px) {
+  .language-switcher {
+    font-size: 11px;
+  }
 }

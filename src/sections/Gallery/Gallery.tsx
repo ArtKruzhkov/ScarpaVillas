@@ -1,51 +1,86 @@
 import { VillaGallery } from './VillaGallery';
+import './gallery.css';
+
+// type Villa = {
+//   name: string;
+//   href: string;
+//   position: {
+//     top: string;
+//     left: string;
+//     height: string;
+//   };
+// };
+
+// const villas: Villa[] = [
+//   {
+//     name: 'TETTIMORA',
+//     href: '#',
+//     position: {
+//       top: '41%',
+//       left: '23%',
+//       height: '150px',
+//     },
+//   },
+//   {
+//     name: 'I BRICCHI',
+//     href: '#',
+//     position: {
+//       top: '27%',
+//       left: '38.5%',
+//       height: '140px',
+//     },
+//   },
+//   {
+//     name: 'LA BOGLIONA',
+//     href: '#',
+//     position: {
+//       top: '34.5%',
+//       left: '51.5%',
+//       height: '150px',
+//     },
+//   },
+//   {
+//     name: 'TETTINEIVE',
+//     href: '#',
+//     position: {
+//       top: '48.5%',
+//       left: '67%',
+//       height: '140px',
+//     },
+//   },
+// ];
 
 type Villa = {
   name: string;
   href: string;
-  position: {
-    top: string;
-    left: string;
-    height: string;
-  };
+  className: string;
+  lineHeight: string;
 };
 
 const villas: Villa[] = [
   {
     name: 'TETTIMORA',
     href: '#',
-    position: {
-      top: '41%',
-      left: '23%',
-      height: '150px',
-    },
+    className: 'villa-tettimora',
+    lineHeight: 'h-[150px]',
   },
   {
     name: 'I BRICCHI',
     href: '#',
-    position: {
-      top: '27%',
-      left: '38.5%',
-      height: '140px',
-    },
+    className: 'villa-bricchi',
+    lineHeight: 'h-[140px]',
   },
   {
     name: 'LA BOGLIONA',
     href: '#',
-    position: {
-      top: '34.5%',
-      left: '51.5%',
-      height: '150px',
-    },
+    className: 'villa-bogliona',
+    lineHeight: 'h-[150px]',
   },
   {
     name: 'TETTINEIVE',
     href: '#',
-    position: {
-      top: '48.5%',
-      left: '67%',
-      height: '140px',
-    },
+    className: 'villa-tettineive',
+    lineHeight: 'h-[140px]',
   },
 ];
 
@@ -76,7 +111,7 @@ export function Gallery() {
           </div>
 
           {/* VILLA LABELS */}
-          {villas.map((villa) => (
+          {/* {villas.map((villa) => (
             <div
               key={villa.name}
               className="absolute z-20"
@@ -85,14 +120,14 @@ export function Gallery() {
                 left: villa.position.left,
               }}>
               <div className="flex flex-col items-center">
-                {/* LABEL */}
+                
                 <a
                   href={villa.href}
                   className="bg-[#f4f1ea] px-8 py-1 text-[20px] font-sans font-bold tracking-[0.2em] text-[#2f3b63] uppercase shadow-md transition-all duration-300 hover:bg-white">
                   {villa.name}
                 </a>
 
-                {/* LINE */}
+                
                 <div
                   className="w-px bg-[#e7e2d7]"
                   style={{
@@ -100,7 +135,21 @@ export function Gallery() {
                   }}
                 />
 
-                {/* DOT */}
+                
+                <div className="h-3 w-3 rounded-full bg-[#f4f1ea]" />
+              </div>
+            </div>
+          ))} */}
+
+          {villas.map((villa) => (
+            <div key={villa.name} className={`absolute z-20 ${villa.className}`}>
+              <div className="flex flex-col items-center">
+                <a href={villa.href} className="villa-label">
+                  {villa.name}
+                </a>
+
+                <div className={`w-px bg-[#e7e2d7] ${villa.lineHeight}`} />
+
                 <div className="h-3 w-3 rounded-full bg-[#f4f1ea]" />
               </div>
             </div>

@@ -111,7 +111,7 @@ export function VillaGallery() {
     <div className="bg-white pt-10 pb-24">
       <div
         ref={galleryRef}
-        className="scroll-mt-[90px] h-[90vh] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8">
+        className="scroll-mt-[90px] h-[90vh] max-h-[1000px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8">
         {/* MAIN IMAGE */}
         <AnimatePresence mode="wait">
           <motion.div

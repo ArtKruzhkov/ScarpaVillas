@@ -42,7 +42,7 @@ export function Navbar() {
           </nav>
 
           {/* LOGO */}
-          <div className="flex justify-center lg:px-20">
+          <div className="flex justify-center lg:px-8 xl:px-20">
             <a
               href={process.env.PUBLIC_URL || '/'}
               className="flex flex-col items-center justify-center text-center leading-none">
@@ -76,13 +76,11 @@ export function Navbar() {
               );
             })}
 
-            <LinkButton href="#" variant="outline" size="nav">
+            <LinkButton href="#" variant="outline" size="nav" className="stay_header_link">
               Plan Your Stay
             </LinkButton>
 
-            <span className="cursor-pointer font-sans text-[13px] font-bold uppercase tracking-[0.08em] text-[#2C3654]">
-              EN
-            </span>
+            <span className="language-switcher">EN</span>
           </div>
 
           {/* MOBILE BUTTON */}
@@ -111,20 +109,24 @@ export function Navbar() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="font-sans rounded-xl px-3 py-3 text-sm font-medium text-ink-800 transition-colors hover:bg-ink-900/5"
+                  className="font-sans uppercase rounded-xl px-3 py-3 text-sm font-[600] text-[#2c3654] transition-colors hover:bg-ink-900/5"
                   onClick={() => setOpen(false)}>
                   {item.label}
                 </a>
               ))}
 
               <div className="mt-3 grid gap-3">
-                <LinkButton href="#plan" variant="primary" size="md">
-                  Plan Your Stay
-                </LinkButton>
+                <div className="flex flex-col items-center">
+                  <LinkButton
+                    href="#plan"
+                    variant="primary"
+                    size="md"
+                    className="w-[50%] uppercase bg-[#2c3654]">
+                    Plan Your Stay
+                  </LinkButton>
+                </div>
 
-                <span className="font-sans rounded-xl px-3 py-2 text-center text-xs font-medium uppercase tracking-[0.3em] text-ink-700">
-                  EN
-                </span>
+                <span className="language-switcher">EN</span>
               </div>
             </nav>
           </div>
