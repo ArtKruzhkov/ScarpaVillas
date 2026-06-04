@@ -92,35 +92,34 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[120vh] items-end justify-center overflow-hidden">
+      className="relative flex section-height items-end justify-center overflow-hidden">
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src="images/hero/hero-section.png"
+          src={`${process.env.PUBLIC_URL}/images/hero/hero-section.png`}
           alt="Scarpa Villas"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[center_29%]"
         />
 
         {/* OVERLAY */}
-        {/* <div className="absolute inset-0 bg-black/45" /> */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(17,24,45,0.75)_0%,rgba(17,24,45,0.45)_40%,rgba(17,24,45,0)_100%)]" />
+        <div className="absolute inset-0 hero-overlay" />
 
         {/* BOTTOM GRADIENT */}
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" /> */}
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex w-full justify-center px-6 pb-32">
+      <div className="relative z-10 flex w-full justify-center px-6 pb-14">
         <div className="flex max-w-[900px] flex-col items-center text-center">
           {/* ICON */}
           <img
-            src="images/hero/logo-hero.png"
+            src={`${process.env.PUBLIC_URL}/images/hero/logo-hero.png`}
             alt="Scarpa Villas"
             className="w-[72px] sm:w-[358px]"
           />
 
           {/* HERO TEXT */}
-          <div className="mt-16 max-w-[900px]">
+          <div className="mt-10 max-w-[900px]">
             <h2 className="font-serif text-xl font-medium leading-[1.2] text-white sm:text-2xl lg:text-4xl">
               Stay among the
               <span className="italic"> vineyards of Monvigliero</span>,

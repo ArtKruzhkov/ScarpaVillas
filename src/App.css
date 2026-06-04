@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.section-height {
+  height: calc(100vh - 86px);
+  max-height: 1000px;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(17, 24, 45, 0.75) 0%,
+    rgba(17, 24, 45, 0.45) 40%,
+    rgba(17, 24, 45, 0) 100%
+  );
 }

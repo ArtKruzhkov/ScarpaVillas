@@ -8,31 +8,33 @@ type VillaGalleryItem = {
   image: string;
 };
 
+const baseUrl = process.env.PUBLIC_URL;
+
 const villaSlides: VillaGalleryItem[] = [
   {
     id: 'tettineive',
     name: 'Villa Tettineive',
     description: 'A refined home base for exploration — and a gentle return at the end of the day.',
-    image: 'images/gallery/tettineive.png',
+    image: `${baseUrl}/images/gallery/tettineive.png`,
   },
   {
     id: 'la-bogliona',
     name: 'Villa La Bogliona',
     description: 'A welcoming villa designed for comfort, conversation, and easy gatherings.',
-    image: 'images/gallery/bogliona.png',
+    image: `${baseUrl}/images/gallery/bogliona.png`,
   },
   {
     id: 'i-bricchi',
     name: 'Villa I Bricchi',
     description: 'A hillside vantage for long mornings, vineyard light, and unhurried evenings.',
-    image: 'images/gallery/bricchi.png',
+    image: `${baseUrl}/images/gallery/bricchi.png`,
   },
   {
     id: 'tettimora',
     name: 'Villa Tettimora',
     description:
       'An intimate retreat for quiet evenings, close company, and the beauty of the Langhe all around.',
-    image: 'images/gallery/tettimora.png',
+    image: `${baseUrl}/images/gallery/tettimora.png`,
   },
 ];
 
@@ -106,10 +108,10 @@ export function VillaGallery() {
   const galleryRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="bg-white pt-10 pb-32">
+    <div className="bg-white pt-10 pb-24">
       <div
         ref={galleryRef}
-        className="scroll-mt-[100px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_280px] gap-6 px-8">
+        className="scroll-mt-[90px] h-[90vh] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8">
         {/* MAIN IMAGE */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -125,7 +127,7 @@ export function VillaGallery() {
             <img
               src={activeVilla.image}
               alt={activeVilla.name}
-              className="h-[1220px] w-full object-cover"
+              className="h-full w-full object-cover"
             />
 
             {/* CONTENT */}
@@ -153,14 +155,14 @@ export function VillaGallery() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.35 }}
-              className="absolute bottom-[4.5rem] left-[4.7rem] z-10 inline-flex border-[3px] border-white bg-white px-[171px] py-[18px] font-sans text-[32px] font-bold uppercase tracking-[0.20em] text-[#2C3654] transition-all duration-300 hover:border-[#2C3654] hover:bg-[#2C3654] hover:text-white">
+              className="absolute bottom-[4.5rem] left-12 z-10 inline-flex border-[3px] border-white bg-white px-[101px] py-[18px] font-sans text-[32px] font-bold uppercase tracking-[0.20em] text-[#2C3654] transition-all duration-300 hover:border-[#2C3654] hover:bg-[#2C3654] hover:text-white">
               Discover The Villa
             </motion.a>
           </motion.div>
         </AnimatePresence>
 
         {/* THUMBNAILS */}
-        <div className="grid grid-rows-4 gap-4">
+        <div className="grid grid-rows-4 gap-6">
           {villaSlides.map((villa) => {
             const isActive = villa.id === activeVilla.id;
 

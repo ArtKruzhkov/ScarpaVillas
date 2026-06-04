@@ -19,9 +19,9 @@ export function Navbar() {
   const [activeSection, setActiveSection] = React.useState('villas');
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink-900/10 bg-sand-100/85 backdrop-blur">
-      <Container className="py-4">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6">
+    <header className="sticky top-0 z-50 bg-sand-100/85 backdrop-blur">
+      <Container className="py-4 2xl:max-w-[1920px] border-b border-ink-900/10">
+        <div className="flex items-center justify-between px-6 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           {/* LEFT NAV */}
           <nav
             className="hidden items-center justify-between gap-4 lg:flex"
@@ -42,14 +42,14 @@ export function Navbar() {
           </nav>
 
           {/* LOGO */}
-          <div className="flex justify-center px-20">
+          <div className="flex justify-center lg:px-20">
             <a
               href={process.env.PUBLIC_URL || '/'}
               className="flex flex-col items-center justify-center text-center leading-none">
               <img
-                src="images/nav/logo.png"
+                src={`${process.env.PUBLIC_URL}/images/nav/logo.png`}
                 alt="Scarpa Villas"
-                className="w-[120px] sm:w-[140px]"
+                className="w-[120px] sm:w-[140px] shrink-0"
               />
             </a>
           </div>
@@ -92,8 +92,6 @@ export function Navbar() {
             aria-label="Open menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}>
-            <span className="sr-only">Menu</span>
-
             <svg
               viewBox="0 0 24 24"
               className="h-5 w-5"
@@ -113,7 +111,7 @@ export function Navbar() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="rounded-xl px-3 py-3 text-sm font-medium text-ink-800 transition-colors hover:bg-ink-900/5"
+                  className="font-sans rounded-xl px-3 py-3 text-sm font-medium text-ink-800 transition-colors hover:bg-ink-900/5"
                   onClick={() => setOpen(false)}>
                   {item.label}
                 </a>
@@ -124,7 +122,7 @@ export function Navbar() {
                   Plan Your Stay
                 </LinkButton>
 
-                <span className="rounded-xl px-3 py-2 text-center text-xs font-medium uppercase tracking-[0.3em] text-ink-700">
+                <span className="font-sans rounded-xl px-3 py-2 text-center text-xs font-medium uppercase tracking-[0.3em] text-ink-700">
                   EN
                 </span>
               </div>

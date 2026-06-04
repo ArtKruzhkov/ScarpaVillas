@@ -12,7 +12,7 @@ type LinkButtonProps = {
 };
 
 const variantClasses: Record<Variant, string> = {
-  primary: 'bg-ink-900 text-sand-50 hover:bg-ink-800 focus-visible:outline-ink-900',
+  primary: 'bg-ink-900 font-sans text-sand-50 hover:bg-ink-800 focus-visible:outline-ink-900',
 
   secondary:
     'border border-ink-900/20 bg-sand-50 text-ink-900 hover:border-ink-900/35 hover:bg-sand-100 focus-visible:outline-ink-900',

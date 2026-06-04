@@ -43,7 +43,7 @@ export function Experience() {
           {/* IMAGE */}
           <div className="relative overflow-hidden">
             <img
-              src="images/experience/experience-img.png"
+              src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
               alt="Luxury wine villa interior"
               className="h-full min-h-[620px] w-full object-cover"
             />

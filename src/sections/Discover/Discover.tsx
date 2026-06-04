@@ -9,34 +9,34 @@ export type LangheSlide = {
   image: string;
 };
 
+const baseUrl = process.env.PUBLIC_URL;
+
 const langheSlides: LangheSlide[] = [
   {
     title: 'Village & Museum',
     subtitle: 'A JOURNEY THROUGH BAROLO HISTORY',
     description:
       'Discover the heritage of the region through historic villages and cultural landmarks.',
-    image: 'images/discover/village-museum.png',
+    image: `${baseUrl}/images/discover/village-museum.png`,
   },
   {
     title: 'La Morra Belvedere',
     subtitle: 'THE MOST ICONIC PANORAMIC VIEW IN THE LANGHE',
     description:
       'Endless vineyards unfolding beneath you, where the landscape of Barolo reveals itself at a glance.',
-    image: 'images/discover/la-morra.png',
+    image: `${baseUrl}/images/discover/la-morra.png`,
   },
   {
     title: 'Alba & White Truffle Culture',
     subtitle: 'THE HOME OF WHITE TRUFFLES',
     description: 'Experience the culinary traditions that made Alba famous around the world.',
-    image: 'images/discover/truffle.png',
+    image: `${baseUrl}/images/discover/truffle.png`,
   },
 ];
 
 export function DiscoverLanghe() {
   return (
-    <section
-      id="discover"
-      className="scroll-mt-[86px] overflow-hidden bg-white pt-[120px] pb-[40px]">
+    <section id="discover" className="scroll-mt-[86px] overflow-hidden bg-white py-28">
       <div className="mx-auto px-0">
         {/* HEADER */}
 
@@ -45,11 +45,12 @@ export function DiscoverLanghe() {
             Discover The Langhe
           </h2>
 
-          <p className="mt-8 max-w-[1800px] font-serif text-[42px] leading-[60px] text-[#2C3654]">
+          <p className="mt-8 font-serif text-[42px] leading-[60px] text-[#2C3654]">
             Just minutes from the vineyards of Monvigliero, the Langhe unfolds through historic
             villages, panoramic viewpoints, and some of Italy’s most celebrated gastronomic
-            destinations. Each place offers a different way to experience the region — from wine and
-            truffles
+            destinations.
+            <br />
+            Each place offers a different way to experience the region — from wine and truffles
             <br />
             to landscapes and centuries-old towns.
           </p>
@@ -64,17 +65,17 @@ export function DiscoverLanghe() {
             spaceBetween={189}
             grabCursor
             initialSlide={1}
-            className="discover-swiper overflow-visible">
+            className="discover-swiper overflow-visible section-height">
             {langheSlides.map((slide) => (
               <SwiperSlide key={slide.title}>
                 <div className="text-center">
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="mx-auto h-[810px] w-full object-cover"
+                    className="mx-auto h-[602px] w-full object-cover"
                   />
 
-                  <h3 className="mt-8 font-serif text-[64px] leading-[80px] tracking-[0.05em] text-[#2C3654]">
+                  <h3 className="mt-8 font-serif text-[58px] leading-[80px] tracking-[0.05em] text-[#2C3654]">
                     {slide.title}
                   </h3>
 

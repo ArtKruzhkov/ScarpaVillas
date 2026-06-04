@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="bg-[#2C3654] text-white">
-      <div className="mx-auto max-w-[1920px] px-8 pt-16 pb-2">
+    <footer className="bg-[#2C3654] text-white max-w-8xl 2xl:max-w-[1920px] mx-auto">
+      <div className="px-8 pt-16 pb-2">
         <div className="grid grid-cols-[1fr_auto_1fr] items-start">
           {/* LEFT */}
           <div>
@@ -38,7 +38,7 @@ export function Footer() {
           <div className="mx-auto flex flex-col items-center text-center">
             <a href={process.env.PUBLIC_URL || '/'} className="block">
               <img
-                src="images/footer/logo_footer.png"
+                src={`${process.env.PUBLIC_URL}/images/footer/logo_footer.png`}
                 alt="Scarpa Villas"
                 className="w-[192px] h-auto"
               />

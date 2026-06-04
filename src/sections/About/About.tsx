@@ -66,11 +66,11 @@ export function About() {
   return (
     <section
       id="story"
-      className="scroll-mt-[86px] relative overflow-hidden min-h-[112vh] flex items-end">
+      className="scroll-mt-[86px] relative overflow-hidden section-height flex items-end">
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
         <img
-          src="images/about/about-hero.png"
+          src={`${process.env.PUBLIC_URL}/images/about/about-hero.png`}
           alt="Scarpa Villas Landscape"
           className="h-full w-full object-cover"
         />
@@ -83,7 +83,7 @@ export function About() {
       </div>
 
       {/* CONTENT */}
-      <Container className="relative z-10 pb-16">
+      <Container className="relative z-10 pb-14">
         <div className="max-w-[1164px] ml-auto mr-[5rem]">
           {/* TITLE */}
           <h2 className="font-serif text-[36px] sm:text-[48px] lg:text-[60px] font-normal uppercase leading-[1] tracking-[0.08em] text-white">

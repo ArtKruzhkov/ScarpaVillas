@@ -15,7 +15,7 @@ export function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="mx-auto max-w-8xl 2xl:max-w-[1920px]">
         <Hero />
         <About />
         <Experience />
