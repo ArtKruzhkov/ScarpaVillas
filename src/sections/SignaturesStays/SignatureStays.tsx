@@ -88,11 +88,11 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         <img
           src={stay.image}
           alt={stay.title}
-          className="w-full object-cover h-[480px] lg:h-auto lg:object-contain xl:h-[482px] xl:object-cover"
+          className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[482px] xl:object-cover"
         />
       )}
 
-      <div className="py-8 px-[1.6rem] text-center">
+      <div className="p-4 sm:p-8 text-center">
         <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
           {stay.title}
         </h3>
@@ -118,7 +118,7 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         <img
           src={stay.image}
           alt={stay.title}
-          className="w-full object-cover h-[480px] lg:h-auto lg:object-contain xl:h-[482px] xl:object-cover"
+          className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[482px] xl:object-cover"
         />
       )}
     </article>
@@ -177,10 +177,10 @@ export function SignatureStays() {
               <img
                 src={stays[0].image}
                 alt={stays[0].title}
-                className="w-full object-cover h-[480px] lg:h-auto lg:object-contain xl:h-[482px] xl:object-cover xl:object-[center_25%]"
+                className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[482px] xl:object-cover xl:object-[center_25%]"
               />
 
-              <div className="p-8 text-center">
+              <div className="p-4 sm:p-8 text-center">
                 <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
                   {stays[0].title}
                 </h3>
@@ -210,7 +210,7 @@ export function SignatureStays() {
                   className="w-full h-auto object-contain xl:h-[514px] xl:object-cover"
                 />
 
-                <div className="px-[1.6rem] py-8 text-center">
+                <div className="p-4 sm:p-8 text-center">
                   <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
                     {stay.title}
                   </h3>
