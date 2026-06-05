@@ -1,50 +1,50 @@
 export function Footer() {
   return (
     <footer className="bg-[#2C3654] text-white max-w-8xl 2xl:max-w-[1920px] mx-auto">
-      <div className="px-8 pt-16 pb-2">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-start">
+      <div className="px-4 sm:px-6 xl:px-8 pt-10 lg:pt-14 xl:pt-16 pb-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-[1fr_auto_1fr] xl:gap-0 items-start">
           {/* LEFT */}
-          <div>
-            <h3 className="font-serif text-[40px] leading-[68px] tracking-[0.05em]">
+          <div className="flex flex-col items-center md:block">
+            <h3 className="font-serif text-center md:text-left text-[28px] leading-[36px] sm:text-[32px] sm:leading-[44px] xl:text-[40px] xl:leading-[68px] tracking-[0.05em]">
               Stay connected to the Langhe
             </h3>
 
-            <p className="mt-3 font-sans text-[20px] leading-[36px] text-white">
+            <p className="mt-3 text-center md:text-left font-sans text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:text-[20px] xl:leading-[36px] text-white">
               Occasional stories, seasonal moments, and insights from the region
             </p>
 
-            <form className="mt-10 max-w-[520px]">
-              <div className="flex">
+            <form className="mt-6 sm:mt-10 max-w-[520px]">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-0">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="h-[54px] placeholder:text-center flex-1 border border-white bg-transparent px-6 text-white font-sans placeholder:text-white/50"
+                  className="h-[54px] placeholder:text-center border border-white bg-transparent px-6 text-white font-sans placeholder:text-white/50"
                 />
 
                 <button
                   type="submit"
-                  className="h-[54px] border border-white bg-white px-10 font-sans text-[14px] font-bold uppercase tracking-[0.05em] text-[#2C3654] hover:bg-[#2C3654] hover:text-white transition-all duration-300">
+                  className="h-[54px] border border-white bg-white px-4 lg:px-10 font-sans text-[12px] font-bold uppercase tracking-[0.05em] text-[#2C3654] hover:bg-[#2C3654] hover:text-white transition-all duration-300">
                   Stay In Touch
                 </button>
               </div>
 
-              <label className="mt-6 font-sans flex items-center gap-3 text-[13px] tracking-[0.05em] leading-[20px] text-white">
+              <label className="mt-3 md:mt-6 font-sans flex items-center justify-center md:justify-start gap-3 text-[13px] tracking-[0.05em] leading-[20px] text-white">
                 <input type="checkbox" />I agree to the privacy statement
               </label>
             </form>
           </div>
 
           {/* CENTER */}
-          <div className="mx-auto flex flex-col items-center text-center">
+          <div className="order-3 md:col-span-2 xl:order-2 xl:col-span-1 mx-auto flex flex-col items-center text-center">
             <a href={process.env.PUBLIC_URL || '/'} className="block">
               <img
                 src={`${process.env.PUBLIC_URL}/images/footer/logo_footer.png`}
                 alt="Scarpa Villas"
-                className="w-[192px] h-auto"
+                className="w-[120px] sm:w-[150px] xl:w-[192px] h-auto"
               />
             </a>
 
-            <p className="mt-8 font-serif text-[20px] leading-[36px] tracking-[0.05em] text-white">
+            <p className="mt-6 xl:mt-8 font-serif text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] xl:text-[20px] xl:leading-[36px] tracking-[0.05em]">
               A collection of <span className="italic">private villas in the vineyards</span>
               <br />
               of Monvigliero, Verduno.
@@ -52,27 +52,29 @@ export function Footer() {
           </div>
 
           {/* RIGHT */}
-          <div className="text-right">
-            <h3 className="font-serif text-[40px] leading-[68px] tracking-[0.05em]">Contact</h3>
+          <div className="order-2 xl:order-3 text-center md:text-right">
+            <h3 className="font-serif text-[28px] leading-[36px] sm:text-[32px] sm:leading-[44px] xl:text-[40px] xl:leading-[68px] tracking-[0.05em]">
+              Contact
+            </h3>
 
-            <div className="mt-6 flex flex-col items-end font-sans text-[20px] leading-[42px] tracking-[0.05em] text-white">
+            <div className="mt-3 lg:mt-6 flex flex-col items-center md:items-end font-sans font-sans text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:text-[20px] xl:leading-[36px] text-white">
               <p>Cascina Monvigliero 28,</p>
               <p>12060 Verduno (CN) Italy</p>
 
               <a
                 href="tel:+393484765176"
-                className="block w-[50%] transition-opacity hover:opacity-50 duration-300">
+                className="block w-full md:w-[50%] transition-opacity hover:opacity-50 duration-300">
                 +39 348 476 5176
               </a>
 
               <a
                 href="mailto:info@scarpa-villas.com"
-                className="block w-[50%] transition-opacity hover:opacity-50 duration-300">
+                className="block w-full md:w-[50%] transition-opacity hover:opacity-50 duration-300">
                 info@scarpa-villas.com
               </a>
             </div>
 
-            <div className="mt-8 flex justify-end gap-10">
+            <div className="mt-4 mb-4 md:mt-8 md:mb-0 flex justify-center md:justify-end gap-10">
               <a
                 href="https://www.instagram.com/scarpavillas/"
                 target="_blank"
@@ -127,12 +129,12 @@ export function Footer() {
         </div>
 
         {/* BOTTOM */}
-        <div className="mt-[35px] flex items-center justify-between border-t-[1.7px] border-white/50 pt-2">
-          <p className="text-[18px] font-sans leading-[32px] text-white/50">
+        <div className="mt-[35px] flex flex-col gap-2 items-center sm:flex-row sm:justify-between border-t-[1.7px] border-white/50 pt-2">
+          <p className="font-sans text-center sm:text-left text-white/50 text-[13px] leading-[20px] lg:text-[18px] lg:leading-[32px]">
             Antica Casa Vinicola Scarpa - P.IVA 00070140058
           </p>
 
-          <div className="text-[18px] font-sans leading-[32px] text-white/50 flex gap-2">
+          <div className="flex gap-2 font-sans text-white/50 text-[13px] leading-[20px] lg:text-[18px] lg:leading-[32px]">
             <a
               href={process.env.PUBLIC_URL || '/'}
               className="hover:text-white transition-colors duration-300">

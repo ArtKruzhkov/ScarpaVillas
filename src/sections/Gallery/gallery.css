@@ -58,9 +58,36 @@
     left: 11%;
   }
 
+  .villa-bricchi {
+    top: 25%;
+    left: 32%;
+  }
+
   .villa-tettineive {
     top: 46.5%;
     left: 76%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .villa-tettimora {
+    top: 43%;
+    left: 2%;
+  }
+
+  .villa-bricchi {
+    top: 26%;
+    left: 32%;
+  }
+
+  .villa-bogliona {
+    top: 32%;
+    left: 54%;
+  }
+
+  .villa-tettineive {
+    top: 48.5%;
+    left: 83%;
   }
 }
 
@@ -85,6 +112,24 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .villa-label {
+    font-size: 13px;
+    padding: 4px 14px;
+  }
+}
+
 .villa-label:hover {
   background: #ffffff;
+}
+
+.section-height-gallery {
+  height: calc(100vh - 86px);
+  max-height: 1000px;
+}
+
+@media (max-width: 639px) {
+  .section-height-gallery {
+    height: 50vh;
+  }
 }

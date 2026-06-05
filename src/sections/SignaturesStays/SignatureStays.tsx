@@ -80,34 +80,46 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
   return (
     <article
       className={`bg-white ${
-        imageFirst ? 'border-b-[13px] border-[#C09A60]' : 'border-t-[13px] border-[#C09A60]'
+        imageFirst
+          ? 'border-b-[13px] border-[#C09A60]'
+          : 'border-t-[13px] border-[#C09A60] flex flex-col justify-between'
       }`}>
       {imageFirst && (
-        <img src={stay.image} alt={stay.title} className="h-[482px] w-full object-cover" />
+        <img
+          src={stay.image}
+          alt={stay.title}
+          className="w-full object-cover h-[480px] lg:h-auto lg:object-contain xl:h-[482px] xl:object-cover"
+        />
       )}
 
       <div className="py-8 px-[1.6rem] text-center">
-        <h3 className="font-serif text-[42px] text-[#2C3654] tracking-[0.05em]">{stay.title}</h3>
+        <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
+          {stay.title}
+        </h3>
 
         {stay.subtitle && (
-          <p className="mt-4 font-sans font-bold italic text-[21px] leading-[32px] text-[#2C3654]">
+          <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
             {stay.subtitle}
           </p>
         )}
 
-        <p className="mt-8 font-sans text-[21px] leading-[32px] text-[#2C3654]">
+        <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
           {stay.description}
         </p>
 
         {stay.nights && (
-          <p className="mt-8 font-sans font-bold text-[21px] leading-[32px] text-[#2C3654]">
+          <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
             {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
           </p>
         )}
       </div>
 
       {!imageFirst && (
-        <img src={stay.image} alt={stay.title} className="h-[482px] w-full object-cover" />
+        <img
+          src={stay.image}
+          alt={stay.title}
+          className="w-full object-cover h-[480px] lg:h-auto lg:object-contain xl:h-[482px] xl:object-cover"
+        />
       )}
     </article>
   );
@@ -115,13 +127,18 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
 
 export function SignatureStays() {
   return (
-    <section className="bg-[#2C3654] pb-20">
+    <section className="bg-[#2C3654] pb-10 sm:pb-12 lg:pb-16 xl:pb-20">
       <div className="mx-auto w-full max-w-8xl px-0">
         {/* TOP HERO */}
         <div className="relative section-height overflow-hidden">
           <Swiper
             modules={[Autoplay]}
-            slidesPerView={2}
+            slidesPerView={1}
+            breakpoints={{
+              1024: {
+                slidesPerView: 2,
+              },
+            }}
             spaceBetween={0}
             loop
             speed={1200}
@@ -144,36 +161,38 @@ export function SignatureStays() {
           </Swiper>
 
           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-            <h2 className="font-serif text-[70px] leading-[72px] uppercase tracking-[0.2em] text-white">
+            <h2 className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[38px] md:leading-[42px]  xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white">
               Moments At Scarpa Villas
             </h2>
           </div>
         </div>
 
         {/* STAYS GRID */}
-        <div id="stays" className="scroll-mt-[6px] bg-[#2C3654] w-full max-w-8xl pt-20 px-8">
+        <div
+          id="stays"
+          className="scroll-mt-[6px] bg-[#2C3654] w-full max-w-8xl pt-10 sm:pt-12 lg:pt-16 xl:pt-20 px-8">
           {/* TOP ROW */}
-          <div className="grid grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 min-[1025px]:grid-cols-3 gap-5 xl:gap-7">
             <article className="bg-white border-b-[13px] border-[#C09A60]">
               <img
                 src={stays[0].image}
                 alt={stays[0].title}
-                className="h-[482px] w-full object-cover object-[center_25%]"
+                className="w-full object-cover h-[480px] lg:h-auto lg:object-contain xl:h-[482px] xl:object-cover xl:object-[center_25%]"
               />
 
               <div className="p-8 text-center">
-                <h3 className="font-serif text-[42px] text-[#2C3654] tracking-[0.05em]">
+                <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
                   {stays[0].title}
                 </h3>
 
-                <p className="mt-4 font-sans text-[21px] leading-[32px] text-[#2C3654]">
+                <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
                   Curated stays designed to help you experience Barolo at its fullest — without
-                  having <br /> to plan every detail.
+                  having to plan every detail.
                 </p>
 
-                <p className="mt-8 font-sans font-medium text-[21px] leading-[32px] text-[#2C3654]">
-                  Each programme brings together wine, gastronomy, and the rhythm of the region into{' '}
-                  <br />a seamless, thoughtfully crafted stay.
+                <p className="mt-4 xl:mt-8 font-sans font-medium text-[15px] min-[1440px]:text-[21px] leading-[32px] text-[#2C3654]">
+                  Each programme brings together wine, gastronomy, and the rhythm of the region into
+                  a seamless, thoughtfully crafted stay.
                 </p>
               </div>
             </article>
@@ -182,31 +201,32 @@ export function SignatureStays() {
           </div>
 
           {/* BOTTOM ROW */}
-          <div className="mt-8 grid grid-cols-2 gap-7">
-            {/* <StayCard stay={stays[3]} imageFirst /> */}
-            {/* <StayCard stay={stays[4]} imageFirst /> */}
-
+          <div className="mt-5 xl:mt-8 grid grid-cols-1 min-[1025px]:grid-cols-2 gap-5 xl:gap-7">
             {stays.slice(3, 5).map((stay) => (
               <article key={stay.title} className="border-b-[13px] border-[#C09A60] bg-white">
-                <img src={stay.image} alt={stay.title} className="h-[514px] w-full object-cover" />
+                <img
+                  src={stay.image}
+                  alt={stay.title}
+                  className="w-full h-auto object-contain xl:h-[514px] xl:object-cover"
+                />
 
                 <div className="px-[1.6rem] py-8 text-center">
-                  <h3 className="font-serif text-[42px] tracking-[0.05em] text-[#2C3654]">
+                  <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
                     {stay.title}
                   </h3>
 
                   {stay.subtitle && (
-                    <p className="mt-4 font-sans text-[21px] font-bold italic leading-[32px] text-[#2C3654]">
+                    <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
                       {stay.subtitle}
                     </p>
                   )}
 
-                  <p className="mt-8 font-sans text-[21px] leading-[32px] text-[#2C3654]">
+                  <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
                     {stay.description}
                   </p>
 
                   {stay.nights && (
-                    <p className="mt-8 font-sans text-[21px] font-bold leading-[32px] text-[#2C3654]">
+                    <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[21px] xl:leading-[32px] text-[#2C3654]">
                       {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
                     </p>
                   )}

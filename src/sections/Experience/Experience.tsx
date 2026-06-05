@@ -3,12 +3,12 @@ import { Container } from '../../components/layout/Container';
 
 export function Experience() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-12 lg:py-20">
       <Container>
-        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[504px_minmax(0,1fr)] lg:items-center px-6">
+        <div className="grid grid-cols-1 lg:gap-8 xl:gap-14 lg:grid-cols-[450px_minmax(0,1fr)] xl:grid-cols-[504px_minmax(0,1fr)] lg:items-center px-6">
           {/* LEFT CONTENT */}
-          <div className="max-w-[504px]">
-            <h2 className="font-serif text-[34px] leading-[70px] tracking-[0.05em] text-[#2C3654]">
+          <div className="lg:max-w-[450px] xl:max-w-[504px]">
+            <h2 className="font-serif text-[30px] leading-[46px] xl:text-[34px] xl:leading-[70px] tracking-[0.05em] text-[#2C3654]">
               Where Time Becomes
               <br />
               Part of the Experience
@@ -16,7 +16,7 @@ export function Experience() {
 
             <div className="mt-4 h-[2px] w-[210px] bg-[#6e7a9b]" />
 
-            <div className="font-sans mt-11 space-y-11 text-[18px] leading-[1.8] text-[#2C3654]">
+            <div className="font-sans mt-6 space-y-6 xl:mt-11 xl:space-y-11 text-[18px] leading-[1.8] text-[#2C3654]">
               <p>
                 For over a century, Scarpa has been guided by a simple belief — that{' '}
                 <strong>great wine is shaped by time.</strong>
@@ -41,11 +41,11 @@ export function Experience() {
           </div>
 
           {/* IMAGE */}
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden mt-6 lg:mt-0">
             <img
               src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
               alt="Luxury wine villa interior"
-              className="h-full min-h-[620px] w-full object-cover"
+              className="h-full min-h-[380px] lg:min-h-[620px] w-full object-cover"
             />
           </div>
         </div>

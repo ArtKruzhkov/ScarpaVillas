@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import './villaGallery.css';
 
 type VillaGalleryItem = {
   id: string;
@@ -38,80 +39,16 @@ const villaSlides: VillaGalleryItem[] = [
   },
 ];
 
-// export function VillaGallery() {
-//   const [activeVilla, setActiveVilla] = useState<VillaGalleryItem>(villaSlides[0]);
-//   const galleryRef = useRef<HTMLDivElement>(null);
-
-//   return (
-//     <div className="bg-white py-10">
-//       <div
-//         ref={galleryRef}
-//         className="scroll-mt-[100px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_280px] gap-6 px-8">
-//         {/* MAIN IMAGE */}
-//         <div className="relative overflow-hidden">
-//           <img
-//             src={activeVilla.image}
-//             alt={activeVilla.name}
-//             className="h-[1220px] w-full object-cover transition-all duration-500"
-//           />
-
-//           {/* CONTENT */}
-//           <div className="absolute left-12 top-12 z-10 max-w-[865px] text-[#2C3654]">
-//             <h3 className="font-serif text-[64px] leading-[80px] tracking-[0.05em]">
-//               {activeVilla.name}
-//             </h3>
-
-//             <p className="mt-4 font-sans text-[30px] leading-[48px]">{activeVilla.description}</p>
-//           </div>
-
-//           {/* BUTTON */}
-//           <a
-//             href="/"
-//             className="absolute bottom-[4.5rem] left-[4.7rem] z-10 inline-flex border-[3px] border-white bg-white px-[171px] py-[18px] font-sans text-[32px] font-bold uppercase tracking-[0.20em] text-[#2C3654] transition-all duration-300 hover:bg-[#2C3654] hover:text-white hover:border-[#2C3654]">
-//             Discover The Villa
-//           </a>
-//         </div>
-
-//         {/* THUMBNAILS */}
-//         <div className="grid grid-rows-4 gap-6">
-//           {villaSlides.map((villa) => {
-//             const isActive = villa.id === activeVilla.id;
-
-//             return (
-//               <button
-//                 key={villa.id}
-//                 type="button"
-//                 onClick={() => {
-//                   setActiveVilla(villa);
-
-//                   galleryRef.current?.scrollIntoView({
-//                     behavior: 'smooth',
-//                     block: 'start',
-//                   });
-//                 }}
-//                 className={`relative overflow-hidden transition-all duration-300 ${
-//                   isActive ? 'ring-[4px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'
-//                 }`}
-//                 aria-label={`Show ${villa.name}`}>
-//                 <img src={villa.image} alt={villa.name} className="h-full w-full object-cover" />
-//               </button>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 export function VillaGallery() {
   const [activeVilla, setActiveVilla] = useState<VillaGalleryItem>(villaSlides[3]);
   const galleryRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="bg-white pt-10 pb-24">
+    <div className="bg-white pt-10 pb-16 md:pb-24">
       <div
         ref={galleryRef}
-        className="scroll-mt-[90px] h-[90vh] max-h-[1000px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8">
+        // className="scroll-mt-[90px] h-[88vh] max-h-[1000px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8"
+        className="scroll-mt-[90px] mx-auto grid w-full max-w-8xl grid-cols-1 md:grid-cols-[1fr_180px] gap-6 px-4 md:px-8">
         {/* MAIN IMAGE */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -123,7 +60,7 @@ export function VillaGallery() {
               duration: 0.45,
               ease: 'easeInOut',
             }}
-            className="relative overflow-hidden">
+            className="relative overflow-hidden h-[65vh] min-h-[500px] md:h-[88vh]">
             <img
               src={activeVilla.image}
               alt={activeVilla.name}
@@ -131,12 +68,12 @@ export function VillaGallery() {
             />
 
             {/* CONTENT */}
-            <div className="absolute left-12 top-12 z-10 max-w-[865px] text-[#2C3654]">
+            <div className="absolute left-4 top-4 md:left-12 md:top-12 z-10 max-w-[90%] md:max-w-[430px] xl:max-w-[865px] text-[#2C3654]">
               <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.15 }}
-                className="font-serif text-[64px] leading-[80px] tracking-[0.05em]">
+                className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[60px] xl:text-[64px] xl:leading-[80px] tracking-[0.05em]">
                 {activeVilla.name}
               </motion.h3>
 
@@ -144,7 +81,7 @@ export function VillaGallery() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.25 }}
-                className="mt-4 font-sans text-[30px] leading-[48px]">
+                className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[30px] xl:leading-[48px]">
                 {activeVilla.description}
               </motion.p>
             </div>
@@ -155,14 +92,14 @@ export function VillaGallery() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.35 }}
-              className="absolute bottom-[4.5rem] left-12 z-10 inline-flex border-[3px] border-white bg-white px-[101px] py-[18px] font-sans text-[32px] font-bold uppercase tracking-[0.20em] text-[#2C3654] transition-all duration-300 hover:border-[#2C3654] hover:bg-[#2C3654] hover:text-white">
+              className="discover-villa-btn">
               Discover The Villa
             </motion.a>
           </motion.div>
         </AnimatePresence>
 
         {/* THUMBNAILS */}
-        <div className="grid grid-rows-4 gap-6">
+        <div className="flex justify-center gap-4 md:grid md:grid-rows-4 md:gap-6 md:h-[88vh]">
           {villaSlides.map((villa) => {
             const isActive = villa.id === activeVilla.id;
 
@@ -180,9 +117,12 @@ export function VillaGallery() {
                     block: 'start',
                   });
                 }}
-                className={`relative overflow-hidden transition-all duration-300 ${
+                className={`relative overflow-hidden w-[120px] h-[90px] md:w-auto md:h-auto transition-all duration-300 ${
                   isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'
                 }`}
+                // className={`relative overflow-hidden shrink-0 w-[120px] h-[90px] md:w-auto md:h-auto transition-all duration-300
+                //           ${isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'}
+                // `}
                 aria-label={`Show ${villa.name}`}>
                 <img src={villa.image} alt={villa.name} className="h-full w-full object-cover" />
               </button>
