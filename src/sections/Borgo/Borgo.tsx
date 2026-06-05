@@ -5,7 +5,7 @@ export function Borgo() {
   return (
     <section
       id="borgo"
-      className="scroll-mt-[86px] relative w-full section-height overflow-hidden bg-[#1f2f63] py-10 px-10">
+      className="scroll-mt-[86px] relative w-full section-height overflow-hidden bg-[#1f2f63] py-6 px-6 sm:px-10 sm:py-10">
       {/* FULL IMAGE SECTION */}
       <div className="relative  w-full h-full">
         {/* IMAGE */}
