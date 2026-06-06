@@ -19,7 +19,7 @@ export function Navbar() {
   const [activeSection, setActiveSection] = React.useState('villas');
 
   return (
-    <header className="sticky top-0 z-50 bg-sand-100/85 backdrop-blur">
+    <header className="sticky top-0 z-50 relative bg-sand-100/85 backdrop-blur">
       <Container className="py-4 2xl:max-w-[1920px] border-b border-ink-900/10">
         <div className="flex items-center justify-between px-6 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           {/* LEFT NAV */}
@@ -102,35 +102,37 @@ export function Navbar() {
           </button>
         </div>
 
-        {open ? (
-          <div className="mt-4 rounded-2xl border border-ink-900/10 bg-sand-50 p-4 shadow-soft lg:hidden">
-            <nav className="grid gap-2" aria-label="Mobile">
-              {nav.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="font-sans uppercase rounded-xl px-3 py-3 text-sm font-[600] text-[#2c3654] transition-colors hover:bg-ink-900/5"
-                  onClick={() => setOpen(false)}>
-                  {item.label}
-                </a>
-              ))}
+        {open && (
+          <div className="absolute left-0 top-full z-50 w-full px-4 lg:hidden">
+            <div className="mt-2 rounded-2xl border border-ink-900/10 bg-sand-50 p-4 shadow-soft">
+              <nav className="grid gap-2" aria-label="Mobile">
+                {nav.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="font-sans uppercase rounded-xl px-3 py-3 text-sm font-[600] text-[#2c3654] transition-colors hover:bg-ink-900/5"
+                    onClick={() => setOpen(false)}>
+                    {item.label}
+                  </a>
+                ))}
 
-              <div className="mt-3 grid gap-3">
-                <div className="flex flex-col items-center">
-                  <LinkButton
-                    href="#plan"
-                    variant="primary"
-                    size="md"
-                    className="w-[50%] uppercase bg-[#2c3654]">
-                    Plan Your Stay
-                  </LinkButton>
+                <div className="mt-3 grid gap-3">
+                  <div className="flex flex-col items-center">
+                    <LinkButton
+                      href="/"
+                      variant="primary"
+                      size="md"
+                      className="w-[50%] uppercase bg-[#2c3654]">
+                      Plan Your Stay
+                    </LinkButton>
+                  </div>
+
+                  <span className="language-switcher">EN</span>
                 </div>
-
-                <span className="language-switcher">EN</span>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
-        ) : null}
+        )}
       </Container>
     </header>
   );
