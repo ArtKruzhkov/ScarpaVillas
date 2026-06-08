@@ -93,7 +93,7 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
       )}
 
       <div className="p-4 sm:p-8 text-center">
-        <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[40px] xl:leading-[48px]">
+        <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] 2xl:text-[40px] 2xl:leading-[48px]">
           {stay.title}
         </h3>
 
@@ -161,7 +161,7 @@ export function SignatureStays() {
           </Swiper>
 
           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-            <h2 className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[38px] md:leading-[42px]  xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white">
+            <h2 className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px]  xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white">
               Moments At Scarpa Villas
             </h2>
           </div>

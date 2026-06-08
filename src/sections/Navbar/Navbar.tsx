@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from '../../components/layout/Container';
 import { LinkButton } from '../../components/ui/LinkButton';
+// import { ReactComponent as ScarpaLogo } from '../../../images/hero/logo_hero.svg';
 import './navbar.css';
 
 type NavItem = { label: string; href: string };
@@ -19,8 +20,8 @@ export function Navbar() {
   const [activeSection, setActiveSection] = React.useState('villas');
 
   return (
-    <header className="sticky top-0 z-50 relative bg-sand-100/85 backdrop-blur">
-      <Container className="py-4 2xl:max-w-[1920px] border-b border-ink-900/10">
+    <header className="sticky top-0 z-50 relative bg-white backdrop-blur">
+      <Container className="py-4 2xl:max-w-[1920px] border-b border-[#2c3654]/70">
         <div className="flex items-center justify-between px-6 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           {/* LEFT NAV */}
           <nav
@@ -56,12 +57,6 @@ export function Navbar() {
 
           {/* RIGHT NAV */}
           <div className="hidden items-center justify-between gap-8 xl:gap-10 lg:flex">
-            {/* {nav.slice(4).map((item) => (
-              <a key={item.href} href={item.href} className="nav-link">
-                {item.label}
-              </a>
-            ))} */}
-
             {nav.slice(4).map((item) => {
               const sectionId = item.href.replace('#', '');
 

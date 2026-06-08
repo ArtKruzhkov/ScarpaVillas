@@ -28,7 +28,7 @@ const sizeClasses: Record<Size, string> = {
 
   md: 'h-11 px-5 text-sm',
 
-  nav: 'h-[42px] px-[34px] text-[13px] font-bold font-sans tracking-[0.08em] uppercase',
+  nav: 'h-[42px] px-[34px] text-[15px] font-bold font-sans tracking-[0.08em] uppercase',
 };
 
 export function LinkButton({

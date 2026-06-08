@@ -8,3 +8,45 @@
   /* opacity: 1; */
   transform: scale(1) !important;
 }
+
+.discover-text {
+  margin-top: 1rem;
+  max-width: 1674px;
+  font-family: 'Bodoni Moda', serif;
+  color: #2c3654;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* @media (max-width: 1739px) {
+  .discover-text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+} */
+
+@media (min-width: 640px) {
+  .discover-text {
+    margin-top: 1.5rem;
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-text {
+    margin-top: 1.5rem;
+    font-size: 22.4px;
+    line-height: 38px;
+    width: 961px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .discover-text {
+    margin-top: 2rem;
+    font-size: 28.6px;
+    line-height: 46px;
+    width: 1227px;
+  }
+}

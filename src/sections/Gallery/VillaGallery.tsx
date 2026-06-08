@@ -48,7 +48,7 @@ export function VillaGallery() {
       <div
         ref={galleryRef}
         // className="scroll-mt-[90px] h-[88vh] max-h-[1000px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8"
-        className="scroll-mt-[90px] mx-auto grid w-full max-w-8xl grid-cols-1 md:grid-cols-[1fr_180px] gap-6 px-4 md:px-8">
+        className="lg:scroll-mt-[100px] mx-auto grid w-full max-w-8xl grid-cols-1 md:grid-cols-[1fr_180px] gap-6 px-4 md:px-8">
         {/* MAIN IMAGE */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -60,7 +60,7 @@ export function VillaGallery() {
               duration: 0.45,
               ease: 'easeInOut',
             }}
-            className="relative overflow-hidden h-[65vh] min-h-[500px] md:h-[88vh]">
+            className="relative overflow-hidden h-[65vh] min-h-[500px] max-h-[1000px] md:h-[87vh]">
             <img
               src={activeVilla.image}
               alt={activeVilla.name}
@@ -68,12 +68,12 @@ export function VillaGallery() {
             />
 
             {/* CONTENT */}
-            <div className="absolute left-4 top-4 md:left-12 md:top-12 z-10 max-w-[90%] md:max-w-[430px] xl:max-w-[865px] text-[#2C3654]">
+            <div className="absolute left-4 top-4 md:left-16 md:top-16 z-10 max-w-[90%] md:max-w-[430px] xl:max-w-[770px] text-[#2C3654]">
               <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.15 }}
-                className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[60px] xl:text-[64px] xl:leading-[80px] tracking-[0.05em]">
+                className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[60px] xl:text-[62px] xl:leading-[76px] tracking-[0.01em]">
                 {activeVilla.name}
               </motion.h3>
 
@@ -81,7 +81,7 @@ export function VillaGallery() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.25 }}
-                className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[30px] xl:leading-[48px]">
+                className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[28px] xl:leading-[46px]">
                 {activeVilla.description}
               </motion.p>
             </div>
@@ -99,7 +99,7 @@ export function VillaGallery() {
         </AnimatePresence>
 
         {/* THUMBNAILS */}
-        <div className="flex justify-center gap-4 md:grid md:grid-rows-4 md:gap-6 md:h-[88vh]">
+        <div className="flex justify-center gap-4 md:grid md:grid-rows-4 md:gap-6 md:h-[87vh] max-h-[1000px]">
           {villaSlides.map((villa) => {
             const isActive = villa.id === activeVilla.id;
 
@@ -112,10 +112,12 @@ export function VillaGallery() {
 
                   setActiveVilla(villa);
 
-                  galleryRef.current?.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                  });
+                  if (window.innerWidth >= 1024) {
+                    galleryRef.current?.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                  }
                 }}
                 className={`relative overflow-hidden w-[120px] h-[90px] md:w-auto md:h-auto transition-all duration-300 ${
                   isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'

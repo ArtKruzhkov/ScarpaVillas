@@ -38,7 +38,7 @@ export function Footer() {
           <div className="order-3 md:col-span-2 xl:order-2 xl:col-span-1 mx-auto flex flex-col items-center text-center">
             <a href={process.env.PUBLIC_URL || '/'} className="block">
               <img
-                src={`${process.env.PUBLIC_URL}/images/footer/logo_footer.png`}
+                src={`${process.env.PUBLIC_URL}/images/footer/logo_footer.svg`}
                 alt="Scarpa Villas"
                 className="w-[120px] sm:w-[150px] xl:w-[192px] h-auto"
               />
@@ -114,8 +114,8 @@ export function Footer() {
                 className="transition-opacity duration-300 hover:opacity-50">
                 <svg
                   width="19"
-                  height="41"
-                  viewBox="0 0 19 41"
+                  height="43"
+                  viewBox="0 0 19 43"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path

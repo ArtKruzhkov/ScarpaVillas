@@ -93,7 +93,7 @@ export function Experiences() {
             Ways To Experience Barolo
           </h2>
 
-          <p className="xl:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[30px] sm:text-[28px] sm:leading-[36px] lg:text-[36px] lg:leading-[46px] xl:text-[48px] xl:leading-[56px]">
+          <p className="xl:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[30px] sm:text-[28px] sm:leading-[36px] lg:text-[36px] lg:leading-[46px] xl:text-[43px] xl:leading-[55px]">
             From private tastings to slow afternoons in the vineyards, each experience is designed
             to immerse <br /> you in the rhythm of Barolo.
           </p>
@@ -118,13 +118,9 @@ export function Experiences() {
                 className="w-full h-[560px] sm:h-[480px] lg:h-auto object-cover"
               />
 
-              <h4 className="mt-4 xl:mt-6 font-sans font-medium uppercase tracking-[0.1em] text-[#C09A60] text-[16px] sm:text-[18px] xl:text-[24px]">
-                {experience.title}
-              </h4>
+              <h4 className="card-title">{experience.title}</h4>
 
-              <p className="mt-1 lg:mt-3 font-sans text-[#2C3654] text-[15px] leading-[24px] sm:text-[17px] leading-[28px] xl:text-[20px] xl:leading-[32px]">
-                {experience.description}
-              </p>
+              <p className="card-description">{experience.description}</p>
             </article>
           ))}
         </div>
@@ -148,13 +144,9 @@ export function Experiences() {
                 className="w-full h-[560px] sm:h-[480px] lg:h-auto object-cover"
               />
 
-              <h4 className="mt-4 xl:mt-6 font-sans font-medium uppercase tracking-[0.1em] text-[#C09A60] text-[16px] sm:text-[18px] xl:text-[24px]">
-                {experience.title}
-              </h4>
+              <h4 className="card-title">{experience.title}</h4>
 
-              <p className="mt-1 lg:mt-3 font-sans text-[#2C3654] text-[15px] leading-[24px] sm:text-[17px] leading-[28px] xl:text-[20px] xl:leading-[32px]">
-                {experience.description}
-              </p>
+              <p className="card-description">{experience.description}</p>
             </article>
           ))}
         </div>
@@ -176,18 +168,14 @@ export function Experiences() {
             <article key={experience.title}>
               <img src={experience.image} alt={experience.title} className="w-full object-cover" />
 
-              <h4 className="mt-4 xl:mt-6 font-sans font-medium uppercase tracking-[0.1em] text-[#C09A60] text-[16px] sm:text-[18px] xl:text-[24px]">
-                {experience.title}
-              </h4>
+              <h4 className="card-title">{experience.title}</h4>
 
-              <p className="mt-1 lg:mt-3 font-sans text-[#2C3654] text-[15px] leading-[24px] sm:text-[17px] leading-[28px] xl:text-[20px] xl:leading-[32px]">
-                {experience.description}
-              </p>
+              <p className="card-description">{experience.description}</p>
             </article>
           ))}
         </div>
 
-        <div className="mt-10 sm:mt-16 lg:mt-24 flex justify-center">
+        <div className="mt-10 lg:mt-14 xl:mt-24 flex justify-center">
           <button className="experiences-btn">Discover All Experiences</button>
         </div>
       </Container>

@@ -1,23 +1,18 @@
 .discover-villa-btn {
   position: absolute;
-  bottom: 4.5rem;
-  left: 3rem;
+  bottom: 3rem;
+  left: 4rem;
   z-index: 10;
   display: inline-flex;
-
   border: 3px solid #ffffff;
   background: #ffffff;
-
-  padding: 18px 101px;
-
+  padding: 16px 205px;
   font-family: 'Montserrat', 'sans-serif';
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: #2c3654;
-
   transition: all 0.3s ease;
 }
 

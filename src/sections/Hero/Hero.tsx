@@ -15,7 +15,7 @@ export function Hero() {
         />
 
         {/* OVERLAY */}
-        <div className="absolute inset-0 hero-overlay" />
+        {/* <div className="absolute inset-0 hero-overlay" /> */}
 
         {/* BOTTOM GRADIENT */}
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" /> */}
@@ -26,7 +26,7 @@ export function Hero() {
         <div className="flex max-w-[900px] flex-col items-center text-center">
           {/* ICON */}
           <img
-            src={`${process.env.PUBLIC_URL}/images/hero/logo-hero.png`}
+            src={`${process.env.PUBLIC_URL}/images/hero/logo_hero.svg`}
             alt="Scarpa Villas"
             className="hero-logo"
           />

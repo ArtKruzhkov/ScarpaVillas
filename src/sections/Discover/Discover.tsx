@@ -33,6 +33,27 @@ const langheSlides: LangheSlide[] = [
     description: 'Experience the culinary traditions that made Alba famous around the world.',
     image: `${baseUrl}/images/discover/truffle.png`,
   },
+  // временные дубликаты
+  {
+    title: 'Village & Museum',
+    subtitle: 'A JOURNEY THROUGH BAROLO HISTORY',
+    description:
+      'Discover the heritage of the region through historic villages and cultural landmarks.',
+    image: `${baseUrl}/images/discover/village-museum.png`,
+  },
+  {
+    title: 'La Morra Belvedere',
+    subtitle: 'THE MOST ICONIC PANORAMIC VIEW IN THE LANGHE',
+    description:
+      'Endless vineyards unfolding beneath you, where the landscape of Barolo reveals itself at a glance.',
+    image: `${baseUrl}/images/discover/la-morra.png`,
+  },
+  {
+    title: 'Alba & White Truffle Culture',
+    subtitle: 'THE HOME OF WHITE TRUFFLES',
+    description: 'Experience the culinary traditions that made Alba famous around the world.',
+    image: `${baseUrl}/images/discover/truffle.png`,
+  },
 ];
 
 export function DiscoverLanghe() {
@@ -41,12 +62,12 @@ export function DiscoverLanghe() {
       <div className="mx-auto px-0">
         {/* HEADER */}
 
-        <div className="mx-auto text-center px-8">
-          <h2 className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[28px] leading-[36px] sm:text-[38px] sm:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[64px] xl:leading-[75px]">
+        <div className="mx-auto text-center px-8 flex flex-col items-center">
+          <h2 className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[28px] leading-[36px] sm:text-[38px] sm:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[57px] xl:leading-[65px]">
             Discover The Langhe
           </h2>
 
-          <p className="mt-4 lg:mt-6 xl:mt-8 font-serif text-[#2C3654] text-[18px] leading-[28px] sm:text-[24px] sm:leading-[36px] lg:text-[32px] lg:leading-[46px] xl:text-[42px] xl:leading-[60px]">
+          <p className="discover-text">
             Just minutes from the vineyards of Monvigliero, the Langhe unfolds through historic
             villages, panoramic viewpoints, and some of Italy’s most celebrated gastronomic
             destinations.
@@ -58,13 +79,6 @@ export function DiscoverLanghe() {
 
         {/* SLIDER */}
         <div className="mt-[30px] sm:mt-[50px] lg:mt-[80px] xl:mt-[100px]">
-          {/* <Swiper
-            slidesPerView={1.95}
-            centeredSlides
-            spaceBetween={189}
-            grabCursor
-            initialSlide={1}
-            className="discover-swiper overflow-visible"> */}
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
@@ -81,13 +95,13 @@ export function DiscoverLanghe() {
                 slidesPerView: 1.95,
                 centeredSlides: true,
                 spaceBetween: 189,
-                loop: false,
+                // loop: false,
               },
             }}
             grabCursor
             className="discover-swiper overflow-visible">
-            {langheSlides.map((slide) => (
-              <SwiperSlide key={slide.title}>
+            {langheSlides.map((slide, index) => (
+              <SwiperSlide key={`${slide.title}-${index}`}>
                 <div className="text-center">
                   <img
                     src={slide.image}
