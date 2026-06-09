@@ -83,13 +83,13 @@ export function About() {
             delay: 0.2,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="xl:max-w-[1164px] ml-auto xl:mr-[5rem] px-6 xl:px-0">
-          <h2 className="font-serif text-[22px] sm:text-[28px] md:text-[36px] lg:text-[48px] xl:text-[57.5px] font-normal uppercase leading-[1] tracking-[0.08em] text-white">
+          className="xl:max-w-[1164px] ml-auto xl:mr-[4rem] px-6 xl:px-0">
+          <h2 className="font-serif text-[22px] sm:text-[28px] md:text-[36px] lg:text-[48px] xl:text-[52px] font-normal uppercase leading-[1] tracking-[0.08em] text-white">
             A Different Rhythm of Living
           </h2>
 
           <div className="mt-3 lg:mt-6">
-            <p className="font-serif text-white/90 text-[16px] sm:text-[18px] leading-[1.3] lg:text-[22px] lg:leading-[32px] xl:text-[26px] xl:leading-[42px]">
+            <p className="font-serif text-white/90 text-[16px] sm:text-[18px] leading-[1.3] lg:text-[22px] lg:leading-[32px] xl:text-[24px] xl:leading-[38px] xl:pr-28">
               In the hills of Verduno, within the vineyards of Monvigliero, Scarpa Villas offers a
               rare way to experience Barolo. Inspired by the philosophy of Scarpa, it goes beyond a
               place to stay – it is shaped by wine, time, and the land itself. Here, days unfold
