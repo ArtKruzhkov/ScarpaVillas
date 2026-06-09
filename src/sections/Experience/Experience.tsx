@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from '../../components/layout/Container';
+import { motion } from 'framer-motion';
 
 export function Experience() {
   return (
@@ -7,14 +8,7 @@ export function Experience() {
       <Container>
         <div className="grid grid-cols-1 lg:gap-10 lg:grid-cols-[450px_minmax(0,1fr)] xl:grid-cols-[574px_minmax(0,1fr)] px-6">
           {/* LEFT CONTENT */}
-          <div className="lg:max-w-[450px] xl:max-w-[574px] flex flex-col justify-between">
-            {/* <h2 className="font-serif text-[28px] leading-[28px] xl:text-[42px] xl:leading-[36px] text-[#2C3654]">
-              <span className="block">Where Time Becomes</span>
-              <span className="block mt-7">Part of the Experience</span>
-            </h2>
-
-            <div className="mt-6 h-[2px] w-[210px] bg-[#6e7a9b]" /> */}
-
+          {/* <div className="lg:max-w-[450px] xl:max-w-[574px] flex flex-col justify-between">
             <div>
               <h2 className="font-serif text-[28px] leading-[28px] xl:text-[42px] xl:leading-[36px] text-[#2C3654]">
                 <span className="block">Where Time Becomes</span>
@@ -46,16 +40,82 @@ export function Experience() {
                 becomes part of the experience itself.
               </p>
             </div>
-          </div>
+          </div> */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 1,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.4,
+            }}>
+            <div className="lg:max-w-[450px] xl:max-w-[574px] flex flex-col justify-between">
+              <div>
+                <h2 className="font-serif text-[28px] leading-[28px] xl:text-[42px] xl:leading-[36px] text-[#2C3654]">
+                  <span className="block">Where Time Becomes</span>
+                  <span className="block mt-8">Part of the Experience</span>
+                </h2>
+
+                <div className="mt-8 h-[2px] w-[210px] bg-[#6e7a9b]" />
+              </div>
+
+              <div className="font-sans mt-7 space-y-7 xl:mt-10 xl:space-y-10 text-[20px] leading-[1.8] text-[#2C3654]">
+                <p>
+                  For over a century, Scarpa has been guided by a simple belief — that{' '}
+                  <strong>great wine is shaped by time.</strong>
+                </p>
+
+                <p>
+                  <strong>Scarpa Villas</strong> were created as a natural extension of this
+                  philosophy - a place where the culture of wine can be lived, not just tasted — by
+                  those who choose to stay here.
+                </p>
+
+                <p>
+                  <strong>Founded in 1900</strong>, the winery has built its legacy on patience,
+                  respect for the land, and a deep connection to Piedmont’s terroirs.
+                </p>
+
+                <p>
+                  Here, <strong>among the vineyards of Monvigliero</strong>, time slows, deepens,
+                  and becomes part of the experience itself.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
           {/* IMAGE */}
-          <div className="relative overflow-hidden mt-6 lg:mt-0">
+          {/* <div className="relative overflow-hidden mt-6 lg:mt-0">
             <img
               src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
               alt="Luxury wine villa interior"
               className="h-full min-h-[380px] lg:min-h-[620px] w-full object-cover"
             />
-          </div>
+          </div> */}
+
+          <motion.div
+            className="relative overflow-hidden mt-6 lg:mt-0"
+            initial={{
+              opacity: 0,
+              scale: 1.12,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 1.8,
+              ease: [0.22, 1, 0.36, 1],
+            }}>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
+              alt="Luxury wine villa interior"
+              className="h-full min-h-[380px] lg:min-h-[620px] w-full object-cover"
+            />
+          </motion.div>
         </div>
       </Container>
     </section>

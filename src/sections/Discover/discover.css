@@ -45,8 +45,9 @@
 @media (min-width: 1280px) {
   .discover-text {
     margin-top: 2rem;
-    font-size: 28.6px;
+    font-size: 30px;
     line-height: 46px;
-    width: 1227px;
+    width: 1175px;
+    letter-spacing: -0.04em;
   }
 }
