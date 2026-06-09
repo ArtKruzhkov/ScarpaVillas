@@ -9,11 +9,21 @@
   }
 }
 
-.hero-overlay {
+/* .hero-overlay {
   background: linear-gradient(
     to top,
     rgba(17, 24, 45, 0.75) 0%,
     rgba(17, 24, 45, 0.45) 40%,
+    rgba(17, 24, 45, 0) 100%
+  );
+} */
+
+.hero-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(17, 24, 45, 0.75) 5%,
+    rgba(17, 24, 45, 0.45) 20%,
+    rgba(17, 24, 45, 0) 50%,
     rgba(17, 24, 45, 0) 100%
   );
 }

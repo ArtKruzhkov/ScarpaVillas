@@ -47,10 +47,8 @@ export function VillaGallery() {
     <div className="bg-white pt-10 pb-16 md:pb-24">
       <div
         ref={galleryRef}
-        // className="scroll-mt-[90px] h-[88vh] max-h-[1000px] mx-auto grid w-full max-w-8xl grid-cols-[1fr_180px] gap-6 px-8"
         className="lg:scroll-mt-[100px] mx-auto grid w-full max-w-8xl grid-cols-1 md:grid-cols-[1fr_180px] gap-6 px-4 md:px-8">
-        {/* MAIN IMAGE */}
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           <motion.div
             key={activeVilla.id}
             initial={{ opacity: 0 }}
@@ -67,7 +65,6 @@ export function VillaGallery() {
               className="h-full w-full object-cover"
             />
 
-            {/* CONTENT */}
             <div className="absolute left-4 top-4 md:left-16 md:top-16 z-10 max-w-[90%] md:max-w-[430px] xl:max-w-[770px] text-[#2C3654]">
               <motion.h3
                 initial={{ opacity: 0, y: 20 }}
@@ -86,7 +83,6 @@ export function VillaGallery() {
               </motion.p>
             </div>
 
-            {/* BUTTON */}
             <motion.a
               href={process.env.PUBLIC_URL || '/'}
               initial={{ opacity: 0 }}
@@ -96,7 +92,65 @@ export function VillaGallery() {
               Discover The Villa
             </motion.a>
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence> */}
+
+        <div className="relative">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeVilla.id}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                duration: 0.45,
+                ease: 'easeInOut',
+              }}
+              className="overflow-hidden h-[65vh] min-h-[500px] max-h-[1000px] md:h-[87vh]">
+              <img
+                src={activeVilla.image}
+                alt={activeVilla.name}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute left-4 top-4 md:left-16 md:top-16 z-10 max-w-[90%] md:max-w-[430px] xl:max-w-[770px] text-[#2C3654]">
+                <motion.h3
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.15 }}
+                  className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[60px] xl:text-[62px] xl:leading-[76px] tracking-[0.01em]">
+                  {activeVilla.name}
+                </motion.h3>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.25 }}
+                  className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[28px] xl:leading-[46px]">
+                  {activeVilla.description}
+                </motion.p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
+            Discover The Villa
+          </a> */}
+
+          <AnimatePresence mode="wait">
+            <motion.a
+              key={`button-${activeVilla.id}`}
+              href={process.env.PUBLIC_URL || '/'}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                duration: 0.4,
+                ease: 'easeInOut',
+              }}
+              className="discover-villa-btn">
+              Discover The Villa
+            </motion.a>
+          </AnimatePresence>
+        </div>
 
         {/* THUMBNAILS */}
         <div className="flex justify-center gap-4 md:grid md:grid-rows-4 md:gap-6 md:h-[87vh] max-h-[1000px]">

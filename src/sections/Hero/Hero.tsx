@@ -15,7 +15,7 @@ export function Hero() {
         />
 
         {/* OVERLAY */}
-        {/* <div className="absolute inset-0 hero-overlay" /> */}
+        <div className="absolute inset-0 hero-overlay" />
 
         {/* BOTTOM GRADIENT */}
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" /> */}
