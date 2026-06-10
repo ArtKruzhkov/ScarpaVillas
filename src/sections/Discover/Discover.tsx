@@ -209,7 +209,7 @@ export function DiscoverLanghe() {
                     {slide.title}
                   </h3>
 
-                  <p className="font-sans font-semibold uppercase tracking-[0.1em] text-[#C09A60] text-[13px] leading-[22px] sm:text-[16px] sm:leading-[26px] xl:text-[20px] xl:leading-[32px]">
+                  <p className="px-4 md:px-0 font-sans font-semibold uppercase tracking-[0.1em] text-[#C09A60] text-[12px] leading-[22px] sm:text-[16px] sm:leading-[26px] xl:text-[20px] xl:leading-[32px]">
                     {slide.subtitle}
                   </p>
 
