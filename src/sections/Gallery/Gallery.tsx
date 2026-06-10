@@ -171,11 +171,11 @@ export function Gallery() {
                 delay: 0.4,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <p className="font-serif font-medium text-[22px] sm:text-[34px] md:text-[42px] xl:text-[50px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+              <p className="font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                 Four Villas
               </p>
 
-              <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[34px] md:text-[42px] xl:text-[50px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+              <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                 Four Ways To Live Barolo
               </h2>
             </motion.div>

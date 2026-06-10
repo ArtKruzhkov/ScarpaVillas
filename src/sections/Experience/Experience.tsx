@@ -61,7 +61,7 @@ export function Experience() {
                 <div className="mt-8 h-[2px] w-[210px] bg-[#6e7a9b]" />
               </div>
 
-              <div className="font-sans mt-7 space-y-7 xl:mt-10 xl:space-y-10 text-[20px] leading-[1.8] text-[#2C3654]">
+              <div className="font-sans mt-7 space-y-7 xl:mt-10 xl:space-y-10 text-[18px] xl:text-[20px] leading-[1.8] text-[#2C3654]">
                 <p>
                   For over a century, Scarpa has been guided by a simple belief — that{' '}
                   <strong>great wine is shaped by time.</strong>

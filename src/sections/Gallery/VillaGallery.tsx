@@ -97,17 +97,8 @@ export function VillaGallery() {
                 </motion.p>
               </div>
 
-              {/* <motion.a
-                href={process.env.PUBLIC_URL || '/'}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, delay: 0.35 }}
-                className="discover-villa-btn">
-                Discover The Villa
-              </motion.a> */}
-
               <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
-                Discover The Villa2
+                Discover The Villa
               </a>
             </motion.div>
           </AnimatePresence>
