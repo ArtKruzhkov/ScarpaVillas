@@ -91,11 +91,11 @@ export function Borgo() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="hidden font-sans sm:block mt-5 max-w-[1140px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.8] text-[#2C3654]">
+          <p className="hidden font-sans sm:block mt-5 max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[14.9px] xl:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.8] text-[#2C3654]">
             The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the
-            surrounding estate, all exclusively yours. A setting designed for meaningful gatherings,
-            from private celebrations and intimate weddings to corporate retreats, where privacy,
-            space, and the rhythm of Barolo come together.
+            surrounding estate, all exclusively yours. A&nbsp;setting designed for meaningful
+            gatherings, from private celebrations and intimate weddings to corporate retreats, where
+            privacy, space, and the rhythm of Barolo come together.
           </p>
 
           <p className="mt-4 text-[15px] leading-[1.6] text-[#2C3654] sm:hidden">

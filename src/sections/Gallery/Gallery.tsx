@@ -155,7 +155,7 @@ export function Gallery() {
           </motion.div>
 
           {/* TITLE */}
-          <div className="absolute left-1/2 top-4 sm:top-12 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0">
+          <div className="absolute left-1/2 top-3 sm:top-10 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0">
             <motion.div
               initial={{
                 opacity: 0,
