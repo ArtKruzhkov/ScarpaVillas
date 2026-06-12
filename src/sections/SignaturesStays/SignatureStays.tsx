@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { motion, Variants } from 'framer-motion';
 import 'swiper/css';
+import './signaturesStays.css';
 
 type Stay = {
   title: string;
@@ -113,7 +114,7 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         <img
           src={stay.image}
           alt={stay.title}
-          className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[432px] xl:object-cover"
+          className="w-full object-cover h-[410px] md:h-[480px] lg:h-auto lg:object-contain xl:h-[432px] xl:object-cover sm:object-[center_30%] lg:object-center"
         />
       )}
 
@@ -123,7 +124,7 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         </h3>
 
         {stay.subtitle && (
-          <p className="mt-3 xl:mt-5 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[18px] xl:leading-[28px] text-[#2C3654]">
+          <p className="mt-3 xl:mt-5 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
             {stay.subtitle}
           </p>
         )}
@@ -133,7 +134,7 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         </p>
 
         {stay.nights && (
-          <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[18px] xl:leading-[28px] text-[#2C3654]">
+          <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
             {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
           </p>
         )}
@@ -143,7 +144,7 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         <img
           src={stay.image}
           alt={stay.title}
-          className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[432px] xl:object-cover"
+          className="w-full object-cover h-[410px] md:h-[480px] lg:h-auto lg:object-contain xl:h-[432px] xl:object-cover"
         />
       )}
     </article>
@@ -226,7 +227,7 @@ export function SignatureStays() {
           </div> */}
 
           <motion.div
-            className="grid grid-cols-1 min-[1025px]:grid-cols-3 gap-5 xl:gap-7"
+            className="hidden lg:grid lg:grid-cols-3 gap-5 xl:gap-7"
             variants={cardsContainer}
             initial="hidden"
             whileInView="visible"
@@ -234,38 +235,13 @@ export function SignatureStays() {
               once: true,
               amount: 0.15,
             }}>
-            {/* <article className="bg-white border-b-[13px] border-[#C09A60]">
-              <img
-                src={stays[0].image}
-                alt={stays[0].title}
-                className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[462px] xl:object-cover xl:object-[center_25%]"
-              />
-
-              <div className="p-4 sm:p-8 text-center">
-                <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
-                  {stays[0].title}
-                </h3>
-
-                <p className="mt-2 xl:mt-5 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
-                  Curated stays designed to help you experience Barolo at its fullest — without
-                  having to plan every detail.
-                </p>
-
-                <p className="mt-4 xl:mt-8 font-sans font-medium text-[15px] min-[1440px]:text-[20.5px] leading-[32px] text-[#2C3654]">
-                  Each programme brings together wine, gastronomy, and the rhythm of the region into
-                  a seamless, thoughtfully crafted stay.
-                </p>
-              </div>
-            </article>
-             */}
-
             <motion.article
               variants={cardItem}
               className="bg-white border-b-[13px] border-[#C09A60]">
               <img
                 src={stays[0].image}
                 alt={stays[0].title}
-                className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[432px] xl:object-cover xl:object-[center_25%]"
+                className="w-full object-cover h-[410px] md:h-[480px] lg:h-auto lg:object-contain xl:h-[432px] xl:object-cover xl:object-[center_25%]"
               />
 
               <div className="p-4 sm:p-8 text-center">
@@ -278,18 +254,16 @@ export function SignatureStays() {
                   having to plan every detail.
                 </p>
 
-                <p className="mt-4 xl:mt-7 font-sans font-medium text-[15px] min-[1440px]:text-[20.5px] leading-[32px] text-[#2C3654] xl:px-4">
+                <p className="mt-4 xl:mt-7 font-sans font-medium text-[17px] lg:text-[18px] 2xl:text-[20.5px] leading-[32px] text-[#2C3654] xl:px-4">
                   Each programme brings together wine, gastronomy, and the rhythm of the region into
                   a seamless, thoughtfully crafted stay.
                 </p>
               </div>
             </motion.article>
-            {/* <StayCard stay={stays[1]} imageFirst={false} /> */}
+
             <motion.div variants={cardItem}>
               <StayCard stay={stays[1]} imageFirst={false} />
             </motion.div>
-
-            {/* <StayCard stay={stays[2]} imageFirst /> */}
 
             <motion.div variants={cardItem}>
               <StayCard stay={stays[2]} imageFirst />
@@ -332,7 +306,7 @@ export function SignatureStays() {
           </div> */}
 
           <motion.div
-            className="mt-5 xl:mt-8 grid grid-cols-1 min-[1025px]:grid-cols-2 gap-5 xl:gap-7"
+            className="hidden lg:grid mt-5 xl:mt-8 lg:grid-cols-2 gap-5 xl:gap-7"
             variants={cardsContainer}
             initial="hidden"
             whileInView="visible"
@@ -356,7 +330,7 @@ export function SignatureStays() {
                   </h3>
 
                   {stay.subtitle && (
-                    <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[18px] xl:leading-[28px] text-[#2C3654]">
+                    <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
                       {stay.subtitle}
                     </p>
                   )}
@@ -366,13 +340,79 @@ export function SignatureStays() {
                   </p>
 
                   {stay.nights && (
-                    <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[18px] xl:leading-[28px] text-[#2C3654]">
+                    <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
                       {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
                     </p>
                   )}
                 </div>
               </motion.article>
             ))}
+          </motion.div>
+
+          {/* MOBILE SWIPER */}
+          <motion.div
+            className="block lg:hidden"
+            initial={{
+              opacity: 0,
+              y: 45,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 0.9,
+              ease: 'easeOut',
+            }}>
+            <Swiper
+              className="stays-swiper"
+              // modules={[Autoplay]}
+              slidesPerView={1}
+              spaceBetween={20}
+              loop
+              speed={1200}
+              autoplay={{
+                delay: 3500,
+                disableOnInteraction: false,
+              }}>
+              {/* SIGNATURE STAYS */}
+              <SwiperSlide>
+                <article className="bg-white border-b-[13px] border-[#C09A60]">
+                  <img
+                    src={stays[0].image}
+                    alt={stays[0].title}
+                    className="w-full object-cover h-[410px] md:h-[480px]"
+                  />
+
+                  <div className="p-4 sm:p-8 text-center">
+                    <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px]">
+                      {stays[0].title}
+                    </h3>
+
+                    <p className="mt-2 font-sans text-[15px] leading-[24px] text-[#2C3654]">
+                      Curated stays designed to help you experience Barolo at its fullest - without
+                      having to plan every detail.
+                    </p>
+
+                    <p className="mt-4 font-sans font-medium text-[15px] leading-[32px] text-[#2C3654]">
+                      Each programme brings together wine, gastronomy, and the rhythm of the region
+                      into a seamless, thoughtfully crafted stay.
+                    </p>
+                  </div>
+                </article>
+              </SwiperSlide>
+
+              {/* OTHER STAYS */}
+              {stays.slice(1).map((stay) => (
+                <SwiperSlide key={stay.title}>
+                  <StayCard stay={stay} imageFirst />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </motion.div>
         </div>
       </div>

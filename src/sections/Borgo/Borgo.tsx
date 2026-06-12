@@ -8,7 +8,7 @@ export function Borgo() {
       id="borgo"
       className="scroll-mt-[86px] relative w-full bg-[#1f2f63] py-6 px-6 sm:px-10 sm:py-10">
       {/* FULL IMAGE SECTION */}
-      <div className="relative  w-full h-[85vh] lg:h-[95vh] 2xl:h-full">
+      <div className="relative w-full h-[85vh] lg:h-[95vh] 2xl:h-full">
         {/* IMAGE */}
         {/* <img
           src={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero.png`}
@@ -16,25 +16,27 @@ export function Borgo() {
           className=" h-full w-full object-cover 2xl:max-h-[1150px]"
         /> */}
 
-        <motion.img
-          src={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero.png`}
-          alt="The Borgo"
-          className="h-full w-full object-cover 2xl:max-h-[1150px]"
-          initial={{
-            scale: 1.12,
-          }}
-          whileInView={{
-            scale: 1,
-          }}
-          viewport={{
-            once: true,
-            amount: 0.1,
-          }}
-          transition={{
-            duration: 2.5,
-            ease: 'easeOut',
-          }}
-        />
+        <div className="overflow-hidden h-full">
+          <motion.img
+            src={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero.png`}
+            alt="The Borgo"
+            className="h-full w-full object-cover 2xl:max-h-[1150px]"
+            initial={{
+              scale: 1.12,
+            }}
+            whileInView={{
+              scale: 1,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.1,
+            }}
+            transition={{
+              duration: 2,
+              ease: 'easeOut',
+            }}
+          />
+        </div>
 
         {/* LIGHT OVERLAY */}
         {/* <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/11 to-black/14" /> */}

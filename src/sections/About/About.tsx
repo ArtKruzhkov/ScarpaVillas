@@ -124,7 +124,7 @@ export function About() {
               Piedmontese life.
             </p> */}
 
-            <p className="hidden sm:block font-serif text-white text-[16px] text-center lg:text-left md:text-[17.5px] md:leading-[28px] lg:text-[19.5px] min-[1780px]:text-[24px] xl:leading-[38px]">
+            <p className="hidden sm:block font-serif text-white text-[16px] text-center lg:text-left md:text-[17.5px] md:leading-[26px] lg:text-[19.5px] min-[1780px]:text-[24px] xl:leading-[30px]">
               <span className="block">
                 In the hills of Verduno, within the vineyards of Monvigliero, Scarpa Villas offers a
                 rare way to experience&nbsp;Barolo.

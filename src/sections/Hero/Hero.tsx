@@ -36,7 +36,7 @@ export function Hero() {
             <h2 className="hero-title">
               Stay among the
               <span className="italic"> vineyards of Monvigliero</span>,
-              <span className="mt-2 lg:mt-4 block">in your own private villa</span>
+              <span className="mt-2 block">in your own private villa</span>
             </h2>
           </div>
         </div>

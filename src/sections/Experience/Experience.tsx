@@ -95,27 +95,27 @@ export function Experience() {
             />
           </div> */}
 
-          <motion.div
-            className="relative overflow-hidden mt-6 lg:mt-0"
-            initial={{
-              opacity: 0,
-              scale: 1.12,
-            }}
-            whileInView={{
-              opacity: 1,
-              scale: 1,
-            }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{
-              duration: 1.8,
-              ease: [0.22, 1, 0.36, 1],
-            }}>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
-              alt="Luxury wine villa interior"
-              className="h-full min-h-[380px] lg:min-h-[620px] w-full object-cover"
-            />
-          </motion.div>
+          <div className="overflow-hidden mt-6 lg:mt-0">
+            <motion.div
+              initial={{
+                opacity: 0,
+                scale: 1.12,
+              }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: 1.8,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
+                alt="Luxury wine villa interior"
+                className="h-full min-h-[380px] lg:min-h-[620px] w-full object-cover"
+              />
+            </motion.div>
+          </div>
         </div>
       </Container>
     </section>

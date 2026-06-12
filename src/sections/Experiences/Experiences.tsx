@@ -1,6 +1,9 @@
 import React from 'react';
 import { Container } from '../../components/layout/Container';
 import { motion, Variants } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 import './experiences.css';
 
 type Experience = {
@@ -146,13 +149,15 @@ export function Experiences() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
-          <h2 className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[32px] leading-[40px] sm:text-[42px] sm:leading-[52px] lg:text-[52px] lg:leading-[62px] xl:text-[52px] xl:leading-[65px]">
+          <h2 className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[32px] leading-[40px] sm:text-[38px] sm:leading-[46px] lg:text-[52px] lg:leading-[62px]">
             Ways To Experience Barolo
           </h2>
 
-          <p className="tracking-[-0.03em] xl:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[30px] sm:text-[28px] sm:leading-[36px] lg:text-[36px] lg:leading-[46px] xl:text-[35px] xl:leading-[48px] xl:w-[792px]">
+          <p className="tracking-[-0.03em] sm:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[30px] md:text-[28px] sm:leading-[36px] lg:text-[35px] lg:leading-[46px] xl:leading-[48px] sm:w-[570px] md:w-[705px] lg:w-[870px]">
             From private tastings to slow afternoons in the vineyards, each experience is designed
-            to immerse <br /> you in the rhythm of Barolo.
+            to&nbsp;immerse
+            <br />
+            you in the rhythm of Barolo.
           </p>
         </motion.div>
 
@@ -171,7 +176,7 @@ export function Experiences() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
-          <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[28px] leading-[40px] sm:text-[36px] sm:leading-[50px] lg:text-[42px] lg:leading-[60px] xl:text-[42px] xl:leading-[72px]">
+          <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[28px] leading-[40px] sm:text-[36px] sm:leading-[50px] lg:text-[38px] lg:leading-[60px] xl:text-[42px] xl:leading-[72px]">
             Wine & Taste
           </h3>
 
@@ -195,7 +200,7 @@ export function Experiences() {
           ))}
         </div> */}
 
-        <motion.div
+        {/* <motion.div
           className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
           variants={cardsContainer}
           initial="hidden"
@@ -207,6 +212,65 @@ export function Experiences() {
                 src={experience.image}
                 alt={experience.title}
                 className="w-full h-[560px] sm:h-[480px] lg:h-[620px] object-cover"
+              />
+
+              <h4 className="card-title">{experience.title}</h4>
+
+              <p className="card-description">{experience.description}</p>
+            </motion.article>
+          ))}
+        </motion.div> */}
+
+        {/* MOBILE SWIPER */}
+        <motion.div
+          className="mt-6 sm:hidden"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={1}
+            spaceBetween={18}
+            grabCursor
+            speed={1200}
+            loop
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            className="w-full">
+            {wineAndTaste.map((experience) => (
+              <SwiperSlide key={experience.title}>
+                <article>
+                  <img
+                    src={experience.image}
+                    alt={experience.title}
+                    className="w-full h-[520px] object-cover"
+                  />
+
+                  <h4 className="card-title">{experience.title}</h4>
+
+                  <p className="card-description">{experience.description}</p>
+                </article>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
+
+        {/* TABLET & DESKTOP GRID */}
+        <motion.div
+          className="mt-6 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-10"
+          variants={cardsContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
+          {wineAndTaste.map((experience) => (
+            <motion.article key={experience.title} variants={cardItem}>
+              <img
+                src={experience.image}
+                alt={experience.title}
+                className="w-full h-[480px] lg:h-[380px] xl:h-[480px] 2xl:h-[580px] object-cover"
               />
 
               <h4 className="card-title">{experience.title}</h4>
@@ -231,7 +295,7 @@ export function Experiences() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
-          <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[28px] leading-[40px] sm:text-[36px] sm:leading-[50px] lg:text-[42px] lg:leading-[60px] xl:text-[42px] xl:leading-[72px]">
+          <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[28px] leading-[40px] sm:text-[36px] sm:leading-[50px] lg:text-[38px] lg:leading-[60px] xl:text-[42px] xl:leading-[72px]">
             Culture & Discovery
           </h3>
 
@@ -255,7 +319,7 @@ export function Experiences() {
           ))}
         </div> */}
 
-        <motion.div
+        {/* <motion.div
           className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-10"
           variants={cardsContainer}
           initial="hidden"
@@ -267,6 +331,65 @@ export function Experiences() {
                 src={experience.image}
                 alt={experience.title}
                 className="w-full h-[560px] sm:h-[480px] lg:h-auto object-cover"
+              />
+
+              <h4 className="card-title">{experience.title}</h4>
+
+              <p className="card-description">{experience.description}</p>
+            </motion.article>
+          ))}
+        </motion.div> */}
+
+        {/* MOBILE SWIPER */}
+        <motion.div
+          className="mt-6 sm:hidden"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={1}
+            spaceBetween={18}
+            loop
+            speed={1200}
+            grabCursor
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            className="w-full">
+            {cultureAndDiscovery.map((experience) => (
+              <SwiperSlide key={experience.title}>
+                <article>
+                  <img
+                    src={experience.image}
+                    alt={experience.title}
+                    className="w-full h-[520px] object-cover"
+                  />
+
+                  <h4 className="card-title">{experience.title}</h4>
+
+                  <p className="card-description">{experience.description}</p>
+                </article>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
+
+        {/* TABLET & DESKTOP GRID */}
+        <motion.div
+          className="mt-6 hidden sm:grid sm:grid-cols-2 gap-10"
+          variants={cardsContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
+          {cultureAndDiscovery.map((experience) => (
+            <motion.article key={experience.title} variants={cardItem}>
+              <img
+                src={experience.image}
+                alt={experience.title}
+                className="w-full h-[480px] lg:h-auto object-cover"
               />
 
               <h4 className="card-title">{experience.title}</h4>
@@ -294,7 +417,7 @@ export function Experiences() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
           <div className="flex justify-end">
-            <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[28px] leading-[40px] sm:text-[36px] sm:leading-[50px] lg:text-[42px] lg:leading-[60px] xl:text-[42px] xl:leading-[72px]">
+            <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[28px] leading-[40px] sm:text-[36px] sm:leading-[50px] lg:text-[38px] lg:leading-[60px] xl:text-[42px] xl:leading-[72px]">
               Nature & Movement
             </h3>
           </div>
@@ -315,8 +438,62 @@ export function Experiences() {
           ))}
         </div> */}
 
-        <motion.div
+        {/* <motion.div
           className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
+          variants={cardsContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
+          {natureAndMovement.map((experience) => (
+            <motion.article key={experience.title} variants={cardItem}>
+              <img src={experience.image} alt={experience.title} className="w-full object-cover" />
+
+              <h4 className="card-title">{experience.title}</h4>
+
+              <p className="card-description">{experience.description}</p>
+            </motion.article>
+          ))}
+        </motion.div> */}
+
+        {/* MOBILE SWIPER */}
+        <motion.div
+          className="mt-6 sm:hidden"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={1}
+            spaceBetween={18}
+            loop
+            speed={1200}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            className="w-full">
+            {natureAndMovement.map((experience) => (
+              <SwiperSlide key={experience.title}>
+                <article>
+                  <img
+                    src={experience.image}
+                    alt={experience.title}
+                    className="w-full h-[520px] object-cover"
+                  />
+
+                  <h4 className="card-title">{experience.title}</h4>
+
+                  <p className="card-description">{experience.description}</p>
+                </article>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
+
+        {/* TABLET & DESKTOP GRID */}
+        <motion.div
+          className="mt-6 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-10"
           variants={cardsContainer}
           initial="hidden"
           whileInView="visible"
@@ -332,6 +509,7 @@ export function Experiences() {
           ))}
         </motion.div>
 
+        {/* DISCOVER BTN */}
         {/* <div className="mt-10 lg:mt-14 xl:mt-24 flex justify-center">
           <button className="experiences-btn">Discover All Experiences</button>
         </div> */}
