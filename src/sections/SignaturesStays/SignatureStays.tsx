@@ -370,7 +370,7 @@ export function SignatureStays() {
             }}>
             <Swiper
               className="stays-swiper"
-              // modules={[Autoplay]}
+              modules={[Autoplay]}
               slidesPerView={1}
               spaceBetween={20}
               loop
