@@ -181,7 +181,7 @@ export function Navbar() {
                       href="/"
                       variant="primary"
                       size="md"
-                      className="w-[50%] uppercase bg-[#2c3654]">
+                      className="w-[80%] uppercase bg-[#2c3654]">
                       {/* {t('nav.planStay')} */}
                       <AnimatePresence mode="wait">
                         <motion.span
