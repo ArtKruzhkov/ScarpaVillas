@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "villas": "Villas",
+    "borgo": "The Borgo",
+    "experiences": "Experiences",
+    "story": "The Story",
+    "stays": "Stays",
+    "discover": "Discover",
+    "planStay": "Plan Your Stay"
+  },
+  "hero": {
+    "titlePart1": "Stay among the",
+    "titleItalic": "vineyards of Monvigliero",
+    "titlePart2": "in your own private villa"
+  },
+  "about": {
+    "title": "A Different Rhythm of Living",
+    "text1": "In the hills of Verduno, within the vineyards of Monvigliero, Scarpa Villas offers a rare way to experience\u00A0Barolo.",
+    "text2": "Inspired by the philosophy of Scarpa, it goes beyond a place to stay – it is shaped by wine, time, and the land\u00A0itself.",
+    "text3": "Here, days unfold slowly, between the silence of the vines, the warmth of the sun, and the rituals of Piedmontese\u00A0life."
+  },
+  "experience": {
+    "title1": "Where Time Becomes",
+    "title2": "Part of the Experience",
+    "paragraph1": "For over a century, Scarpa has been guided by a simple belief — that <strong>great wine is shaped by time.</strong>",
+    "paragraph2": "<strong>Scarpa Villas</strong> were created as a natural extension of this philosophy - a place where the culture of wine can be lived, not just tasted — by those who choose to stay here.",
+    "paragraph3": "<strong>Founded in 1900</strong>, the winery has built its legacy on patience, respect for the land, and a deep connection to Piedmont’s terroirs.",
+    "paragraph4": "Here, <strong>among the vineyards of Monvigliero</strong>, time slows, deepens, and becomes part of the experience itself."
+  },
+  "gallery": {
+    "title1": "Four Villas",
+    "title2": "Four Ways To Live Barolo"
+  },
+  "villaGallery": {
+    "discoverVilla": "Discover The Villa",
+    "tettineiveDescription": "A refined home base for exploration — and a gentle return at the end of the day.",
+    "boglionaDescription": "A welcoming villa designed for comfort, conversation, and easy gatherings.",
+    "bricchiDescription": "A hillside vantage for long mornings, vineyard light, and unhurried evenings.",
+    "tettimoraDescription": "An intimate retreat for quiet evenings, close company, and the beauty of the Langhe all around."
+  },
+  "borgo": {
+    "title1": "The Borgo",
+    "title2": "A Hilltop Village, All Yours",
+    "descriptionDesktop": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours. A setting designed for meaningful gatherings, from private celebrations and intimate weddings to corporate retreats, where privacy, space, and the rhythm of Barolo come together.",
+    "descriptionMobile": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours.",
+    "button": "Discover The Entire Borgo"
+  },
+  "experiences": {
+    "title": "Ways To Experience Barolo",
+    "descriptionLine1": "From private tastings to slow afternoons in the vineyards, each experience is designed to\u00A0immerse",
+    "descriptionLine2": "you in the rhythm of Barolo.",
+    "wineTaste": "Wine & Taste",
+    "cultureDiscovery": "Culture & Discovery",
+    "natureMovement": "Nature & Movement",
+    "discoverAll": "Discover All Experiences"
+  },
+  "experienceCards": {
+    "wineryVisits": "Winery Visits",
+    "wineryVisitsDescription": "Step inside the historic Scarpa cellars and experience the craft behind every bottle.",
+
+    "privateWineTastings": "Private Wine Tastings",
+    "privateWineTastingsDescription": "Discover Scarpa wines with a sommelier, from rare vintages to iconic labels.",
+
+    "chefPrivateDining": "Chef & Private Dining",
+    "chefPrivateDiningDescription": "Enjoy slow dinners and breakfasts prepared just for you, in the comfort of your villa.",
+
+    "cookingClasses": "Cooking Classes",
+    "cookingClassesDescription": "Learn the traditions of Piedmontese cuisine, hands-on and unhurried.",
+
+    "langheBaroloTours": "Langhe & Barolo Tours",
+    "langheBaroloToursDescription": "Discover historic villages, local markets, and hidden corners of the region.",
+
+    "turinExperiences": "Turin Experiences",
+    "turinExperiencesDescription": "From historic cafés to vermouth bars, explore the culture of Piedmont’s capital.",
+
+    "truffleHunting": "Truffle Hunting",
+    "truffleHuntingDescription": "Walk through the woods with a trifolau in search of Alba’s most prized treasure.",
+
+    "vineyardPicnics": "Vineyard Picnics",
+    "vineyardPicnicsDescription": "A simple table, a bottle of wine, and the vineyards all around you.",
+
+    "hotAirBalloonFlights": "Hot-Air Balloon Flights",
+    "hotAirBalloonFlightsDescription": "See the Langhe from above at sunrise, drifting quietly over vineyards and hills.",
+
+    "vespaEBikeTours": "Vespa & E-bike Tours",
+    "vespaEBikeToursDescription": "Explore the Barolo hills on a Vespa, moving freely between vineyards and villages."
+  }
+}

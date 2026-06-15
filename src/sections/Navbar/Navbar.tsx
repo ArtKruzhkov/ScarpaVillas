@@ -1,32 +1,42 @@
 import React from 'react';
 import { Container } from '../../components/layout/Container';
 import { LinkButton } from '../../components/ui/LinkButton';
-// import { ReactComponent as ScarpaLogo } from '../../../images/hero/logo_hero.svg';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 import './navbar.css';
 
 type NavItem = { label: string; href: string };
 
-const nav: NavItem[] = [
-  { label: 'Villas', href: '#villas' },
-  { label: 'The Borgo', href: '#borgo' },
-  { label: 'Experiences', href: '#experiences' },
-  { label: 'The Story', href: '#story' },
-  { label: 'Stays', href: '#stays' },
-  { label: 'Discover', href: '#discover' },
-];
+// const nav: NavItem[] = [
+//   { label: 'Villas', href: '#villas' },
+//   { label: 'The Borgo', href: '#borgo' },
+//   { label: 'Experiences', href: '#experiences' },
+//   { label: 'The Story', href: '#story' },
+//   { label: 'Stays', href: '#stays' },
+//   { label: 'Discover', href: '#discover' },
+// ];
 
 export function Navbar() {
+  const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('villas');
+
+  const nav: NavItem[] = [
+    { label: t('nav.villas'), href: '#villas' },
+    { label: t('nav.borgo'), href: '#borgo' },
+    { label: t('nav.experiences'), href: '#experiences' },
+    { label: t('nav.story'), href: '#story' },
+    { label: t('nav.stays'), href: '#stays' },
+    { label: t('nav.discover'), href: '#discover' },
+  ];
 
   return (
     <header className="sticky top-0 z-50 relative bg-white backdrop-blur">
       <Container className="py-4 2xl:max-w-[1920px] border-b border-[#2c3654]/70">
         <div className="flex items-center justify-between px-6 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           {/* LEFT NAV */}
-          <nav
-            className="hidden items-center justify-between gap-4 lg:flex"
-            aria-label="Primary Left">
+          <nav className="hidden items-center justify-between lg:flex" aria-label="Primary Left">
             {nav.slice(0, 4).map((item) => {
               const sectionId = item.href.replace('#', '');
 
@@ -36,7 +46,18 @@ export function Navbar() {
                   href={item.href}
                   onClick={() => setActiveSection(sectionId)}
                   className={`nav-link ${activeSection === sectionId ? 'active' : ''}`}>
-                  {item.label}
+                  {/* {item.label} */}
+
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={item.label}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.25 }}>
+                      {item.label}
+                    </motion.span>
+                  </AnimatePresence>
                 </a>
               );
             })}
@@ -56,7 +77,7 @@ export function Navbar() {
           </div>
 
           {/* RIGHT NAV */}
-          <div className="hidden items-center justify-between gap-8 xl:gap-10 lg:flex">
+          <div className="hidden items-center justify-between lg:flex">
             {nav.slice(4).map((item) => {
               const sectionId = item.href.replace('#', '');
 
@@ -66,16 +87,41 @@ export function Navbar() {
                   href={item.href}
                   onClick={() => setActiveSection(sectionId)}
                   className={`nav-link ${activeSection === sectionId ? 'active' : ''}`}>
-                  {item.label}
+                  {/* {item.label} */}
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={item.label}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.25 }}>
+                      {item.label}
+                    </motion.span>
+                  </AnimatePresence>
                 </a>
               );
             })}
 
-            <LinkButton href="#" variant="outline" size="nav" className="stay_header_link">
+            {/* <LinkButton href="#" variant="outline" size="nav" className="stay_header_link">
               Plan Your Stay
+            </LinkButton> */}
+
+            <LinkButton href="#" variant="outline" size="nav" className="stay_header_link">
+              {/* {t('nav.planStay')} */}
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={t('nav.planStay')}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.25 }}>
+                  {t('nav.planStay')}
+                </motion.span>
+              </AnimatePresence>
             </LinkButton>
 
-            <span className="language-switcher">EN</span>
+            {/* <span className="language-switcher">EN</span> */}
+            <LanguageSwitcher />
           </div>
 
           {/* MOBILE BUTTON */}
@@ -107,22 +153,51 @@ export function Navbar() {
                     href={item.href}
                     className="font-sans uppercase rounded-xl px-3 py-3 text-sm font-[600] text-[#2c3654] transition-colors hover:bg-ink-900/5"
                     onClick={() => setOpen(false)}>
-                    {item.label}
+                    {/* {item.label} */}
+                    <AnimatePresence mode="wait">
+                      <motion.span
+                        key={item.label}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.25 }}>
+                        {item.label}
+                      </motion.span>
+                    </AnimatePresence>
                   </a>
                 ))}
 
                 <div className="mt-3 grid gap-3">
                   <div className="flex flex-col items-center">
-                    <LinkButton
+                    {/* <LinkButton
                       href="/"
                       variant="primary"
                       size="md"
                       className="w-[50%] uppercase bg-[#2c3654]">
                       Plan Your Stay
+                    </LinkButton> */}
+
+                    <LinkButton
+                      href="/"
+                      variant="primary"
+                      size="md"
+                      className="w-[50%] uppercase bg-[#2c3654]">
+                      {/* {t('nav.planStay')} */}
+                      <AnimatePresence mode="wait">
+                        <motion.span
+                          key={t('nav.planStay')}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.25 }}>
+                          {t('nav.planStay')}
+                        </motion.span>
+                      </AnimatePresence>
                     </LinkButton>
                   </div>
 
-                  <span className="language-switcher">EN</span>
+                  {/* <span className="language-switcher">EN</span> */}
+                  <LanguageSwitcher />
                 </div>
               </nav>
             </div>

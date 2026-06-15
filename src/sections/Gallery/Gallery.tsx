@@ -1,55 +1,7 @@
 import { VillaGallery } from './VillaGallery';
-import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { AnimatePresence, motion } from 'framer-motion';
 import './gallery.css';
-
-// type Villa = {
-//   name: string;
-//   href: string;
-//   position: {
-//     top: string;
-//     left: string;
-//     height: string;
-//   };
-// };
-
-// const villas: Villa[] = [
-//   {
-//     name: 'TETTIMORA',
-//     href: '#',
-//     position: {
-//       top: '41%',
-//       left: '23%',
-//       height: '150px',
-//     },
-//   },
-//   {
-//     name: 'I BRICCHI',
-//     href: '#',
-//     position: {
-//       top: '27%',
-//       left: '38.5%',
-//       height: '140px',
-//     },
-//   },
-//   {
-//     name: 'LA BOGLIONA',
-//     href: '#',
-//     position: {
-//       top: '34.5%',
-//       left: '51.5%',
-//       height: '150px',
-//     },
-//   },
-//   {
-//     name: 'TETTINEIVE',
-//     href: '#',
-//     position: {
-//       top: '48.5%',
-//       left: '67%',
-//       height: '140px',
-//     },
-//   },
-// ];
 
 type Villa = {
   name: string;
@@ -86,6 +38,8 @@ const villas: Villa[] = [
 ];
 
 export function Gallery() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section id="villas" className="scroll-mt-[86px] relative overflow-hidden bg-[#f5f3ee]">
       {/* <div className="mx-auto w-full max-w-8xl px-0">
@@ -171,13 +125,29 @@ export function Gallery() {
                 delay: 0.4,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <p className="font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+              {/* <p className="font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                 Four Villas
               </p>
 
               <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                 Four Ways To Live Barolo
-              </h2>
+              </h2> */}
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`gallery-title-${i18n.language}`}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.3 }}>
+                  <p className="font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                    {t('gallery.title1')}
+                  </p>
+
+                  <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                    {t('gallery.title2')}
+                  </h2>
+                </motion.div>
+              </AnimatePresence>
             </motion.div>
           </div>
 

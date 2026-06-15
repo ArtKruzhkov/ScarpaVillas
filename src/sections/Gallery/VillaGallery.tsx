@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './villaGallery.css';
 
 type VillaGalleryItem = {
@@ -11,36 +12,67 @@ type VillaGalleryItem = {
 
 const baseUrl = process.env.PUBLIC_URL;
 
-const villaSlides: VillaGalleryItem[] = [
-  {
-    id: 'tettineive',
-    name: 'Villa Tettineive',
-    description: 'A refined home base for exploration — and a gentle return at the end of the day.',
-    image: `${baseUrl}/images/gallery/tettineive.png`,
-  },
-  {
-    id: 'la-bogliona',
-    name: 'Villa La Bogliona',
-    description: 'A welcoming villa designed for comfort, conversation, and easy gatherings.',
-    image: `${baseUrl}/images/gallery/bogliona.png`,
-  },
-  {
-    id: 'i-bricchi',
-    name: 'Villa I Bricchi',
-    description: 'A hillside vantage for long mornings, vineyard light, and unhurried evenings.',
-    image: `${baseUrl}/images/gallery/bricchi.png`,
-  },
-  {
-    id: 'tettimora',
-    name: 'Villa Tettimora',
-    description:
-      'An intimate retreat for quiet evenings, close company, and the beauty of the Langhe all around.',
-    image: `${baseUrl}/images/gallery/tettimora.png`,
-  },
-];
+// const villaSlides: VillaGalleryItem[] = [
+//   {
+//     id: 'tettineive',
+//     name: 'Villa Tettineive',
+//     description: 'A refined home base for exploration — and a gentle return at the end of the day.',
+//     image: `${baseUrl}/images/gallery/tettineive.png`,
+//   },
+//   {
+//     id: 'la-bogliona',
+//     name: 'Villa La Bogliona',
+//     description: 'A welcoming villa designed for comfort, conversation, and easy gatherings.',
+//     image: `${baseUrl}/images/gallery/bogliona.png`,
+//   },
+//   {
+//     id: 'i-bricchi',
+//     name: 'Villa I Bricchi',
+//     description: 'A hillside vantage for long mornings, vineyard light, and unhurried evenings.',
+//     image: `${baseUrl}/images/gallery/bricchi.png`,
+//   },
+//   {
+//     id: 'tettimora',
+//     name: 'Villa Tettimora',
+//     description:
+//       'An intimate retreat for quiet evenings, close company, and the beauty of the Langhe all around.',
+//     image: `${baseUrl}/images/gallery/tettimora.png`,
+//   },
+// ];
 
 export function VillaGallery() {
-  const [activeVilla, setActiveVilla] = useState<VillaGalleryItem>(villaSlides[3]);
+  const { t, i18n } = useTranslation();
+
+  const villaSlides: VillaGalleryItem[] = [
+    {
+      id: 'tettineive',
+      name: 'Villa Tettineive',
+      description: t('villaGallery.tettineiveDescription'),
+      image: `${baseUrl}/images/gallery/tettineive.png`,
+    },
+    {
+      id: 'la-bogliona',
+      name: 'Villa La Bogliona',
+      description: t('villaGallery.boglionaDescription'),
+      image: `${baseUrl}/images/gallery/bogliona.png`,
+    },
+    {
+      id: 'i-bricchi',
+      name: 'Villa I Bricchi',
+      description: t('villaGallery.bricchiDescription'),
+      image: `${baseUrl}/images/gallery/bricchi.png`,
+    },
+    {
+      id: 'tettimora',
+      name: 'Villa Tettimora',
+      description: t('villaGallery.tettimoraDescription'),
+      image: `${baseUrl}/images/gallery/tettimora.png`,
+    },
+  ];
+
+  // const [activeVilla, setActiveVilla] = useState<VillaGalleryItem>(villaSlides[3]);
+  const [activeVillaId, setActiveVillaId] = useState('tettimora');
+  const activeVilla = villaSlides.find((villa) => villa.id === activeVillaId) ?? villaSlides[3];
   const galleryRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -57,7 +89,7 @@ export function VillaGallery() {
             opacity: 1,
             scale: 1,
           }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 1.2,
             ease: [0.22, 1, 0.36, 1],
@@ -88,17 +120,42 @@ export function VillaGallery() {
                   {activeVilla.name}
                 </motion.h3>
 
-                <motion.p
+                {/* <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.25 }}
                   className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[28px] xl:leading-[46px]">
                   {activeVilla.description}
-                </motion.p>
+                </motion.p> */}
+
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={`${activeVilla.id}-${i18n.language}`}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.3 }}
+                    className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[28px] xl:leading-[46px]">
+                    {activeVilla.description}
+                  </motion.p>
+                </AnimatePresence>
               </div>
 
-              <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
+              {/* <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
                 Discover The Villa
+              </a> */}
+
+              <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={i18n.language}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.25 }}>
+                    {t('villaGallery.discoverVilla')}
+                  </motion.span>
+                </AnimatePresence>
               </a>
             </motion.div>
           </AnimatePresence>
@@ -145,23 +202,25 @@ export function VillaGallery() {
             opacity: 1,
             x: 0,
           }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 1,
             delay: 0.3,
             ease: [0.22, 1, 0.36, 1],
           }}>
           {villaSlides.map((villa) => {
-            const isActive = villa.id === activeVilla.id;
+            // const isActive = villa.id === activeVilla.id;
+            const isActive = villa.id === activeVillaId;
 
             return (
               <button
                 key={villa.id}
                 type="button"
                 onClick={() => {
-                  if (villa.id === activeVilla.id) return;
+                  if (villa.id === activeVillaId) return;
 
-                  setActiveVilla(villa);
+                  // setActiveVilla(villa);
+                  setActiveVillaId(villa.id);
 
                   if (window.innerWidth >= 1024) {
                     galleryRef.current?.scrollIntoView({

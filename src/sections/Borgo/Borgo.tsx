@@ -1,8 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { AnimatePresence, motion } from 'framer-motion';
 import './borgo.css';
 
 export function Borgo() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section
       id="borgo"
@@ -87,27 +90,74 @@ export function Borgo() {
             delay: 0.5,
           }}>
           {/* TITLE */}
-          <h2 className="font-serif text-[24px] leading-[1.1] tracking-[0.02em] text-[#2C3654] uppercase sm:text-[29px] lg:text-[48px] 2xl:text-[57px]">
+          {/* <h2 className="font-serif text-[24px] leading-[1.1] tracking-[0.02em] text-[#2C3654] uppercase sm:text-[29px] lg:text-[48px] 2xl:text-[57px]">
             <span className="block">The Borgo</span>
             <span className="block mt-1 lg:mt-2">A Hilltop Village, All Yours</span>
-          </h2>
+          </h2> */}
+          <AnimatePresence mode="wait">
+            <motion.h2
+              key={`borgo-title-${i18n.language}`}
+              className="font-serif text-[24px] leading-[1.1] tracking-[0.02em] text-[#2C3654] uppercase sm:text-[29px] lg:text-[40px] 2xl:text-[57px]"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3 }}>
+              <span className="block">{t('borgo.title1')}</span>
+              <span className="block mt-1 lg:mt-2">{t('borgo.title2')}</span>
+            </motion.h2>
+          </AnimatePresence>
 
-          {/* DESCRIPTION */}
-          <p className="hidden font-sans sm:block mt-5 max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[14.9px] xl:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.8] text-[#2C3654]">
+          {/* DESCRIPTION DESKTOP*/}
+          {/* <p className="hidden font-sans sm:block mt-5 max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[14.9px] xl:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.8] text-[#2C3654]">
             The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the
             surrounding estate, all exclusively yours. A&nbsp;setting designed for meaningful
             gatherings, from private celebrations and intimate weddings to corporate retreats, where
             privacy, space, and the rhythm of Barolo come together.
-          </p>
+          </p> */}
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={`borgo-desktop-${i18n.language}`}
+              className="hidden font-sans sm:block mt-5 max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[14.9px] xl:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.8] text-[#2C3654]"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3 }}>
+              {t('borgo.descriptionDesktop')}
+            </motion.p>
+          </AnimatePresence>
 
-          <p className="mt-4 text-[15px] leading-[1.6] text-[#2C3654] sm:hidden">
+          {/* DESCRIPTION MOBILE */}
+          {/* <p className="mt-4 text-[15px] leading-[1.6] text-[#2C3654] sm:hidden">
             The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the
             surrounding estate, all exclusively yours.
-          </p>
+          </p> */}
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={`borgo-mobile-${i18n.language}`}
+              className="mt-4 text-[15px] leading-[1.6] text-[#2C3654] sm:hidden"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3 }}>
+              {t('borgo.descriptionMobile')}
+            </motion.p>
+          </AnimatePresence>
 
           {/* BUTTON */}
-          <a href={process.env.PUBLIC_URL || '/'} className="borgo-btn">
+          {/* <a href={process.env.PUBLIC_URL || '/'} className="borgo-btn">
             Discover The Entire Borgo
+          </a> */}
+          <a href={process.env.PUBLIC_URL || '/'} className="borgo-btn">
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={t('borgo.button')}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25 }}>
+                {t('borgo.button')}
+              </motion.span>
+            </AnimatePresence>
           </a>
         </motion.div>
       </div>

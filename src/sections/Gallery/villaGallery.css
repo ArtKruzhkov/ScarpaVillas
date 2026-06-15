@@ -4,6 +4,7 @@
   left: 4rem;
   z-index: 10;
   display: inline-flex;
+  justify-content: center;
   border: 3px solid #ffffff;
   background: #ffffff;
   padding: 16px 205px;
@@ -14,6 +15,18 @@
   text-transform: uppercase;
   color: #2c3654;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .discover-villa-btn {
+    min-width: 371.4px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .discover-villa-btn {
+    min-width: 710.86px;
+  }
 }
 
 @media (max-width: 1279px) {
