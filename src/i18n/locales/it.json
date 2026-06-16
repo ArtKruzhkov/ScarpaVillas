@@ -84,5 +84,82 @@
 
     "vespaEBikeTours": "Tour In Vespa E E-bike",
     "vespaEBikeToursDescription": "Esplora le colline del Barolo in Vespa, muovendoti liberamente tra vigneti e borghi."
+  },
+  "moments": {
+    "title": "Momenti Da Scarpa Villas"
+  },
+  "stays": {
+    "signatureStays": "Soggiorni Signature",
+    "signatureStaysDescription1": "Soggiorni pensati per permetterti di vivere Barolo al massimo, senza dover pianificare ogni dettaglio.",
+    "signatureStaysDescription2": "Ogni programma unisce vino, gastronomia e il ritmo del territorio in un soggiorno armonioso e curato nei minimi dettagli.",
+
+    "tasteOfLanghe": "Sapori Delle Langhe",
+    "tasteOfLangheSubtitle": "Un viaggio tra i sapori del Piemonte.",
+    "tasteOfLangheDescription": "Dalle degustazioni ai ristoranti locali, dai corsi di cucina ai tour nei vigneti, questo soggiorno ti immerge nella cultura gastronomica delle Langhe.",
+
+    "luxRetreat": "The Lux Retreat",
+    "luxRetreatSubtitle": "Una breve fuga nel ritmo di Barolo.",
+    "luxRetreatDescription": "Un soggiorno di tre notti pensato per rallentare e ritrovare l'equilibrio, tra alta cucina, vigneti e cene private nella tua villa.",
+
+    "autumnGems": "Gemme D'Autunno",
+    "autumnGemsSubtitle": "La stagione più affascinante di Barolo.",
+    "autumnGemsDescription": "Vivi la stagione del tartufo, i colori autunnali e la profondità di Barolo e Barbaresco attraverso degustazioni ed esperienze stagionali.",
+
+    "piemonteEscape": "Piemonte Escape",
+    "piemonteEscapeSubtitle": "Un'immersione completa nel territorio.",
+    "piemonteEscapeDescription": "Un soggiorno esteso alla scoperta di vino, cultura e paesaggi tra Langhe, Monferrato e Torino, con accesso esclusivo alla cantina Scarpa."
+  },
+  "common": {
+    "nights": "notti",
+    "january": "Gennaio",
+    "february": "Febbraio",
+    "march": "Marzo",
+    "april": "Aprile",
+    "may": "Maggio",
+    "june": "Giugno",
+    "july": "Luglio",
+    "august": "Agosto",
+    "september": "Settembre",
+    "october": "Ottobre",
+    "november": "Novembre",
+    "december": "Dicembre"
+  },
+  "discover": {
+    "title": "Scopri Le Langhe",
+    "text1": "A pochi minuti dai vigneti di Monvigliero, le Langhe si svelano tra borghi storici, punti panoramici e alcune delle destinazioni gastronomiche più celebri d'Italia.",
+    "text2": "Ogni luogo offre un modo diverso di vivere il territorio, tra vino, tartufi, paesaggi e borghi."
+  },
+  "langheSlides": {
+    "villageMuseum": "Borghi e Musei",
+    "villageMuseumSubtitle": "UN VIAGGIO NELLA STORIA DI BAROLO",
+    "villageMuseumDescription": "Scopri il patrimonio del territorio attraverso borghi storici e luoghi simbolo della cultura locale.",
+
+    "laMorraBelvedere": "Belvedere di La Morra",
+    "laMorraBelvedereSubtitle": "IL PANORAMA PIÙ ICONICO DELLE LANGHE",
+    "laMorraBelvedereDescription": "Vigneti a perdita d'occhio, dove il paesaggio di Barolo si svela in tutta la sua bellezza.",
+
+    "albaTruffleCulture": "Alba e la Cultura del Tartufo Bianco",
+    "albaTruffleCultureSubtitle": "LA CASA DEL TARTUFO BIANCO",
+    "albaTruffleCultureDescription": "Vivi le tradizioni gastronomiche che hanno reso Alba famosa in tutto il mondo."
+  },
+  "planStay": {
+    "title": "Il Tuo Angolo Di Barolo Ti Aspetta",
+    "text1": "Pianifica il tuo soggiorno",
+    "text2": "a Scarpa Villas",
+    "text3": "e vivi le Langhe a modo tuo.",
+    "button": "Pianifica Soggiorno"
+  },
+  "footer": {
+    "title": "Resta in contatto con le Langhe",
+    "description": "Storie occasionali, momenti stagionali e ispirazioni dal territorio",
+    "emailPlaceholder": "Inserisci la tua email",
+    "button": "Resta In Contatto",
+    "privacyAgree": "Accetto l'informativa sulla privacy",
+    "logoText1": "Una collezione di",
+    "logoTextItalic": "ville private tra i vigneti",
+    "logoText2": "di Monvigliero, Verduno.",
+    "contact": "Contatti",
+    "cookiePolicy": "Informativa Cookie",
+    "privacyPolicy": "Informativa Privacy"
   }
 }

@@ -84,5 +84,82 @@
 
     "vespaEBikeTours": "Vespa & E-bike Tours",
     "vespaEBikeToursDescription": "Explore the Barolo hills on a Vespa, moving freely between vineyards and villages."
+  },
+  "moments": {
+    "title": "Moments At Scarpa Villas"
+  },
+  "stays": {
+    "signatureStays": "Signature Stays",
+    "signatureStaysDescription1": "Curated stays designed to help you experience Barolo at its fullest — without having to plan every detail.",
+    "signatureStaysDescription2": "Each programme brings together wine, gastronomy, and the rhythm of the region into a seamless, thoughtfully crafted stay.",
+
+    "tasteOfLanghe": "Taste of Langhe",
+    "tasteOfLangheSubtitle": "A journey through the flavors of Piedmont.",
+    "tasteOfLangheDescription": "From wine tastings and local restaurants to cooking classes and vineyard tours, this stay immerses you in the culinary culture of the Langhe.",
+
+    "luxRetreat": "The Lux Retreat",
+    "luxRetreatSubtitle": "A short escape into the rhythm of Barolo.",
+    "luxRetreatDescription": "A three-night stay designed to slow down and reconnect, combining fine dining, vineyard exploration, and private dining in your villa.",
+
+    "autumnGems": "Autumn Gems",
+    "autumnGemsSubtitle": "The most enchanting season in Barolo.",
+    "autumnGemsDescription": "Experience truffle season, autumn colors, and the depth of Barolo and Barbaresco through curated tastings and seasonal experiences.",
+
+    "piemonteEscape": "Piemonte Escape",
+    "piemonteEscapeSubtitle": "A complete immersion in the region.",
+    "piemonteEscapeDescription": "An extended stay exploring wine, culture, and landscapes across Langhe, Monferrato, and Turin, with exclusive access to Scarpa winery."
+  },
+  "common": {
+    "nights": "nights",
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "discover": {
+    "title": "Discover The Langhe",
+    "text1": "Just minutes from the vineyards of Monvigliero, the Langhe unfolds through historic villages, panoramic viewpoints, and some of Italy’s most celebrated gastronomic destinations.",
+    "text2": "Each place offers a different way to experience the region — from wine and truffles to landscapes and centuries-old towns."
+  },
+  "langheSlides": {
+    "villageMuseum": "Village & Museum",
+    "villageMuseumSubtitle": "A JOURNEY THROUGH BAROLO HISTORY",
+    "villageMuseumDescription": "Discover the heritage of the region through historic villages and cultural landmarks.",
+
+    "laMorraBelvedere": "La Morra Belvedere",
+    "laMorraBelvedereSubtitle": "THE MOST ICONIC PANORAMIC VIEW IN THE LANGHE",
+    "laMorraBelvedereDescription": "Endless vineyards unfolding beneath you, where the landscape of Barolo reveals itself at a glance.",
+
+    "albaTruffleCulture": "Alba & White Truffle Culture",
+    "albaTruffleCultureSubtitle": "THE HOME OF WHITE TRUFFLES",
+    "albaTruffleCultureDescription": "Experience the culinary traditions that made Alba famous around the world."
+  },
+  "planStay": {
+    "title": "Your Place In Barolo Awaits",
+    "text1": "Plan your stay",
+    "text2": "at Scarpa Villas",
+    "text3": "and experience the Langhe in your own way.",
+    "button": "Plan Your Stay"
+  },
+  "footer": {
+    "title": "Stay connected to the Langhe",
+    "description": "Occasional stories, seasonal moments, and insights from the region",
+    "emailPlaceholder": "Enter your email",
+    "button": "Stay In Touch",
+    "privacyAgree": "I agree to the privacy statement",
+    "logoText1": "A collection of",
+    "logoTextItalic": "private villas in the vineyards",
+    "logoText2": "of Monvigliero, Verduno.",
+    "contact": "Contact",
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy"
   }
 }

@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { motion, Variants } from 'framer-motion';
+import { AnimatePresence, motion, Variants } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import 'swiper/css';
 import './signaturesStays.css';
 
@@ -16,51 +17,95 @@ type Stay = {
 
 const baseUrl = process.env.PUBLIC_URL;
 
+// const stays: Stay[] = [
+//   {
+//     title: 'Signature Stays',
+//     description:
+//       'Curated stays designed to help you experience Barolo at its fullest — without having to plan every detail. Each programme brings together wine, gastronomy, and the rhythm of the region into a seamless, thoughtfully crafted stay.',
+//     image: `${baseUrl}/images/stays/signature-stays.png`,
+//   },
+//   {
+//     title: 'Taste of Langhe',
+//     subtitle: 'A journey through the flavors of Piedmont.',
+//     description:
+//       'From wine tastings and local restaurants to cooking classes and vineyard tours, this stay immerses you in the culinary culture of the Langhe.',
+//     nights: 5,
+//     startMonth: 'January',
+//     endMonth: 'May',
+//     image: `${baseUrl}/images/stays/taste-of-langhe.png`,
+//   },
+//   {
+//     title: 'The Lux Retreat',
+//     subtitle: 'A short escape into the rhythm of Barolo.',
+//     description:
+//       'A three-night stay designed to slow down and reconnect, combining fine dining, vineyard exploration, and private dining in your villa.',
+//     nights: 3,
+//     startMonth: 'January',
+//     endMonth: 'April',
+//     image: `${baseUrl}/images/stays/lux-retreat.png`,
+//   },
+//   {
+//     title: 'Autumn Gems',
+//     subtitle: 'The most enchanting season in Barolo.',
+//     description:
+//       'Experience truffle season, autumn colors, and the depth of Barolo and Barbaresco through curated tastings and seasonal experiences.',
+//     nights: 5,
+//     startMonth: 'October',
+//     endMonth: 'November',
+//     image: `${baseUrl}/images/stays/autumn-gems.png`,
+//   },
+//   {
+//     title: 'Piemonte Escape',
+//     subtitle: 'A complete immersion in the region.',
+//     description:
+//       'An extended stay exploring wine, culture, and landscapes across Langhe, Monferrato, and Turin, with exclusive access to Scarpa winery.',
+//     nights: 7,
+//     startMonth: 'January',
+//     endMonth: 'May',
+//     image: `${baseUrl}/images/stays/piemonte-escape.png`,
+//   },
+// ];
+
 const stays: Stay[] = [
   {
-    title: 'Signature Stays',
-    description:
-      'Curated stays designed to help you experience Barolo at its fullest — without having to plan every detail. Each programme brings together wine, gastronomy, and the rhythm of the region into a seamless, thoughtfully crafted stay.',
+    title: 'signatureStays',
+    description: 'signatureStaysDescription',
     image: `${baseUrl}/images/stays/signature-stays.png`,
   },
   {
-    title: 'Taste of Langhe',
-    subtitle: 'A journey through the flavors of Piedmont.',
-    description:
-      'From wine tastings and local restaurants to cooking classes and vineyard tours, this stay immerses you in the culinary culture of the Langhe.',
+    title: 'tasteOfLanghe',
+    subtitle: 'tasteOfLangheSubtitle',
+    description: 'tasteOfLangheDescription',
     nights: 5,
-    startMonth: 'January',
-    endMonth: 'May',
+    startMonth: 'january',
+    endMonth: 'may',
     image: `${baseUrl}/images/stays/taste-of-langhe.png`,
   },
   {
-    title: 'The Lux Retreat',
-    subtitle: 'A short escape into the rhythm of Barolo.',
-    description:
-      'A three-night stay designed to slow down and reconnect, combining fine dining, vineyard exploration, and private dining in your villa.',
+    title: 'luxRetreat',
+    subtitle: 'luxRetreatSubtitle',
+    description: 'luxRetreatDescription',
     nights: 3,
-    startMonth: 'January',
-    endMonth: 'April',
+    startMonth: 'january',
+    endMonth: 'april',
     image: `${baseUrl}/images/stays/lux-retreat.png`,
   },
   {
-    title: 'Autumn Gems',
-    subtitle: 'The most enchanting season in Barolo.',
-    description:
-      'Experience truffle season, autumn colors, and the depth of Barolo and Barbaresco through curated tastings and seasonal experiences.',
+    title: 'autumnGems',
+    subtitle: 'autumnGemsSubtitle',
+    description: 'autumnGemsDescription',
     nights: 5,
-    startMonth: 'October',
-    endMonth: 'November',
+    startMonth: 'october',
+    endMonth: 'november',
     image: `${baseUrl}/images/stays/autumn-gems.png`,
   },
   {
-    title: 'Piemonte Escape',
-    subtitle: 'A complete immersion in the region.',
-    description:
-      'An extended stay exploring wine, culture, and landscapes across Langhe, Monferrato, and Turin, with exclusive access to Scarpa winery.',
+    title: 'piemonteEscape',
+    subtitle: 'piemonteEscapeSubtitle',
+    description: 'piemonteEscapeDescription',
     nights: 7,
-    startMonth: 'January',
-    endMonth: 'May',
+    startMonth: 'january',
+    endMonth: 'may',
     image: `${baseUrl}/images/stays/piemonte-escape.png`,
   },
 ];
@@ -103,6 +148,8 @@ type StayCardProps = {
 };
 
 function StayCard({ stay, imageFirst = true }: StayCardProps) {
+  const { t, i18n } = useTranslation();
+
   return (
     <article
       className={`bg-white h-full ${
@@ -113,37 +160,82 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
       {imageFirst && (
         <img
           src={stay.image}
-          alt={stay.title}
+          alt={t(`stays.${stay.title}`)}
           className="w-full object-cover h-[410px] md:h-[480px] lg:h-auto lg:object-contain xl:h-[432px] xl:object-cover sm:object-[center_30%] lg:object-center"
         />
       )}
 
       <div className="p-4 sm:p-8 text-center">
-        <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
+        {/* <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
           {stay.title}
-        </h3>
+        </h3> */}
+        <AnimatePresence mode="wait">
+          <motion.h3
+            key={`${stay.title}-${i18n.language}`}
+            className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]"
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.25 }}>
+            {t(`stays.${stay.title}`)}
+          </motion.h3>
+        </AnimatePresence>
 
         {stay.subtitle && (
-          <p className="mt-3 xl:mt-5 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
-            {stay.subtitle}
-          </p>
+          // <p className="mt-3 xl:mt-5 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
+          //   {stay.subtitle}
+          // </p>
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={`${stay.subtitle}-${i18n.language}`}
+              className="mt-3 xl:mt-5 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]"
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.25 }}>
+              {t(`stays.${stay.subtitle}`)}
+            </motion.p>
+          </AnimatePresence>
         )}
 
-        <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
+        {/* <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
           {stay.description}
-        </p>
+        </p> */}
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={`${stay.description}-${i18n.language}`}
+            className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]"
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.25 }}>
+            {t(`stays.${stay.description}`)}
+          </motion.p>
+        </AnimatePresence>
 
         {stay.nights && (
-          <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
-            {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
-          </p>
+          // <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
+          //   {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
+          // </p>
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={`${stay.title}-dates-${i18n.language}`}
+              className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]"
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.25 }}>
+              {stay.nights} {t('common.nights')} · {t(`common.${stay.startMonth}`)} –{' '}
+              {t(`common.${stay.endMonth}`)}
+            </motion.p>
+          </AnimatePresence>
         )}
       </div>
 
       {!imageFirst && (
         <img
           src={stay.image}
-          alt={stay.title}
+          alt={t(`stays.${stay.title}`)}
           className="w-full object-cover h-[410px] md:h-[480px] lg:h-auto lg:object-contain xl:h-[432px] xl:object-cover"
         />
       )}
@@ -152,6 +244,8 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
 }
 
 export function SignatureStays() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="bg-[#2C3654] pb-10 sm:pb-12 lg:pb-16 xl:pb-20">
       <div className="mx-auto w-full max-w-8xl px-0">
@@ -187,9 +281,20 @@ export function SignatureStays() {
           </Swiper>
 
           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-            <h2 className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px]  xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white">
+            {/* <h2 className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px]  xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white">
               Moments At Scarpa Villas
-            </h2>
+            </h2> */}
+            <AnimatePresence mode="wait">
+              <motion.h2
+                key={`moments-title-${i18n.language}`}
+                className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px] xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.3 }}>
+                {t('moments.title')}
+              </motion.h2>
+            </AnimatePresence>
           </div>
         </div>
 
@@ -198,34 +303,6 @@ export function SignatureStays() {
           id="stays"
           className="scroll-mt-[6px] bg-[#2C3654] w-full max-w-8xl pt-10 sm:pt-12 lg:pt-16 xl:pt-20 px-8">
           {/* TOP ROW */}
-          {/* <div className="grid grid-cols-1 min-[1025px]:grid-cols-3 gap-5 xl:gap-7">
-            <article className="bg-white border-b-[13px] border-[#C09A60]">
-              <img
-                src={stays[0].image}
-                alt={stays[0].title}
-                className="w-full object-cover h-[410px] md:h-[480px] min-[1025px]:h-auto min-[1025px]:object-contain xl:h-[462px] xl:object-cover xl:object-[center_25%]"
-              />
-
-              <div className="p-4 sm:p-8 text-center">
-                <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
-                  {stays[0].title}
-                </h3>
-
-                <p className="mt-2 xl:mt-5 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
-                  Curated stays designed to help you experience Barolo at its fullest — without
-                  having to plan every detail.
-                </p>
-
-                <p className="mt-4 xl:mt-8 font-sans font-medium text-[15px] min-[1440px]:text-[20.5px] leading-[32px] text-[#2C3654]">
-                  Each programme brings together wine, gastronomy, and the rhythm of the region into
-                  a seamless, thoughtfully crafted stay.
-                </p>
-              </div>
-            </article>
-            <StayCard stay={stays[1]} imageFirst={false} />
-            <StayCard stay={stays[2]} imageFirst />
-          </div> */}
-
           <motion.div
             className="hidden lg:grid lg:grid-cols-3 gap-5 xl:gap-7"
             variants={cardsContainer}
@@ -245,19 +322,52 @@ export function SignatureStays() {
               />
 
               <div className="p-4 sm:p-8 text-center">
-                <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
+                {/* <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
                   {stays[0].title}
-                </h3>
+                </h3> */}
+                <AnimatePresence mode="wait">
+                  <motion.h3
+                    key={`${stays[0].title}-${i18n.language}`}
+                    className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]"
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.25 }}>
+                    {t(`stays.${stays[0].title}`)}
+                  </motion.h3>
+                </AnimatePresence>
 
-                <p className="mt-2 xl:mt-4 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654] xl:px-4">
+                {/* <p className="mt-2 xl:mt-4 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654] xl:px-4">
                   Curated stays designed to help you experience Barolo at its fullest - without
                   having to plan every detail.
-                </p>
+                </p> */}
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={`signature1-${i18n.language}`}
+                    className="mt-2 xl:mt-4 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654] xl:px-4"
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.25 }}>
+                    {t('stays.signatureStaysDescription1')}
+                  </motion.p>
+                </AnimatePresence>
 
-                <p className="mt-4 xl:mt-7 font-sans font-medium text-[17px] lg:text-[18px] 2xl:text-[20.5px] leading-[32px] text-[#2C3654] xl:px-4">
+                {/* <p className="mt-4 xl:mt-7 font-sans font-medium text-[17px] lg:text-[18px] 2xl:text-[20.5px] leading-[32px] text-[#2C3654] xl:px-4">
                   Each programme brings together wine, gastronomy, and the rhythm of the region into
                   a seamless, thoughtfully crafted stay.
-                </p>
+                </p> */}
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={`signature2-${i18n.language}`}
+                    className="mt-4 xl:mt-7 font-sans font-medium text-[17px] lg:text-[18px] 2xl:text-[20.5px] leading-[28px] 2xl:leading-[32px] text-[#2C3654] xl:px-4"
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.25 }}>
+                    {t('stays.signatureStaysDescription2')}
+                  </motion.p>
+                </AnimatePresence>
               </div>
             </motion.article>
 
@@ -271,40 +381,6 @@ export function SignatureStays() {
           </motion.div>
 
           {/* BOTTOM ROW */}
-          {/* <div className="mt-5 xl:mt-8 grid grid-cols-1 min-[1025px]:grid-cols-2 gap-5 xl:gap-7">
-            {stays.slice(3, 5).map((stay) => (
-              <article key={stay.title} className="border-b-[13px] border-[#C09A60] bg-white">
-                <img
-                  src={stay.image}
-                  alt={stay.title}
-                  className="w-full h-auto object-contain xl:h-[468px] xl:object-cover"
-                />
-
-                <div className="p-4 sm:p-8 text-center">
-                  <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
-                    {stay.title}
-                  </h3>
-
-                  {stay.subtitle && (
-                    <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[18px] xl:leading-[28px] text-[#2C3654]">
-                      {stay.subtitle}
-                    </p>
-                  )}
-
-                  <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
-                    {stay.description}
-                  </p>
-
-                  {stay.nights && (
-                    <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[18px] xl:leading-[28px] text-[#2C3654]">
-                      {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
-                    </p>
-                  )}
-                </div>
-              </article>
-            ))}
-          </div> */}
-
           <motion.div
             className="hidden lg:grid mt-5 xl:mt-8 lg:grid-cols-2 gap-5 xl:gap-7"
             variants={cardsContainer}
@@ -321,28 +397,73 @@ export function SignatureStays() {
                 className="border-b-[13px] border-[#C09A60] bg-white">
                 <img
                   src={stay.image}
-                  alt={stay.title}
+                  alt={t(`stays.${stay.title}`)}
                   className="w-full h-auto object-contain xl:h-[468px] xl:object-cover"
                 />
                 <div className="p-4 sm:p-8 text-center">
-                  <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
+                  {/* <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
                     {stay.title}
-                  </h3>
+                  </h3> */}
+                  <AnimatePresence mode="wait">
+                    <motion.h3
+                      key={`${stay.title}-${i18n.language}`}
+                      className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]"
+                      initial={{ opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -6 }}
+                      transition={{ duration: 0.25 }}>
+                      {t(`stays.${stay.title}`)}
+                    </motion.h3>
+                  </AnimatePresence>
 
                   {stay.subtitle && (
-                    <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
-                      {stay.subtitle}
-                    </p>
+                    // <p className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
+                    //   {stay.subtitle}
+                    // </p>
+                    <AnimatePresence mode="wait">
+                      <motion.p
+                        key={`${stay.subtitle}-${i18n.language}`}
+                        className="mt-3 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]"
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25 }}>
+                        {t(`stays.${stay.subtitle}`)}
+                      </motion.p>
+                    </AnimatePresence>
                   )}
 
-                  <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
+                  {/* <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
                     {stay.description}
-                  </p>
+                  </p> */}
+                  <AnimatePresence mode="wait">
+                    <motion.p
+                      key={`${stay.description}-${i18n.language}`}
+                      className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]"
+                      initial={{ opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -6 }}
+                      transition={{ duration: 0.25 }}>
+                      {t(`stays.${stay.description}`)}
+                    </motion.p>
+                  </AnimatePresence>
 
                   {stay.nights && (
-                    <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
-                      {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
-                    </p>
+                    // <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
+                    //   {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
+                    // </p>
+                    <AnimatePresence mode="wait">
+                      <motion.p
+                        key={`${stay.title}-dates-${i18n.language}`}
+                        className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]"
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25 }}>
+                        {stay.nights} {t('common.nights')} · {t(`common.${stay.startMonth}`)} –{' '}
+                        {t(`common.${stay.endMonth}`)}
+                      </motion.p>
+                    </AnimatePresence>
                   )}
                 </div>
               </motion.article>
@@ -370,7 +491,7 @@ export function SignatureStays() {
             }}>
             <Swiper
               className="stays-swiper"
-              modules={[Autoplay]}
+              // modules={[Autoplay]}
               slidesPerView={1}
               spaceBetween={20}
               loop
@@ -384,24 +505,57 @@ export function SignatureStays() {
                 <article className="bg-white border-b-[13px] border-[#C09A60]">
                   <img
                     src={stays[0].image}
-                    alt={stays[0].title}
+                    alt={t(`stays.${stays[0].title}`)}
                     className="w-full object-cover h-[410px] md:h-[480px]"
                   />
 
                   <div className="p-4 sm:p-8 text-center">
-                    <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px]">
+                    {/* <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px]">
                       {stays[0].title}
-                    </h3>
+                    </h3> */}
+                    <AnimatePresence mode="wait">
+                      <motion.h3
+                        key={`mobile-signature-title-${i18n.language}`}
+                        className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px]"
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25 }}>
+                        {t(`stays.${stays[0].title}`)}
+                      </motion.h3>
+                    </AnimatePresence>
 
-                    <p className="mt-2 font-sans text-[15px] leading-[24px] text-[#2C3654]">
+                    {/* <p className="mt-2 font-sans text-[15px] leading-[24px] text-[#2C3654]">
                       Curated stays designed to help you experience Barolo at its fullest - without
                       having to plan every detail.
-                    </p>
+                    </p> */}
+                    <AnimatePresence mode="wait">
+                      <motion.p
+                        key={`mobile-signature-desc1-${i18n.language}`}
+                        className="mt-2 font-sans text-[15px] leading-[24px] text-[#2C3654]"
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25 }}>
+                        {t('stays.signatureStaysDescription1')}
+                      </motion.p>
+                    </AnimatePresence>
 
-                    <p className="mt-4 font-sans font-medium text-[15px] leading-[32px] text-[#2C3654]">
+                    {/* <p className="mt-4 font-sans font-medium text-[15px] leading-[32px] text-[#2C3654]">
                       Each programme brings together wine, gastronomy, and the rhythm of the region
                       into a seamless, thoughtfully crafted stay.
-                    </p>
+                    </p> */}
+                    <AnimatePresence mode="wait">
+                      <motion.p
+                        key={`mobile-signature-desc2-${i18n.language}`}
+                        className="mt-4 font-sans font-medium text-[15px] leading-[24px] text-[#2C3654]"
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25 }}>
+                        {t('stays.signatureStaysDescription2')}
+                      </motion.p>
+                    </AnimatePresence>
                   </div>
                 </article>
               </SwiperSlide>

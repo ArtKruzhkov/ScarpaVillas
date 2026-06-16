@@ -22,11 +22,9 @@
 @media (max-width: 1280px) {
   .plan-stay-btn {
     margin-top: 3rem;
-
     padding: 12px 80px;
-
-    font-size: 24px;
-    line-height: 40px;
+    /* font-size: 18px; */
+    /* line-height: 40px; */
   }
 }
 

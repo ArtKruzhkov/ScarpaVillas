@@ -1,35 +1,76 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 export function Footer() {
+  const { t, i18n } = useTranslation();
+
   return (
     <footer className="bg-[#2C3654] text-white max-w-8xl 2xl:max-w-[1920px] mx-auto">
-      <div className="px-4 sm:px-6 xl:px-8 pt-10 lg:pt-14 xl:pt-16 pb-2">
+      <div className="px-4 sm:px-6 xl:px-8 pt-10 lg:pt-14 pb-2">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-[1fr_auto_1fr] xl:gap-0 items-start">
           {/* LEFT */}
           <div className="flex flex-col items-center md:block">
-            <h3 className="font-serif text-center md:text-left text-[28px] leading-[36px] sm:text-[32px] sm:leading-[44px] xl:text-[40px] xl:leading-[68px] tracking-[0.05em]">
-              Stay connected to the Langhe
-            </h3>
+            <AnimatePresence mode="wait">
+              <motion.h3
+                key={`footer-title-${i18n.language}`}
+                className="font-serif text-center md:text-left text-[28px] leading-[36px] sm:text-[32px] sm:leading-[44px] xl:text-[38px] xl:leading-[58px] tracking-[0.02em]"
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25 }}>
+                {t('footer.title')}
+              </motion.h3>
+            </AnimatePresence>
 
-            <p className="mt-3 text-center md:text-left font-sans text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:text-[20px] xl:leading-[36px] text-white">
-              Occasional stories, seasonal moments, and insights from the region
-            </p>
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={`footer-description-${i18n.language}`}
+                className="mt-3 text-center md:text-left font-sans text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:text-[17px] xl:leading-[32px] text-white"
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25 }}>
+                {t('footer.description')}
+              </motion.p>
+            </AnimatePresence>
 
             <form className="mt-6 sm:mt-10 max-w-[520px]">
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-0">
                 <input
                   type="email"
-                  placeholder="Enter your email"
-                  className="h-[54px] placeholder:text-center border border-white bg-transparent px-6 text-white font-sans placeholder:text-white/50"
+                  placeholder={t('footer.emailPlaceholder')}
+                  className="h-[50px] placeholder:text-center border border-white bg-transparent px-6 text-white font-sans placeholder:text-white/50"
                 />
 
                 <button
                   type="submit"
-                  className="h-[54px] border border-white bg-white px-4 lg:px-10 font-sans text-[12px] font-bold uppercase tracking-[0.05em] text-[#2C3654] hover:bg-[#2C3654] hover:text-white transition-all duration-300">
-                  Stay In Touch
+                  className="h-[50px] border border-white bg-white px-4 lg:px-10 font-sans text-[12px] font-bold uppercase tracking-[0.05em] text-[#2C3654] hover:bg-[#2C3654] hover:text-white transition-all duration-300">
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={`footer-button-${i18n.language}`}
+                      initial={{ opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -6 }}
+                      transition={{ duration: 0.25 }}>
+                      {t('footer.button')}
+                    </motion.span>
+                  </AnimatePresence>
                 </button>
               </div>
 
               <label className="mt-3 md:mt-6 font-sans flex items-center justify-center md:justify-start gap-3 text-[13px] tracking-[0.05em] leading-[20px] text-white">
-                <input type="checkbox" />I agree to the privacy statement
+                <input type="checkbox" />
+
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={`footer-privacy-${i18n.language}`}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.25 }}>
+                    {t('footer.privacyAgree')}
+                  </motion.span>
+                </AnimatePresence>
               </label>
             </form>
           </div>
@@ -44,20 +85,36 @@ export function Footer() {
               />
             </a>
 
-            <p className="mt-6 xl:mt-8 font-serif text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] xl:text-[20px] xl:leading-[36px] tracking-[0.05em]">
-              A collection of <span className="italic">private villas in the vineyards</span>
-              <br />
-              of Monvigliero, Verduno.
-            </p>
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={`footer-logo-text-${i18n.language}`}
+                className="mt-6 xl:mt-8 font-serif text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] xl:text-[17px] xl:leading-[32px] tracking-[0.05em]"
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25 }}>
+                {t('footer.logoText1')} <span className="italic">{t('footer.logoTextItalic')}</span>
+                <br />
+                {t('footer.logoText2')}
+              </motion.p>
+            </AnimatePresence>
           </div>
 
           {/* RIGHT */}
           <div className="order-2 xl:order-3 text-center md:text-right">
-            <h3 className="font-serif text-[28px] leading-[36px] sm:text-[32px] sm:leading-[44px] xl:text-[40px] xl:leading-[68px] tracking-[0.05em]">
-              Contact
-            </h3>
+            <AnimatePresence mode="wait">
+              <motion.h3
+                key={`footer-contact-${i18n.language}`}
+                className="font-serif text-[28px] leading-[36px] sm:text-[32px] sm:leading-[44px] xl:text-[38px] xl:leading-[58px] tracking-[0.02em]"
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25 }}>
+                {t('footer.contact')}
+              </motion.h3>
+            </AnimatePresence>
 
-            <div className="mt-3 lg:mt-6 flex flex-col items-center md:items-end font-sans font-sans text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:text-[20px] xl:leading-[36px] text-white">
+            <div className="mt-3 lg:mt-6 flex flex-col items-center md:items-end font-sans font-sans text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:text-[17px] xl:leading-[32px] text-white">
               <p>Cascina Monvigliero 28,</p>
               <p>12060 Verduno (CN) Italy</p>
 
@@ -81,8 +138,8 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="transition-opacity duration-300 hover:opacity-50">
                 <svg
-                  width="43"
-                  height="43"
+                  width="38"
+                  height="38"
                   viewBox="0 0 43 43"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -113,8 +170,8 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="transition-opacity duration-300 hover:opacity-50">
                 <svg
-                  width="19"
-                  height="43"
+                  width="16"
+                  height="38"
                   viewBox="0 0 19 43"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -130,21 +187,39 @@ export function Footer() {
 
         {/* BOTTOM */}
         <div className="mt-[35px] flex flex-col gap-2 items-center sm:flex-row sm:justify-between border-t-[1.7px] border-white/50 pt-2">
-          <p className="font-sans text-center sm:text-left text-white/50 text-[13px] leading-[20px] lg:text-[18px] lg:leading-[32px]">
+          <p className="font-sans text-center sm:text-left text-white/50 text-[13px] leading-[20px] lg:text-[16px] lg:leading-[30px]">
             Antica Casa Vinicola Scarpa - P.IVA 00070140058
           </p>
 
-          <div className="flex gap-2 font-sans text-white/50 text-[13px] leading-[20px] lg:text-[18px] lg:leading-[32px]">
+          <div className="flex gap-2 font-sans text-white/50 text-[13px] leading-[20px] lg:text-[16px] lg:leading-[30px]">
             <a
               href={process.env.PUBLIC_URL || '/'}
               className="hover:text-white transition-colors duration-300">
-              Cookie Policy
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={`cookie-${i18n.language}`}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.25 }}>
+                  {t('footer.cookiePolicy')}
+                </motion.span>
+              </AnimatePresence>
             </a>
             <span>|</span>
             <a
               href={process.env.PUBLIC_URL || '/'}
               className="hover:text-white transition-colors duration-300">
-              Privacy Policy
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={`privacy-${i18n.language}`}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.25 }}>
+                  {t('footer.privacyPolicy')}
+                </motion.span>
+              </AnimatePresence>
             </a>
           </div>
         </div>
