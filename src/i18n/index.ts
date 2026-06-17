@@ -1,8 +1,45 @@
+// import i18n from 'i18next';
+// import { initReactI18next } from 'react-i18next';
+
+// import en from './locales/en.json';
+// import it from './locales/it.json';
+
+// i18n.use(initReactI18next).init({
+//   resources: {
+//     en: {
+//       translation: en,
+//     },
+//     it: {
+//       translation: it,
+//     },
+//   },
+
+//   lng: localStorage.getItem('language') || 'en',
+
+//   fallbackLng: 'en',
+
+//   interpolation: {
+//     escapeValue: false,
+//   },
+// });
+
+// export default i18n;
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import en from './locales/en.json';
 import it from './locales/it.json';
+
+const getLanguageFromUrl = () => {
+  const path = window.location.pathname;
+
+  if (path.includes('/it')) {
+    return 'it';
+  }
+
+  return 'en';
+};
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -14,8 +51,7 @@ i18n.use(initReactI18next).init({
     },
   },
 
-  lng: localStorage.getItem('language') || 'en',
-
+  lng: getLanguageFromUrl(),
   fallbackLng: 'en',
 
   interpolation: {

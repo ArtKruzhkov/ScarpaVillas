@@ -23,13 +23,19 @@
   }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .discover-villa-btn {
-    min-width: 710.86px;
+    min-width: 608px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1536px) {
+  .discover-villa-btn {
+    min-width: 750px;
+  }
+}
+
+@media (max-width: 1535px) {
   .discover-villa-btn {
     padding: 14px 50px;
     font-size: 18px;

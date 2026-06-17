@@ -16,72 +16,6 @@ type Experience = {
 
 const baseUrl = process.env.PUBLIC_URL;
 
-// const experiences: Experience[] = [
-//   {
-//     category: 'Wine & Taste',
-//     title: 'Winery Visits',
-//     description:
-//       'Step inside the historic Scarpa cellars and experience the craft behind every bottle.',
-//     image: `${baseUrl}/images/experiences/winery-visits.png`,
-//   },
-//   {
-//     category: 'Wine & Taste',
-//     title: 'Private Wine Tastings',
-//     description: 'Discover Scarpa wines with a sommelier, from rare vintages to iconic labels.',
-//     image: `${baseUrl}/images/experiences/wine-tastings.png`,
-//   },
-//   {
-//     category: 'Wine & Taste',
-//     title: 'Chef & Private Dining',
-//     description:
-//       'Enjoy slow dinners and breakfasts prepared just for you, in the comfort of your villa.',
-//     image: `${baseUrl}/images/experiences/private-dining.png`,
-//   },
-//   {
-//     category: 'Wine & Taste',
-//     title: 'Cooking Classes',
-//     description: 'Learn the traditions of Piedmontese cuisine, hands-on and unhurried.',
-//     image: `${baseUrl}/images/experiences/cooking-classes.png`,
-//   },
-//   {
-//     category: 'Culture & Discovery',
-//     title: 'Langhe & Barolo Tours',
-//     description: 'Discover historic villages, local markets, and hidden corners of the region.',
-//     image: `${baseUrl}/images/experiences/langhe-tours.png`,
-//   },
-//   {
-//     category: 'Culture & Discovery',
-//     title: 'Turin Experiences',
-//     description: 'From historic cafés to vermouth bars, explore the culture of Piedmont’s capital.',
-//     image: `${baseUrl}/images/experiences/turin-experiences.png`,
-//   },
-//   {
-//     category: 'Nature & Movement',
-//     title: 'Truffle Hunting',
-//     description: 'Walk through the woods with a trifolau in search of Alba’s most prized treasure.',
-//     image: `${baseUrl}/images/experiences/truffle-hunting.png`,
-//   },
-//   {
-//     category: 'Nature & Movement',
-//     title: 'Vineyard Picnics',
-//     description: 'A simple table, a bottle of wine, and the vineyards all around you.',
-//     image: `${baseUrl}/images/experiences/vineyard-picnics.png`,
-//   },
-//   {
-//     category: 'Nature & Movement',
-//     title: 'Hot-Air Balloon Flights',
-//     description: 'See the Langhe from above at sunrise, drifting quietly over vineyards and hills.',
-//     image: `${baseUrl}/images/experiences/hot-air-balloon.png`,
-//   },
-//   {
-//     category: 'Nature & Movement',
-//     title: 'Vespa & E-bike Tours',
-//     description:
-//       'Explore the Barolo hills on a Vespa, moving freely between vineyards and villages.',
-//     image: `${baseUrl}/images/experiences/vespa-ebike.png`,
-//   },
-// ];
-
 export function Experiences() {
   const experiences: Experience[] = [
     {
@@ -319,11 +253,13 @@ export function Experiences() {
           viewport={{ once: true, amount: 0.2 }}>
           {wineAndTaste.map((experience) => (
             <motion.article key={experience.title} variants={cardItem}>
-              <img
-                src={experience.image}
-                alt={t(`experienceCards.${experience.title}`)}
-                className="w-full h-[480px] lg:h-[380px] xl:h-[480px] 2xl:h-[580px] object-cover"
-              />
+              <div className="group cursor-pointer overflow-hidden">
+                <img
+                  src={experience.image}
+                  alt={t(`experienceCards.${experience.title}`)}
+                  className="w-full h-[480px] lg:h-[380px] xl:h-[480px] 2xl:h-[580px] object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+                />
+              </div>
 
               <AnimatePresence mode="wait">
                 <motion.h4
@@ -441,11 +377,13 @@ export function Experiences() {
           viewport={{ once: true, amount: 0.2 }}>
           {cultureAndDiscovery.map((experience) => (
             <motion.article key={experience.title} variants={cardItem}>
-              <img
-                src={experience.image}
-                alt={t(`experienceCards.${experience.title}`)}
-                className="w-full h-[480px] lg:h-auto object-cover"
-              />
+              <div className="group cursor-pointer overflow-hidden">
+                <img
+                  src={experience.image}
+                  alt={t(`experienceCards.${experience.title}`)}
+                  className="w-full h-[480px] lg:h-auto object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+                />
+              </div>
 
               <AnimatePresence mode="wait">
                 <motion.h4
@@ -565,11 +503,13 @@ export function Experiences() {
           viewport={{ once: true, amount: 0.2 }}>
           {natureAndMovement.map((experience) => (
             <motion.article key={experience.title} variants={cardItem}>
-              <img
-                src={experience.image}
-                alt={t(`experienceCards.${experience.title}`)}
-                className="w-full object-cover"
-              />
+              <div className="group cursor-pointer overflow-hidden">
+                <img
+                  src={experience.image}
+                  alt={t(`experienceCards.${experience.title}`)}
+                  className="w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+                />
+              </div>
 
               <AnimatePresence mode="wait">
                 <motion.h4

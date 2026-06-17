@@ -18,9 +18,14 @@ type NavItem = { label: string; href: string };
 // ];
 
 export function Navbar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [open, setOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('villas');
+
+  const homeUrl =
+    i18n.language === 'en'
+      ? `${process.env.PUBLIC_URL}`
+      : `${process.env.PUBLIC_URL}/${i18n.language}`;
 
   const nav: NavItem[] = [
     { label: t('nav.villas'), href: '#villas' },
@@ -66,7 +71,7 @@ export function Navbar() {
           {/* LOGO */}
           <div className="flex justify-center lg:px-8 xl:px-20">
             <a
-              href={process.env.PUBLIC_URL || '/'}
+              href={homeUrl}
               className="flex flex-col items-center justify-center text-center leading-none">
               <img
                 src={`${process.env.PUBLIC_URL}/images/nav/logo.png`}

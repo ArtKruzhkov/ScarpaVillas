@@ -42,47 +42,6 @@ export function Gallery() {
 
   return (
     <section id="villas" className="scroll-mt-[86px] relative overflow-hidden bg-[#f5f3ee]">
-      {/* <div className="mx-auto w-full max-w-8xl px-0">
-        <div className="relative section-height-gallery">
-          
-          <img
-            src={`${process.env.PUBLIC_URL}/images/gallery/gallery-hero.png`}
-            alt="Scarpa Villas"
-            className="h-full w-full object-cover"
-          />
-
-          
-          <div className="absolute inset-0 bg-black/10" />
-
-          
-          <div className="absolute left-1/2 top-4 sm:top-12 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0">
-            <p className="font-serif font-medium text-[22px] sm:text-[34px] md:text-[42px] xl:text-[50px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
-              Four Villas
-            </p>
-
-            <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[34px] md:text-[42px] xl:text-[50px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
-              Four Ways To Live Barolo
-            </h2>
-          </div>
-
-          {villas.map((villa) => (
-            <div
-              key={villa.name}
-              className={`hidden min-[1025px]:block absolute z-20 ${villa.className}`}>
-              <div className="flex flex-col items-center">
-                <a href={villa.href} className="villa-label">
-                  {villa.name}
-                </a>
-
-                <div className={`w-px bg-[#e7e2d7] ${villa.lineHeight}`} />
-
-                <div className="h-3 w-3 rounded-full bg-[#f4f1ea]" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
-
       <div className="mx-auto w-full max-w-8xl px-0">
         <div className="relative section-height-gallery overflow-hidden">
           {/* IMAGE */}
@@ -109,7 +68,7 @@ export function Gallery() {
           </motion.div>
 
           {/* TITLE */}
-          <div className="absolute left-1/2 top-3 sm:top-10 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0">
+          <div className="absolute left-1/2 top-8 sm:top-14 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0">
             <motion.div
               initial={{
                 opacity: 0,
@@ -139,11 +98,11 @@ export function Gallery() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.3 }}>
-                  <p className="font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                  <p className="font-serif font-medium text-[18px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                     {t('gallery.title1')}
                   </p>
 
-                  <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[24px] md:text-[26px] xl:text-[26.5px] min-[1780px]:text-[32.5px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                  <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                     {t('gallery.title2')}
                   </h2>
                 </motion.div>
@@ -154,7 +113,7 @@ export function Gallery() {
           {villas.map((villa, index) => (
             <motion.div
               key={villa.name}
-              className={`hidden min-[1025px]:block absolute z-20 ${villa.className}`}
+              className={`hidden lg:block absolute z-20 ${villa.className}`}
               initial={{
                 opacity: 0,
                 y: 35,
