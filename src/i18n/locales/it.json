@@ -161,5 +161,40 @@
     "contact": "Contatti",
     "cookiePolicy": "Informativa Cookie",
     "privacyPolicy": "Informativa Privacy"
+  },
+  "storyHero": {
+    "title": "La Storia",
+    "subtitle": "Un luogo plasmato dal tempo, dal vino e dalle persone"
+  },
+  "storyChapters": {
+    "heading": "Scarpa Villas fa parte di una storia più ampia — una storia che nasce tra i <italic1>vigneti del Piemonte</italic1> e continua attraverso il vino, le persone e uno stile di vita modellato nel corso di <italic2>generazioni</italic2>.",
+
+    "origins": {
+      "title": "Origini",
+      "description": "Un paesaggio modellato lentamente nel corso dei secoli, dove vigneti, borghi e tradizioni si sono evoluti insieme nel tempo.",
+      "button": "Scopri le Origini"
+    },
+
+    "winery": {
+      "title": "Cantina Scarpa",
+      "description": "Dal 1900, Scarpa crea vini definiti dal tempo, dalla pazienza e da un profondo rispetto per il territorio.",
+      "button": "Esplora la Cantina"
+    },
+
+    "people": {
+      "title": "Persone",
+      "description": "Dietro ogni esperienza c'è un gruppo di persone la cui cura e attenzione danno forma a ogni momento del soggiorno.",
+      "button": "Incontra le Persone"
+    },
+
+    "press": {
+      "title": "Stampa",
+      "description": "Una selezione di articoli e menzioni che raccontano Scarpa Villas e il suo posto nelle Langhe.",
+      "button": "Visualizza la Rassegna"
+    }
+  },
+  "storyVillasCTA": {
+    "text": "Scarpa Villas danno vita a questa storia, offrendo un modo per vivere Barolo attraverso lo spazio, il tempo e il legame con la terra.",
+    "button": "Esplora Le Ville"
   }
 }

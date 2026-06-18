@@ -161,5 +161,41 @@
     "contact": "Contact",
     "cookiePolicy": "Cookie Policy",
     "privacyPolicy": "Privacy Policy"
+  },
+  "storyHero": {
+    "title": "The Story",
+    "subtitle": "A place shaped by time, wine, and people"
+  },
+
+  "storyChapters": {
+    "heading": "Scarpa Villas is part of a wider story — one that begins in the <italic1>vineyards of Piedmont</italic1> and continues through wine, people, and a way of life shaped over <italic2>generations</italic2>.",
+
+    "origins": {
+      "title": "Origins",
+      "description": "A landscape shaped slowly over centuries, where vineyards, villages, and traditions have evolved together over time.",
+      "button": "Discover Origins"
+    },
+
+    "winery": {
+      "title": "Scarpa Winery",
+      "description": "Since 1900, Scarpa has been creating wines defined by time, patience, and a deep respect for the land.",
+      "button": "Explore The Winery"
+    },
+
+    "people": {
+      "title": "People",
+      "description": "Behind every experience is a group of people whose care and attention shape each moment of your stay.",
+      "button": "Meet The People"
+    },
+
+    "press": {
+      "title": "Press",
+      "description": "A selection of features and mentions highlighting Scarpa Villas and its place in the Langhe.",
+      "button": "View Press"
+    }
+  },
+  "storyVillasCTA": {
+    "text": "Scarpa Villas bring this story to life — offering a way to experience Barolo through space, time, and connection to the land.",
+    "button": "Explore The Villas"
   }
 }

@@ -1,0 +1,9 @@
+.story_hero-title {
+  font-family: 'Bodoni Moda', serif;
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: 15%;
+  line-height: 68px;
+  color: white;
+}
