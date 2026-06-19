@@ -7,3 +7,31 @@
   line-height: 68px;
   color: white;
 }
+
+@media (max-width: 1279px) {
+  .story_hero-title {
+    font-size: 62px;
+    line-height: 64px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .story_hero-title {
+    font-size: 50px;
+    line-height: 52px;
+  }
+}
+
+/* @media (max-width: 767px) {
+  .story_hero-title {
+    font-size: 48px;
+    line-height: 46px;
+  }
+} */
+
+@media (max-width: 639px) {
+  .story_hero-title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
