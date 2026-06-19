@@ -38,11 +38,11 @@ export function StoryChapters() {
   ];
 
   return (
-    <section className="bg-[#FFFFFF] pt-20 pb-5">
+    <section className="bg-[#FFFFFF] pt-10 lg:pt-20 lg:pb-5">
       <div className="mx-auto max-w-8xl px-8">
         {/* Heading */}
         <motion.div
-          className="mx-auto mb-20 md:max-w-[704px] lg:max-w-[868px] xl:max-w-[992px] 2xl:max-w-[1072px] text-center"
+          className="mx-auto mb-10 lg:mb-20 md:max-w-[704px] lg:max-w-[868px] xl:max-w-[992px] 2xl:max-w-[1072px] text-center"
           initial={{
             opacity: 0,
             y: 40,
