@@ -50,7 +50,7 @@ export function Borgo() {
 
         {/* CONTENT */}
         <motion.div
-          className="absolute inset-0 z-10 flex flex-col sm:items-center px-6 pt-8 lg:pt-18 2xl:pt-24 sm:text-center"
+          className="absolute inset-0 z-10 flex flex-col sm:items-center px-6 pt-6 lg:pt-12 2xl:pt-24 sm:text-center"
           initial={{
             opacity: 0,
             y: 40,
