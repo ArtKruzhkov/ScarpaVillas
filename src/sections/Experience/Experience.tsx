@@ -100,7 +100,15 @@ export function Experience() {
         <div className="lg:hidden">
           <div className="lg:max-w-[450px] xl:max-w-[574px]">
             {/* HEADER */}
-            <div className="flex flex-col items-center lg:block">
+            <motion.div
+              className="flex flex-col items-center lg:block"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
               {/* Mobile */}
               <AnimatePresence mode="wait">
                 <motion.h2
@@ -115,25 +123,34 @@ export function Experience() {
               </AnimatePresence>
 
               <div className="mt-6 h-[2px] w-[210px] bg-[#6e7a9b]" />
-            </div>
+            </motion.div>
 
             {/* TOP TEXT */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`experience-top-text-${i18n.language}`}
-                className="font-sans mt-6 space-y-5  text-[14.3px] leading-[20px] sm:text-[18px] sm:leading-[26px] md:text-[21px] md:leading-[31px] text-[#2C3654] px-4 max-w-[402px] sm:max-w-[500px] md:max-w-[580px] mx-auto"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}>
-                <p>
-                  <Trans i18nKey="experience.paragraph1" components={{ strong: <strong /> }} />
-                </p>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`experience-top-text-${i18n.language}`}
+                  className="font-sans mt-6 space-y-5  text-[14.3px] leading-[20px] sm:text-[18px] sm:leading-[26px] md:text-[21px] md:leading-[31px] text-[#2C3654] px-4 max-w-[402px] sm:max-w-[500px] md:max-w-[580px] mx-auto"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}>
+                  <p>
+                    <Trans i18nKey="experience.paragraph1" components={{ strong: <strong /> }} />
+                  </p>
 
-                <p>
-                  <Trans i18nKey="experience.paragraph2" components={{ strong: <strong /> }} />
-                </p>
-              </motion.div>
-            </AnimatePresence>
+                  <p>
+                    <Trans i18nKey="experience.paragraph2" components={{ strong: <strong /> }} />
+                  </p>
+                </motion.div>
+              </AnimatePresence>
+            </motion.div>
 
             {/* IMAGE */}
             <div className="overflow-hidden mt-10">
@@ -155,22 +172,31 @@ export function Experience() {
             </div>
 
             {/* BOTTOM TEXT */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`experience-bottom-text-${i18n.language}`}
-                className="font-sans mt-10 space-y-5  text-[14.3px] leading-[20px] sm:text-[18px] sm:leading-[26px] md:text-[21px] md:leading-[31px] text-[#2C3654] px-4 max-w-[402px] sm:max-w-[500px] md:max-w-[580px] mx-auto"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}>
-                <p>
-                  <Trans i18nKey="experience.paragraph3" components={{ strong: <strong /> }} />
-                </p>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`experience-bottom-text-${i18n.language}`}
+                  className="font-sans mt-10 space-y-5  text-[14.3px] leading-[20px] sm:text-[18px] sm:leading-[26px] md:text-[21px] md:leading-[31px] text-[#2C3654] px-4 max-w-[402px] sm:max-w-[500px] md:max-w-[580px] mx-auto"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}>
+                  <p>
+                    <Trans i18nKey="experience.paragraph3" components={{ strong: <strong /> }} />
+                  </p>
 
-                <p>
-                  <Trans i18nKey="experience.paragraph4" components={{ strong: <strong /> }} />
-                </p>
-              </motion.div>
-            </AnimatePresence>
+                  <p>
+                    <Trans i18nKey="experience.paragraph4" components={{ strong: <strong /> }} />
+                  </p>
+                </motion.div>
+              </AnimatePresence>
+            </motion.div>
           </div>
         </div>
       </Container>
