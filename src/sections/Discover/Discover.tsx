@@ -106,7 +106,7 @@ export function DiscoverLanghe() {
       <div className="mx-auto px-0">
         {/* HEADER */}
         <motion.div
-          className="mx-auto text-center px-8 flex flex-col items-center"
+          className="mx-auto text-center px-2 sm:px-8 flex flex-col items-center"
           initial={{
             opacity: 0,
             y: 50,
@@ -126,7 +126,7 @@ export function DiscoverLanghe() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`discover-title-${i18n.language}`}
-              className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[28px] leading-[36px] sm:text-[38px] sm:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[65px]"
+              className="font-serif px-2 sm:px-0 uppercase tracking-[0.1em] text-[#2C3654] text-[28px] leading-[36px] sm:text-[38px] sm:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[65px]"
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}

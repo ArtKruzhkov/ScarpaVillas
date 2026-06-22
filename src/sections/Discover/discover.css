@@ -15,21 +15,27 @@
   font-family: 'Bodoni Moda', serif;
   color: #2c3654;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 21px;
 }
 
-/* @media (max-width: 1739px) {
+@media (max-width: 639px) {
   .discover-text {
-    font-size: 24px;
-    line-height: 36px;
+    max-width: 370px;
   }
-} */
+}
 
 @media (min-width: 640px) {
   .discover-text {
     margin-top: 1.5rem;
     font-size: 19px;
-    line-height: 30px;
+    line-height: 27px;
+    width: 576px;
+  }
+}
+
+@media (min-width: 880px) {
+  .discover-text {
+    width: 815px;
   }
 }
 
@@ -37,7 +43,7 @@
   .discover-text {
     margin-top: 1.5rem;
     font-size: 22.4px;
-    line-height: 38px;
+    line-height: 34px;
     width: 961px;
   }
 }
@@ -46,7 +52,7 @@
   .discover-text {
     margin-top: 2rem;
     font-size: 30px;
-    line-height: 46px;
+    line-height: 44px;
     width: 1175px;
     letter-spacing: -0.04em;
   }

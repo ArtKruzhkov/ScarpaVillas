@@ -15,7 +15,7 @@ export function Hero() {
         <img
           src={`${process.env.PUBLIC_URL}/images/hero/hero-section.png`}
           alt="Scarpa Villas"
-          className="h-full w-full object-cover object-[20%_center] sm:object-[center_center]"
+          className="h-full w-full object-cover object-[20%_center] xl:object-[center_center]"
         />
 
         {/* OVERLAY */}

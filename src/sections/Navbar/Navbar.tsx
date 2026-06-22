@@ -137,7 +137,7 @@ export function Navbar() {
           {/* MOBILE BUTTON */}
           <button
             type="button"
-            className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/15 bg-sand-50 text-ink-900 transition-colors hover:bg-sand-100 lg:hidden"
+            className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#2c3654] text-ink-900 transition-colors hover:bg-gray-100 lg:hidden"
             aria-label="Open menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}>

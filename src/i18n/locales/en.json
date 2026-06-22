@@ -22,7 +22,7 @@
   "experience": {
     "title1": "Where Time Becomes",
     "title2": "Part of the Experience",
-    "paragraph1": "For over a century, Scarpa has been guided by a simple belief — that <strong>great wine is shaped by time.</strong>",
+    "paragraph1": "For over a century, Scarpa has been guided by a simple belief — that <strong>great wine is shaped\u00A0by\u00A0time.</strong>",
     "paragraph2": "<strong>Scarpa Villas</strong> were created as a natural extension of this philosophy - a place where the culture of wine can be lived, not just tasted — by those who choose to stay here.",
     "paragraph3": "<strong>Founded in 1900</strong>, the winery has built its legacy on patience, respect for the land, and a deep connection to Piedmont’s terroirs.",
     "paragraph4": "Here, <strong>among the vineyards of Monvigliero</strong>, time slows, deepens, and becomes part of the experience itself."
@@ -41,7 +41,7 @@
   "borgo": {
     "title1": "The Borgo",
     "title2": "A Hilltop Village, All Yours",
-    "descriptionDesktop": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours. A setting designed for meaningful gatherings, from private celebrations and intimate weddings to corporate retreats, where privacy, space, and the rhythm of Barolo come together.",
+    "descriptionDesktop": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours. A\u00A0setting designed for meaningful gatherings, from private celebrations and intimate weddings to corporate retreats, where privacy, space, and the rhythm of Barolo come together.",
     "descriptionMobile": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours.",
     "button": "Discover The Entire Borgo"
   },
@@ -126,8 +126,8 @@
   },
   "discover": {
     "title": "Discover The Langhe",
-    "text1": "Just minutes from the vineyards of Monvigliero, the Langhe unfolds through historic villages, panoramic viewpoints, and some of Italy’s most celebrated gastronomic destinations.",
-    "text2": "Each place offers a different way to experience the region — from wine and truffles to landscapes and centuries-old towns."
+    "text1": "Just minutes from the vineyards of Monvigliero, the Langhe unfolds through historic villages, panoramic viewpoints, and some of Italy’s most celebrated\u00A0gastronomic\u00A0destinations.",
+    "text2": "Each place offers a different way to experience the region — from wine and truffles to landscapes and\u00A0centuries\u00A0—\u00A0old\u00A0towns."
   },
   "langheSlides": {
     "villageMuseum": "Village & Museum",

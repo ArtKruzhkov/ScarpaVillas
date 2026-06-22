@@ -98,11 +98,11 @@ export function Gallery() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.3 }}>
-                  <p className="font-serif font-medium text-[18px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                  <p className="font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                     {t('gallery.title1')}
                   </p>
 
-                  <h2 className="mt-1 sm:mt-2 font-serif font-medium text-[18px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                  <h2 className="sm:mt-2 font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
                     {t('gallery.title2')}
                   </h2>
                 </motion.div>
