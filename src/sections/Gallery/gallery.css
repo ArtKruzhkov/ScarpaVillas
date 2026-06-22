@@ -131,5 +131,6 @@
 @media (max-width: 639px) {
   .section-height-gallery {
     height: 65vh;
+    min-height: 552px;
   }
 }
