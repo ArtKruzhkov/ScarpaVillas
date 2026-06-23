@@ -83,12 +83,12 @@ export function VillaGallery() {
                 className="h-full w-full object-cover"
               />
 
-              <div className="absolute left-4 top-4 md:left-6 md:top-10 2xl:left-16 z-10 max-w-[90%] md:max-w-[430px] xl:max-w-[648px] 2xl:max-w-[770px] text-[#2C3654]">
+              <div className="absolute left-4 top-4 md:left-6 md:top-10 2xl:left-16 z-10 max-w-[90%] md:max-w-[430px] lg:max-w-[540px] xl:max-w-[610px] 2xl:max-w-[770px] text-[#2C3654]">
                 <motion.h3
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.15 }}
-                  className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[60px] xl:text-[54px] xl:leading-[68px] 2xl:text-[62px] 2xl:leading-[76px] tracking-[0.01em]">
+                  className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[58px] 2xl:text-[54px] 2xl:leading-[62px] tracking-[0.01em]">
                   {activeVilla.name}
                 </motion.h3>
 
@@ -99,7 +99,7 @@ export function VillaGallery() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.3 }}
-                    className="mt-2 md:mt-4 font-sans text-[15px] leading-[24px] sm:text-[18px] sm:leading-[30px] lg:text-[22px] lg:leading-[36px] xl:text-[24px] xl:leading-[42px] 2xl:text-[28px] 2xl:leading-[46px]">
+                    className="mt-2 md:mt-4 font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[26px] lg:text-[22px] lg:leading-[32px] 2xl:text-[24px] 2xl:leading-[34px]">
                     {activeVilla.description}
                   </motion.p>
                 </AnimatePresence>

@@ -98,12 +98,14 @@ export function Borgo() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`borgo-mobile-${i18n.language}`}
-              className="mt-2 font-sans text-[15px] leading-[1.4] text-[#2C3654] sm:hidden"
+              className="mt-2 font-sans text-[14px] leading-[1.4] text-[#2C3654] sm:hidden"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3 }}>
-              {t('borgo.descriptionDesktop')}
+              <span>{t('borgo.descriptionMobile1')}</span>
+              <br />
+              <span>{t('borgo.descriptionMobile2')}</span>
             </motion.p>
           </AnimatePresence>
 

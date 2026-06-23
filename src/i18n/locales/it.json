@@ -39,10 +39,11 @@
     "tettimoraDescription": "Un rifugio intimo per serate tranquille, buona compagnia e tutta la bellezza delle Langhe intorno."
   },
   "borgo": {
-    "title1": "Il Borgo",
-    "title2": "Un borgo collinare, tutto per te",
+    "title1": "Il Borgo.",
+    "title2": "Tutto per te",
     "descriptionDesktop": "Il Borgo può essere prenotato nella sua interezza: quattro ville, una piscina panoramica e la tenuta circostante, tutto esclusivamente per te. Un luogo pensato per incontri significativi, dalle feste private e matrimoni intimi ai ritiri aziendali, dove privacy, spazio e il ritmo di Barolo si fondono.",
-    "descriptionMobile": "Il Borgointerezza può essere prenotato nella sua interezza: quattro ville, una piscina panoramica e la tenuta circostante, tutto esclusivamente per te.",
+    "descriptionMobile1": "Prenotate l'intero Borgo: quattro ville, una piscina panoramica e la tenuta, tutti esclusivamente a vostra\u00A0disposizione.",
+    "descriptionMobile2": "Progettato per incontri significativi, dalle celebrazioni private e dai matrimoni intimi ai ritiri aziendali, dove privacy, spazio e il ritmo di Barolo si fondono insieme.",
     "button": "Scopri Il Borgo"
   },
   "experiences": {

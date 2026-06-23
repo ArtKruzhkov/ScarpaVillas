@@ -76,13 +76,13 @@ export function PlanStay() {
         <AnimatePresence mode="wait">
           <motion.p
             key={`plan-text-${i18n.language}`}
-            className="mt-4 lg:mt-6 tracking-[-0.03em] max-w-[920px] font-serif text-[18px] leading-[28px] sm:text-[24px] sm:leading-[34px] lg:text-[32px] lg:leading-[44px] xl:text-[34px] xl:leading-[50px]"
+            className="mt-4 lg:mt-6 tracking-[-0.03em] max-w-[920px] font-serif text-[17.5px] leading-[25px] sm:text-[24px] sm:leading-[34px] lg:text-[32px] lg:leading-[44px] xl:text-[34px] xl:leading-[50px]"
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.25 }}>
             {t('planStay.text1')} <span className="italic">{t('planStay.text2')}</span>
-            <br className="hidden lg:block" />
+            <br />
             {t('planStay.text3')}
           </motion.p>
         </AnimatePresence>

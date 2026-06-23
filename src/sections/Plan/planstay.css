@@ -19,12 +19,10 @@
   color: #2c3654;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .plan-stay-btn {
     margin-top: 3rem;
     padding: 12px 80px;
-    /* font-size: 18px; */
-    /* line-height: 40px; */
   }
 }
 

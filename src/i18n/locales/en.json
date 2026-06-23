@@ -39,10 +39,11 @@
     "tettimoraDescription": "An intimate retreat for quiet evenings, close company and the beauty of the Langhe all around."
   },
   "borgo": {
-    "title1": "The Borgo",
+    "title1": "The Borgo.",
     "title2": "A Hilltop Village, All Yours",
     "descriptionDesktop": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours. A\u00A0setting designed for meaningful gatherings, from private celebrations and intimate weddings to corporate retreats, where privacy, space, and the rhythm of Barolo come together.",
-    "descriptionMobile": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the surrounding estate, all exclusively yours.",
+    "descriptionMobile1": "The Borgo can be reserved in its entirety — four villas, a panoramic pool, and the estate, exclusively\u00A0yours.",
+    "descriptionMobile2": "Designed for meaningful gatherings, from private celebrations and intimate weddings to corporate retreats, where privacy, space, and the rhythm of Barolo come together.",
     "button": "Discover The Entire Borgo"
   },
   "experiences": {
@@ -151,7 +152,7 @@
   },
   "footer": {
     "title": "Stay connected to the Langhe",
-    "description": "Occasional stories, seasonal moments, and insights from the region",
+    "description": "Occasional stories, seasonal moments, and insights from the region.",
     "emailPlaceholder": "Enter your e-mail",
     "button": "Stay In Touch",
     "privacyAgree": "I agree to the privacy statement",
