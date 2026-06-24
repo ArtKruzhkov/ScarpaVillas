@@ -53,9 +53,6 @@ export function PlanStay() {
           delay: 0.45,
           ease: 'easeOut',
         }}>
-        {/* <h2 className="font-serif uppercase tracking-[0.08em] text-[28px] leading-[36px] sm:text-[38px] sm:leading-[46px] lg:text-[48px] lg:leading-[56px] xl:text-[52px] xl:leading-[68px]">
-          Your Place In Barolo Awaits
-        </h2> */}
         <AnimatePresence mode="wait">
           <motion.h2
             key={`plan-title-${i18n.language}`}
@@ -68,11 +65,6 @@ export function PlanStay() {
           </motion.h2>
         </AnimatePresence>
 
-        {/* <p className="mt-4 lg:mt-6 tracking-[-0.03em] max-w-[920px] font-serif text-[18px] leading-[28px] sm:text-[24px] sm:leading-[34px] lg:text-[32px] lg:leading-[44px] xl:text-[34px] xl:leading-[50px]">
-          Plan your stay <span className="italic">at Scarpa Villas </span>
-          <br className="hidden lg:block" />
-          and experience the Langhe in your own way.
-        </p> */}
         <AnimatePresence mode="wait">
           <motion.p
             key={`plan-text-${i18n.language}`}
@@ -87,9 +79,6 @@ export function PlanStay() {
           </motion.p>
         </AnimatePresence>
 
-        {/* <a href={process.env.PUBLIC_URL || '/'} className="plan-stay-btn">
-          Plan Your Stay
-        </a> */}
         <a href={process.env.PUBLIC_URL || '/'} className="plan-stay-btn">
           <AnimatePresence mode="wait">
             <motion.span

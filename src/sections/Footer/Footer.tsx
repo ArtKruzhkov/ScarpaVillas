@@ -293,7 +293,7 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Desktop Footer */}
+      {/* Footer */}
       {/* <div className="px-4 sm:px-6 xl:px-8 pt-10 2xl:pt-14 pb-2 bg-[#2C3654]">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-[1fr_auto_1fr] xl:gap-0 items-start">
           
@@ -512,10 +512,11 @@ export function Footer() {
           </div>
         </div>
       </div> */}
+
       <div className="bg-[#2C3654] text-white overflow-x-hidden">
         {/* TOP */}
         <div className="relative">
-          <div className="mx-auto max-w-8xl px-6 py-10 lg:px-10 lg:py-10">
+          <div className="mx-auto max-w-8xl px-6 py-10 lg:px-10">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-start">
               {/* LEFT */}
               <motion.div
@@ -539,13 +540,13 @@ export function Footer() {
                 <img
                   src={`${process.env.PUBLIC_URL}/images/footer/logo_footer.svg`}
                   alt="Scarpa Villas"
-                  className="w-[172px] xl:w-[192px]"
+                  className="w-[172px]"
                 />
 
                 <AnimatePresence mode="wait">
                   <motion.p
                     key={`footer-logo-text-${i18n.language}`}
-                    className="mt-4 xl:mt-6 text-center font-serif text-[15px] sm:text-[17px] xl:text-[18px] 2xl:text-[20px] xl:leading-[30px] 2xl:leading-[36px]"
+                    className="mt-4 text-center font-serif text-[15px] sm:text-[17px] xl:text-[18px] xl:leading-[30px]"
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
@@ -579,7 +580,7 @@ export function Footer() {
                   <AnimatePresence mode="wait">
                     <motion.h3
                       key={`footer-contact-${i18n.language}`}
-                      className="font-serif mt-10 lg:mt-0 text-[34px] lg:text-[38px] xl:text-[42px] 2xl:text-[48px] leading-none"
+                      className="font-serif mt-10 lg:mt-0 text-[34px] xl:text-[38px] leading-none"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
@@ -590,8 +591,7 @@ export function Footer() {
                 </motion.div>
 
                 <motion.div
-                  // className="lg:mt-3 xl:mt-4 space-y-0 font-sans lg:text-[14px] xl:text-[15px] 2xl:text-[16px]"
-                  className="mt-3 xl:mt-4 max-w-[320px] text-[14px] xl:text-[15px] 2xl:text-[16px] mx-auto lg:mx-0 lg:max-w-none space-y-0 font-sans text-center lg:text-left"
+                  className="mt-3 xl:mt-4 max-w-[320px] text-[14px] xl:text-[15px] mx-auto lg:mx-0 lg:max-w-none space-y-0 font-sans text-center lg:text-left"
                   initial={{
                     opacity: 0,
                     y: 40,
@@ -609,17 +609,13 @@ export function Footer() {
                     delay: 0.15,
                     ease: [0.22, 1, 0.36, 1],
                   }}>
-                  <div className="border-b-2 border-white/30 py-3 xl:py-4">
-                    CASCINA MONVIGLIERO 28,
-                  </div>
+                  <div className="border-b-2 border-white/30 py-3">CASCINA MONVIGLIERO 28,</div>
 
-                  <div className="border-b-2 border-white/30 py-3 xl:py-4">
-                    12060 VERDUNO (CN) ITALY
-                  </div>
+                  <div className="border-b-2 border-white/30 py-3">12060 VERDUNO (CN) ITALY</div>
 
-                  <div className="border-b-2 border-white/30 py-3 xl:py-4">+39 348 476 5176</div>
+                  <div className="border-b-2 border-white/30 py-3">+39 348 476 5176</div>
 
-                  <div className="pt-3 xl:pt-4">INFO@SCARPA-VILLAS.COM</div>
+                  <div className="pt-3">INFO@SCARPA-VILLAS.COM</div>
                 </motion.div>
               </div>
             </div>
@@ -627,8 +623,7 @@ export function Footer() {
 
           {/* SOCIAL BAR */}
           <motion.div
-            // className="absolute right-0 top-[23%] bg-white w-[65px] h-[200px] flex flex-col justify-evenly items-center"
-            className="hidden lg:flex absolute right-0 top-[23%] bg-white w-[65px] h-[200px] flex-col justify-evenly items-center"
+            className="hidden lg:flex absolute right-0 top-[19%] bg-white w-[65px] h-[200px] flex-col justify-evenly items-center"
             initial={{
               opacity: 0,
               x: 20,

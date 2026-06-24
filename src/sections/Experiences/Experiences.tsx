@@ -199,10 +199,10 @@ export function Experiences() {
             slidesPerView={1}
             spaceBetween={18}
             grabCursor
-            speed={1200}
+            speed={1600}
             loop
             autoplay={{
-              delay: 3500,
+              delay: 5500,
               disableOnInteraction: false,
             }}
             className="w-full">
@@ -323,10 +323,10 @@ export function Experiences() {
             slidesPerView={1}
             spaceBetween={18}
             loop
-            speed={1200}
+            speed={1600}
             grabCursor
             autoplay={{
-              delay: 3500,
+              delay: 5500,
               disableOnInteraction: false,
             }}
             className="w-full">
@@ -450,9 +450,9 @@ export function Experiences() {
             slidesPerView={1}
             spaceBetween={18}
             loop
-            speed={1200}
+            speed={1600}
             autoplay={{
-              delay: 3500,
+              delay: 5500,
               disableOnInteraction: false,
             }}
             className="w-full">

@@ -32,13 +32,13 @@
 
 @media (max-width: 1440px) {
   .villa-tettimora {
-    top: 41%;
-    left: 18%;
+    top: 35%;
+    left: 22%;
   }
 
   .villa-bricchi {
-    top: 26%;
-    left: 37%;
+    top: 25%;
+    left: 39%;
   }
 
   .villa-bogliona {
@@ -47,8 +47,8 @@
   }
 
   .villa-tettineive {
-    top: 46.5%;
-    left: 71.5%;
+    top: 43.5%;
+    left: 68.5%;
   }
 }
 
@@ -92,6 +92,7 @@
 }
 
 .villa-label {
+  display: block;
   background: #f4f1ea;
   padding: 4px 32px;
   font-family: 'Montserrat', sans-serif;
