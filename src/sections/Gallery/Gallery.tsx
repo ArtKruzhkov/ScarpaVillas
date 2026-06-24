@@ -41,7 +41,7 @@ const villas: Villa[] = [
 const villaMasks = {
   desktop: {
     TETTIMORA: { cx: 600, cy: 610, r: 180 },
-    BRICCHI: { cx: 855, cy: 473, r: 140 },
+    BRICCHI: { cx: 855, cy: 473, r: 150 },
     BOGLIONA: { cx: 1104, cy: 545, r: 160 },
     TETTINEIVE: { cx: 1392, cy: 674, r: 182 },
   },
@@ -122,7 +122,7 @@ export function Gallery() {
                   transition={{ duration: 0.35 }}>
                   <defs>
                     <filter id="blurCircle">
-                      <feGaussianBlur stdDeviation="10" />
+                      <feGaussianBlur stdDeviation="18" />
                     </filter>
                     <mask id="villaMask">
                       <rect width="100%" height="100%" fill="white" />
