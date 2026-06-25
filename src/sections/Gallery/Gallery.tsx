@@ -39,26 +39,134 @@ const villas: Villa[] = [
 ];
 
 const villaMasks = {
+  // desktop: {
+  //   TETTIMORA: { cx: 600, cy: 610, r: 180 },
+  //   BRICCHI: { cx: 855, cy: 473, r: 150 },
+  //   BOGLIONA: { cx: 1104, cy: 545, r: 160 },
+  //   TETTINEIVE: { cx: 1392, cy: 674, r: 182 },
+  // },
+
   desktop: {
-    TETTIMORA: { cx: 600, cy: 610, r: 180 },
-    BRICCHI: { cx: 855, cy: 473, r: 150 },
-    BOGLIONA: { cx: 1104, cy: 545, r: 160 },
-    TETTINEIVE: { cx: 1392, cy: 674, r: 182 },
+    TETTIMORA: {
+      topX: 540,
+      topY: 380,
+
+      leftX: 380,
+      leftY: 710,
+
+      rightX: 930,
+      rightY: 610,
+
+      curveY: 900,
+    },
+
+    BRICCHI: {
+      topX: 820,
+      topY: 265,
+
+      leftX: 700,
+      leftY: 520,
+
+      rightX: 1020,
+      rightY: 460,
+
+      curveY: 680,
+    },
+
+    BOGLIONA: {
+      topX: 1110,
+      topY: 330,
+
+      leftX: 880,
+      leftY: 630,
+
+      rightX: 1280,
+      rightY: 530,
+
+      curveY: 870,
+    },
+
+    TETTINEIVE: {
+      topX: 1410,
+      topY: 440,
+
+      leftX: 1120,
+      leftY: 760,
+
+      rightX: 1625,
+      rightY: 720,
+
+      curveY: 920,
+    },
   },
 
+  // laptop: {
+  //   TETTIMORA: { cx: 575, cy: 610, r: 200 },
+  //   BRICCHI: { cx: 850, cy: 480, r: 150 },
+  //   BOGLIONA: { cx: 1110, cy: 570, r: 160 },
+  //   TETTINEIVE: { cx: 1415, cy: 674, r: 170 },
+  // },
+
   laptop: {
-    TETTIMORA: { cx: 575, cy: 610, r: 200 },
-    BRICCHI: { cx: 850, cy: 480, r: 150 },
-    BOGLIONA: { cx: 1110, cy: 570, r: 160 },
-    TETTINEIVE: { cx: 1415, cy: 674, r: 170 },
+    TETTIMORA: {
+      topX: 520,
+      topY: 320,
+
+      leftX: 360,
+      leftY: 710,
+
+      rightX: 900,
+      rightY: 640,
+
+      curveY: 880,
+    },
+
+    BRICCHI: {
+      topX: 840,
+      topY: 250,
+
+      leftX: 690,
+      leftY: 520,
+
+      rightX: 1030,
+      rightY: 460,
+
+      curveY: 700,
+    },
+
+    BOGLIONA: {
+      topX: 1145,
+      topY: 320,
+
+      leftX: 870,
+      leftY: 610,
+
+      rightX: 1310,
+      rightY: 530,
+
+      curveY: 870,
+    },
+
+    TETTINEIVE: {
+      topX: 1425,
+      topY: 410,
+
+      leftX: 1130,
+      leftY: 750,
+
+      rightX: 1640,
+      rightY: 680,
+
+      curveY: 950,
+    },
   },
 };
 
 export function Gallery() {
   const { t, i18n } = useTranslation();
   const [activeVilla, setActiveVilla] = useState<string | null>(null);
-  // const activeVilla = 'TETTINEIVE';
   const [isLaptop, setIsLaptop] = useState(false);
+  // const [shouldShowVillaMask, setShouldShowVillaMask] = useState(false);
 
   useEffect(() => {
     const update = () => {
@@ -71,6 +179,27 @@ export function Gallery() {
 
     return () => window.removeEventListener('resize', update);
   }, []);
+
+  // useEffect(() => {
+  //   const update = () => {
+  //     const width = window.innerWidth;
+  //     const height = window.innerHeight;
+
+  //     setIsLaptop(width <= 1442);
+
+  //     const isDesktop1920 = width >= 1900 && width <= 1920 && height >= 900;
+
+  //     const isLaptop1140 = width >= 1140 && width <= 1442 && height >= 900 && height <= 1032;
+
+  //     setShouldShowVillaMask(width >= 1024 && (isDesktop1920 || isLaptop1140));
+  //   };
+
+  //   update();
+
+  //   window.addEventListener('resize', update);
+
+  //   return () => window.removeEventListener('resize', update);
+  // }, []);
 
   const currentMasks = isLaptop ? villaMasks.laptop : villaMasks.desktop;
 
@@ -126,23 +255,7 @@ export function Gallery() {
                     </filter>
                     <mask id="villaMask">
                       <rect width="100%" height="100%" fill="white" />
-
-                      {/* {activeVilla === 'TETTIMORA' && (
-                        <circle cx="600" cy="610" r="180" fill="black" filter="url(#blurCircle)" />
-                      )}
-
-                      {activeVilla === 'I BRICCHI' && (
-                        <circle cx="855" cy="473" r="140" fill="black" filter="url(#blurCircle)" />
-                      )}
-
-                      {activeVilla === 'LA BOGLIONA' && (
-                        <circle cx="1104" cy="545" r="160" fill="black" filter="url(#blurCircle)" />
-                      )}
-
-                      {activeVilla === 'TETTINEIVE' && (
-                        <circle cx="1392" cy="674" r="182" fill="black" filter="url(#blurCircle)" />
-                      )} */}
-                      {activeMask && (
+                      {/* {activeMask && (
                         <circle
                           cx={activeMask.cx}
                           cy={activeMask.cy}
@@ -150,54 +263,34 @@ export function Gallery() {
                           fill="black"
                           filter="url(#blurCircle)"
                         />
+                      )} */}
+
+                      {activeMask && (
+                        <path
+                          d={`
+                            M ${activeMask.topX} ${activeMask.topY}
+                            L ${activeMask.leftX} ${activeMask.leftY}
+                            Q
+                            ${(activeMask.leftX + activeMask.rightX) / 2}
+                            ${activeMask.curveY}
+                            ${activeMask.rightX}
+                            ${activeMask.rightY}Z`}
+                          fill="black"
+                          filter="url(#blurCircle)"
+                        />
                       )}
                     </mask>
                   </defs>
 
-                  <rect width="100%" height="100%" fill="rgba(0,0,0,0.7)" mask="url(#villaMask)" />
+                  <rect width="100%" height="100%" fill="rgba(0,0,0,0.65)" mask="url(#villaMask)" />
                 </motion.svg>
               )}
             </AnimatePresence>
           </motion.div>
 
           {/* TITLE */}
-          {/* <div className="absolute left-1/2 top-8 sm:top-14 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0">
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                duration: 1,
-                delay: 0.4,
-                ease: [0.22, 1, 0.36, 1],
-              }}>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={`gallery-title-${i18n.language}`}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.3 }}>
-                  <p className="font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
-                    {t('gallery.title1')}
-                  </p>
-
-                  <h2 className="sm:mt-2 font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
-                    {t('gallery.title2')}
-                  </h2>
-                </motion.div>
-              </AnimatePresence>
-            </motion.div>
-          </div> */}
-          {/* TITLE */}
           <motion.div
-            className="absolute left-1/2 top-8 sm:top-14 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0"
+            className="absolute left-1/2 top-8 sm:top-12 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0"
             initial={{
               opacity: 0,
               filter: 'blur(5px)',
@@ -245,75 +338,6 @@ export function Gallery() {
           </motion.div>
 
           {villas.map((villa, index) => (
-            // <motion.div
-            //   key={villa.name}
-            //   className={`hidden lg:block absolute z-20 ${villa.className}`}
-            //   initial={{
-            //     opacity: 0,
-            //     y: 35,
-            //   }}
-            //   whileInView={{
-            //     opacity: 1,
-            //     y: 0,
-            //   }}
-            //   viewport={{ once: true, amount: 0.3 }}
-            //   transition={{
-            //     duration: 0.9,
-            //     delay: 0.6 + index * 0.12,
-            //     ease: [0.22, 1, 0.36, 1],
-            //   }}>
-            //   <div className="flex flex-col items-center">
-            //     <a href={villa.href} className="villa-label">
-            //       {villa.name}
-            //     </a>
-
-            //     <div className={`w-px bg-[#e7e2d7] ${villa.lineHeight}`} />
-
-            //     <div className="h-3 w-3 rounded-full bg-[#f4f1ea]" />
-            //   </div>
-            // </motion.div>
-
-            // <motion.div
-            //   key={villa.name}
-            //   className={`hidden lg:block absolute z-20 ${villa.className}`}
-            //   animate={{
-            //     opacity: activeVilla === null ? 1 : activeVilla === villa.name ? 1 : 0,
-            //     scale: activeVilla === null ? 1 : activeVilla === villa.name ? 1 : 0.9,
-            //     pointerEvents: activeVilla && activeVilla !== villa.name ? 'none' : 'auto',
-            //   }}
-            //   transition={{
-            //     duration: 0.65,
-            //     ease: [0.22, 1, 0.36, 1],
-            //   }}>
-            //   <div className="flex flex-col items-center">
-            //     <motion.div
-            //       style={{
-            //         transformOrigin: 'center center',
-            //         willChange: 'transform',
-            //         backfaceVisibility: 'hidden',
-            //       }}
-            //       animate={{
-            //         scale: activeVilla === villa.name ? 1.08 : 1,
-            //       }}
-            //       transition={{
-            //         duration: 0.6,
-            //         ease: [0.22, 1, 0.36, 1],
-            //       }}>
-            //       <a
-            //         href={villa.href}
-            //         className="villa-label"
-            //         onMouseEnter={() => setActiveVilla(villa.name)}
-            //         onMouseLeave={() => setActiveVilla(null)}>
-            //         {villa.name}
-            //       </a>
-            //     </motion.div>
-
-            //     <div className={`w-px bg-[#e7e2d7] ${villa.lineHeight}`} />
-
-            //     <div className="h-3 w-3 rounded-full bg-[#f4f1ea]" />
-            //   </div>
-            // </motion.div>
-
             <motion.div
               key={villa.name}
               className={`hidden lg:block absolute z-20 ${villa.className}`}

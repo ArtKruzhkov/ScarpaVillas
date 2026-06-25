@@ -42,14 +42,14 @@
 }
 
 /* MD-LG */
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
   .discover-villa-btn {
     min-width: 430px;
   }
-}
+} */
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .discover-villa-btn {
     left: 50%;
     bottom: 20px;

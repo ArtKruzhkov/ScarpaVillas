@@ -7,7 +7,7 @@ export function StoryVillasCTA() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white pb-20">
+    <section className="bg-white">
       <div className="mx-auto max-w-8xl">
         <div className="bg-[#2C3654] px-4 pt-4 pb-12 xl:px-5 xl:py-5">
           <div className="flex flex-col xl:items-center gap-6 xl:gap-12 xl:flex-row xl:justify-between">

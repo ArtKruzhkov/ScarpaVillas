@@ -85,7 +85,7 @@ export function Borgo() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`borgo-desktop-${i18n.language}`}
-              className="hidden font-sans sm:block mt-5 max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[14.9px] xl:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.8] text-[#2C3654]"
+              className="hidden font-sans sm:block mt-5 max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px] text-[15px] leading-[1.6] sm:text-[14px] lg:text-[14.9px] xl:text-[16px] 2xl:text-[19.8px] 2xl:leading-[1.7] text-[#2C3654]"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}

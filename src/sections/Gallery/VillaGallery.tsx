@@ -51,7 +51,7 @@ export function VillaGallery() {
     <div className="bg-white pt-10 pb-16 md:pb-24">
       <div
         ref={galleryRef}
-        className="lg:scroll-mt-[100px] mx-auto grid w-full max-w-8xl grid-cols-1 md:grid-cols-[1fr_180px] gap-6 xl:gap-12 px-8 md:px-12 xl:px-16">
+        className="lg:scroll-mt-[100px] mx-auto grid w-full max-w-8xl grid-cols-1 lg:grid-cols-[1fr_180px] gap-6 xl:gap-12 px-8 md:px-12 xl:px-16">
         <motion.div
           initial={{
             opacity: 0,
@@ -76,7 +76,7 @@ export function VillaGallery() {
                 duration: 0.45,
                 ease: 'easeInOut',
               }}
-              className="relative overflow-hidden h-[65vh] min-h-[500px] max-h-[1000px] md:h-[80vh]">
+              className="relative overflow-hidden h-[65vh] min-h-[500px] max-h-[1000px] lg:h-[80vh]">
               <img
                 src={activeVilla.image}
                 alt={activeVilla.name}
@@ -127,7 +127,7 @@ export function VillaGallery() {
 
         {/* THUMBNAILS */}
         <motion.div
-          className="flex justify-center gap-4 md:grid md:grid-rows-4 md:gap-6 md:h-[80vh] max-h-[1000px]"
+          className="flex justify-center gap-4 lg:grid lg:grid-rows-4 lg:gap-6 lg:h-[80vh] max-h-[1000px]"
           initial={{
             opacity: 0,
             x: 40,
@@ -143,17 +143,49 @@ export function VillaGallery() {
             ease: [0.22, 1, 0.36, 1],
           }}>
           {villaSlides.map((villa) => {
-            // const isActive = villa.id === activeVilla.id;
             const isActive = villa.id === activeVillaId;
+            const getThumbnailTitle = (name: string) => {
+              switch (name) {
+                case 'Villa La Bogliona':
+                  return 'Bogliona';
+
+                case 'Villa I Bricchi':
+                  return 'Bricchi';
+
+                default:
+                  return name.replace('Villa ', '');
+              }
+            };
 
             return (
+              // <button
+              //   key={villa.id}
+              //   type="button"
+              //   onClick={() => {
+              //     if (villa.id === activeVillaId) return;
+
+              //     // setActiveVilla(villa);
+              //     setActiveVillaId(villa.id);
+
+              //     if (window.innerWidth >= 1024) {
+              //       galleryRef.current?.scrollIntoView({
+              //         behavior: 'smooth',
+              //         block: 'start',
+              //       });
+              //     }
+              //   }}
+              //   className={`relative overflow-hidden w-[120px] h-[90px] md:w-auto md:h-auto transition-all duration-300 ${
+              //     isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'
+              //   }`}
+              //   aria-label={`Show ${villa.name}`}>
+              //   <img src={villa.image} alt={villa.name} className="h-full w-full object-cover" />
+              // </button>
               <button
                 key={villa.id}
                 type="button"
                 onClick={() => {
                   if (villa.id === activeVillaId) return;
 
-                  // setActiveVilla(villa);
                   setActiveVillaId(villa.id);
 
                   if (window.innerWidth >= 1024) {
@@ -163,11 +195,34 @@ export function VillaGallery() {
                     });
                   }
                 }}
-                className={`relative overflow-hidden w-[120px] h-[90px] md:w-auto md:h-auto transition-all duration-300 ${
-                  isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'
+                className={`relative overflow-hidden w-[120px] h-[90px] lg:w-auto lg:h-auto transition-all duration-300 ${
+                  isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-85 hover:opacity-100'
                 }`}
                 aria-label={`Show ${villa.name}`}>
                 <img src={villa.image} alt={villa.name} className="h-full w-full object-cover" />
+
+                {/* Overlay */}
+                {/* <div
+                  className={`absolute inset-0 transition-all duration-300 ${
+                    isActive
+                      ? 'bg-gradient-to-t from-[#2C3654] to-[#2C36548C]'
+                      : 'bg-gradient-to-t from-black/85 via-black/25 to-transparent'
+                  }`}
+                /> */}
+                {/* Overlay for not active*/}
+                <div
+                  className={`absolute inset-0 transition-all duration-300 ${
+                    isActive
+                      ? 'bg-gradient-to-t from-black/50 via-black/5 to-transparent'
+                      : 'bg-gradient-to-t from-[#2C3654] to-[#2C36548C]'
+                  }`}
+                />
+                {/* Text */}
+                <div className="absolute inset-x-0 bottom-2 z-10 text-center text-white">
+                  <p className="lg:mt-1 font-serif text-[13px] leading-[16px] sm:text-[18px] sm:leading-[20px] lg:text-[24px] lg:leading-[24px]">
+                    {getThumbnailTitle(villa.name)}
+                  </p>
+                </div>
               </button>
             );
           })}
