@@ -66,7 +66,7 @@ export function Hero() {
           />
 
           {/* HERO TEXT */}
-          <div className="mt-4 sm:mt-6 xl:mt-10 max-w-[900px]">
+          <div className="mt-4 sm:mt-6 max-w-[900px]">
             {/* <h2 className="hero-title">
               Stay among the
               <span className="italic"> vineyards of Monvigliero</span>,
