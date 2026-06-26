@@ -1,11 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 const interests = [
-  'Villa Rental',
-  'Borgo Experience',
-  'Events & Celebrations',
-  'Long-Term Stays',
-  'Other',
+  'villaRental',
+  'borgoExperience',
+  'eventsCelebrations',
+  'longTermStays',
+  'other',
 ];
 
 interface ContactFormProps {
@@ -13,11 +16,20 @@ interface ContactFormProps {
 }
 
 export function ContactForm({ onClose }: ContactFormProps) {
+  const { t, i18n } = useTranslation();
+  const prevLanguage = useRef(i18n.language);
+
+  const isLanguageChanged = prevLanguage.current !== i18n.language;
+
+  useEffect(() => {
+    prevLanguage.current = i18n.language;
+  }, [i18n.language]);
+
   return (
-    <form className="w-full max-w-[1120px] bg-white px-8 py-10 lg:px-12 lg:py-12">
+    <form className="w-full h-full lg:h-auto max-w-[1120px] bg-white px-4 py-6 lg:px-12 lg:py-12">
       {/* Header */}
       <div className="relative flex items-center justify-center">
-        <div className="absolute left-0 h-px w-[45%] bg-[#2C3654]" />
+        <div className="absolute left-0 h-px w-[40%] md:w-[45%] bg-[#2C3654]" />
 
         <img
           src={`${process.env.PUBLIC_URL}/images/contactModal/logo_modal.svg`}
@@ -25,7 +37,7 @@ export function ContactForm({ onClose }: ContactFormProps) {
           className="h-12"
         />
 
-        <div className="absolute right-0 h-px w-[45%] bg-[#2C3654]" />
+        <div className="absolute right-0 h-px w-[40%] md:w-[45%] bg-[#2C3654]" />
 
         <button
           type="button"
@@ -47,24 +59,45 @@ export function ContactForm({ onClose }: ContactFormProps) {
       </div>
 
       {/* Title */}
-      <h2 className="mx-auto mt-4 max-w-[760px] text-center font-serif text-[36px] leading-[42px] text-[#2C3654]">
-        Tell us about your plans, and we will create the perfect Italian experience for you.
-      </h2>
+      <AnimatePresence mode="wait">
+        <motion.h2
+          key={`contact-title-${i18n.language}`}
+          className="mx-auto mt-4 max-w-[760px] text-center font-serif text-[17px] leading-[20px] sm:text-[20px] sm:leading-[24px] md:text-[24px] md:leading-[28px] lg:text-[36px] lg:leading-[42px] text-[#2C3654]"
+          initial={isLanguageChanged ? { opacity: 0, y: 8 } : false}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.3 }}>
+          {t('contact.title1')}
+          <br />
+          {t('contact.title2')}
+        </motion.h2>
+      </AnimatePresence>
 
       {/* Interests */}
-      <div className="mt-8">
-        <p className="mb-4 font-sans text-[15px] font-semibold uppercase tracking-[0.18em] text-[#2C3654]">
-          What are you interested in?
-        </p>
+      <div className="mt-6 lg:mt-8">
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={`contact-interest-${i18n.language}`}
+            className="mb-4 font-sans text-[12px] md:text-[14px] lg:text-[15px] font-semibold uppercase tracking-[0.13em] lg:tracking-[0.18em] text-[#2C3654]"
+            initial={isLanguageChanged ? { opacity: 0, y: 8 } : false}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.3 }}>
+            {t('contact.interests')}
+          </motion.p>
+        </AnimatePresence>
 
-        <div className="flex flex-wrap gap-x-10 gap-y-4 font-sans">
+        <div className="flex flex-wrap gap-x-6 lg:gap-x-10  gap-y-4 font-sans">
           {interests.map((item) => (
             <label
               key={item}
-              className="flex cursor-pointer items-center gap-3 text-[14px] text-[#2C3654]">
-              <input type="checkbox" className="h-[16px] w-[16px] border border-[#2C3654]" />
+              className="flex cursor-pointer items-center gap-3 text-[13px] sm:text-[14px] text-[#2C3654]">
+              <input
+                type="checkbox"
+                className="h-[12px] w-[12px] sm:h-[16px] sm:w-[16px] border border-[#2C3654]"
+              />
 
-              {item}
+              {t(`contact.interestsList.${item}`)}
             </label>
           ))}
         </div>
@@ -73,51 +106,77 @@ export function ContactForm({ onClose }: ContactFormProps) {
       </div>
 
       {/* Details */}
-      <div className="mt-6">
-        <p className="mb-4 font-sans text-[15px] font-semibold uppercase tracking-[0.18em] text-[#2C3654]">
-          Your Details
-        </p>
+      <div className="mt-4 lg:mt-6">
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={`contact-interest-${i18n.language}`}
+            className="mb-4 font-sans text-[12px] md:text-[14px] lg:text-[15px] font-semibold uppercase tracking-[0.13em] lg:tracking-[0.18em] text-[#2C3654]"
+            initial={isLanguageChanged ? { opacity: 0, y: 8 } : false}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.3 }}>
+            {t('contact.details')}
+          </motion.p>
+        </AnimatePresence>
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 font-sans text-[#2C3654]">
           <input
             type="text"
-            placeholder="Name"
-            className="h-[54px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
+            placeholder={t('contact.name')}
+            className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
           />
 
           <input
             type="email"
-            placeholder="Email"
-            className="h-[54px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
+            placeholder={t('contact.email')}
+            className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
           />
 
           <input
             type="tel"
-            placeholder="Phone Number"
-            className="h-[54px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
+            placeholder={t('contact.phone')}
+            className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
           />
         </div>
       </div>
 
       {/* Message */}
-      <div className="mt-6 font-sans">
-        <p className="mb-4 text-[15px] font-semibold uppercase tracking-[0.18em] text-[#2C3654]">
-          Message
-        </p>
+      <div className="mt-4 lg:mt-6 font-sans">
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={`contact-interest-${i18n.language}`}
+            className="mb-4 font-sans text-[12px] md:text-[14px] lg:text-[15px] font-semibold uppercase tracking-[0.13em] lg:tracking-[0.18em] text-[#2C3654]"
+            initial={isLanguageChanged ? { opacity: 0, y: 8 } : false}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.3 }}>
+            {t('contact.message')}
+          </motion.p>
+        </AnimatePresence>
 
         <textarea
           rows={2}
-          placeholder="Share a few details about your travel dates, group size, or any special requests."
-          className="text-[#2C3654] w-full resize-none border border-[#2C3654] bg-transparent p-5 placeholder:text-center placeholder:text-[#BFBFBF] focus:outline-none"
+          placeholder={t('contact.messagePlaceholder')}
+          className="text-[#2C3654] text-[14px] md:text-[15px] lg:text-[16px] w-full resize-none border border-[#2C3654] bg-transparent p-3 lg:p-5 placeholder:text-center placeholder:text-[#BFBFBF] focus:outline-none"
         />
       </div>
 
       {/* Submit */}
-      <div className="mt-6 flex justify-center">
+      <div className="mt-12 lg:mt-6 flex justify-center">
         <button
           type="submit"
-          className="min-w-[440px] bg-[#2C3654] px-10 py-4 font-sans text-[16px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 hover:bg-[#404B73]">
-          Submit Inquiry
+          className="min-w-full lg:min-w-[440px] bg-[#2C3654] px-10 py-3 lg:py-4 font-sans text-[14px] lg:text-[16px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 hover:bg-[#404B73]">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={`contact-submit-${i18n.language}`}
+              className="block"
+              initial={isLanguageChanged ? { opacity: 0, y: 8 } : false}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3 }}>
+              {t('contact.submit')}
+            </motion.span>
+          </AnimatePresence>
         </button>
       </div>
     </form>

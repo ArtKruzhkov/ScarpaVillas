@@ -163,6 +163,25 @@
     "cookiePolicy": "Informativa Cookie",
     "privacyPolicy": "Informativa Privacy"
   },
+  "contact": {
+    "title1": "Raccontaci i tuoi programmi e creeremo",
+    "title2": "l'esperienza italiana perfetta per te.",
+    "interests": "Cosa ti interessa?",
+    "details": "I tuoi dati",
+    "message": "Messaggio",
+    "submit": "Invia richiesta",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Numero di telefono",
+    "messagePlaceholder": "Condividi qualche dettaglio sulle date del viaggio, il numero di ospiti o eventuali richieste speciali.",
+    "interestsList": {
+      "villaRental": "Affitto villa",
+      "borgoExperience": "Esperienza Borgo",
+      "eventsCelebrations": "Eventi e celebrazioni",
+      "longTermStays": "Soggiorni a lungo termine",
+      "other": "Altro"
+    }
+  },
   "storyHero": {
     "title": "La Storia",
     "subtitle": "Un luogo plasmato dal tempo, dal vino e dalle persone"

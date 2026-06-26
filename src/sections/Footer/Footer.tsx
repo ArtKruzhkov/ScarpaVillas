@@ -613,9 +613,17 @@ export function Footer() {
 
                   <div className="border-b-2 border-white/30 py-3">12060 VERDUNO (CN) ITALY</div>
 
-                  <div className="border-b-2 border-white/30 py-3">+39 348 476 5176</div>
+                  <a
+                    href="tel:+393484765176"
+                    className="block border-b-2 border-white/30 py-3 transition-opacity duration-300 hover:opacity-70">
+                    +39 348 476 5176
+                  </a>
 
-                  <div className="pt-3">INFO@SCARPA-VILLAS.COM</div>
+                  <a
+                    href="mailto:info@scarpa-villas.com"
+                    className="block pt-3 transition-opacity duration-300 hover:opacity-70">
+                    INFO@SCARPA-VILLAS.COM
+                  </a>
                 </motion.div>
               </div>
             </div>

@@ -163,6 +163,25 @@
     "cookiePolicy": "Cookie Policy",
     "privacyPolicy": "Privacy Policy"
   },
+  "contact": {
+    "title1": "Tell us about your plans, and we will create",
+    "title2": "the perfect Italian experience for you.",
+    "interests": "What are you interested in?",
+    "details": "Your Details",
+    "message": "Message",
+    "submit": "Submit Inquiry",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "messagePlaceholder": "Share a few details about your travel dates, group size, or any special requests.",
+    "interestsList": {
+      "villaRental": "Villa Rental",
+      "borgoExperience": "Borgo Experience",
+      "eventsCelebrations": "Events & Celebrations",
+      "longTermStays": "Long-Term Stays",
+      "other": "Other"
+    }
+  },
   "storyHero": {
     "title": "The Story",
     "subtitle": "A place shaped by time, wine, and people"

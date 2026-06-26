@@ -6,7 +6,7 @@
   bottom: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .modal-height {
     top: 78.48px;
   }

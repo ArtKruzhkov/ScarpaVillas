@@ -166,32 +166,11 @@ export function Gallery() {
   const { t, i18n } = useTranslation();
   const [activeVilla, setActiveVilla] = useState<string | null>(null);
   const [isLaptop, setIsLaptop] = useState(false);
-  // const [shouldShowVillaMask, setShouldShowVillaMask] = useState(false);
-
-  useEffect(() => {
-    const update = () => {
-      setIsLaptop(window.innerWidth <= 1442);
-    };
-
-    update();
-
-    window.addEventListener('resize', update);
-
-    return () => window.removeEventListener('resize', update);
-  }, []);
+  const [shouldShowVillaMask, setShouldShowVillaMask] = useState(false);
 
   // useEffect(() => {
   //   const update = () => {
-  //     const width = window.innerWidth;
-  //     const height = window.innerHeight;
-
-  //     setIsLaptop(width <= 1442);
-
-  //     const isDesktop1920 = width >= 1900 && width <= 1920 && height >= 900;
-
-  //     const isLaptop1140 = width >= 1140 && width <= 1442 && height >= 900 && height <= 1032;
-
-  //     setShouldShowVillaMask(width >= 1024 && (isDesktop1920 || isLaptop1140));
+  //     setIsLaptop(window.innerWidth <= 1442);
   //   };
 
   //   update();
@@ -200,6 +179,27 @@ export function Gallery() {
 
   //   return () => window.removeEventListener('resize', update);
   // }, []);
+
+  useEffect(() => {
+    const update = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      setIsLaptop(width <= 1442);
+
+      const isDesktop1920 = width >= 1900 && width <= 1920 && height >= 900;
+
+      const isLaptop1140 = width >= 1140 && width <= 1442 && height >= 900 && height <= 1032;
+
+      setShouldShowVillaMask(width >= 1024 && (isDesktop1920 || isLaptop1140));
+    };
+
+    update();
+
+    window.addEventListener('resize', update);
+
+    return () => window.removeEventListener('resize', update);
+  }, []);
 
   const currentMasks = isLaptop ? villaMasks.laptop : villaMasks.desktop;
 
@@ -240,7 +240,7 @@ export function Gallery() {
               className="h-full w-full object-cover"
             />
             <AnimatePresence>
-              {activeVilla && (
+              {activeVilla && shouldShowVillaMask && (
                 <motion.svg
                   className="absolute inset-0 w-full h-full pointer-events-none z-10"
                   viewBox="0 0 1920 860"
