@@ -34,7 +34,7 @@ export function Hero() {
           loop
           playsInline
           preload="auto">
-          <source src={`${process.env.PUBLIC_URL}/images/hero/hero_vid_mob.mov`} type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/images/hero/hero_vid_mob.mp4`} type="video/mp4" />
         </video>
 
         {/* Desktop video */}
@@ -46,7 +46,7 @@ export function Hero() {
           playsInline
           preload="auto">
           <source
-            src={`${process.env.PUBLIC_URL}/images/hero/hero_vid_desk.mov`}
+            src={`${process.env.PUBLIC_URL}/images/hero/hero_vid_desk.mp4`}
             type="video/mp4"
           />
         </video>
