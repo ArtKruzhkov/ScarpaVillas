@@ -56,7 +56,7 @@ export function Hero() {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex w-full justify-center px-6 pb-[5.5rem] sm:pb-[5rem]">
+      <div className="relative z-10 flex w-full justify-center px-6 pb-[6.5rem] sm:pb-[4.1rem]">
         <div className="flex max-w-[900px] flex-col items-center text-center">
           {/* ICON */}
           <img
