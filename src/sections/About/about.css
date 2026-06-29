@@ -1,9 +1,9 @@
 .about-text {
   font-family: 'Bodoni Moda', serif;
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 @media (min-width: 640px) {

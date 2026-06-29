@@ -56,7 +56,7 @@ export function Hero() {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex w-full justify-center px-6 pb-20 sm:pb-14">
+      <div className="relative z-10 flex w-full justify-center px-6 pb-[5rem] sm:pb-15">
         <div className="flex max-w-[900px] flex-col items-center text-center">
           {/* ICON */}
           <img
@@ -66,7 +66,7 @@ export function Hero() {
           />
 
           {/* HERO TEXT */}
-          <div className="mt-4 sm:mt-6 max-w-[900px]">
+          <div className="mt-5 sm:mt-6 max-w-[900px]">
             {/* <h2 className="hero-title">
               Stay among the
               <span className="italic"> vineyards of Monvigliero</span>,

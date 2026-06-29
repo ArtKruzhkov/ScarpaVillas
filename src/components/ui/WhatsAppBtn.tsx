@@ -14,7 +14,7 @@ export function WhatsAppButton({ className = '', phone }: WhatsAppButtonProps) {
       <img
         src={`${process.env.PUBLIC_URL}/images/whatsAppBtn/whatsapp.svg`}
         alt="WhatsApp"
-        className="w-[55px] rounded-[10px] opacity-50 transition-all duration-300 hover:scale-105 hover:opacity-100"
+        className="w-[40px] lg:w-[55px] rounded-[10px] opacity-50 transition-all duration-300 hover:scale-105 hover:opacity-100"
       />
     </a>
   );

@@ -122,7 +122,7 @@ export function Footer() {
               <input
                 type="email"
                 placeholder={t('footer.emailPlaceholder')}
-                className="h-[50px] md:h-[57px] border-2 border-[#2C3654] md:text-[18px] font-sans bg-transparent px-6 text-center text-[#2C3654] placeholder:text-[#A8ABB8]"
+                className="h-[50px] md:h-[57px] text-[#2C3654] border-2 border-[#2C3654] md:text-[18px] font-sans bg-transparent px-6 text-center text-[#2C3654] placeholder:text-[#A8ABB8]"
               />
 
               <button
@@ -273,7 +273,7 @@ export function Footer() {
                   <input
                     type="email"
                     placeholder={t('footer.emailPlaceholder')}
-                    className="h-[57px] font-sans text-[18px] flex-1 border-2 border-[#2C3654] px-6 text-center"
+                    className="h-[57px] text-[#2C3654] placeholder:text-[#A8ABB8] font-sans text-[18px] flex-1 border-2 border-[#2C3654] px-6 text-center"
                   />
 
                   <button
@@ -546,7 +546,7 @@ export function Footer() {
                 <AnimatePresence mode="wait">
                   <motion.p
                     key={`footer-logo-text-${i18n.language}`}
-                    className="mt-4 text-center font-serif text-[15px] sm:text-[17px] xl:text-[18px] xl:leading-[30px]"
+                    className="mt-4 text-center font-serif text-[15px] sm:text-[17px] xl:text-[18px] xl:leading-[28px]"
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
@@ -771,7 +771,7 @@ export function Footer() {
 
         {/* BOTTOM */}
         <div className="bg-[#E8E1D4]">
-          <div className="mx-auto text-[13px] xl:text-[14px] font-sans max-w-8xl px-4 py-3 flex flex-col items-center gap-2 text-center lg:h-[46px] lg:flex-row lg:justify-between">
+          <div className="mx-auto text-[13px] xl:text-[14px] font-sans max-w-8xl px-4 py-3 flex flex-col items-center gap-2 text-center lg:flex-row lg:justify-between">
             <p className="text-[#8B8E97]">Antica Casa Vinicola Scarpa - P.IVA 00070140058</p>
 
             <AnimatePresence mode="wait">

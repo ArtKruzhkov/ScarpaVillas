@@ -169,7 +169,7 @@ export function DiscoverLanghe() {
                   <AnimatePresence mode="wait">
                     <motion.h3
                       key={`${slide.title}-${i18n.language}`}
-                      className="mt-2 font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] sm:text-[30px] sm:leading-[40px] lg:text-[36px] lg:leading-[50px] xl:text-[38px] xl:leading-[72px]"
+                      className="mt-2 font-serif tracking-[0.05em] text-[#2C3654] text-[22px] leading-[30px] sm:text-[30px] sm:leading-[40px] lg:text-[27px] lg:leading-[50px] xl:text-[34px] xl:leading-[60px]"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
@@ -181,7 +181,7 @@ export function DiscoverLanghe() {
                   <AnimatePresence mode="wait">
                     <motion.p
                       key={`${slide.subtitle}-${i18n.language}`}
-                      className="px-4 md:px-0 font-sans font-semibold uppercase tracking-[0.1em] text-[#C09A60] text-[12px] leading-[22px] sm:text-[16px] sm:leading-[26px] xl:text-[20px] xl:leading-[32px]"
+                      className="px-4 md:px-0 mt-1 font-sans font-semibold uppercase tracking-[0.1em] text-[#C09A60] text-[10.5px] leading-[22px] sm:text-[13px] sm:leading-[18px] xl:text-[18px] xl:leading-[28px]"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
@@ -193,7 +193,7 @@ export function DiscoverLanghe() {
                   <AnimatePresence mode="wait">
                     <motion.p
                       key={`${slide.description}-${i18n.language}`}
-                      className="px-2 md:px-0 mx-auto lg:mt-4 font-sans text-[#2C3654] text-[15px] leading-[24px] sm:text-[17px] sm:leading-[28px] xl:px-24 xl:text-[21px] xl:leading-[32px]"
+                      className="px-2 mx-auto mt-1 lg:mt-2 font-sans text-[#2C3654] text-[14px] leading-[18px] sm:text-[17px] sm:leading-[28px] lg:text-[16px] lg:leading-[22px] xl:text-[21px] xl:leading-[32px]"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
