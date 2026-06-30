@@ -210,13 +210,16 @@ export function VillaGallery() {
                   }`}
                 /> */}
                 {/* Overlay for not active*/}
-                <div
+                {/* <div
                   className={`absolute inset-0 transition-all duration-300 ${
                     isActive
                       ? 'bg-gradient-to-t from-black/50 via-black/5 to-transparent'
                       : 'bg-gradient-to-t from-[#2C3654] to-[#2C36548C]'
                   }`}
-                />
+                /> */}
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent transition-all duration-300" />
+
                 {/* Text */}
                 <div className="absolute inset-x-0 bottom-2 z-10 text-center text-white">
                   <p className="lg:mt-1 font-serif text-[13px] leading-[16px] sm:text-[18px] sm:leading-[20px] lg:text-[24px] lg:leading-[24px]">
