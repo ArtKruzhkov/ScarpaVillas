@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-sand-100 text-ink-900;
+    @apply bg-white text-ink-900;
     scroll-behavior: smooth;
   }
 
