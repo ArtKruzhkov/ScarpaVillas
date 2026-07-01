@@ -11,7 +11,7 @@ export function Borgo() {
       id="borgo"
       className="scroll-mt-[86px] relative w-full bg-[#2C3654] py-6 px-6 sm:px-10 sm:py-10">
       {/* FULL IMAGE SECTION */}
-      <div className="relative w-full h-[85vh] lg:h-[95vh] min-h-[800px] 2xl:h-full">
+      <div className="relative w-full h-[85vh] lg:h-[95vh] min-h-[720px] lg:min-h-[800px] 2xl:h-full">
         {/* IMAGE */}
         <div className="overflow-hidden h-full">
           <motion.div
