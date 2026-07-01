@@ -26,7 +26,7 @@ export function HomePage() {
         <PlanStay />
       </main>
 
-      <WhatsAppButton phone="34620165833" className="fixed bottom-10 right-1 z-50" />
+      <WhatsAppButton phone="34620165833" className="fixed bottom-5 right-1 z-50" />
       {/* <ContactModal className="fixed bottom-8 left-8" /> */}
     </>
   );

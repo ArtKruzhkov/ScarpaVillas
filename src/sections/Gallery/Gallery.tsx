@@ -189,7 +189,7 @@ export function Gallery() {
 
       const isDesktop1920 = width >= 1900 && width <= 1920 && height >= 900;
 
-      const isLaptop1140 = width >= 1140 && width <= 1442 && height >= 900 && height <= 1032;
+      const isLaptop1140 = width >= 1380 && width <= 1442 && height >= 700 && height <= 880;
 
       setShouldShowVillaMask(width >= 1024 && (isDesktop1920 || isLaptop1140));
     };
@@ -325,11 +325,11 @@ export function Gallery() {
                     duration: 0.55,
                     ease: [0.22, 1, 0.36, 1],
                   }}>
-                  <p className="font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                  <p className="font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2C3654] uppercase">
                     {t('gallery.title1')}
                   </p>
 
-                  <h2 className="sm:mt-2 font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2f3b63] uppercase">
+                  <h2 className="sm:mt-2 font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2C3654] uppercase">
                     {t('gallery.title2')}
                   </h2>
                 </motion.div>

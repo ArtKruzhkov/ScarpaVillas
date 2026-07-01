@@ -118,7 +118,13 @@ export function Navbar() {
               );
             })}
 
-            <LinkButton href="#" variant="outline" size="nav" className="stay_header_link">
+            <LinkButton
+              href="https://www.simplebooking.it/ibe2/hotel/9131"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+              size="nav"
+              className="stay_header_link">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={t('nav.planStay')}
@@ -197,7 +203,9 @@ export function Navbar() {
                 <div className="mt-3 grid gap-3">
                   <div className="flex flex-col items-center">
                     <LinkButton
-                      href="/"
+                      href="https://www.simplebooking.it/ibe2/hotel/9131"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       variant="primary"
                       size="md"
                       className="w-[80%] uppercase bg-[#2c3654]">

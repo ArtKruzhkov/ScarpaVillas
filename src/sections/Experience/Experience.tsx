@@ -34,7 +34,7 @@ export function Experience() {
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.3 }}>
                     <span className="block">{t('experience.title1')}</span>
-                    <span className="block mt-5 xl:mt-8">{t('experience.title2')}</span>
+                    <span className="block mt-5 xl:mt-7">{t('experience.title2')}</span>
                   </motion.h2>
                 </AnimatePresence>
 

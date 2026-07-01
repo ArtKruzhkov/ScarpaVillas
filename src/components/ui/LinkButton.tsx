@@ -5,6 +5,8 @@ type Size = 'sm' | 'md' | 'nav';
 
 type LinkButtonProps = {
   children: React.ReactNode;
+  target?: string;
+  rel?: string;
   className?: string;
   href: string;
   variant?: Variant;
@@ -35,12 +37,16 @@ export function LinkButton({
   children,
   className,
   href,
+  target,
+  rel,
   variant = 'primary',
   size = 'md',
 }: LinkButtonProps) {
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       className={[
         'inline-flex items-center justify-center gap-2 font-bold transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
         variantClasses[variant],

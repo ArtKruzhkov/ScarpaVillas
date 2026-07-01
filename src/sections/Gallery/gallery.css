@@ -99,7 +99,7 @@
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #2f3b63;
+  color: #2c3654;
   text-transform: uppercase;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
@@ -127,11 +127,18 @@
 .section-height-gallery {
   height: calc(100vh - 86px);
   max-height: 1000px;
+  min-height: 720px;
 }
 
 @media (max-width: 639px) {
   .section-height-gallery {
     height: 65vh;
+    min-height: 552px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 540px) {
+  .section-height-gallery {
     min-height: 552px;
   }
 }
