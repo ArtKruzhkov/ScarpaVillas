@@ -17,55 +17,6 @@ type Stay = {
 
 const baseUrl = process.env.PUBLIC_URL;
 
-// const stays: Stay[] = [
-//   {
-//     title: 'Signature Stays',
-//     description:
-//       'Curated stays designed to help you experience Barolo at its fullest — without having to plan every detail. Each programme brings together wine, gastronomy, and the rhythm of the region into a seamless, thoughtfully crafted stay.',
-//     image: `${baseUrl}/images/stays/signature-stays.png`,
-//   },
-//   {
-//     title: 'Taste of Langhe',
-//     subtitle: 'A journey through the flavors of Piedmont.',
-//     description:
-//       'From wine tastings and local restaurants to cooking classes and vineyard tours, this stay immerses you in the culinary culture of the Langhe.',
-//     nights: 5,
-//     startMonth: 'January',
-//     endMonth: 'May',
-//     image: `${baseUrl}/images/stays/taste-of-langhe.png`,
-//   },
-//   {
-//     title: 'The Lux Retreat',
-//     subtitle: 'A short escape into the rhythm of Barolo.',
-//     description:
-//       'A three-night stay designed to slow down and reconnect, combining fine dining, vineyard exploration, and private dining in your villa.',
-//     nights: 3,
-//     startMonth: 'January',
-//     endMonth: 'April',
-//     image: `${baseUrl}/images/stays/lux-retreat.png`,
-//   },
-//   {
-//     title: 'Autumn Gems',
-//     subtitle: 'The most enchanting season in Barolo.',
-//     description:
-//       'Experience truffle season, autumn colors, and the depth of Barolo and Barbaresco through curated tastings and seasonal experiences.',
-//     nights: 5,
-//     startMonth: 'October',
-//     endMonth: 'November',
-//     image: `${baseUrl}/images/stays/autumn-gems.png`,
-//   },
-//   {
-//     title: 'Piemonte Escape',
-//     subtitle: 'A complete immersion in the region.',
-//     description:
-//       'An extended stay exploring wine, culture, and landscapes across Langhe, Monferrato, and Turin, with exclusive access to Scarpa winery.',
-//     nights: 7,
-//     startMonth: 'January',
-//     endMonth: 'May',
-//     image: `${baseUrl}/images/stays/piemonte-escape.png`,
-//   },
-// ];
-
 const stays: Stay[] = [
   {
     title: 'signatureStays',
@@ -113,8 +64,16 @@ const stays: Stay[] = [
 const momentSlides = [
   `${baseUrl}/images/stays/moment-left.png`,
   `${baseUrl}/images/stays/moment-right.png`,
-  `${baseUrl}/images/stays/moment-left.png`,
-  `${baseUrl}/images/stays/moment-right.png`,
+  `${baseUrl}/images/stays/moment-left2.png`,
+  `${baseUrl}/images/stays/moment-right2.png`,
+  `${baseUrl}/images/stays/moment-left3.png`,
+  `${baseUrl}/images/stays/moment-right3.png`,
+  `${baseUrl}/images/stays/moment-left4.png`,
+  `${baseUrl}/images/stays/moment-right4.png`,
+  `${baseUrl}/images/stays/moment-left5.png`,
+  `${baseUrl}/images/stays/moment-right5.png`,
+  `${baseUrl}/images/stays/moment-left6.png`,
+  `${baseUrl}/images/stays/moment-right6.png`,
 ];
 
 const cardsContainer: Variants = {
@@ -261,15 +220,15 @@ export function SignatureStays() {
             }}
             spaceBetween={0}
             loop
-            speed={1200}
+            speed={1800}
             allowTouchMove
             grabCursor
             autoplay={{
-              delay: 3000,
+              delay: 3500,
               disableOnInteraction: false,
             }}
             className="h-full w-full">
-            {momentSlides.map((image, index) => (
+            {/* {momentSlides.map((image, index) => (
               <SwiperSlide key={`${image}-${index}`} className="bg-transparent">
                 <img
                   src={image}
@@ -277,13 +236,26 @@ export function SignatureStays() {
                   className="h-full w-full object-cover block"
                 />
               </SwiperSlide>
+            ))} */}
+            {momentSlides.map((image, index) => (
+              <SwiperSlide key={`${image}-${index}`} className="bg-transparent">
+                <img
+                  src={image}
+                  alt="moment at scarpa villas"
+                  className={`block h-full w-full object-cover ${
+                    image.includes('moment-left3') ||
+                    image.includes('moment-left5') ||
+                    image.includes('moment-right5')
+                      ? 'object-[center_90%]'
+                      : ''
+                  }`}
+                />
+              </SwiperSlide>
             ))}
           </Swiper>
 
+          {/* TITLE */}
           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-            {/* <h2 className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px]  xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white">
-              Moments At Scarpa Villas
-            </h2> */}
             <AnimatePresence mode="wait">
               <motion.h2
                 key={`moments-title-${i18n.language}`}
