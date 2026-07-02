@@ -22,9 +22,10 @@ export function Navbar() {
       : `${process.env.PUBLIC_URL}/${i18n.language}`;
 
   const storyUrl = i18n.language === 'en' ? '/story' : `/${i18n.language}/story`;
+  const villasUrl = i18n.language === 'en' ? '/villas' : `/${i18n.language}/villas`;
 
   const nav: NavItem[] = [
-    { id: 'villas', label: t('nav.villas'), href: '#villas' },
+    { id: 'villas', label: t('nav.villas'), href: villasUrl, isRoute: true, routeId: 'villas' },
     { id: 'borgo', label: t('nav.borgo'), href: '#borgo' },
     { id: 'experiences', label: t('nav.experiences'), href: '#experiences' },
     { id: 'story', label: t('nav.story'), href: storyUrl, isRoute: true, routeId: 'story' },

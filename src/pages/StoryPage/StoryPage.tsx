@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { StoryChapters } from '../../sections/StoryChapters/StoryChapters';
-import { StoryHero } from '../../sections/StoryHero/StoryHero';
-import { StoryVillasCTA } from '../../sections/StoryVillasCTA/StoryVillasCTA';
+import { StoryChapters } from '../../sections/StoryPageSections/StoryChapters/StoryChapters';
+import { StoryHero } from '../../sections/StoryPageSections/StoryHero/StoryHero';
+import { StoryVillasCTA } from '../../sections/StoryPageSections/StoryVillasCTA/StoryVillasCTA';
 
 export function StoryPage() {
   useEffect(() => {
