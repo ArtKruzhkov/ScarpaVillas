@@ -8,7 +8,7 @@ import { Experiences } from '../../sections/Experiences/Experiences';
 import { SignatureStays } from '../../sections/SignaturesStays/SignatureStays';
 import { DiscoverLanghe } from '../../sections/Discover/Discover';
 import { PlanStay } from '../../sections/Plan/PlanStay';
-import { WhatsAppButton } from '../../components/ui/WhatsAppBtn';
+import { ContactUs } from '../../components/ui/ContactUs';
 // import { ContactModal } from '../../components/ui/ContactModal/ContactModal';
 
 export function HomePage() {
@@ -26,7 +26,7 @@ export function HomePage() {
         <PlanStay />
       </main>
 
-      <WhatsAppButton phone="34620165833" className="fixed bottom-5 right-1 z-50" />
+      <ContactUs phone="34620165833" className="fixed bottom-8 right-8 z-50" />
       {/* <ContactModal className="fixed bottom-8 left-8" /> */}
     </>
   );
