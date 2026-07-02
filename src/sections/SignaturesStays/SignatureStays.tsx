@@ -72,8 +72,6 @@ const momentSlides = [
   `${baseUrl}/images/stays/moment-right4.png`,
   `${baseUrl}/images/stays/moment-left5.png`,
   `${baseUrl}/images/stays/moment-right5.png`,
-  `${baseUrl}/images/stays/moment-left6.png`,
-  `${baseUrl}/images/stays/moment-right6.png`,
 ];
 
 const cardsContainer: Variants = {
@@ -228,7 +226,7 @@ export function SignatureStays() {
               disableOnInteraction: false,
             }}
             className="h-full w-full">
-            {/* {momentSlides.map((image, index) => (
+            {momentSlides.map((image, index) => (
               <SwiperSlide key={`${image}-${index}`} className="bg-transparent">
                 <img
                   src={image}
@@ -236,8 +234,8 @@ export function SignatureStays() {
                   className="h-full w-full object-cover block"
                 />
               </SwiperSlide>
-            ))} */}
-            {momentSlides.map((image, index) => (
+            ))}
+            {/* {momentSlides.map((image, index) => (
               <SwiperSlide key={`${image}-${index}`} className="bg-transparent">
                 <img
                   src={image}
@@ -249,7 +247,7 @@ export function SignatureStays() {
                   }`}
                 />
               </SwiperSlide>
-            ))}
+            ))} */}
           </Swiper>
 
           {/* TITLE */}
