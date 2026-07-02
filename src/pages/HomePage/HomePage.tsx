@@ -26,7 +26,7 @@ export function HomePage() {
         <PlanStay />
       </main>
 
-      <ContactUs phone="34620165833" className="fixed bottom-8 right-8 z-50" />
+      <ContactUs phone="34620165833" className="fixed bottom-4 right-4 z-50" />
       {/* <ContactModal className="fixed bottom-8 left-8" /> */}
     </>
   );

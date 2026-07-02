@@ -63,7 +63,7 @@ export function ContactUs({ className = '', phone }: ContactUsProps) {
             }`}>
             {/* Email */}
             <a
-              href="mailto:INFO@SCARPA-VILLAS.COM"
+              href="mailto:info@scarpa-villas.com"
               aria-label="Email"
               onClick={() => setIsMenuOpen(false)}>
               <img
