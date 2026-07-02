@@ -96,11 +96,11 @@ export function ContactUs({ className = '', phone }: ContactUsProps) {
               />
             </a>
 
-            {/* Mail */}
+            {/* Form */}
             <button type="button" aria-label="Contact form" onClick={openModal}>
               <img
-                src={`${process.env.PUBLIC_URL}/images/contactBtn/mail.svg`}
-                alt="Mail"
+                src={`${process.env.PUBLIC_URL}/images/contactBtn/form.svg`}
+                alt="Form"
                 className="w-[40px] lg:w-[55px] rounded-[10px] transition-transform duration-300 hover:scale-105"
               />
             </button>
