@@ -243,9 +243,7 @@ export function SignatureStays() {
                   src={image}
                   alt="moment at scarpa villas"
                   className={`block h-full w-full object-cover ${
-                    image.includes('moment-left3') ||
-                    image.includes('moment-left5') ||
-                    image.includes('moment-right5')
+                    image.includes('moment-left5') || image.includes('moment-right5')
                       ? 'object-[center_90%]'
                       : ''
                   }`}
