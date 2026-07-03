@@ -22,7 +22,7 @@ const variantClasses: Record<Variant, string> = {
   ghost: 'text-ink-900 hover:bg-ink-900/5 focus-visible:outline-ink-900',
 
   outline:
-    'border-2 border-[#2C3654] bg-transparent text-[#2C3654] hover:bg-[#2C3654] hover:text-white',
+    'border-2 font-sans border-[#2C3654] bg-transparent text-[#2C3654] hover:bg-[#2C3654] hover:text-white text-[11px] sm:text-[13px] h-auto py-1 sm:py-2',
 };
 
 const sizeClasses: Record<Size, string> = {

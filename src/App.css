@@ -5,7 +5,7 @@
 
 @media (max-width: 639px) {
   .section-height {
-    height: calc(100vh - 78.48px);
+    height: calc(100vh - 73px);
   }
 }
 

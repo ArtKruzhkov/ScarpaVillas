@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { VillasHero } from '../../sections/VillasPageSections/VillasHero/VillasHero';
+import { VillasShare } from '../../sections/VillasPageSections/VillasShare/VillasShare';
 
 export function VillasPage() {
   useEffect(() => {
@@ -10,6 +11,7 @@ export function VillasPage() {
     <>
       <main className="mx-auto max-w-8xl 2xl:max-w-[1920px]">
         <VillasHero />
+        <VillasShare />
       </main>
     </>
   );
