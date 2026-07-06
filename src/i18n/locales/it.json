@@ -217,5 +217,57 @@
   "storyVillasCTA": {
     "text": "Scarpa Villas danno vita a questa storia, offrendo un modo per vivere Barolo attraverso lo spazio, il tempo e il legame con la terra.",
     "button": "Esplora Le Ville"
+  },
+  "villasHero": {
+    "title": "Quattro modi diversi di vivere Barolo"
+  },
+  "villasShare": {
+    "title": "Ogni villa offre un'atmosfera diversa — da ampia e conviviale a intima e riservata — pur condividendo la stessa cornice",
+    "titleItalic": "tra i vigneti di Monvigliero.",
+    "heading": "Ciò che tutte le ville condividono",
+    "features": {
+      "privateSpaces": "Spazi privati tra\ni vigneti di\nMonvigliero",
+      "pool": "Accesso alla\npiscina panoramica",
+      "kitchen": "Cucine completamente\nattrezzate e spazi\nall'aperto",
+      "hospitality": "L'ospitalità Scarpa\ne le esperienze\nselezionate"
+    }
+  },
+  "villasGrid": {
+    "discover": "Scopri la villa",
+    "tettineive": {
+      "title": "Tettineive",
+      "text1": "La villa più spaziosa per condividere momenti insieme.",
+      "text2": "Ideale per famiglie, gruppi e occasioni speciali."
+    },
+    "bogliona": {
+      "title": "La Bogliona",
+      "text1": "La villa più intima per coppie e soggiorni tranquilli.",
+      "text2": "Ideale per coppie e piccoli gruppi in cerca di privacy."
+    },
+    "bricchi": {
+      "title": "I Bricchi",
+      "text1": "Una villa contemporanea luminosa con vista panoramica.",
+      "text2": "Ideale per chi ama luce, spazi aperti e design moderno."
+    },
+    "tettimorra": {
+      "title": "Tettimorra",
+      "text1": "Una villa tradizionale immersa nei vigneti di Monvigliero.",
+      "text2": "Ideale per chi cerca autenticità e un legame profondo con il territorio."
+    }
+  },
+  "villasAdviceCTA": {
+    "title": "Non sei ancora sicuro di quale opzione faccia per te?",
+    "subtitle": "Il nostro team può aiutarti a scegliere la soluzione più adatta ai tuoi piani e al tuo gruppo.",
+    "placeholder": "Inserisci la tua e-mail",
+    "button": "Ricevi una consulenza",
+    "privacy": "Accetto l'informativa sulla privacy"
+  },
+  "villasPlanStayCTA": {
+    "title": "Pianificando un evento o un gruppo numeroso?",
+    "text1": "Il Borgo ti permette di riservare",
+    "textItalic": "tutte e quattro le ville insieme",
+    "text1End": "creando una tenuta privata per gruppi, celebrazioni o ritiri.",
+    "text2": "Trova la villa più adatta al tuo soggiorno e vivi Barolo a modo tuo.",
+    "button": "Pianifica il soggiorno"
   }
 }

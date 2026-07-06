@@ -276,14 +276,28 @@ export function Footer() {
                     className="h-[57px] text-[#2C3654] placeholder:text-[#A8ABB8] font-sans text-[18px] flex-1 border-2 border-[#2C3654] px-6 text-center"
                   />
 
+                  {/* <button
+                    type="submit"
+                    className="h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold tracking-[0.18em] uppercase text-white transition-opacity duration-300 hover:opacity-80">
+                    {t('footer.button')}
+                  </button> */}
                   <button
                     type="submit"
-                    className="h-[57px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold tracking-[0.18em] uppercase text-white">
-                    {t('footer.button')}
+                    className="h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80">
+                    <AnimatePresence mode="wait">
+                      <motion.span
+                        key={t('footer.button')}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.25 }}>
+                        {t('footer.button')}
+                      </motion.span>
+                    </AnimatePresence>
                   </button>
                 </div>
 
-                <label className="mt-5 flex items-center font-sans gap-2 text-[15px] text-[#2C3654]">
+                <label className="mt-3 flex items-center font-sans gap-2 text-[15px] text-[#2C3654]">
                   <input type="checkbox" />
                   {t('footer.privacyAgree')}
                 </label>
@@ -782,9 +796,13 @@ export function Footer() {
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.25 }}
                 className="flex gap-2 text-[#8B8E97]">
-                <a href="/">{t('footer.cookiePolicy')}</a>
+                <a href="/" className="transition-opacity duration-300 hover:opacity-60">
+                  {t('footer.cookiePolicy')}
+                </a>
                 <span>|</span>
-                <a href="/">{t('footer.privacyPolicy')}</a>
+                <a href="/" className="transition-opacity duration-300 hover:opacity-60">
+                  {t('footer.privacyPolicy')}
+                </a>
               </motion.div>
             </AnimatePresence>
           </div>

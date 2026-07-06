@@ -34,7 +34,7 @@ export function VillasHero() {
           <div className="mt-5 sm:mt-6">
             <AnimatePresence mode="wait">
               <motion.h2
-                key={t('Four distinct ways to experience Barolo')}
+                key={t('villasHero.title')}
                 className="text-[20px] lg:text-[42px] text-white font-serif tracking-[-0.03rem] leading-[1.1]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export function VillasHero() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}>
-                Four distinct ways to experience Barolo
+                {t('villasHero.title')}
               </motion.h2>
             </AnimatePresence>
           </div>
