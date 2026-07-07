@@ -10,8 +10,8 @@
     "planStayMob": "Your Stay"
   },
   "hero": {
-    "titlePart1": "Stay among the",
-    "titleItalic": "vineyards of Monvigliero",
+    "titlePart1": "Stay in the",
+    "titleItalic": "heart of Barolo",
     "titlePart2": "in your own private villa"
   },
   "about": {
@@ -21,12 +21,11 @@
     "text3": "Here, days unfold slowly, between the silence of the vines, the warmth of the sun, and the rituals of Piedmontese\u00A0life."
   },
   "experience": {
-    "title1": "Where Time Becomes",
-    "title2": "Part of the Experience",
-    "paragraph1": "For over a century, Scarpa has been guided by a simple belief — that <strong>great wine is shaped\u00A0by\u00A0time.</strong>",
-    "paragraph2": "<strong>Scarpa Villas</strong> were created as a natural extension of this philosophy - a place where the culture of wine can be lived, not just tasted — by those who choose to stay here.",
-    "paragraph3": "<strong>Founded in 1900</strong>, the winery has built its legacy on patience, respect for the land, and a deep connection to Piedmont’s terroirs.",
-    "paragraph4": "Here, <strong>among the vineyards of Monvigliero</strong>, time slows, deepens, and becomes part of the experience itself."
+    "title1": "More Than a Stay.",
+    "title2": "A True Wine Resort.",
+    "paragraph1": "Scarpa Villas were created as a natural extension of the Scarpa winery — a place where the <strong>philosophy of wine can be lived</strong>, not\u00A0only\u00A0tasted.",
+    "paragraph2": "<strong>Founded in 1900</strong>, Scarpa has always believed that great wine is shaped by time, patience, and a deep connection to\u00A0the\u00A0land.",
+    "paragraph3": "The villas bring guests closer to that philosophy through the vineyards of Monvigliero, <strong>the culture of Barolo</strong>, and experiences rooted in the\u00A0traditions\u00A0of\u00A0Piedmont."
   },
   "gallery": {
     "title1": "Four Villas",

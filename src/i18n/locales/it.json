@@ -10,8 +10,8 @@
     "planStayMob": "Prenota"
   },
   "hero": {
-    "titlePart1": "Soggiorna tra i",
-    "titleItalic": "vigneti di Monvigliero",
+    "titlePart1": "Soggiorna nel",
+    "titleItalic": "cuore di Barolo",
     "titlePart2": "nella tua villa privata"
   },
   "about": {
@@ -21,12 +21,11 @@
     "text3": "Qui le giornate scorrono lentamente, tra il silenzio dei vigneti, il calore del sole e i rituali della vita\u00A0piemontese."
   },
   "experience": {
-    "title1": "Dove il tempo diventa",
-    "title2": "parte dell'esperienza",
-    "paragraph1": "Da oltre un secolo, Scarpa è guidata da una semplice convinzione: che <strong>il grande vino sia plasmato dal tempo.</strong>",
-    "paragraph2": "<strong>Scarpa Villas</strong> nasce come naturale estensione di questa filosofia: un luogo dove la cultura del vino può essere vissuta, non solo degustata, da chi soggiorna qui.",
-    "paragraph3": "<strong>Fondata nel 1900</strong>, la cantina ha costruito la propria eredità sulla pazienza, sul rispetto per la terra e su un profondo legame con i terroir del Piemonte.",
-    "paragraph4": "Qui, <strong>tra i vigneti di Monvigliero</strong>, il tempo rallenta, si intensifica e diventa parte dell'esperienza stessa."
+    "title1": "Oltre il soggiorno.",
+    "title2": "Un vero Wine Resort.",
+    "paragraph1": "Le Scarpa Villas sono la naturale estensione della cantina Scarpa — un luogo dove la <strong>filosofia del vino può essere vissuta</strong>, non\u00A0solo\u00A0degustata.",
+    "paragraph2": "<strong>Fondata nel 1900</strong>, Scarpa ha sempre creduto che un grande vino sia il frutto del tempo, della pazienza e di un profondo legame\u00A0con\u00A0la\u00A0terra.",
+    "paragraph3": "Le ville avvicinano gli ospiti a questa filosofia attraverso i vigneti di Monvigliero, <strong>la cultura del Barolo</strong> e le esperienze radicate nelle tradizioni\u00A0del\u00A0Piemonte."
   },
   "gallery": {
     "title1": "Quattro Ville",

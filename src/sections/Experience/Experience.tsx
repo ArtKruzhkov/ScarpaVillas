@@ -38,14 +38,14 @@ export function Experience() {
                   </motion.h2>
                 </AnimatePresence>
 
-                <div className="mt-8 h-[2px] w-[210px] bg-[#6e7a9b]" />
+                <div className="mt-12 h-[2px] w-[210px] bg-[#6e7a9b]" />
               </div>
 
               {/* TEXT */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`experience-text-${i18n.language}`}
-                  className="font-sans mt-7 space-y-7 xl:mt-10 xl:space-y-10 text-[18px] xl:text-[20px] leading-[1.8] text-[#2C3654]"
+                  className="font-sans mt-7 space-y-7 lg:mt-[3rem] lg:space-y-[5.25rem] text-[18px] xl:text-[20px] leading-[1.65] text-[#2C3654]"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
@@ -62,9 +62,9 @@ export function Experience() {
                     <Trans i18nKey="experience.paragraph3" components={{ strong: <strong /> }} />
                   </p>
 
-                  <p>
+                  {/* <p>
                     <Trans i18nKey="experience.paragraph4" components={{ strong: <strong /> }} />
-                  </p>
+                  </p> */}
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -90,7 +90,7 @@ export function Experience() {
               <img
                 src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
                 alt="Luxury wine villa interior"
-                className="h-full min-h-[380px] lg:min-h-[620px] lg:max-h-[663.8px] w-full object-cover"
+                className="h-full min-h-[380px] lg:min-h-[620px] lg:max-h-[675px] w-full object-cover"
               />
             </motion.div>
           </div>
@@ -118,7 +118,9 @@ export function Experience() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.3 }}>
-                  {t('experience.title1')} {t('experience.title2')}
+                  {t('experience.title1')}
+                  <br />
+                  {t('experience.title2')}
                 </motion.h2>
               </AnimatePresence>
 
@@ -144,16 +146,12 @@ export function Experience() {
                   <p>
                     <Trans i18nKey="experience.paragraph1" components={{ strong: <strong /> }} />
                   </p>
-
-                  <p>
-                    <Trans i18nKey="experience.paragraph2" components={{ strong: <strong /> }} />
-                  </p>
                 </motion.div>
               </AnimatePresence>
             </motion.div>
 
             {/* IMAGE */}
-            <div className="overflow-hidden mt-10">
+            <div className="overflow-hidden mt-8">
               <motion.div
                 className="h-full"
                 viewport={{ once: true, amount: 0.5 }}
@@ -183,16 +181,16 @@ export function Experience() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`experience-bottom-text-${i18n.language}`}
-                  className="font-sans mt-10 space-y-5  text-[14.3px] leading-[20px] sm:text-[18px] sm:leading-[26px] md:text-[21px] md:leading-[31px] text-[#2C3654] px-4 max-w-[402px] sm:max-w-[500px] md:max-w-[580px] mx-auto"
+                  className="font-sans mt-8 space-y-5  text-[14.3px] leading-[20px] sm:text-[18px] sm:leading-[26px] md:text-[21px] md:leading-[31px] text-[#2C3654] px-4 max-w-[402px] sm:max-w-[500px] md:max-w-[580px] mx-auto"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}>
                   <p>
-                    <Trans i18nKey="experience.paragraph3" components={{ strong: <strong /> }} />
+                    <Trans i18nKey="experience.paragraph2" components={{ strong: <strong /> }} />
                   </p>
 
                   <p>
-                    <Trans i18nKey="experience.paragraph4" components={{ strong: <strong /> }} />
+                    <Trans i18nKey="experience.paragraph3" components={{ strong: <strong /> }} />
                   </p>
                 </motion.div>
               </AnimatePresence>
