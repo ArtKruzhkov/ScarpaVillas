@@ -1,45 +1,7 @@
-// import React from 'react';
-
-// export function VillasPlanStayCTA() {
-//   return (
-//     <section className="relative overflow-hidden section-height">
-//       {/* Background */}
-//       <img
-//         src={`${process.env.PUBLIC_URL}/images/villas_planStay/villas-plan-stay.png`}
-//         alt="Scarpa Villas"
-//         className="w-full h-full object-cover"
-//       />
-
-//       {/* Content */}
-//       <div className="absolute inset-0 flex items-center">
-//         <div className="pl-10 text-white">
-//           <h2 className="max-w-[685px] font-serif text-[56px] uppercase leading-[1] tracking-[0.03rem]">
-//             Planning a Larger
-//             <br />
-//             Gathering or Event?
-//           </h2>
-
-//           <p className="max-w-[685px] mt-10 font-serif text-[24px] leading-[1.2]">
-//             The Borgo allows you to reserve <em>all four villas together</em> — creating a private
-//             estate for groups, celebrations, or retreats.
-//           </p>
-
-//           <p className="mt-10 max-w-[544px] font-serif text-[24px] leading-[1.2]">
-//             Find the villa that fits your stay and experience Barolo in your own way.
-//           </p>
-
-//           <button className="mt-10 h-[57px] w-full bg-white font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-[#2C3654] transition-colors duration-300 hover:bg-[#2C3654] hover:text-white">
-//             Plan Your Stay
-//           </button>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import './villasPlanStay.css';
 
 export function VillasPlanStayCTA() {
   const { t } = useTranslation();
@@ -47,28 +9,32 @@ export function VillasPlanStayCTA() {
   return (
     <section className="relative section-height overflow-hidden">
       {/* Background */}
-      <motion.img
-        src={`${process.env.PUBLIC_URL}/images/villas_planStay/villas-plan-stay.png`}
-        alt="Scarpa Villas"
-        className="h-full w-full object-cover"
-        initial={{
-          scale: 1.08,
-          opacity: 0,
-        }}
-        whileInView={{
-          scale: 1,
-          opacity: 1,
-        }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{
-          duration: 1.2,
-          ease: [0.22, 1, 0.36, 1],
-        }}
-      />
+      <div className="absolute inset-0">
+        <motion.img
+          src={`${process.env.PUBLIC_URL}/images/villas_planStay/villas-plan-stay.png`}
+          alt="Scarpa Villas"
+          className="h-full w-full object-cover"
+          initial={{
+            scale: 1.08,
+            opacity: 0,
+          }}
+          whileInView={{
+            scale: 1,
+            opacity: 1,
+          }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            duration: 1.2,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent lg:hidden" />
+      </div>
 
       {/* Content */}
       <motion.div
-        className="absolute inset-0 flex items-center"
+        className="absolute inset-0 flex items-center justify-center lg:justify-start"
         initial={{
           opacity: 0,
           y: 30,
@@ -83,11 +49,11 @@ export function VillasPlanStayCTA() {
           delay: 0.35,
           ease: [0.22, 1, 0.36, 1],
         }}>
-        <div className="pl-10 text-white">
+        <div className="px-6 lg:pl-10 lg:pr-0 text-center lg:text-left text-white">
           <AnimatePresence mode="wait">
             <motion.h2
               key={t('villasPlanStayCTA.title')}
-              className="max-w-[688px] font-serif text-[56px] uppercase leading-[1] tracking-[0.03rem]"
+              className="mx-auto lg:mx-0 max-w-[688px] lg:max-w-[430px] xl:max-w-[494px] min-[1400px]:max-w-[588px] min-[1740px]:max-w-[688px] font-serif text-[28px] lg:text-[34px] min-[1640px]:text-[56px] xl:text-[40px] min-[1640px]:text-[48px] uppercase leading-[1] tracking-[0.03rem]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -102,7 +68,7 @@ export function VillasPlanStayCTA() {
           <AnimatePresence mode="wait">
             <motion.p
               key={t('villasPlanStayCTA.text1')}
-              className="mt-10 max-w-[688px] font-serif text-[24px] leading-[1.2]"
+              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[688px] lg:max-w-[430px] min-[1400px]:max-w-[588px] min-[1740px]:max-w-[688px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -115,7 +81,7 @@ export function VillasPlanStayCTA() {
           <AnimatePresence mode="wait">
             <motion.p
               key={t('villasPlanStayCTA.text2')}
-              className="mt-10 max-w-[544px] font-serif text-[24px] leading-[1.2]"
+              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[360px] min-[1400px]:max-w-[460px] min-[1740px]:max-w-[568px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -124,7 +90,7 @@ export function VillasPlanStayCTA() {
             </motion.p>
           </AnimatePresence>
 
-          <button className="mt-10 h-[57px] w-full bg-white font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-[#2C3654] transition-colors duration-300 hover:bg-[#2C3654] hover:text-white">
+          <button className="plan-stay-button">
             <AnimatePresence mode="wait">
               <motion.span
                 key={t('villasPlanStayCTA.button')}

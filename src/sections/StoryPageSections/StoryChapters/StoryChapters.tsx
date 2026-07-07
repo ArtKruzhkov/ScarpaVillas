@@ -69,7 +69,7 @@ export function StoryChapters() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <h2 className="font-serif text-[22px] leading-[26px] sm:text-[27px] sm:leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[42px] lg:leading-[54px] xl:text-[48px] xl:leading-[56px] 2xl:text-[52px] 2xl:leading-[58px] text-[#2C3654]">
+              <h2 className="font-serif text-[21px] leading-[25px] sm:text-[27px] sm:leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[42px] lg:leading-[54px] xl:text-[48px] xl:leading-[56px] 2xl:text-[52px] 2xl:leading-[58px] text-[#2C3654]">
                 <Trans
                   i18nKey="storyChapters.heading"
                   components={{
@@ -124,7 +124,7 @@ export function StoryChapters() {
                   <div
                     // className="lg:max-w-[360px] 2xl:max-w-[430px] min-[1680px]:max-w-[442px]"
                     className="flex flex-col items-center lg:items-start max-w-full lg:max-w-[360px] 2xl:max-w-[430px] min-[1680px]:max-w-[442px]">
-                    <p className="mb-8 lg:mb-11 text-[16.5px] lg:text-[17px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px] min-[1680px]:text-[21px] min-[1680px]:leading-[32px] text-[#2C3654]">
+                    <p className="mb-8 lg:mb-11 text-[16.5px] leading-[24px] lg:text-[17px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px] min-[1680px]:text-[21px] min-[1680px]:leading-[32px] text-[#2C3654]">
                       {card.description}
                     </p>
 

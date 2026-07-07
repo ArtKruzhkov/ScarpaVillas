@@ -188,7 +188,7 @@
   },
 
   "storyChapters": {
-    "heading": "Scarpa Villas is part of a wider story — one that begins in the <italic1>vineyards of Piedmont</italic1> and continues through wine, people, and a way of life shaped over <italic2>generations</italic2>.",
+    "heading": "Scarpa Villas is part of a wider story — one that begins in the <italic1>vineyards of Piedmont</italic1> and continues through wine, people, and a way of life shaped over\u00A0<italic2>generations</italic2>.",
 
     "origins": {
       "title": "Origins",
@@ -223,7 +223,7 @@
   },
   "villasShare": {
     "title": "Each villa offers a different atmosphere — from spacious and social to intimate and secluded — while sharing the same setting",
-    "titleItalic": "in the vineyards of Monvigliero.",
+    "titleItalic": "in the vineyards\u00A0of\u00A0Monvigliero.",
     "heading": "What all villas share",
     "features": {
       "privateSpaces": "Private spaces within\nthe Monvigliero\nvineyards",
@@ -236,28 +236,28 @@
     "discover": "Discover the villa",
     "tettineive": {
       "title": "Tettineive",
-      "text1": "The most spacious villa for gathering and shared moments.",
-      "text2": "Ideal for families, group stays, and private gatherings."
+      "text1": "The most spacious villa for gathering and shared\u00A0moments.",
+      "text2": "Ideal for families, group stays, and private\u00A0gatherings."
     },
     "bogliona": {
       "title": "La Bogliona",
-      "text1": "The most intimate villa for couples and quiet stays.",
-      "text2": "Ideal for couples and small groups seeking privacy."
+      "text1": "The most intimate villa for couples and quiet\u00A0stays.",
+      "text2": "Ideal for couples and small groups seeking\u00A0privacy."
     },
     "bricchi": {
       "title": "I Bricchi",
-      "text1": "A light-filled contemporary villa with panoramic views.",
-      "text2": "Ideal for those who value openness, light, and modern design."
+      "text1": "A light-filled contemporary villa with panoramic\u00A0views.",
+      "text2": "Ideal for those who value openness, light, and modern\u00A0design."
     },
     "tettimorra": {
       "title": "Tettimorra",
-      "text1": "A traditional villa rooted in the vineyards of Monvigliero.",
-      "text2": "Ideal for those seeking authenticity and a closer connection to the land."
+      "text1": "A traditional villa rooted in the vineyards of\u00A0Monvigliero.",
+      "text2": "Ideal for those seeking authenticity and a closer connection\u00A0to\u00A0the\u00A0land."
     }
   },
   "villasAdviceCTA": {
-    "title": "Still Not Sure Which Option Suits You Best?",
-    "subtitle": "Our team can help you choose the right space based on your plans and group",
+    "title": "Still Not Sure Which Option Suits\u00A0You\u00A0Best?",
+    "subtitle": "Our team can help you choose the right space based on your\u00A0plans\u00A0and\u00A0group",
     "placeholder": "Enter your e-mail",
     "button": "Get Personal Advice",
     "privacy": "I agree to the privacy statement"

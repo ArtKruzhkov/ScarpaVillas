@@ -35,7 +35,7 @@ export function VillasHero() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={t('villasHero.title')}
-                className="text-[20px] lg:text-[42px] text-white font-serif tracking-[-0.03rem] leading-[1.1]"
+                className="text-[18.5px] sm:text-[24px] md:text-[32px] xl:text-[36px] 2xl:text-[42px] text-white font-serif tracking-[-0.03rem] leading-[1.2]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}

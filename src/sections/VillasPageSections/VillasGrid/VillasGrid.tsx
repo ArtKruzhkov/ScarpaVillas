@@ -43,7 +43,7 @@ export function VillasGrid() {
           {villas.map((villa, index) => (
             <motion.article
               key={villa.title}
-              className="relative h-[670px]"
+              className="relative h-[430px] md:h-[520px] lg:h-[670px]"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -58,11 +58,11 @@ export function VillasGrid() {
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
 
-                  <div className="absolute inset-x-0 bottom-0 z-10 p-7 text-white">
+                  <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-6 lg:p-7 text-white">
                     <AnimatePresence mode="wait">
                       <motion.h3
                         key={villa.title}
-                        className="font-serif text-[48px] leading-none"
+                        className="font-serif text-[32px] sm:text-[38px] lg:text-[42px] xl:text-[48px] leading-none"
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -12 }}
@@ -77,7 +77,7 @@ export function VillasGrid() {
                     <AnimatePresence mode="wait">
                       <motion.p
                         key={`${villa.text1}-${villa.text2}`}
-                        className="mt-3 max-w-[720px] font-sans text-[20px] leading-[30px]"
+                        className="mt-2 sm:mt-3 max-w-[720px] font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[24px] lg:text-[20px] lg:leading-[30px]"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -92,7 +92,7 @@ export function VillasGrid() {
                       <motion.a
                         key={t('villasGrid.discover')}
                         href="/villas"
-                        className="mt-8 inline-block border-y border-white py-2 font-sans text-[21px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-10"
+                        className="mt-4 sm:mt-6 lg:mt-8 inline-block border-y border-white py-2 font-sans text-[16px] sm:text-[18px] lg:text-[21px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-10"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}

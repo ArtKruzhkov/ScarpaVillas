@@ -10,7 +10,7 @@ export function StoryVillasCTA() {
     <section className="bg-white">
       <div className="mx-auto max-w-8xl">
         <div className="bg-[#2C3654] px-4 pt-4 pb-12 xl:px-5 xl:py-5">
-          <div className="flex flex-col xl:items-center gap-6 xl:gap-12 xl:flex-row xl:justify-between">
+          <div className="flex flex-col xl:items-center gap-5 xl:gap-12 xl:flex-row xl:justify-between">
             {/* Image */}
             <div className="shrink-0 overflow-hidden order-1">
               <motion.div
@@ -55,8 +55,7 @@ export function StoryVillasCTA() {
                 duration: 1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              // className="mx-auto flex max-w-[982px] flex-col items-center text-center"
-              className="order-2 mx-auto flex 2xl:max-w-[982px] flex-col items-center text-center px-4">
+              className="order-2 mx-auto flex 2xl:max-w-[982px] flex-col items-center text-center xl:px-4">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={t('storyVillasCTA.text')}
@@ -68,15 +67,11 @@ export function StoryVillasCTA() {
                     ease: [0.22, 1, 0.36, 1],
                   }}
                   className="flex flex-col items-center mx-auto flex max-w-[982px] text-center">
-                  <h2
-                    // className="font-serif text-[44px] leading-[58px] text-white"
-                    className="font-serif text-[20px] leading-[28px] sm:text-[22px] sm:leading-[30px] md:text-[26px] md:leading-[34px] lg:text-[38px] lg:leading-[46px] 2xl:text-[44px] 2xl:leading-[58px] text-white">
+                  <h2 className="font-serif text-[19px] leading-[23px] sm:text-[22px] sm:leading-[30px] md:text-[26px] md:leading-[34px] lg:text-[38px] lg:leading-[46px] 2xl:text-[44px] 2xl:leading-[58px] text-white">
                     {t('storyVillasCTA.text')}
                   </h2>
 
-                  <button
-                    // className="mt-14 min-w-[704px] border border-white px-12 py-4 font-sans text-[22px] font-bold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-white hover:text-[#2C3654]"
-                    className="mt-7 lg:mt-10 w-full max-w-[704px] border border-white px-8 py-3 lg:py-4 font-sans text-[14px] sm:text-[16px] lg:text-[20px] 2xl:text-[22px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-white hover:text-[#2C3654]">
+                  <button className="mt-7 lg:mt-10 w-full max-w-[704px] border border-white px-8 py-3 lg:py-4 font-sans text-[14px] sm:text-[16px] lg:text-[20px] 2xl:text-[22px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-white hover:text-[#2C3654]">
                     {t('storyVillasCTA.button')}
                   </button>
                 </motion.div>

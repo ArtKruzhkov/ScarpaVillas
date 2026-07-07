@@ -29,7 +29,7 @@ export function VillasShare() {
       <div className="mx-auto max-w-8xl 2xl:max-w-[1920px]">
         {/* TOP TEXT */}
         <motion.div
-          className="px-20 py-14 text-center"
+          className="px-6 lg:px-12 2xl:px-20 py-6 lg:py-10 2xl:py-14 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
@@ -40,7 +40,7 @@ export function VillasShare() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={t('villasShare.title')}
-              className="font-serif text-[30px] leading-[1.25] tracking-[-0.02rem] text-[#2C3654] md:text-[42px]"
+              className="font-serif text-[19px] sm:text-[23px] md:text-[28px] xl:text-[36px] 2xl:text-[42px] leading-[1.25] tracking-[-0.02rem] text-[#2C3654]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -60,7 +60,7 @@ export function VillasShare() {
           <motion.img
             src={`${process.env.PUBLIC_URL}/images/villas_villasShare/villas.png`}
             alt="Scarpa Villas in Monvigliero vineyards"
-            className="h-auto w-full"
+            className="h-auto w-full min-h-[375px] object-cover object-[70%_center] lg:object-center"
             initial={{
               scale: 1.08,
               opacity: 0,
@@ -78,7 +78,8 @@ export function VillasShare() {
 
           {/* CONTENT */}
           <motion.div
-            className="absolute inset-0 z-10 flex max-w-[800px] flex-col justify-center pl-12 text-white"
+            // className="absolute inset-0 z-10 flex max-w-[800px] flex-col justify-center pl-12 text-white"
+            className="absolute inset-0 z-10 hidden lg:flex flex-col justify-center text-white lg:max-w-[440px] xl:max-w-[580px] lg:pl-12 2xl:max-w-[640px] min-[1820px]:max-w-[800px]"
             initial={{
               opacity: 0,
               y: 30,
@@ -97,7 +98,7 @@ export function VillasShare() {
               <AnimatePresence mode="wait">
                 <motion.h3
                   key={t('villasShare.heading')}
-                  className="font-sans text-[18px] font-bold uppercase leading-none tracking-[0.35em] text-[#2C3654]"
+                  className="font-sans text-[16px] xl:text-[18px] font-bold uppercase leading-none tracking-[0.35em] text-[#2C3654]"
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -12 }}
@@ -129,7 +130,7 @@ export function VillasShare() {
                     <AnimatePresence mode="wait">
                       <motion.p
                         key={item.text}
-                        className={`absolute w-[152px] font-sans text-[14px] leading-[20px] ${
+                        className={`absolute w-[152px] font-sans text-[13px] leading-[17px] xl:text-[14px] xl:leading-[19px] ${
                           index === 0
                             ? 'left-0 text-left'
                             : index === sharedFeatures.length - 1
