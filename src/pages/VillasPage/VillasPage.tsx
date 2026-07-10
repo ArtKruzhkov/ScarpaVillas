@@ -4,6 +4,7 @@ import { VillasShare } from '../../sections/VillasPageSections/VillasShare/Villa
 import { VillasAdviceCTA } from '../../sections/VillasPageSections/VillasAdviceCTA/VillasAdviceCTA';
 import { VillasPlanStayCTA } from '../../sections/VillasPageSections/VillasPlanStay/VillasPlanStay';
 import { VillasGrid } from '../../sections/VillasPageSections/VillasGrid/VillasGrid';
+import { ContactUs } from '../../components/ui/ContactUs';
 
 export function VillasPage() {
   useEffect(() => {
@@ -19,6 +20,8 @@ export function VillasPage() {
         <VillasAdviceCTA />
         <VillasPlanStayCTA />
       </main>
+
+      <ContactUs phone="34620165833" className="fixed bottom-4 right-4 z-50" />
     </>
   );
 }

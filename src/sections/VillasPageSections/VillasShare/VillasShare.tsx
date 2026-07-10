@@ -78,7 +78,6 @@ export function VillasShare() {
 
           {/* CONTENT */}
           <motion.div
-            // className="absolute inset-0 z-10 flex max-w-[800px] flex-col justify-center pl-12 text-white"
             className="absolute inset-0 z-10 hidden lg:flex flex-col justify-center text-white lg:max-w-[440px] xl:max-w-[580px] lg:pl-12 2xl:max-w-[640px] min-[1820px]:max-w-[800px]"
             initial={{
               opacity: 0,
@@ -94,7 +93,7 @@ export function VillasShare() {
               delay: 0.35,
               ease: [0.22, 1, 0.36, 1],
             }}>
-            <div className="mb-20 bg-white py-2 text-center">
+            <div className="mb-14 bg-white py-2 text-center">
               <AnimatePresence mode="wait">
                 <motion.h3
                   key={t('villasShare.heading')}

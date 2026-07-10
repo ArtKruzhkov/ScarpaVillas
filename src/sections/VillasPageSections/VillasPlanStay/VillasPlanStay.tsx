@@ -53,7 +53,7 @@ export function VillasPlanStayCTA() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={t('villasPlanStayCTA.title')}
-              className="mx-auto lg:mx-0 max-w-[688px] lg:max-w-[430px] xl:max-w-[494px] min-[1400px]:max-w-[588px] min-[1740px]:max-w-[688px] font-serif text-[28px] lg:text-[34px] min-[1640px]:text-[56px] xl:text-[40px] min-[1640px]:text-[48px] uppercase leading-[1] tracking-[0.03rem]"
+              className="mx-auto lg:mx-0 max-w-[688px] lg:max-w-[430px] xl:max-w-[494px] min-[1400px]:max-w-[588px] min-[1640px]:max-w-[688px] font-serif text-[28px] lg:text-[34px] min-[1640px]:text-[56px] xl:text-[40px] min-[1640px]:text-[48px] uppercase leading-[1] tracking-[0.03rem]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -68,7 +68,7 @@ export function VillasPlanStayCTA() {
           <AnimatePresence mode="wait">
             <motion.p
               key={t('villasPlanStayCTA.text1')}
-              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[688px] lg:max-w-[430px] min-[1400px]:max-w-[588px] min-[1740px]:max-w-[688px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
+              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[688px] lg:max-w-[430px] min-[1400px]:max-w-[588px] min-[1640px]:max-w-[688px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -81,7 +81,7 @@ export function VillasPlanStayCTA() {
           <AnimatePresence mode="wait">
             <motion.p
               key={t('villasPlanStayCTA.text2')}
-              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[360px] min-[1400px]:max-w-[460px] min-[1740px]:max-w-[568px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
+              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[360px] min-[1400px]:max-w-[460px] min-[1640px]:max-w-[568px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
