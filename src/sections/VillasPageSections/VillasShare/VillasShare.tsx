@@ -29,7 +29,7 @@ export function VillasShare() {
       <div className="mx-auto max-w-8xl 2xl:max-w-[1920px]">
         {/* TOP TEXT */}
         <motion.div
-          className="px-6 lg:px-20 xl:px-10 2xl:px-[14rem] py-6 lg:py-10 2xl:py-14 text-center"
+          className="px-6 lg:px-20 xl:px-10 2xl:px-[8rem] py-6 lg:py-10 2xl:py-14 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}

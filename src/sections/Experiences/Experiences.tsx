@@ -151,7 +151,7 @@ export function Experiences() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`experiences-description-${i18n.language}`}
-              className="tracking-[-0.03em] sm:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[30px] md:text-[28px] sm:leading-[36px] lg:text-[35px] lg:leading-[46px] xl:leading-[48px] sm:w-[570px] md:w-[705px] lg:w-[870px]"
+              className="tracking-[-0.03em] sm:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[28px] md:text-[28px] md:leading-[36px] lg:text-[36px] lg:leading-[46px] sm:w-[550px] md:w-[705px] lg:w-[900px]"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
