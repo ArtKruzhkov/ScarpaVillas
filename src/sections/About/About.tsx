@@ -96,7 +96,7 @@ export function About() {
       </Container> */}
 
       <Container className="relative z-10 h-full pb-8 lg:h-auto lg:pb-10 2xl:pb-14">
-        <div className="flex h-full flex-col items-center justify-between px-3 lg:px-6 lg:block lg:h-auto lg:max-w-[912px] lg:ml-auto xl:max-w-[1052px] min-[1780px]:max-w-[1290px] xl:mr-6 xl:px-0 2xl:mr-12 min-[1780px]:mr-[5rem]">
+        <div className="flex h-full flex-col items-center justify-between px-3 lg:px-6 lg:block lg:h-auto lg:max-w-[912px] lg:ml-auto xl:max-w-[1074px] min-[1780px]:max-w-[1290px] xl:mr-6 xl:px-0 2xl:mr-12 min-[1780px]:mr-[5rem]">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -29,7 +29,7 @@ export function VillasShare() {
       <div className="mx-auto max-w-8xl 2xl:max-w-[1920px]">
         {/* TOP TEXT */}
         <motion.div
-          className="px-6 lg:px-12 2xl:px-20 py-6 lg:py-10 2xl:py-14 text-center"
+          className="px-6 lg:px-20 xl:px-10 2xl:px-[14rem] py-6 lg:py-10 2xl:py-14 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
@@ -40,7 +40,7 @@ export function VillasShare() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={t('villasShare.title')}
-              className="font-serif text-[19px] sm:text-[23px] md:text-[28px] xl:text-[36px] 2xl:text-[42px] leading-[1.25] tracking-[-0.02rem] text-[#2C3654]"
+              className="font-serif text-[19px] sm:text-[23px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] leading-[1.25] tracking-[-0.02rem] text-[#2C3654]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
