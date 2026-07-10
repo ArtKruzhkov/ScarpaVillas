@@ -128,7 +128,7 @@ export function Experiences() {
 
   return (
     <section id="experiences" className="scroll-mt-[86px] bg-white py-12 lg:py-16 xl:py-24">
-      <Container className="px-8">
+      <Container className="px-4 sm:px-8">
         {/* HEADER */}
         <motion.div
           className="mx-auto text-center"
@@ -151,7 +151,7 @@ export function Experiences() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`experiences-description-${i18n.language}`}
-              className="tracking-[-0.03em] sm:mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[28px] md:text-[28px] md:leading-[36px] lg:text-[36px] lg:leading-[46px] sm:w-[550px] md:w-[705px] lg:w-[900px]"
+              className="tracking-[-0.03em] mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[28px] md:text-[28px] md:leading-[36px] lg:text-[36px] lg:leading-[46px] max-w-[330px] sm:max-w-none sm:w-[550px] md:w-[705px] lg:w-[900px]"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
