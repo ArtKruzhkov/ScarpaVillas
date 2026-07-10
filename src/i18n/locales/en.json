@@ -219,7 +219,8 @@
     "button": "Explore The Villas"
   },
   "villasHero": {
-    "title": "Four distinct ways to experience Barolo"
+    "title": "Villas",
+    "subtitle": "Four distinct ways to experience Barolo"
   },
   "villasShare": {
     "title": "Each villa offers a different atmosphere — from spacious and social to intimate and secluded — while sharing the same setting",
@@ -267,7 +268,7 @@
     "text1": "The Borgo allows you to reserve",
     "textItalic": "all four villas together",
     "text1End": "creating a private estate for groups, celebrations, or retreats.",
-    "text2": "Find the villa that fits your stay and experience Barolo in your own way.",
-    "button": "Plan Your Stay"
+    "text2": "Reserve the entire estate and enjoy Barolo together, with complete privacy.",
+    "button": "Explore The Borgo"
   }
 }

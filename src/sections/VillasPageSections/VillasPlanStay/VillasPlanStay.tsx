@@ -81,7 +81,7 @@ export function VillasPlanStayCTA() {
           <AnimatePresence mode="wait">
             <motion.p
               key={t('villasPlanStayCTA.text2')}
-              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[360px] min-[1400px]:max-w-[460px] min-[1640px]:max-w-[568px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
+              className="mx-auto lg:mx-0 mt-8 lg:mt-10 max-w-[410px] min-[1400px]:max-w-[500px] min-[1640px]:max-w-[574px] font-serif text-[18px] xl:text-[21px] min-[1640px]:text-[24px] leading-[1.2]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

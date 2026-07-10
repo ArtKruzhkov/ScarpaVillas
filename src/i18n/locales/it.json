@@ -218,7 +218,8 @@
     "button": "Esplora Le Ville"
   },
   "villasHero": {
-    "title": "Quattro modi diversi di vivere Barolo"
+    "title": "Villas",
+    "subtitle": "Quattro modi diversi di vivere il Barolo"
   },
   "villasShare": {
     "title": "Ogni villa offre un'atmosfera diversa — da ampia e conviviale a intima e riservata — pur condividendo la stessa cornice",
@@ -266,7 +267,7 @@
     "text1": "Il Borgo ti permette di riservare",
     "textItalic": "tutte e quattro le ville insieme",
     "text1End": "creando una tenuta privata per gruppi, celebrazioni o ritiri.",
-    "text2": "Trova la villa più adatta al tuo soggiorno e vivi Barolo a modo tuo.",
-    "button": "Pianifica il soggiorno"
+    "text2": "Prenotate l'intera tenuta e gustatevi il Barolo in compagnia, in totale privacy.",
+    "button": "Scopri il Borgo"
   }
 }

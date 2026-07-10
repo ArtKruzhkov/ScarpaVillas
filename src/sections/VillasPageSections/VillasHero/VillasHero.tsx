@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import './villasHero.css';
 
 export function VillasHero() {
   const { t } = useTranslation();
@@ -8,7 +9,7 @@ export function VillasHero() {
   return (
     <section
       id="villas-top"
-      className="relative flex section-height justify-center overflow-hidden">
+      className="relative flex section-height justify-center items-center overflow-hidden">
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
@@ -21,21 +22,21 @@ export function VillasHero() {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex w-full justify-center px-6 pb-[6.5rem] sm:pb-[4.1rem]">
+      <div className="relative z-10 flex w-full justify-center px-6">
         <div className="flex flex-col items-center justify-end text-center">
           {/* ICON */}
-          <img
+          {/* <img
             src={`${process.env.PUBLIC_URL}/images/hero/logo_hero.svg`}
             alt="Scarpa Villas"
             className="hero-logo"
-          />
+          /> */}
 
           {/* HERO TEXT */}
           <div className="mt-5 sm:mt-6">
-            <AnimatePresence mode="wait">
+            {/* <AnimatePresence mode="wait">
               <motion.h2
                 key={t('villasHero.title')}
-                className="text-[18.5px] sm:text-[24px] md:text-[32px] xl:text-[36px] 2xl:text-[42px] text-white font-serif tracking-[-0.03rem] leading-[1.2]"
+                className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] xl:text-[36px] text-white"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
@@ -45,6 +46,24 @@ export function VillasHero() {
                 }}>
                 {t('villasHero.title')}
               </motion.h2>
+            </AnimatePresence> */}
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={t('villasHero.title')}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{
+                  duration: 0.35,
+                  ease: [0.22, 1, 0.36, 1],
+                }}>
+                <h1 className="villas_hero-title">{t('villasHero.title')}</h1>
+
+                <p className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] xl:text-[36px] text-white">
+                  {t('villasHero.subtitle')}
+                </p>
+              </motion.div>
             </AnimatePresence>
           </div>
         </div>
