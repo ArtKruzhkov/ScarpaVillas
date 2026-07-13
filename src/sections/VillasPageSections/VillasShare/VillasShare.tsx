@@ -40,7 +40,7 @@ export function VillasShare() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={t('villasShare.title')}
-              className="font-serif text-[19px] sm:text-[23px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] leading-[1.25] tracking-[-0.02rem] text-[#2C3654] lg:w-[992px] xl:w-[1136px] 2xl:w-[1294px]"
+              className="font-serif text-[19px] sm:text-[23px] md:text-[28px] xl:text-[32px] leading-[1.25] xl:leading-[38px] tracking-[-0.02rem] text-[#2C3654] lg:w-[992px] xl:w-[1148px]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}

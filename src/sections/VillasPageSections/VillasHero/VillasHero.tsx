@@ -32,22 +32,7 @@ export function VillasHero() {
           /> */}
 
           {/* HERO TEXT */}
-          <div className="mt-5 sm:mt-6">
-            {/* <AnimatePresence mode="wait">
-              <motion.h2
-                key={t('villasHero.title')}
-                className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] xl:text-[36px] text-white"
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -12 }}
-                transition={{
-                  duration: 0.35,
-                  ease: [0.22, 1, 0.36, 1],
-                }}>
-                {t('villasHero.title')}
-              </motion.h2>
-            </AnimatePresence> */}
-
+          <div>
             <AnimatePresence mode="wait">
               <motion.div
                 key={t('villasHero.title')}
@@ -60,7 +45,7 @@ export function VillasHero() {
                 }}>
                 <h1 className="villas_hero-title">{t('villasHero.title')}</h1>
 
-                <p className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] xl:text-[36px] text-white">
+                <p className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] text-white">
                   {t('villasHero.subtitle')}
                 </p>
               </motion.div>
