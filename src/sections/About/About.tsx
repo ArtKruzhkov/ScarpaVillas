@@ -108,7 +108,7 @@ export function About() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={`about-title-${i18n.language}`}
-                className="pt-12 sm:pt-6 max-w-[340px] sm:max-w-[360px] md:max-w-[430px] lg:max-w-full font-serif text-center text-[28px] leading-[34px] font-medium uppercase tracking-[0.08em] text-[#2C3654] sm:text-[30px] sm:leading-[38px] md:text-[35px] lg:pt-0 lg:text-left lg:text-[42px] lg:leading-[52px] lg:text-white min-[1780px]:text-[52px]"
+                className="pt-12 sm:pt-6 max-w-[340px] sm:max-w-[360px] md:max-w-[430px] lg:max-w-full font-serif text-center text-[28px] leading-[34px] font-medium uppercase tracking-[0.08em] text-[#2C3654] sm:text-[30px] sm:leading-[38px] md:text-[35px] lg:pt-0 lg:text-left lg:text-[36px] lg:leading-[38px] lg:text-white"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}

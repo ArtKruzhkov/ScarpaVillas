@@ -28,7 +28,7 @@ export function Experience() {
                   {/* Desktop */}
                   <motion.h2
                     key={`experience-title-${i18n.language}`}
-                    className="hidden lg:block font-serif text-[28px] leading-[28px] xl:text-[42px] xl:leading-[36px] text-[#2C3654]"
+                    className="hidden lg:block font-serif text-[28px] leading-[28px] xl:text-[36px] xl:leading-[20px] text-[#2C3654]"
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
@@ -45,7 +45,7 @@ export function Experience() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`experience-text-${i18n.language}`}
-                  className="font-sans mt-7 space-y-7 lg:mt-[3rem] lg:space-y-[5.25rem] text-[18px] xl:text-[20px] leading-[1.65] text-[#2C3654]"
+                  className="font-sans mt-7 space-y-7 lg:mt-[3rem] lg:space-y-[6.25rem] text-[18px] xl:text-[20px] leading-[1.65] text-[#2C3654]"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}

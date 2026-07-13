@@ -50,7 +50,7 @@ export function Borgo() {
 
         {/* CONTENT */}
         <motion.div
-          className="absolute inset-0 z-10 flex flex-col sm:items-center px-6 pt-6 lg:pt-12 2xl:pt-24 sm:text-center"
+          className="absolute inset-0 z-10 flex flex-col sm:items-center px-6 pt-6 lg:pt-12 2xl:pt-16 sm:text-center"
           initial={{
             opacity: 0,
             y: 40,
@@ -77,7 +77,7 @@ export function Borgo() {
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3 }}>
               <span className="block">{t('borgo.title1')}</span>
-              <span className="block lg:mt-2">{t('borgo.title2')}</span>
+              <span className="block lg:mt-1">{t('borgo.title2')}</span>
             </motion.h2>
           </AnimatePresence>
 

@@ -290,7 +290,7 @@ export function Gallery() {
 
           {/* TITLE */}
           <motion.div
-            className="absolute left-1/2 top-8 sm:top-12 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0"
+            className="absolute left-1/2 top-8 sm:top-14 z-20 -translate-x-1/2 text-center w-full px-8 md:w-max md:px-0"
             initial={{
               opacity: 0,
               filter: 'blur(5px)',
@@ -325,11 +325,11 @@ export function Gallery() {
                     duration: 0.55,
                     ease: [0.22, 1, 0.36, 1],
                   }}>
-                  <p className="font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2C3654] uppercase">
+                  <p className="font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2C3654] uppercase">
                     {t('gallery.title1')}
                   </p>
 
-                  <h2 className="sm:mt-2 font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] xl:text-[39px] 2xl:text-[42px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2C3654] uppercase">
+                  <h2 className="sm:mt-2 font-serif font-medium text-[24px] sm:text-[30px] lg:text-[36px] leading-[28px] sm:leading-[1.1] tracking-[0.08em] text-[#2C3654] uppercase">
                     {t('gallery.title2')}
                   </h2>
                 </motion.div>

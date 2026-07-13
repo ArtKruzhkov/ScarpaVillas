@@ -139,7 +139,7 @@ export function Experiences() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`experiences-title-${i18n.language}`}
-              className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[32px] leading-[40px] sm:text-[38px] sm:leading-[46px] lg:text-[52px] lg:leading-[62px]"
+              className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[32px] leading-[40px] sm:text-[38px] sm:leading-[46px] lg:text-[42px] lg:leading-[50px]"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
@@ -151,14 +151,12 @@ export function Experiences() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`experiences-description-${i18n.language}`}
-              className="tracking-[-0.03em] mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[28px] md:text-[28px] md:leading-[36px] lg:text-[36px] lg:leading-[46px] max-w-[330px] sm:max-w-none sm:w-[550px] md:w-[705px] lg:w-[900px]"
+              className="tracking-[-0.03em] mx-auto mt-4 lg:mt-6 max-w-[1120px] font-serif text-[#2C3654] text-[22px] leading-[28px] md:text-[28px] md:leading-[36px] xl:text-[32px] xl:leading-[38px] max-w-[330px] sm:max-w-none sm:w-[550px] md:w-[705px] lg:w-[900px] xl:w-[1024px]"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3 }}>
-              {t('experiences.descriptionLine1')}
-              <br />
-              {t('experiences.descriptionLine2')}
+              {t('experiences.descriptionLine1')} {t('experiences.descriptionLine2')}
             </motion.p>
           </AnimatePresence>
         </motion.div>
