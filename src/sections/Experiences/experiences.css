@@ -32,16 +32,16 @@
   .experiences-btn {
     width: 100%;
     max-width: 420px;
-    font-size: 14px;
-    padding: 10px 18px;
+    font-size: 13px;
+    padding: 9px 18px;
     text-align: center;
   }
 }
 
 @media (max-width: 419px) {
   .experiences-btn {
-    font-size: 12px;
-    padding: 10px 14px;
+    font-size: 13px;
+    padding: 9px 14px;
     letter-spacing: 0.08em;
   }
 }
