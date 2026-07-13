@@ -42,7 +42,7 @@ export function StoryChapters() {
       <div className="mx-auto max-w-8xl px-8">
         {/* Heading */}
         <motion.div
-          className="mx-auto mb-10 lg:mb-20 md:max-w-[704px] lg:max-w-[580px] xl:max-w-[662px] 2xl:max-w-[746px] text-center"
+          className="mx-auto mb-10 lg:mb-20 md:max-w-[704px] lg:max-w-[580px] xl:max-w-[662px] text-center"
           initial={{
             opacity: 0,
             y: 40,
@@ -69,7 +69,7 @@ export function StoryChapters() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <h2 className="font-serif text-[21px] leading-[25px] sm:text-[27px] sm:leading-[32px] md:text-[28px] md:leading-[32px] xl:text-[32px] xl:leading-[40px] 2xl:text-[36px] 2xl:leading-[42px] text-[#2C3654]">
+              <h2 className="font-serif text-[21px] leading-[25px] sm:text-[27px] sm:leading-[32px] md:text-[28px] md:leading-[32px] xl:text-[32px] xl:leading-[38px] text-[#2C3654]">
                 <Trans
                   i18nKey="storyChapters.heading"
                   components={{
@@ -128,7 +128,7 @@ export function StoryChapters() {
                       {card.description}
                     </p>
 
-                    <button className="w-full border text-[#2C3654] border-[#2C3654] px-8 py-3 sm:py-4 text-[14px] sm:text-[15px] 2xl:text-[16px] min-[1680px]:text-[18px] uppercase font-bold tracking-[18%] transition hover:bg-[#2C3654] hover:text-white">
+                    <button className="w-full border text-[#2C3654] border-[#2C3654] px-8 py-3 sm:py-4 lg:py-[14px] text-[14px] sm:text-[15px] 2xl:text-[16px] min-[1680px]:text-[18px] uppercase font-bold tracking-[18%] transition hover:bg-[#2C3654] hover:text-white">
                       {card.button}
                     </button>
                   </div>

@@ -1,19 +1,19 @@
 .story_hero-title {
   font-family: 'Bodoni Moda', serif;
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 62px;
   font-weight: 500;
   letter-spacing: 15%;
-  line-height: 68px;
+  line-height: 64px;
   color: white;
 }
 
-@media (max-width: 1279px) {
+/* @media (max-width: 1279px) {
   .story_hero-title {
     font-size: 62px;
     line-height: 64px;
   }
-}
+} */
 
 @media (max-width: 1023px) {
   .story_hero-title {
