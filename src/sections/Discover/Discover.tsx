@@ -136,12 +136,12 @@ export function DiscoverLanghe() {
             centeredSlides={false}
             spaceBetween={20}
             loop
-            speed={2000}
+            speed={1800}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
             autoplay={{
-              delay: 6000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             breakpoints={{

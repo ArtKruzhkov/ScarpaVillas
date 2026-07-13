@@ -50,10 +50,10 @@
 
 @media (min-width: 1280px) {
   .discover-text {
-    margin-top: 2rem;
-    font-size: 30px;
-    line-height: 44px;
-    width: 1175px;
+    margin-top: 1.75rem;
+    font-size: 32px;
+    line-height: 38px;
+    width: 1254px;
     letter-spacing: -0.04em;
   }
 }

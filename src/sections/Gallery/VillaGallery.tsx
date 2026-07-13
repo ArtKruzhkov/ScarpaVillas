@@ -88,7 +88,7 @@ export function VillaGallery() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.15 }}
-                  className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[48px] lg:leading-[58px] 2xl:text-[54px] 2xl:leading-[62px] tracking-[0.01em]">
+                  className="font-serif text-[28px] leading-[34px] sm:text-[36px] sm:leading-[42px] lg:text-[42px] lg:leading-[52px] tracking-[0.01em]">
                   {activeVilla.name}
                 </motion.h3>
 
@@ -99,7 +99,7 @@ export function VillaGallery() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.3 }}
-                    className="mt-2 md:mt-4 font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[26px] lg:text-[22px] lg:leading-[32px] 2xl:text-[24px] 2xl:leading-[34px]">
+                    className="mt-2 md:mt-4 font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[26px] lg:text-[22px] lg:leading-[32px]">
                     {activeVilla.description}
                   </motion.p>
                 </AnimatePresence>
@@ -158,28 +158,6 @@ export function VillaGallery() {
             };
 
             return (
-              // <button
-              //   key={villa.id}
-              //   type="button"
-              //   onClick={() => {
-              //     if (villa.id === activeVillaId) return;
-
-              //     // setActiveVilla(villa);
-              //     setActiveVillaId(villa.id);
-
-              //     if (window.innerWidth >= 1024) {
-              //       galleryRef.current?.scrollIntoView({
-              //         behavior: 'smooth',
-              //         block: 'start',
-              //       });
-              //     }
-              //   }}
-              //   className={`relative overflow-hidden w-[120px] h-[90px] md:w-auto md:h-auto transition-all duration-300 ${
-              //     isActive ? 'ring-[3px] ring-[#2C3654]' : 'opacity-80 hover:opacity-100'
-              //   }`}
-              //   aria-label={`Show ${villa.name}`}>
-              //   <img src={villa.image} alt={villa.name} className="h-full w-full object-cover" />
-              // </button>
               <button
                 key={villa.id}
                 type="button"
@@ -222,7 +200,7 @@ export function VillaGallery() {
 
                 {/* Text */}
                 <div className="absolute inset-x-0 bottom-2 z-10 text-center text-white">
-                  <p className="lg:mt-1 font-serif text-[13px] leading-[16px] sm:text-[18px] sm:leading-[20px] lg:text-[24px] lg:leading-[24px]">
+                  <p className="font-serif text-[13px] leading-[16px] sm:text-[18px] sm:leading-[20px] lg:text-[22px] lg:leading-[24px]">
                     {getThumbnailTitle(villa.name)}
                   </p>
                 </div>
