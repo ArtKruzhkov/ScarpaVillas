@@ -139,7 +139,7 @@ export function Experiences() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`experiences-title-${i18n.language}`}
-              className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[32px] leading-[40px] sm:text-[38px] sm:leading-[46px] lg:text-[42px] lg:leading-[50px]"
+              className="font-serif uppercase tracking-[0.1em] text-[#2C3654] text-[24px] leading-[30px] sm:text-[38px] sm:leading-[46px] lg:text-[42px] lg:leading-[50px]"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}

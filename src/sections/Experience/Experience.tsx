@@ -113,7 +113,7 @@ export function Experience() {
               <AnimatePresence mode="wait">
                 <motion.h2
                   key={`experience-title-mobile-${i18n.language}`}
-                  className="font-serif text-[25.5px] leading-[32px] sm:text-[30px] sm:leading-[36px] md:text-[38px] md:leading-[48px] text-[#2C3654] text-center lg:hidden w-[311px] sm:w-[375px] md:w-[480px]"
+                  className="font-serif text-[24px] leading-[30px] sm:text-[30px] sm:leading-[36px] md:text-[38px] md:leading-[48px] text-[#2C3654] text-center lg:hidden w-[311px] sm:w-[375px] md:w-[480px]"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}

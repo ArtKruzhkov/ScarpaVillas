@@ -554,7 +554,7 @@ export function Footer() {
                 <img
                   src={`${process.env.PUBLIC_URL}/images/footer/logo_footer.svg`}
                   alt="Scarpa Villas"
-                  className="w-[172px]"
+                  className="w-[152px] lg:w-[172px]"
                 />
 
                 <AnimatePresence mode="wait">
@@ -594,7 +594,7 @@ export function Footer() {
                   <AnimatePresence mode="wait">
                     <motion.h3
                       key={`footer-contact-${i18n.language}`}
-                      className="font-serif mt-10 lg:mt-0 text-[34px] xl:text-[38px] leading-none"
+                      className="font-serif mt-10 lg:mt-0 text-[30px] xl:text-[36px] leading-none"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
@@ -605,7 +605,7 @@ export function Footer() {
                 </motion.div>
 
                 <motion.div
-                  className="mt-3 xl:mt-4 max-w-[320px] text-[14px] xl:text-[15px] mx-auto lg:mx-0 lg:max-w-none space-y-0 font-sans text-center lg:text-left"
+                  className="mt-3 xl:mt-4 max-w-[320px] text-[13px] xl:text-[15px] mx-auto lg:mx-0 lg:max-w-none space-y-0 font-sans text-center lg:text-left"
                   initial={{
                     opacity: 0,
                     y: 40,

@@ -48,53 +48,6 @@ export function About() {
       </motion.div>
 
       {/* CONTENT */}
-      {/* <Container className="relative z-10 pb-10">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.2,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-          className="lg:max-w-[912px] xl:max-w-[1052px] ml-auto xl:mr-6 2xl:mr-12 min-[1780px]:mr-[5rem] px-6 xl:px-0">
-          <AnimatePresence mode="wait">
-            <motion.h2
-              key={`about-title-${i18n.language}`}
-              className="font-serif text-center lg:text-left text-[22px] leading-[1.3] sm:leading-[1] sm:text-[28px] md:text-[36px] lg:text-[42px] min-[1780px]:text-[52px] font-normal uppercase tracking-[0.08em] text-white"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.3 }}>
-              {t('about.title')}
-            </motion.h2>
-          </AnimatePresence>
-
-          <div className="mt-3 lg:mt-4">
-            <AnimatePresence mode="wait">
-              <motion.p
-                key={`about-text-${i18n.language}`}
-                className="about-text"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.3 }}>
-                <span className="block">{t('about.text1')}</span>
-                <span className="block mt-2">{t('about.text2')}</span>
-                <span className="block mt-2">{t('about.text3')}</span>
-              </motion.p>
-            </AnimatePresence>
-          </div>
-        </motion.div>
-      </Container> */}
-
       <Container className="relative z-10 h-full pb-8 lg:h-auto lg:pb-10 2xl:pb-14">
         <div className="flex h-full flex-col items-center justify-between px-3 lg:px-6 lg:block lg:h-auto lg:max-w-[912px] lg:ml-auto xl:max-w-[1074px] min-[1780px]:max-w-[1290px] xl:mr-6 xl:px-0 2xl:mr-12 min-[1780px]:mr-[5rem]">
           <motion.div
@@ -108,7 +61,7 @@ export function About() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={`about-title-${i18n.language}`}
-                className="pt-12 sm:pt-6 max-w-[340px] sm:max-w-[360px] md:max-w-[430px] lg:max-w-full font-serif text-center text-[28px] leading-[34px] font-medium uppercase tracking-[0.08em] text-[#2C3654] sm:text-[30px] sm:leading-[38px] md:text-[35px] lg:pt-0 lg:text-left lg:text-[36px] lg:leading-[38px] lg:text-white"
+                className="pt-12 sm:pt-6 max-w-[310px] sm:max-w-[360px] md:max-w-[430px] lg:max-w-full font-serif text-center text-[24px] leading-[30px] font-medium uppercase tracking-[0.08em] text-[#2C3654] sm:text-[30px] sm:leading-[38px] md:text-[35px] lg:pt-0 lg:text-left lg:text-[36px] lg:leading-[38px] lg:text-white"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}

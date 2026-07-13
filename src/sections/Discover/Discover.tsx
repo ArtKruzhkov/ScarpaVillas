@@ -86,7 +86,7 @@ export function DiscoverLanghe() {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`discover-title-${i18n.language}`}
-              className="font-serif px-2 sm:px-0 uppercase tracking-[0.1em] text-[#2C3654] text-[28px] leading-[36px] sm:text-[38px] sm:leading-[46px] lg:text-[42px] lg:leading-[50px]"
+              className="font-serif px-2 sm:px-0 uppercase tracking-[0.1em] text-[#2C3654] text-[24px] leading-[30px] sm:text-[38px] sm:leading-[46px] lg:text-[42px] lg:leading-[50px]"
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
