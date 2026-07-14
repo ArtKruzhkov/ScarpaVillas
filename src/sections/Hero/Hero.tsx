@@ -11,20 +11,6 @@ export function Hero() {
       id="top"
       className="relative flex section-height items-end justify-center overflow-hidden">
       {/* BACKGROUND */}
-      {/* <div className="absolute inset-0">
-        <img
-          src={`${process.env.PUBLIC_URL}/images/hero/hero-section.png`}
-          alt="Scarpa Villas"
-          className="h-full w-full object-cover object-[20%_center] xl:object-[center_center]"
-        />
-
-        
-        <div className="absolute inset-0 hero-overlay" />
-
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
-      </div> */}
-
       <div className="absolute inset-0">
         {/* Mobile video */}
         <video
@@ -37,9 +23,23 @@ export function Hero() {
           <source src={`${process.env.PUBLIC_URL}/images/hero/hero_vid_mob.mp4`} type="video/mp4" />
         </video>
 
+        {/* Laptop video */}
+        <video
+          className="hidden h-full w-full object-cover lg:block 2xl:hidden"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto">
+          <source
+            src={`${process.env.PUBLIC_URL}/images/hero/hero_vid_laptop.mp4`}
+            type="video/mp4"
+          />
+        </video>
+
         {/* Desktop video */}
         <video
-          className="hidden h-full w-full object-cover lg:block"
+          className="hidden h-full w-full object-cover 2xl:block"
           autoPlay
           muted
           loop
