@@ -129,12 +129,7 @@ export function StoryChapters() {
                         {card.title}
                       </h3>
 
-                      <p
-                        className="mt-6 max-w-full lg:max-w-[380px] 2xl:max-w-[430px]
-                            text-[#2C3654]
-                            text-[16.5px] leading-[24px]
-                            lg:text-[17px] lg:leading-[28px]
-                            2xl:text-[20px] 2xl:leading-[30px]">
+                      <p className="mt-6 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px]">
                         {card.description}
                       </p>
 
