@@ -31,7 +31,7 @@ export function Footer() {
             <AnimatePresence mode="wait">
               <motion.h3
                 key={`footer-title-mobile-${i18n.language}`}
-                className="font-serif text-center text-[23px] leading-[33px] md:text-[28px] md:leading-[38px] lg:text-[40px] lg:leading-[50px] text-[#2C3654]"
+                className="font-serif text-center text-[23px] leading-[33px] md:text-[28px] md:leading-[38px] lg:text-[36px] lg:leading-[46px] text-[#2C3654]"
                 initial={{ opacity: 0, y: 6 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -6 }}
@@ -211,7 +211,7 @@ export function Footer() {
                 <AnimatePresence mode="wait">
                   <motion.h3
                     key={`footer-title-desktop-${i18n.language}`}
-                    className="font-serif text-[44px] leading-[54px] text-[#2C3654] mt-[-0.5rem]"
+                    className="font-serif text-[40px] leading-[50px] text-[#2C3654] mt-[-0.5rem]"
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}>

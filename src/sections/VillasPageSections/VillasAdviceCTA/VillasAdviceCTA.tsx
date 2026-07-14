@@ -26,7 +26,7 @@ export function VillasAdviceCTA() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={t('villasAdviceCTA.title')}
-                className="font-serif text-[28px] leading-[1.2] tracking-[0.03em] md:text-[44px]"
+                className="font-serif leading-[1.2] tracking-[0.03em] xl:text-[40px]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
@@ -41,7 +41,7 @@ export function VillasAdviceCTA() {
             <AnimatePresence mode="wait">
               <motion.p
                 key={t('villasAdviceCTA.subtitle')}
-                className="mt-4 font-sans text-[17px] leading-[22px] tracking-[0.04em]"
+                className="mt-4 font-sans text-[18px] leading-[22px] tracking-[0.04em]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -106,7 +106,7 @@ export function VillasAdviceCTA() {
       {/* Mobile + Tablet */}
       <div className="xl:hidden">
         <motion.div
-          className="mx-auto max-w-[700px] text-center text-[#2C3654]"
+          className="mx-auto max-w-[700px] lg:max-w-[860px] text-center text-[#2C3654]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.35 }}>
@@ -122,7 +122,7 @@ export function VillasAdviceCTA() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={t('villasAdviceCTA.title')}
-                className="font-serif text-[26px] leading-[1.2] tracking-[0.03em] text-[#2C3654] md:text-[34px] lg:text-[40px]"
+                className="font-serif text-[26px] leading-[1.2] tracking-[0.03em] text-[#2C3654] md:text-[32px] lg:text-[36px]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
@@ -137,7 +137,7 @@ export function VillasAdviceCTA() {
             <AnimatePresence mode="wait">
               <motion.p
                 key={t('villasAdviceCTA.subtitle')}
-                className="mt-4 font-sans text-[16px] leading-[24px] text-[#2C3654] md:text-[18px] lg:text-[20px]"
+                className="mt-4 font-sans text-[16px] leading-[24px] text-[#2C3654] md:text-[18px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
