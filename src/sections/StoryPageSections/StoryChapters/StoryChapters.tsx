@@ -38,7 +38,7 @@ export function StoryChapters() {
   ];
 
   return (
-    <section className="bg-[#FFFFFF] pt-10 lg:pt-20 lg:pb-5">
+    <section className="bg-[#FFFFFF] pt-10 lg:pt-20 pb-5">
       <div className="mx-auto max-w-8xl px-8">
         {/* Heading */}
         <motion.div
@@ -113,7 +113,7 @@ export function StoryChapters() {
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={`${card.title}-${i18n.language}`}
-                      className={`order-2 ${textOrder} mt-8 flex flex-col items-center text-center lg:mt-0 lg:w-[33%] lg:items-start lg:text-left lg:mr-auto lg:ml-auto`}
+                      className={`order-2 ${textOrder} mt-4 flex flex-col items-center text-center lg:mt-0 lg:w-[33%] lg:items-start lg:text-left lg:mr-auto lg:ml-auto`}
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -12 }}
@@ -129,12 +129,12 @@ export function StoryChapters() {
                         {card.title}
                       </h3>
 
-                      <p className="mt-6 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px]">
+                      <p className="mt-3 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px]">
                         {card.description}
                       </p>
 
                       <button
-                        className="mt-10 w-full max-w-[360px]
+                        className="mt-8 w-full max-w-[360px]
                            border border-[#2C3654]
                            px-8 py-3 sm:py-4 lg:py-[14px]
                            text-[#2C3654]
