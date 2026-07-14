@@ -162,12 +162,12 @@ export function VillasAdviceCTA() {
               <input
                 type="email"
                 placeholder={t('villasAdviceCTA.placeholder')}
-                className="h-[50px] border-2 border-[#2C3654] bg-white px-6 text-center font-sans text-[16px] text-[#2C3654] outline-none placeholder:text-[#A8ABB8] md:h-[57px] md:text-[18px]"
+                className="h-[44px] border-2 border-[#2C3654] bg-white px-6 text-center font-sans text-[16px] text-[#2C3654] outline-none placeholder:text-[#A8ABB8] md:h-[57px] md:text-[18px]"
               />
 
               <button
                 type="submit"
-                className="h-[50px] bg-[#2C3654] font-sans text-[15px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80 md:h-[57px] md:text-[18px]">
+                className="h-[44px] bg-[#2C3654] font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80 md:h-[57px] md:text-[18px]">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={t('villasAdviceCTA.button')}

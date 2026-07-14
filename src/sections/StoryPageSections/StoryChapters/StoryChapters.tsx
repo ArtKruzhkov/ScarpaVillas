@@ -83,11 +83,10 @@ export function StoryChapters() {
         </motion.div>
 
         {/* Cards */}
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           {storyCards.map((card) => (
             <motion.article
               key={card.id}
-              // className="flex border-t-[2px] border-[#2C3654] pt-6 pb-20 font-sans justify-between"
               className="flex flex-col border-t-[2px] border-[#2C3654] pt-6 pb-12 lg:flex-row lg:justify-between lg:pb-20 font-sans "
               initial={{
                 opacity: 0,
@@ -108,7 +107,6 @@ export function StoryChapters() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`${card.title}-${i18n.language}`}
-                  // className="flex gap-8"
                   className="order-2 lg:order-1 mt-8 lg:mt-0 flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3 xl:gap-8"
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -121,9 +119,7 @@ export function StoryChapters() {
                     {card.title}
                   </h3>
 
-                  <div
-                    // className="lg:max-w-[360px] 2xl:max-w-[430px] min-[1680px]:max-w-[442px]"
-                    className="flex flex-col items-center lg:items-start max-w-full lg:max-w-[360px] 2xl:max-w-[430px] min-[1680px]:max-w-[442px]">
+                  <div className="flex flex-col items-center lg:items-start max-w-full lg:max-w-[360px] 2xl:max-w-[430px] min-[1680px]:max-w-[442px]">
                     <p className="mb-8 lg:mb-11 text-[16.5px] leading-[24px] lg:text-[17px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px] min-[1680px]:text-[21px] min-[1680px]:leading-[32px] text-[#2C3654]">
                       {card.description}
                     </p>
@@ -135,18 +131,100 @@ export function StoryChapters() {
                 </motion.div>
               </AnimatePresence>
 
-              <div
-                // className="lg:w-[45%] xl:w-[50%]"
-                className="order-1 lg:order-2 w-full lg:w-[45%] xl:w-[50%]">
+              <div className="order-1 lg:order-2 w-full lg:w-[45%] xl:w-[50%]">
                 <img
                   src={card.image}
                   alt={card.title}
-                  // className="h-[425px] w-full object-cover"
                   className="h-[260px] sm:h-[380px] lg:h-[425px] w-full object-cover"
                 />
               </div>
             </motion.article>
           ))}
+        </div> */}
+
+        <div className="flex flex-col">
+          {storyCards.map((card, index) => {
+            const textOrder = index % 2 === 0 ? 'lg:order-1' : 'lg:order-2';
+            const imageOrder = index % 2 === 0 ? 'lg:order-2' : 'lg:order-1';
+
+            return (
+              <motion.article
+                key={card.id}
+                className="border-t-[2px] border-[#2C3654] py-6 lg:py-10 xl:py-12 font-sans"
+                initial={{
+                  opacity: 0,
+                  y: 45,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.3,
+                }}
+                transition={{
+                  duration: 0.9,
+                  ease: [0.22, 1, 0.36, 1],
+                }}>
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                  {/* TEXT */}
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={`${card.title}-${i18n.language}`}
+                      className={`order-2 ${textOrder} mt-8 flex flex-col items-center text-center lg:mt-0 lg:w-[38%]`}
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -12 }}
+                      transition={{
+                        duration: 0.35,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}>
+                      <h3
+                        className="uppercase font-semibold tracking-[0.18em] text-[#2C3654]
+                             text-[18px]
+                             xl:text-[22px]
+                             2xl:text-[26px]">
+                        {card.title}
+                      </h3>
+
+                      <p
+                        className="mt-6 max-w-full lg:max-w-[380px] 2xl:max-w-[430px]
+                            text-[#2C3654]
+                            text-[16.5px] leading-[24px]
+                            lg:text-[17px] lg:leading-[28px]
+                            2xl:text-[20px] 2xl:leading-[30px]">
+                        {card.description}
+                      </p>
+
+                      <button
+                        className="mt-10 w-full max-w-[360px]
+                           border border-[#2C3654]
+                           px-8 py-3 sm:py-4 lg:py-[14px]
+                           text-[#2C3654]
+                           text-[14px] sm:text-[15px]
+                           2xl:text-[16px] min-[1680px]:text-[18px]
+                           uppercase font-bold tracking-[0.18em]
+                           transition-colors duration-300
+                           hover:bg-[#2C3654]
+                           hover:text-white">
+                        {card.button}
+                      </button>
+                    </motion.div>
+                  </AnimatePresence>
+
+                  {/* IMAGE */}
+                  <div className={`order-1 ${imageOrder} w-full lg:w-[55%]`}>
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="h-[260px] w-full object-cover sm:h-[380px] lg:h-[425px] xl:h-[540px]"
+                    />
+                  </div>
+                </div>
+              </motion.article>
+            );
+          })}
         </div>
       </div>
     </section>

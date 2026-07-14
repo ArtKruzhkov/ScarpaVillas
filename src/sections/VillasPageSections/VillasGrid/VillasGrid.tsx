@@ -62,7 +62,7 @@ export function VillasGrid() {
                     <AnimatePresence mode="wait">
                       <motion.h3
                         key={villa.title}
-                        className="font-serif text-[32px] sm:text-[38px] lg:text-[42px] xl:text-[48px] leading-none"
+                        className="font-serif text-[28px] sm:text-[36px] lg:text-[42px] leading-none"
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -12 }}
@@ -77,7 +77,7 @@ export function VillasGrid() {
                     <AnimatePresence mode="wait">
                       <motion.p
                         key={`${villa.text1}-${villa.text2}`}
-                        className="mt-2 sm:mt-3 max-w-[720px] font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[24px] lg:text-[20px] lg:leading-[30px]"
+                        className="mt-2 sm:mt-3 max-w-[720px] xl:max-w-none font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[24px] lg:text-[20px] lg:leading-[30px]"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -92,7 +92,7 @@ export function VillasGrid() {
                       <motion.a
                         key={t('villasGrid.discover')}
                         href="/villas"
-                        className="mt-4 sm:mt-6 lg:mt-8 inline-block border-y border-white py-2 font-sans text-[16px] sm:text-[18px] lg:text-[21px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-10"
+                        className="mt-4 sm:mt-6 lg:mt-8 inline-block border-y border-white py-2 font-sans text-[13px] md:text-[18px] lg:text-[20px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-10"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
