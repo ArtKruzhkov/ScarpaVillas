@@ -11,13 +11,60 @@ export function VillasHero() {
       id="villas-top"
       className="relative flex section-height justify-center items-center overflow-hidden">
       {/* BACKGROUND */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <img
           src={`${process.env.PUBLIC_URL}/images/villas_hero/villas-hero.png`}
           alt="The Villas"
           className="h-full w-full object-cover"
         />
 
+        <div className="absolute inset-0 hero-overlay" />
+      </div> */}
+
+      <div className="absolute inset-0">
+        {/* Mobile video */}
+        <video
+          className="block h-full w-full object-cover lg:hidden"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto">
+          <source
+            src={`${process.env.PUBLIC_URL}/images/villas_hero/villas_hero_vid_mob.mp4`}
+            type="video/mp4"
+          />
+        </video>
+
+        {/* Laptop video */}
+        <video
+          className="hidden h-full w-full object-cover lg:block 2xl:hidden"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto">
+          <source
+            src={`${process.env.PUBLIC_URL}/images/villas_hero/villas_hero_vid_laptop.mp4`}
+            type="video/mp4"
+          />
+        </video>
+
+        {/* Desktop video */}
+        <video
+          className="hidden h-full w-full object-cover 2xl:block"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto">
+          <source
+            src={`${process.env.PUBLIC_URL}/images/villas_hero/villas_hero_vid_desk.mp4`}
+            type="video/mp4"
+          />
+        </video>
+
+        {/* OVERLAY */}
         <div className="absolute inset-0 hero-overlay" />
       </div>
 
