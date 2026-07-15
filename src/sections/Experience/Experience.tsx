@@ -21,9 +21,9 @@ export function Experience() {
               ease: [0.22, 1, 0.36, 1],
               delay: 0.4,
             }}>
-            <div className="lg:max-w-[450px] xl:max-w-[574px] flex flex-col justify-between h-full">
+            <div className="lg:max-w-[450px] xl:max-w-[574px] flex flex-col justify-center h-full">
               {/* HEADER */}
-              <div className="flex flex-col items-center lg:block">
+              <div className="flex flex-col items-center lg:block lg:mt-4">
                 <AnimatePresence mode="wait">
                   {/* Desktop */}
                   <motion.h2
@@ -38,14 +38,14 @@ export function Experience() {
                   </motion.h2>
                 </AnimatePresence>
 
-                <div className="mt-12 h-[2px] w-[210px] bg-[#6e7a9b]" />
+                <div className="mt-11 h-[2px] w-[210px] bg-[#6e7a9b]" />
               </div>
 
               {/* TEXT */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`experience-text-${i18n.language}`}
-                  className="font-sans mt-7 space-y-7 lg:mt-[3rem] lg:space-y-[6.25rem] text-[18px] xl:text-[20px] leading-[1.65] text-[#2C3654]"
+                  className="font-sans mt-7 space-y-7 lg:mt-[2.5rem] lg:space-y-[2.5rem] text-[18px] xl:text-[20px] leading-[1.65] text-[#2C3654]"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
@@ -61,10 +61,6 @@ export function Experience() {
                   <p>
                     <Trans i18nKey="experience.paragraph3" components={{ strong: <strong /> }} />
                   </p>
-
-                  {/* <p>
-                    <Trans i18nKey="experience.paragraph4" components={{ strong: <strong /> }} />
-                  </p> */}
                 </motion.div>
               </AnimatePresence>
             </div>

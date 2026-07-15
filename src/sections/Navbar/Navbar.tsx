@@ -16,6 +16,25 @@ export function Navbar() {
   const [activeSection, setActiveSection] = React.useState<string | null>(null);
   const location = useLocation();
 
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
+  const closeTimeout = React.useRef<NodeJS.Timeout | null>(null);
+
+  const [mobileVillasOpen, setMobileVillasOpen] = React.useState(false);
+
+  const openDropdown = () => {
+    if (closeTimeout.current) {
+      clearTimeout(closeTimeout.current);
+    }
+
+    setDropdownOpen(true);
+  };
+
+  const closeDropdown = () => {
+    closeTimeout.current = setTimeout(() => {
+      setDropdownOpen(false);
+    }, 520);
+  };
+
   const homeUrl =
     i18n.language === 'en'
       ? `${process.env.PUBLIC_URL}`
@@ -31,6 +50,38 @@ export function Navbar() {
     { id: 'story', label: t('nav.story'), href: storyUrl, isRoute: true, routeId: 'story' },
     { id: 'stays', label: t('nav.stays'), href: '#stays' },
     { id: 'discover', label: t('nav.discover'), href: '#discover' },
+  ];
+
+  const villasItem = nav.find((item) => item.id === 'villas');
+  const storyItem = nav.find((item) => item.id === 'story');
+
+  const isVillasActiveRoute =
+    villasItem?.routeId && location.pathname.includes(`/${villasItem.routeId}`);
+
+  const isStoryActiveRoute =
+    storyItem?.routeId && location.pathname.includes(`/${storyItem.routeId}`);
+
+  const villas = [
+    {
+      id: 'tettineive',
+      name: 'Tettineive',
+      image: `${process.env.PUBLIC_URL}/images/nav/Tettineive.png`,
+    },
+    {
+      id: 'bogliona',
+      name: 'Bogliona',
+      image: `${process.env.PUBLIC_URL}/images/nav/Bogliona.png`,
+    },
+    {
+      id: 'bricchi',
+      name: 'Bricchi',
+      image: `${process.env.PUBLIC_URL}/images/nav/Bricchi.png`,
+    },
+    {
+      id: 'tettimorra',
+      name: 'Tettimorra',
+      image: `${process.env.PUBLIC_URL}/images/nav/Tettimorra.png`,
+    },
   ];
 
   return (
@@ -56,6 +107,79 @@ export function Navbar() {
                 </AnimatePresence>
               );
 
+              /* VILLAS WITH DROPDOWN */
+              if (item.id === 'villas') {
+                const isActiveRoute = location.pathname.includes('/villas');
+
+                return (
+                  <div
+                    key={item.id}
+                    // className="relative"
+                    onMouseEnter={openDropdown}
+                    onMouseLeave={closeDropdown}>
+                    {/* MAIN VILLAS LINK */}
+                    <Link
+                      to={item.href}
+                      className={`nav-link flex items-center gap-2 ${
+                        isActiveRoute || dropdownOpen ? 'active' : ''
+                      }`}>
+                      {label}
+
+                      <svg
+                        width="15"
+                        height="9"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`transition-transform duration-300 ${
+                          dropdownOpen ? 'rotate-180' : 'rotate-0'
+                        }`}>
+                        <path
+                          d="M1 1L5 5L9 1"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </Link>
+
+                    {/* DROPDOWN */}
+                    <div
+                      className={`absolute left-0 top-full w-full border-t border-[#2C3654]/10 bg-white shadow-[0_15px_30px_rgba(44,54,84,0.12)] transition-all duration-300 ${dropdownOpen ? 'visible opacity-100 translate-y-0 pointer-events-auto' : 'invisible opacity-0 -translate-y-2 pointer-events-none'}`}>
+                      <div className="mx-auto max-w-[1920px] px-6 py-8">
+                        <div className="mx-auto grid max-w-[1550px] grid-cols-4 gap-5">
+                          {villas.map((villa) => (
+                            <a
+                              key={villa.id}
+                              href="/"
+                              onClick={(event) => event.preventDefault()}
+                              className="group/villa relative block overflow-hidden">
+                              <div className="relative aspect-[1.6/1] overflow-hidden">
+                                <img
+                                  src={villa.image}
+                                  alt={villa.name}
+                                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/villa:scale-105"
+                                />
+
+                                {/* IMAGE OVERLAY */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+
+                                {/* VILLA NAME */}
+                                <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
+                                  {villa.name}
+                                </span>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              /* OTHER ROUTES */
               if (item.isRoute) {
                 const isActiveRoute =
                   item.routeId && location.pathname.includes(`/${item.routeId}`);
@@ -70,6 +194,7 @@ export function Navbar() {
                 );
               }
 
+              /* ANCHOR LINKS */
               return (
                 <a
                   key={item.id}
@@ -199,8 +324,12 @@ export function Navbar() {
               <button
                 type="button"
                 aria-label="Close menu"
-                onClick={() => setOpen(false)}
-                className="absolute right-7 top-5 text-[#2c3654] transition-opacity hover:opacity-60">
+                // onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  setMobileVillasOpen(false);
+                }}
+                className="absolute right-7 top-4 text-[#2c3654]/35 transition-opacity hover:opacity-60">
                 <svg
                   viewBox="0 0 24 24"
                   className="h-6 w-6"
@@ -212,44 +341,7 @@ export function Navbar() {
                 </svg>
               </button>
 
-              <nav className="grid" aria-label="Mobile">
-                {/* {nav.map((item) => {
-                  const label = (
-                    <AnimatePresence mode="wait">
-                      <motion.span
-                        key={item.label}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.25 }}>
-                        {item.label}
-                      </motion.span>
-                    </AnimatePresence>
-                  );
-
-                  if (item.isRoute) {
-                    return (
-                      <Link
-                        key={item.id}
-                        to={item.href}
-                        className="font-sans uppercase rounded-xl px-3 py-3 text-[15px] font-[600] text-[#2c3654] transition-colors hover:bg-ink-900/5"
-                        onClick={() => setOpen(false)}>
-                        {label}
-                      </Link>
-                    );
-                  }
-
-                  return (
-                    <a
-                      key={item.id}
-                      href={item.href}
-                      className="font-sans uppercase rounded-xl px-3 py-3 text-[15px] font-[600] text-[#2c3654] transition-colors hover:bg-ink-900/5"
-                      onClick={() => setOpen(false)}>
-                      {label}
-                    </a>
-                  );
-                })} */}
-
+              {/* <nav className="grid" aria-label="Mobile">
                 {nav.map((item, index) => {
                   const isLast = index === nav.length - 1;
 
@@ -318,6 +410,139 @@ export function Navbar() {
                         src={`${process.env.PUBLIC_URL}/images/nav/fb_logo.svg`}
                         alt="Facebook"
                         className="h-5 w-5"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </nav> */}
+
+              <nav className="flex flex-col" aria-label="Mobile">
+                {/* VILLAS */}
+                <div className="border-b border-[#2c3654]">
+                  <div className="flex items-center">
+                    <Link
+                      to={villasUrl}
+                      onClick={() => {
+                        setOpen(false);
+                        setMobileVillasOpen(false);
+                      }}
+                      className={`nav-link_mob flex-1 py-3 ${
+                        isVillasActiveRoute || mobileVillasOpen ? 'active' : ''
+                      }`}>
+                      {t('nav.villas')}
+                    </Link>
+
+                    <button
+                      type="button"
+                      onClick={() => setMobileVillasOpen((prev) => !prev)}
+                      className={`flex h-11 w-11 items-center justify-end ${
+                        isVillasActiveRoute || mobileVillasOpen
+                          ? 'text-[#C09A60]'
+                          : 'text-[#2c3654]'
+                      }`}>
+                      <svg
+                        width="16"
+                        height="10"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`transition-transform duration-300 ${
+                          mobileVillasOpen ? 'rotate-180' : ''
+                        }`}>
+                        <path
+                          d="M1 1L5 5L9 1"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      mobileVillasOpen ? 'max-h-[260px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                    <div className="flex gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
+                      {villas.map((villa) => (
+                        <a
+                          key={villa.id}
+                          href="/"
+                          onClick={(e) => e.preventDefault()}
+                          className="w-[44%] shrink-0">
+                          <div className="relative aspect-[1.55/1] overflow-hidden">
+                            <img
+                              src={villa.image}
+                              alt={villa.name}
+                              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                            />
+
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
+
+                            <span className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white">
+                              {villa.name}
+                            </span>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* BORGO */}
+                <a href="#borgo" className="border-b border-[#2c3654] py-3 nav-link_mob">
+                  {t('nav.borgo')}
+                </a>
+
+                {/* EXPERIENCES */}
+                <a href="#experiences" className="border-b border-[#2c3654] py-3 nav-link_mob">
+                  {t('nav.experiences')}
+                </a>
+
+                {/* STORY */}
+                <Link
+                  to={storyUrl}
+                  onClick={() => setOpen(false)}
+                  className={`nav-link_mob border-b border-[#2c3654] py-3 ${
+                    isStoryActiveRoute ? 'active' : ''
+                  }`}>
+                  {t('nav.story')}
+                </Link>
+
+                {/* STAYS */}
+                <a href="#stays" className="border-b border-[#2c3654] py-3 nav-link_mob">
+                  {t('nav.stays')}
+                </a>
+
+                {/* DISCOVER */}
+                <a href="#discover" className="py-3 nav-link_mob">
+                  {t('nav.discover')}
+                </a>
+
+                <div className="mt-8 flex justify-between">
+                  <LanguageSwitcher />
+
+                  <div className="flex gap-4">
+                    <a
+                      href="https://www.instagram.com/scarpavillas/"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <img
+                        src={`${process.env.PUBLIC_URL}/images/nav/insta_logo.svg`}
+                        className="h-6 w-6"
+                        alt="Instagram"
+                      />
+                    </a>
+
+                    <a
+                      href="https://www.facebook.com/ScarpaVillas"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <img
+                        src={`${process.env.PUBLIC_URL}/images/nav/fb_logo.svg`}
+                        className="h-5 w-5"
+                        alt="Facebook"
                       />
                     </a>
                   </div>
