@@ -121,7 +121,7 @@ export function Navbar() {
                     <Link
                       to={item.href}
                       className={`nav-link flex items-center gap-2 ${
-                        isActiveRoute || dropdownOpen ? 'active' : ''
+                        isActiveRoute ? 'active' : ''
                       }`}>
                       {label}
 
@@ -426,9 +426,7 @@ export function Navbar() {
                         setOpen(false);
                         setMobileVillasOpen(false);
                       }}
-                      className={`nav-link_mob flex-1 py-3 ${
-                        isVillasActiveRoute || mobileVillasOpen ? 'active' : ''
-                      }`}>
+                      className={`nav-link_mob flex-1 py-3 ${isVillasActiveRoute ? 'active' : ''}`}>
                       {t('nav.villas')}
                     </Link>
 
@@ -436,9 +434,7 @@ export function Navbar() {
                       type="button"
                       onClick={() => setMobileVillasOpen((prev) => !prev)}
                       className={`flex h-11 w-11 items-center justify-end ${
-                        isVillasActiveRoute || mobileVillasOpen
-                          ? 'text-[#C09A60]'
-                          : 'text-[#2c3654]'
+                        isVillasActiveRoute ? 'text-[#C09A60]' : 'text-[#2c3654]'
                       }`}>
                       <svg
                         width="16"
