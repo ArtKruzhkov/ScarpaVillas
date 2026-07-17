@@ -32,7 +32,7 @@ export function Navbar() {
   const closeDropdown = () => {
     closeTimeout.current = setTimeout(() => {
       setDropdownOpen(false);
-    }, 520);
+    }, 400);
   };
 
   const homeUrl =
@@ -66,21 +66,25 @@ export function Navbar() {
       id: 'tettineive',
       name: 'Tettineive',
       image: `${process.env.PUBLIC_URL}/images/nav/Tettineive.png`,
+      href: '/villas/tettineive',
     },
     {
       id: 'bogliona',
       name: 'Bogliona',
       image: `${process.env.PUBLIC_URL}/images/nav/Bogliona.png`,
+      href: '/villas/bogliona',
     },
     {
       id: 'bricchi',
       name: 'Bricchi',
       image: `${process.env.PUBLIC_URL}/images/nav/Bricchi.png`,
+      href: '/villas/bricchi',
     },
     {
       id: 'tettimorra',
       name: 'Tettimorra',
       image: `${process.env.PUBLIC_URL}/images/nav/Tettimorra.png`,
+      href: '/villas/tettimorra',
     },
   ];
 
@@ -150,10 +154,10 @@ export function Navbar() {
                       <div className="mx-auto max-w-[1920px] px-6 py-8">
                         <div className="mx-auto grid max-w-[1550px] grid-cols-4 gap-5">
                           {villas.map((villa) => (
-                            <a
+                            <Link
                               key={villa.id}
-                              href="/"
-                              onClick={(event) => event.preventDefault()}
+                              to={villa.href}
+                              onClick={() => setDropdownOpen(false)}
                               className="group/villa relative block overflow-hidden">
                               <div className="relative aspect-[1.6/1] overflow-hidden">
                                 <img
@@ -170,7 +174,7 @@ export function Navbar() {
                                   {villa.name}
                                 </span>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -462,10 +466,32 @@ export function Navbar() {
                     }`}>
                     <div className="flex gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
                       {villas.map((villa) => (
-                        <a
+                        // <a
+                        //   key={villa.id}
+                        //   href="/"
+                        //   onClick={(e) => e.preventDefault()}
+                        //   className="w-[44%] shrink-0">
+                        //   <div className="relative aspect-[1.55/1] overflow-hidden">
+                        //     <img
+                        //       src={villa.image}
+                        //       alt={villa.name}
+                        //       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                        //     />
+
+                        //     <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
+
+                        //     <span className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white">
+                        //       {villa.name}
+                        //     </span>
+                        //   </div>
+                        // </a>
+                        <Link
                           key={villa.id}
-                          href="/"
-                          onClick={(e) => e.preventDefault()}
+                          to={villa.href}
+                          onClick={() => {
+                            setOpen(false);
+                            setMobileVillasOpen(false);
+                          }}
                           className="w-[44%] shrink-0">
                           <div className="relative aspect-[1.55/1] overflow-hidden">
                             <img
@@ -480,7 +506,7 @@ export function Navbar() {
                               {villa.name}
                             </span>
                           </div>
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
