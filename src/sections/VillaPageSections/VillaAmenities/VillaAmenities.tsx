@@ -115,7 +115,7 @@ export function VillaAmenities() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent" />
 
         {/* Text */}
         <div className="absolute bottom-10 2xl:bottom-12 left-1/2 w-full max-w-[950px] -translate-x-1/2 px-6 text-center text-white">
