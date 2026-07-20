@@ -71,13 +71,6 @@ export function VillasHero() {
       {/* CONTENT */}
       <div className="relative z-10 flex w-full justify-center px-6">
         <div className="flex flex-col items-center justify-end text-center">
-          {/* ICON */}
-          {/* <img
-            src={`${process.env.PUBLIC_URL}/images/hero/logo_hero.svg`}
-            alt="Scarpa Villas"
-            className="hero-logo"
-          /> */}
-
           {/* HERO TEXT */}
           <div>
             <AnimatePresence mode="wait">
@@ -92,7 +85,7 @@ export function VillasHero() {
                 }}>
                 <h1 className="villas_hero-title">{t('villasHero.title')}</h1>
 
-                <p className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] text-white">
+                <p className="mt-2 xl:mt-4 font-serif text-[22px] leading-[28px] sm:leading-normal sm:text-[28px] lg:text-[32px] text-white">
                   {t('villasHero.subtitle')}
                 </p>
               </motion.div>

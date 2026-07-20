@@ -51,7 +51,7 @@ export function VillaFeatures() {
                   className="h-[48px] w-[48px] object-contain lg:h-[58px] lg:w-[58px]"
                 />
 
-                <p className="mt-5 font-sans text-[13px] font-semibold uppercase tracking-[0.16em] text-white lg:text-[15px]">
+                <p className="mt-5 font-sans text-[12px] sm:text-[13px] font-semibold uppercase tracking-[0.16em] text-white lg:text-[15px]">
                   {feature.label}
                 </p>
               </div>
@@ -88,8 +88,8 @@ export function VillaFeatures() {
                 duration: 1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="flex items-center px-6 py-12 lg:pl-10 lg:pr-12">
-              <div className="max-w-[800px] font-sans text-[#2C3654] text-[15px] leading-[20px] lg:text-[20px] lg:leading-[28px]">
+              className="flex items-center px-6 py-6 lg:py-12 lg:pl-10 lg:pr-12">
+              <div className="max-w-[800px] font-sans text-[#2C3654] text-[15px] leading-[20px] sm:text-[16px] sm:leading-[22px] lg:text-[18px] lg:leading-[25px] 2xl:text-[20px] 2xl:leading-[28px]">
                 <p>At Tettineive, space becomes part of the experience.</p>
 
                 <p className="mt-5">
@@ -119,12 +119,12 @@ export function VillaFeatures() {
             duration: 1,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="p-4 lg:p-6">
+          className="p-0 lg:p-6">
           <div className="overflow-hidden">
             <img
               src={`${process.env.PUBLIC_URL}/images/VillaPage/villa_features/interior.png`}
               alt="Dining room interior at Villa Tettineive"
-              className="h-full w-full object-cover min-h-[360px] lg:max-h-[720px]"
+              className="h-full w-full object-cover object-[97%_center] lg:object-center min-h-[360px] lg:max-h-[720px]"
             />
           </div>
         </motion.div>

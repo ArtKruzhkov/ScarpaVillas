@@ -34,7 +34,7 @@ export function StoryHero() {
               }}>
               <h1 className="story_hero-title">{t('storyHero.title')}</h1>
 
-              <p className="mt-2 xl:mt-4 font-serif text-[22px] sm:text-[28px] lg:text-[32px] text-white">
+              <p className="mt-2 xl:mt-4 font-serif text-[22px] leading-[28px] sm:leading-normal sm:text-[28px] lg:text-[32px] text-white">
                 {t('storyHero.subtitle')}
               </p>
             </motion.div>

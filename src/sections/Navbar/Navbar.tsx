@@ -124,6 +124,7 @@ export function Navbar() {
                     {/* MAIN VILLAS LINK */}
                     <Link
                       to={item.href}
+                      onClick={() => setDropdownOpen(false)}
                       className={`nav-link flex items-center gap-2 ${
                         isActiveRoute ? 'active' : ''
                       }`}>
