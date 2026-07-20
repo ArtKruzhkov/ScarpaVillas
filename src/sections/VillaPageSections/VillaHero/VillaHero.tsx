@@ -26,7 +26,7 @@ export function VillaHero() {
               duration: 0.35,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="flex flex-col items-center text-center text-white mt-32 sm:mt-24">
+            className="flex flex-col items-center text-center text-white mt-28 sm:mt-24">
             <div className="mb-3 bg-white px-4 sm:px-6">
               <span className="font-sans text-[16px] sm:text-[18px] font-semibold uppercase tracking-[0.15em] text-[#2C3654]">
                 Villa
@@ -48,7 +48,7 @@ export function VillaHero() {
             duration: 0.35,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="pb-28 sm:pb-12 text-center font-serif text-[22px] leading-[28px] sm:text-[28px] sm:leading-[34px] lg:text-[32px] lg:leading-[38px] text-white max-w-[350px] sm:max-w-[510px] lg:max-w-[600px]">
+          className="pb-24 sm:pb-12 text-center font-serif text-[22px] leading-[28px] sm:text-[28px] sm:leading-[34px] lg:text-[32px] lg:leading-[38px] text-white max-w-[350px] sm:max-w-[510px] lg:max-w-[600px]">
           A place for gathering, <em>space, and quiet moments</em> in the Langhe
         </motion.p>
       </div>
