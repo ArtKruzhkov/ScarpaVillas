@@ -1,28 +1,15 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { villas } from '../../../data/villas';
+import type { Villa } from '../../../data/villas';
 
-const villas = [
-  {
-    title: 'La Bogliona',
-    description: 'The most intimate villa for couples and quiet stays',
-    image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bogliona.png`,
-    href: '/villas/la-bogliona',
-  },
-  {
-    title: 'I Bricchi',
-    description: 'A light-filled contemporary villa with panoramic views',
-    image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bricchi.png`,
-    href: '/villas/i-bricchi',
-  },
-  {
-    title: 'Tettimorra',
-    description: 'A traditional villa rooted in the vineyards of Monvigliero',
-    image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettimorra.png`,
-    href: '/villas/tettimora',
-  },
-];
+type OtherVillasProps = {
+  currentVillaId: Villa['id'];
+};
 
-export function OtherVillas() {
+export function OtherVillas({ currentVillaId }: OtherVillasProps) {
+  const otherVillas = villas.filter((villa) => villa.id !== currentVillaId);
+
   return (
     <section className="bg-white pt-14 pb-4 lg:pt-20 lg:pb-6">
       <div className="mx-auto max-w-8xl px-4 lg:px-5">
@@ -52,9 +39,9 @@ export function OtherVillas() {
 
         {/* Cards */}
         <div className="mt-6 md:mt-7 lg:mt-8 grid gap-5 lg:grid-cols-3">
-          {villas.map((villa, index) => (
+          {otherVillas.map((villa, index) => (
             <motion.div
-              key={villa.title}
+              key={villa.id}
               viewport={{ once: true, amount: 0.2 }}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -63,11 +50,11 @@ export function OtherVillas() {
                 duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <Link to={villa.href} className="group block overflow-hidden">
+              <Link to={`/villas/${villa.id}`} className="group block overflow-hidden">
                 <div className="relative overflow-hidden">
                   <img
-                    src={villa.image}
-                    alt={villa.title}
+                    src={villa.card.image}
+                    alt={villa.card.title}
                     className="h-[400px] md:h-[650px] lg:h-[400px] xl:h-[500px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
@@ -77,13 +64,13 @@ export function OtherVillas() {
                   {/* Content */}
                   <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                     <h3 className="font-serif text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[34px] leading-none">
-                      {villa.title}
+                      {villa.card.title}
                     </h3>
 
                     <div className="my-3 lg:my-4 h-px bg-white" />
 
-                    <p className="max-w-[280px] font-sans text-[14px] md:text-[15px] lg:text-[16px] leading-[1.55] text-white/90">
-                      {villa.description}
+                    <p className="max-w-[310px] font-sans text-[14px] md:text-[15px] lg:text-[16px] leading-[1.55] text-white/90">
+                      {villa.card.description}
                     </p>
                   </div>
                 </div>

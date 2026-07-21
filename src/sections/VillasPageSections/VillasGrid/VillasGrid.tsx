@@ -1,12 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export function VillasGrid() {
   const { t } = useTranslation();
 
   const villas = [
     {
+      id: 'tettineive',
       title: t('villasGrid.tettineive.title'),
       text1: t('villasGrid.tettineive.text1'),
       text2: t('villasGrid.tettineive.text2'),
@@ -14,6 +16,7 @@ export function VillasGrid() {
       framed: true,
     },
     {
+      id: 'bogliona',
       title: t('villasGrid.bogliona.title'),
       text1: t('villasGrid.bogliona.text1'),
       text2: t('villasGrid.bogliona.text2'),
@@ -21,6 +24,7 @@ export function VillasGrid() {
       framed: false,
     },
     {
+      id: 'bricchi',
       title: t('villasGrid.bricchi.title'),
       text1: t('villasGrid.bricchi.text1'),
       text2: t('villasGrid.bricchi.text2'),
@@ -28,6 +32,7 @@ export function VillasGrid() {
       framed: false,
     },
     {
+      id: 'tettimorra',
       title: t('villasGrid.tettimorra.title'),
       text1: t('villasGrid.tettimorra.text1'),
       text2: t('villasGrid.tettimorra.text2'),
@@ -89,7 +94,7 @@ export function VillasGrid() {
                     </AnimatePresence>
 
                     <AnimatePresence mode="wait">
-                      <motion.a
+                      {/* <motion.a
                         key={t('villasGrid.discover')}
                         href="/villas"
                         className="mt-4 sm:mt-6 lg:mt-8 inline-block border-y border-white py-2 font-sans text-[13px] md:text-[18px] lg:text-[20px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-10"
@@ -99,7 +104,20 @@ export function VillasGrid() {
                         whileHover={{ opacity: 0.6 }}
                         transition={{ duration: 0.25 }}>
                         {t('villasGrid.discover')}
-                      </motion.a>
+                      </motion.a> */}
+                      <motion.div
+                        key={`${villa.id}-${t('villasGrid.discover')}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="mt-4 sm:mt-6 lg:mt-8 inline-block">
+                        <Link
+                          to={`/villas/${villa.id}`}
+                          className="inline-block border-y border-white py-2 font-sans text-[13px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-60 md:text-[18px] lg:text-[20px]">
+                          {t('villasGrid.discover')}
+                        </Link>
+                      </motion.div>
                     </AnimatePresence>
                   </div>
                 </div>

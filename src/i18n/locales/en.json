@@ -270,5 +270,51 @@
     "text1End": "creating a private estate for groups, celebrations, or retreats.",
     "text2": "Reserve the entire estate and enjoy Barolo together, with complete privacy.",
     "button": "Explore The Borgo"
+  },
+  "villa": {
+    "tettineive": {
+      "overview": {
+        "title": "Tettineive is the most spacious of the Scarpa Villas — designed for families, gatherings, and time spent together without losing a sense of privacy.",
+        "description": "<strong>Five bedrooms</strong>, generous <strong>living areas</strong>, and a <strong>large private garden</strong> create a setting where each moment unfolds naturally, between shared experiences and quiet personal time."
+      },
+      "features": {
+        "intro": "At Tettineive, space becomes part of the experience.",
+        "paragraph1": "Mornings begin in the <strong>quiet of the garden</strong>, with light stretching across the hills. Afternoons unfold slowly — between <strong>conversation, rest, and time outdoors.</strong>",
+        "paragraph2": "In the evening, the <strong>villa gathers everyone together</strong> again — around the table, in the open air, or simply watching the landscape change with the light."
+      }
+    },
+    "bogliona": {
+      "overview": {
+        "title": "La Bogliona is the most intimate of the Scarpa Villas — a space designed for couples and small groups who value privacy, warmth, and a slower rhythm of living.",
+        "description": "With its <strong>direct view of the infinity pool</strong> and the <strong>surrounding vineyards,</strong> the villa offers a setting where the landscape becomes part of every moment."
+      },
+      "features": {
+        "intro": "At La Bogliona, everything feels closer.",
+        "paragraph1": "Light enters through wide windows, opening the villa to the surrounding landscape, while inside, the <strong>atmosphere remains warm and grounded.</strong>",
+        "paragraph2": "Evenings unfold slowly <strong>— by the fire, in the garden, or around the table —</strong> where time seems to soften and extend beyond the moment."
+      }
+    },
+    "bricchi": {
+      "overview": {
+        "title": "I Bricchi is a villa defined by light and openness — where large windows and panoramic views bring the landscape into every room.",
+        "description": "Designed for <strong>shared moments</strong> and <strong>quiet reflection</strong> alike, it offers a contemporary space that feels both expansive and intimate."
+      },
+      "features": {
+        "intro": "At I Bricchi, <strong>light becomes part of the experience.</strong>",
+        "paragraph1": "Throughout the day, it moves through the villa, shifting the atmosphere from morning clarity to soft evening tones.",
+        "paragraph2": "Spaces are designed for <strong>both gathering and retreat —</strong> from long conversations under the pergola to <strong>quiet moments by the fireplace.</strong>"
+      }
+    },
+    "tettimorra": {
+      "overview": {
+        "title": "Tettimorra is a villa rooted in Piedmontese tradition — where the atmosphere of a historic countryside home has been carefully preserved and reimagined.",
+        "description": "With its restored wooden beams, <strong>quiet interiors,</strong> and direct <strong>views over the Monvigliero vineyard,</strong> it offers a stay defined by intimacy, authenticity, and a deep connection to the land."
+      },
+      "features": {
+        "intro": "At Tettimorra, time moves differently — slower, more gently, following the <strong>rhythm of the vineyards.</strong>",
+        "paragraph1": "From the terrace, <strong>the Monvigliero landscape</strong> unfolds like a continuous horizon of vines, changing with the light throughout the day.",
+        "paragraph2": "Mornings begin in silence, with coffee overlooking the hills. Evenings settle into a quiet stillness, where the <strong>presence of the landscape</strong> becomes part of the experience."
+      }
+    }
   }
 }

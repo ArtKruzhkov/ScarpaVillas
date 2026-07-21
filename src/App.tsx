@@ -20,8 +20,12 @@ export default function App() {
         <Route path="/:lang/story" element={<StoryPage />} />
         <Route path="/villas" element={<VillasPage />} />
         <Route path="/:lang/villas" element={<VillasPage />} />
-        <Route path="/villas/tettineive" element={<VillaPage />} />
+        {/* <Route path="/villas/tettineive" element={<VillaPage />} />
         <Route path="/:lang/villas/tettineive" element={<VillaPage />} />
+        <Route path="/villas/bogliona" element={<VillaPage />} />
+        <Route path="/:lang/villas/bogliona" element={<VillaPage />} /> */}
+        <Route path="/villas/:villaId" element={<VillaPage />} />
+        <Route path="/:lang/villas/:villaId" element={<VillaPage />} />
       </Routes>
 
       <Footer />
