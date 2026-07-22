@@ -131,7 +131,7 @@ export const villas: Villa[] = [
       title: {
         bold: 'Villa Tettineive:',
         italic: 'ideal for families,',
-        text: 'group stays, and private gatherings.',
+        text: ' group stays, and private gatherings.',
       },
     },
     card: {
@@ -217,7 +217,7 @@ export const villas: Villa[] = [
       title: {
         bold: 'Villa La Bogliona:',
         italic: 'ideal for couples',
-        text: 'and small groups seeking privacy.',
+        text: ' and small groups seeking privacy.',
       },
     },
     card: {
@@ -303,7 +303,7 @@ export const villas: Villa[] = [
       title: {
         bold: 'Villa I Bricchi:',
         italic: 'ideal for groups who value light,',
-        text: 'openness, and contemporary design.',
+        text: ' openness, and contemporary design.',
       },
     },
     card: {
@@ -390,7 +390,7 @@ export const villas: Villa[] = [
       title: {
         bold: 'Villa Tettimorra:',
         italic: 'ideal for slow living,',
-        text: 'vineyard views, and quiet moments.',
+        text: ' vineyard views, and quiet moments.',
       },
     },
     card: {
