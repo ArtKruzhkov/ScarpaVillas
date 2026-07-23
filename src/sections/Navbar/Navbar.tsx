@@ -346,81 +346,6 @@ export function Navbar() {
                 </svg>
               </button>
 
-              {/* <nav className="grid" aria-label="Mobile">
-                {nav.map((item, index) => {
-                  const isLast = index === nav.length - 1;
-
-                  const itemClassName = `font-sans uppercase px-0 py-3 text-[14px] font-[600] tracking-[0.04em] text-[#2c3654] transition-colors hover:text-[#C09A60] ${!isLast ? 'border-b border-[#2c3654]/25' : ''}`;
-
-                  const label = (
-                    <AnimatePresence mode="wait">
-                      <motion.span
-                        key={item.label}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.25 }}>
-                        {item.label}
-                      </motion.span>
-                    </AnimatePresence>
-                  );
-
-                  if (item.isRoute) {
-                    return (
-                      <Link
-                        key={item.id}
-                        to={item.href}
-                        className={itemClassName}
-                        onClick={() => setOpen(false)}>
-                        {label}
-                      </Link>
-                    );
-                  }
-
-                  return (
-                    <a
-                      key={item.id}
-                      href={item.href}
-                      className={itemClassName}
-                      onClick={() => setOpen(false)}>
-                      {label}
-                    </a>
-                  );
-                })}
-
-                <div className="mt-8 flex justify-between">
-                  <LanguageSwitcher />
-
-                  <div className="flex items-center justify-center gap-4">
-                    <a
-                      href="https://www.instagram.com/scarpavillas/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="transition-opacity duration-300 hover:opacity-60"
-                      aria-label="Instagram">
-                      <img
-                        src={`${process.env.PUBLIC_URL}/images/nav/insta_logo.svg`}
-                        alt="Instagram"
-                        className="h-6 w-6"
-                      />
-                    </a>
-
-                    <a
-                      href="https://www.facebook.com/ScarpaVillas"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="transition-opacity duration-300 hover:opacity-60"
-                      aria-label="Facebook">
-                      <img
-                        src={`${process.env.PUBLIC_URL}/images/nav/fb_logo.svg`}
-                        alt="Facebook"
-                        className="h-5 w-5"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </nav> */}
-
               <nav className="flex flex-col" aria-label="Mobile">
                 {/* VILLAS */}
                 <div className="border-b border-[#2c3654]">
@@ -467,25 +392,6 @@ export function Navbar() {
                     }`}>
                     <div className="flex gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
                       {villas.map((villa) => (
-                        // <a
-                        //   key={villa.id}
-                        //   href="/"
-                        //   onClick={(e) => e.preventDefault()}
-                        //   className="w-[44%] shrink-0">
-                        //   <div className="relative aspect-[1.55/1] overflow-hidden">
-                        //     <img
-                        //       src={villa.image}
-                        //       alt={villa.name}
-                        //       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                        //     />
-
-                        //     <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
-
-                        //     <span className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white">
-                        //       {villa.name}
-                        //     </span>
-                        //   </div>
-                        // </a>
                         <Link
                           key={villa.id}
                           to={villa.href}
@@ -503,7 +409,7 @@ export function Navbar() {
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
 
-                            <span className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white">
+                            <span className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] md:text-[20px] text-white">
                               {villa.name}
                             </span>
                           </div>

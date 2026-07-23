@@ -110,7 +110,7 @@ export function VillaHero({ hero }: VillaHeroProps) {
             duration: 0.35,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="max-w-[350px] pb-24 text-center font-serif text-[22px] leading-[28px] text-white sm:max-w-[510px] sm:pb-12 sm:text-[28px] sm:leading-[34px] lg:max-w-[600px] lg:text-[32px] lg:leading-[38px]">
+          className="max-w-[350px] pb-24 text-center font-serif text-[22px] leading-[28px] text-white sm:max-w-[510px] sm:pb-12 sm:text-[28px] sm:leading-[34px] lg:max-w-[660px] lg:text-[32px] lg:leading-[38px]">
           {hero.subtitle.part1} <em>{hero.subtitle.italic}</em> {hero.subtitle.part2}
         </motion.p>
       </div>

@@ -34,7 +34,8 @@ export function VillaPage() {
         <VillaOverview overview={villa.overview} />
         {/* <VillaFeatures /> */}
         <VillaFeatures features={villa.features} />
-        <VillaAmenities />
+        {/* <VillaAmenities /> */}
+        <VillaAmenities amenities={villa.amenities} />
         {/* <VillaBookingCTA /> */}
         <VillaBookingCTA bookingCTA={villa.bookingCTA} />
         {/* <OtherVillas /> */}

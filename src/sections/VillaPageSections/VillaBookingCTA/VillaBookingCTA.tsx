@@ -47,8 +47,8 @@ export function VillaBookingCTA({ bookingCTA }: VillaBookingCTAProps) {
           duration: 0.8,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="mx-auto flex max-w-[344px] flex-col items-center text-center sm:max-w-[410px] md:max-w-[480px] lg:max-w-[760px]">
-        <p className="font-serif text-[20px] leading-[1.15] sm:text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[34px]">
+        className="mx-auto flex max-w-[354px] flex-col items-center text-center sm:max-w-[434px] md:max-w-[500px] lg:max-w-[860px]">
+        <p className="font-serif text-[20px] leading-[1.1] sm:text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[34px]">
           <strong className="font-semibold">{bookingCTA.title.bold}</strong>{' '}
           <em className="font-normal">{bookingCTA.title.italic}</em>
           <br className="hidden lg:block" />

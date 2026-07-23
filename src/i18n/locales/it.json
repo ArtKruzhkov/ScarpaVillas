@@ -280,6 +280,12 @@
         "intro": "At Tettineive, space becomes part of the experience.",
         "paragraph1": "Mornings begin in the <strong>quiet of the garden</strong>, with light stretching across the hills. Afternoons unfold slowly — between <strong>conversation, rest, and time outdoors.</strong>",
         "paragraph2": "In the evening, the <strong>villa gathers everyone together</strong> again — around the table, in the open air, or simply watching the landscape change with the light."
+      },
+      "amenities": {
+        "bottom": {
+          "title": "Outside, <strong>a large private garden</strong> opens towards the vineyards, offering <strong>space to relax</strong>, gather, or simply take in the landscape.",
+          "description": "Whether for breakfast in the morning light<br/> or a quiet moment at sunset, the outdoors becomes an essential part of the stay."
+        }
       }
     },
     "bogliona": {
@@ -291,6 +297,12 @@
         "intro": "At La Bogliona, everything feels closer.",
         "paragraph1": "Light enters through wide windows, opening the villa to the surrounding landscape, while inside, the <strong>atmosphere remains warm and grounded.</strong>",
         "paragraph2": "Evenings unfold slowly <strong>— by the fire, in the garden, or around the table —</strong> where time seems to soften and extend beyond the moment."
+      },
+      "amenities": {
+        "bottom": {
+          "title": "Outside, <strong>a private garden and firepit</strong><br/> create a <strong>space for quiet evenings</strong> under the open sky.",
+          "description": "Surrounded by vineyards, the villa offers a rare sense<br/> of stillness — where the world feels distant, and the moment becomes enough."
+        }
       }
     },
     "bricchi": {
@@ -302,6 +314,12 @@
         "intro": "At I Bricchi, <strong>light becomes part of the experience.</strong>",
         "paragraph1": "Throughout the day, it moves through the villa, shifting the atmosphere from morning clarity to soft evening tones.",
         "paragraph2": "Spaces are designed for <strong>both gathering and retreat —</strong> from long conversations under the pergola to <strong>quiet moments by the fireplace.</strong>"
+      },
+      "amenities": {
+        "bottom": {
+          "title": "Outside, <strong>a pergola-covered space</strong> creates a natural extension of the villa — <strong>a place for slow meals,</strong> conversation, and time spent outdoors at any hour of the day.",
+          "description": "Surrounded by vineyards, the setting invites both movement and stillness."
+        }
       }
     },
     "tettimorra": {
@@ -313,6 +331,12 @@
         "intro": "At Tettimorra, time moves differently — slower, more gently, following the <strong>rhythm of the vineyards.</strong>",
         "paragraph1": "From the terrace, <strong>the Monvigliero landscape</strong> unfolds like a continuous horizon of vines, changing with the light throughout the day.",
         "paragraph2": "Mornings begin in silence, with coffee overlooking the hills. Evenings settle into a quiet stillness, where the <strong>presence of the landscape</strong> becomes part of the experience."
+      },
+      "amenities": {
+        "bottom": {
+          "title": "A covered patio opens directly onto the <strong>Monvigliero vineyard,</strong> creating a rare continuity between the <strong>villa and the landscape.</strong>",
+          "description": "Here, the view remains uninterrupted — a simple composition of earth, vine, and sky."
+        }
       }
     }
   }
