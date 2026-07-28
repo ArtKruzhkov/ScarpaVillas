@@ -32,7 +32,7 @@ export function ScarpaLeadership() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               className="relative overflow-hidden h-full">
-              <motion.img
+              {/* <motion.img
                 src={`${baseUrl}/images/scarpaLeadership/owner_photo.png`}
                 alt={t('storyLeadership.owner.name')}
                 className="absolute inset-0 h-full w-full object-cover object-center"
@@ -50,7 +50,34 @@ export function ScarpaLeadership() {
                   duration: 1.8,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-              />
+              /> */}
+              <motion.picture
+                initial={{
+                  scale: 1.08,
+                }}
+                whileInView={{
+                  scale: 1,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.3,
+                }}
+                transition={{
+                  duration: 1.8,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="absolute inset-0">
+                <source
+                  media="(max-width: 639px)"
+                  srcSet={`${baseUrl}/images/scarpaLeadership/owner_photo_mobile.png`}
+                />
+
+                <img
+                  src={`${baseUrl}/images/scarpaLeadership/owner_photo.png`}
+                  alt={t('storyLeadership.owner.name')}
+                  className="h-full w-full object-cover object-center"
+                />
+              </motion.picture>
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent lg:hidden" />
