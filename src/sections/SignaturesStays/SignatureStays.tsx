@@ -4,6 +4,7 @@ import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import 'swiper/css';
 import './signaturesStays.css';
+import { ScarpaLeadership } from '../ScarpaLeadership/ScarpaLeadership';
 
 type Stay = {
   title: string;
@@ -123,9 +124,6 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
       )}
 
       <div className="p-4 sm:p-8 text-center">
-        {/* <h3 className="font-serif tracking-[0.05em] text-[#2C3654] text-[24px] leading-[32px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[42px]">
-          {stay.title}
-        </h3> */}
         <AnimatePresence mode="wait">
           <motion.h3
             key={`${stay.title}-${i18n.language}`}
@@ -139,9 +137,6 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         </AnimatePresence>
 
         {stay.subtitle && (
-          // <p className="mt-3 xl:mt-5 font-sans font-bold italic text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
-          //   {stay.subtitle}
-          // </p>
           <AnimatePresence mode="wait">
             <motion.p
               key={`${stay.subtitle}-${i18n.language}`}
@@ -155,9 +150,6 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
           </AnimatePresence>
         )}
 
-        {/* <p className="mt-4 xl:mt-8 font-sans text-[15px] leading-[24px] lg:text-[18px] lg:leading-[28px] xl:text-[20.5px] xl:leading-[32px] text-[#2C3654]">
-          {stay.description}
-        </p> */}
         <AnimatePresence mode="wait">
           <motion.p
             key={`${stay.description}-${i18n.language}`}
@@ -171,9 +163,6 @@ function StayCard({ stay, imageFirst = true }: StayCardProps) {
         </AnimatePresence>
 
         {stay.nights && (
-          // <p className="mt-4 xl:mt-8 font-sans font-bold text-[15px] leading-[24px] lg:text-[16px] lg:leading-[26px] 2xl:text-[18px] 2xl:leading-[28px] text-[#2C3654]">
-          //   {stay.nights} nights · {stay.startMonth} – {stay.endMonth}
-          // </p>
           <AnimatePresence mode="wait">
             <motion.p
               key={`${stay.title}-dates-${i18n.language}`}
@@ -235,19 +224,6 @@ export function SignatureStays() {
                 />
               </SwiperSlide>
             ))}
-            {/* {momentSlides.map((image, index) => (
-              <SwiperSlide key={`${image}-${index}`} className="bg-transparent">
-                <img
-                  src={image}
-                  alt="moment at scarpa villas"
-                  className={`block h-full w-full object-cover ${
-                    image.includes('moment-left5') || image.includes('moment-right5')
-                      ? 'object-[center_90%]'
-                      : ''
-                  }`}
-                />
-              </SwiperSlide>
-            ))} */}
           </Swiper>
 
           {/* TITLE */}
@@ -255,16 +231,21 @@ export function SignatureStays() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={`moments-title-${i18n.language}`}
-                className="font-serif text-center text-[20px] sm:leading-[22px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px] xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white"
+                className="font-serif text-center text-[28px] leading-[33px] sm:text-[28px] sm:leading-[32px] md:text-[36px] md:leading-[42px] lg:text-[46px] lg:leading-[48px] xl:text-[54px] xl:leading-[60px] 2xl:text-[70px] 2xl:leading-[72px] uppercase tracking-[0.2em] text-white"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.3 }}>
-                {t('moments.title')}
+                {/* {t('moments.title')} */}
+                <span>{t('moments.title1')}</span>
+
+                <span className="block sm:inline">{t('moments.title2')}</span>
               </motion.h2>
             </AnimatePresence>
           </div>
         </div>
+
+        <ScarpaLeadership />
 
         {/* STAYS GRID */}
         <div

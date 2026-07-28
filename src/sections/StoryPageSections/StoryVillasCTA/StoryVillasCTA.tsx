@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import './storyVillasCTA.css';
 
 const baseUrl = process.env.PUBLIC_URL;
 
@@ -9,75 +10,61 @@ export function StoryVillasCTA() {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-8xl">
-        <div className="bg-[#2C3654] px-4 pt-4 pb-12 xl:px-5 xl:py-5">
-          <div className="flex flex-col xl:items-center gap-5 xl:gap-0 xl:flex-row xl:justify-between">
-            {/* Image */}
-            <div className="shrink-0 overflow-hidden order-1 xl:w-[50%]">
+        <div className="relative overflow-hidden">
+          {/* Background image */}
+          <motion.img
+            src={`${baseUrl}/images/story_cta/storyCTA.png`}
+            alt="Scarpa Villas"
+            className="storyVillasCTA_image-height w-full object-cover"
+            initial={{
+              opacity: 0,
+              scale: 1.08,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 1.6,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent lg:hidden" />
+
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{
+              duration: 1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="absolute inset-0 flex flex-col items-center justify-end px-4 md:px-6 pb-10 text-center sm:pb-14 lg:pb-16">
+            <AnimatePresence mode="wait">
               <motion.div
-                className="h-full"
-                viewport={{ once: true, amount: 0.4 }}
-                initial={{
-                  opacity: 0,
-                  scale: 1.12,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                }}
+                key={t('storyVillasCTA.text')}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
                 transition={{
-                  duration: 1.8,
+                  duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
-                }}>
-                <img
-                  src={`${baseUrl}/images/story_cta/storyCTA.png`}
-                  alt="Scarpa Villas"
-                  // className="h-[720px] w-[720px] object-cover"
-                  className="w-full h-[320px] sm:h-[500px] md:h-[520px] xl:h-[620px] xl:w-full object-cover"
-                />
+                }}
+                className="flex flex-col items-center">
+                <p className="max-w-[343px] sm:max-w-[440px] md:max-w-[560px] lg:max-w-[620px] font-sans text-[11px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-semibold uppercase leading-[1.5] tracking-[0.06em] md:tracking-[0.2em] text-white">
+                  {t('storyVillasCTA.text')}
+                </p>
+
+                <button className="mt-6 min-w-[220px] md:min-w-[440px] lg:min-w-[510px] bg-white px-12 py-3 h-[44px] md:h-[57px] font-sans text-[13px] md:text-[18px] font-bold uppercase tracking-[0.2em] text-[#2C3654] transition-all duration-300 hover:bg-[#2C3654] hover:text-white">
+                  {t('storyVillasCTA.button')}
+                </button>
               </motion.div>
-            </div>
-
-            {/* Content */}
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 40,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.35,
-              }}
-              transition={{
-                duration: 1,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className="order-2 mx-auto flex lg:max-w-[702px] flex-col items-center text-center xl:px-4">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={t('storyVillasCTA.text')}
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -12 }}
-                  transition={{
-                    duration: 0.35,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center mx-auto flex max-w-[982px] text-center">
-                  <h2 className="font-serif text-[19px] leading-[23px] sm:text-[22px] sm:leading-[30px] md:text-[26px] md:leading-[34px] lg:text-[32px] lg:leading-[38px] text-white">
-                    {t('storyVillasCTA.text')}
-                  </h2>
-
-                  <button className="mt-7 lg:mt-10 w-full max-w-[704px] border border-white px-8 py-3 lg:py-[14px] font-sans text-[14px] sm:text-[16px] lg:text-[18px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-white hover:text-[#2C3654]">
-                    {t('storyVillasCTA.button')}
-                  </button>
-                </motion.div>
-              </AnimatePresence>
-            </motion.div>
-          </div>
+            </AnimatePresence>
+          </motion.div>
         </div>
       </div>
     </section>

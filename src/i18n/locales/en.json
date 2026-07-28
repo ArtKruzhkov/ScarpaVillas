@@ -87,7 +87,9 @@
     "vespaEBikeToursDescription": "Explore the Barolo hills on a Vespa, moving freely between vineyards and villages."
   },
   "moments": {
-    "title": "Moments At Scarpa Villas"
+    "title": "Moments At Scarpa Villas",
+    "title1": "Moments",
+    "title2": " At Scarpa Villas"
   },
   "stays": {
     "signatureStays": "Signature Stays",
@@ -339,6 +341,18 @@
           "description": "Here, the view remains uninterrupted — a simple composition of earth, vine, and sky."
         }
       }
+    }
+  },
+  "storyLeadership": {
+    "owner": {
+      "quote": "Scarpa Villas was born from a love for this land and from the desire to preserve its identity. Every space tells the story of its beauty, its history, and the authentic bond it shares with those who experience it.",
+      "name": "Maison Eugene Rene",
+      "role": "Owner of Scarpa"
+    },
+    "ceo": {
+      "quote": "Our goal is to transform every stay into a personal and memorable experience, defined by care, quality, and attention to every detail.",
+      "name": "Davide Champion",
+      "role": "CEO of Scarpa"
     }
   }
 }

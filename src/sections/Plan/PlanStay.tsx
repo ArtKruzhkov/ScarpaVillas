@@ -79,7 +79,11 @@ export function PlanStay() {
           </motion.p>
         </AnimatePresence>
 
-        <a href={process.env.PUBLIC_URL || '/'} className="plan-stay-btn">
+        <a
+          href={'https://www.simplebooking.it/ibe2/hotel/9131'}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="plan-stay-btn">
           <AnimatePresence mode="wait">
             <motion.span
               key={`plan-btn-${i18n.language}`}

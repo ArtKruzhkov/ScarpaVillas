@@ -129,16 +129,17 @@ export function StoryChapters() {
                         {card.title}
                       </h3>
 
-                      <p className="mt-3 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px]">
+                      <p className="mt-2 lg:mt-3 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px]">
                         {card.description}
                       </p>
 
                       <button
                         className="mt-8 w-full max-w-[360px]
                            border border-[#2C3654]
-                           px-8 py-3 sm:py-4 lg:py-[14px]
+                           h-[44px] md:h-[57px]
+                           px-8 py-[0.7rem] md:py-4
                            text-[#2C3654]
-                           text-[14px] sm:text-[15px]
+                           text-[13px] md:text-[15px]
                            2xl:text-[16px] min-[1680px]:text-[18px]
                            uppercase font-bold tracking-[0.18em]
                            transition-colors duration-300
