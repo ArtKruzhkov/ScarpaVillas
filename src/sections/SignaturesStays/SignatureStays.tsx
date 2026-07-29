@@ -4,7 +4,7 @@ import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import 'swiper/css';
 import './signaturesStays.css';
-import { ScarpaLeadership } from '../ScarpaLeadership/ScarpaLeadership';
+// import { ScarpaLeadership } from '../ScarpaLeadership/ScarpaLeadership';
 
 type Stay = {
   title: string;
@@ -245,7 +245,7 @@ export function SignatureStays() {
           </div>
         </div>
 
-        <ScarpaLeadership />
+        {/* <ScarpaLeadership /> */}
 
         {/* STAYS GRID */}
         <div

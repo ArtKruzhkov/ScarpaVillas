@@ -1,4 +1,4 @@
-.story_hero-title {
+.borgo_hero-title {
   font-family: 'Bodoni Moda', serif;
   text-transform: uppercase;
   font-size: 62px;
@@ -9,14 +9,14 @@
 }
 
 @media (max-width: 1023px) {
-  .story_hero-title {
+  .borgo_hero-title {
     font-size: 50px;
     line-height: 52px;
   }
 }
 
 @media (max-width: 639px) {
-  .story_hero-title {
+  .borgo_hero-title {
     font-size: 38px;
     line-height: 42px;
   }

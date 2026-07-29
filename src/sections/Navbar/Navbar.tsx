@@ -50,10 +50,11 @@ export function Navbar() {
   const villasUrl = i18n.language === 'en' ? '/villas' : `/${i18n.language}/villas`;
   const discoverUrl = i18n.language === 'en' ? '/discover' : `/${i18n.language}/discover`;
   const experiencesUrl = i18n.language === 'en' ? '/experiences' : `/${i18n.language}/experiences`;
+  const borgoUrl = i18n.language === 'en' ? '/borgo' : `/${i18n.language}/borgo`;
 
   const nav: NavItem[] = [
     { id: 'villas', label: t('nav.villas'), href: villasUrl, isRoute: true, routeId: 'villas' },
-    { id: 'borgo', label: t('nav.borgo'), href: '#borgo' },
+    { id: 'borgo', label: t('nav.borgo'), href: borgoUrl, isRoute: true, routeId: 'borgo' },
     {
       id: 'experiences',
       label: t('nav.experiences'),
@@ -76,6 +77,7 @@ export function Navbar() {
   const experiencesItem = nav.find((item) => item.id === 'experiences');
   const storyItem = nav.find((item) => item.id === 'story');
   const discoverItem = nav.find((item) => item.id === 'discover');
+  const borgoItem = nav.find((item) => item.id === 'borgo');
 
   const isVillasActiveRoute =
     villasItem?.routeId && location.pathname.includes(`/${villasItem.routeId}`);
@@ -88,6 +90,9 @@ export function Navbar() {
 
   const isDiscoverActiveRoute =
     discoverItem?.routeId && location.pathname.includes(`/${discoverItem.routeId}`);
+
+  const isBorgoActiveRoute =
+    borgoItem?.routeId && location.pathname.includes(`/${borgoItem.routeId}`);
 
   const closeMobileDropdowns = () => {
     setMobileVillasOpen(false);
@@ -798,9 +803,15 @@ export function Navbar() {
                 </div>
 
                 {/* BORGO */}
-                <a href="#borgo" className="border-b border-[#2c3654] py-3 nav-link_mob">
+                <Link
+                  to={borgoUrl}
+                  onClick={() => {
+                    setOpen(false);
+                    closeMobileDropdowns();
+                  }}
+                  className={`border-b border-[#2c3654] py-3 nav-link_mob ${isBorgoActiveRoute ? 'active' : ''}`}>
                   {t('nav.borgo')}
-                </a>
+                </Link>
 
                 {/* EXPERIENCES */}
                 <div className="border-b border-[#2c3654]">

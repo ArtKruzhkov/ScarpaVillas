@@ -12,7 +12,7 @@ export function ScarpaLeadership() {
       <div className="mx-auto max-w-8xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
           {/* OWNER */}
-          <div className="bg-white p-4 sm:p-7 lg:p-[40px] h-full scarpaLeadership_image-height">
+          <div className="bg-[#c09a60] p-4 sm:p-7 lg:p-[40px] h-full scarpaLeadership_image-height">
             <motion.article
               key={`owner-${i18n.language}`}
               initial={{
@@ -32,25 +32,6 @@ export function ScarpaLeadership() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               className="relative overflow-hidden h-full">
-              {/* <motion.img
-                src={`${baseUrl}/images/scarpaLeadership/owner_photo.png`}
-                alt={t('storyLeadership.owner.name')}
-                className="absolute inset-0 h-full w-full object-cover object-center"
-                initial={{
-                  scale: 1.08,
-                }}
-                whileInView={{
-                  scale: 1,
-                }}
-                viewport={{
-                  once: true,
-                  amount: 0.3,
-                }}
-                transition={{
-                  duration: 1.8,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-              /> */}
               <motion.picture
                 initial={{
                   scale: 1.08,
