@@ -14,7 +14,7 @@ export function BorgoEstate() {
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="h-[480px] lg:h-auto relative overflow-hidden flex flex-col justify-between px-6 py-10 lg:px-7 lg:py-12 2xl:px-12 2xl:py-16 max-h-[862px]">
+            className="h-[480px] lg:h-auto relative overflow-hidden flex flex-col justify-between px-4 py-10 lg:px-7 lg:py-12 2xl:px-12 2xl:py-16 max-h-[862px]">
             <img
               src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_estate/estate_left.png`}
               alt=""
@@ -25,7 +25,7 @@ export function BorgoEstate() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
 
             <div className="overflow-hidden relative z-10 flex h-full flex-col justify-between">
-              <h2 className="font-serif uppercase text-[#2C3654] text-[28px] lg:text-[32px] 2xl:text-[38px] leading-[1] lg:leading-[34px] 2xl:leading-[42px] tracking-[0.06em]">
+              <h2 className="font-serif uppercase text-[#2C3654] text-[24px] lg:text-[32px] 2xl:text-[38px] leading-[1] lg:leading-[34px] 2xl:leading-[42px] tracking-[0.06em]">
                 FOUR VILLAS,
                 <br />
                 ONE SETTING —
@@ -33,8 +33,8 @@ export function BorgoEstate() {
                 ENTIRELY YOURS
               </h2>
 
-              <div className="lg:mt-12 space-y-4 lg:space-y-8 font-serif text-[16px] lg:text-[19px] 2xl:text-[24px] leading-[20px] lg:leading-[22px] 2xl:leading-[30px] text-white">
-                <p>
+              <div className="lg:mt-12 space-y-4 lg:space-y-8 font-serif text-[15px] lg:text-[19px] 2xl:text-[24px] leading-[18px] lg:leading-[22px] 2xl:leading-[30px] text-white">
+                <p className="max-w-[343px] sm:max-w-none">
                   The Borgo can be reserved in its entirety — giving you exclusive access to all
                   four villas, the panoramic pool, and the surrounding estate.
                 </p>
