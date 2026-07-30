@@ -110,7 +110,7 @@ export function VillaAmenities({ amenities }: VillaAmenitiesProps) {
                       />
                     </div>
 
-                    <p className="font-sans text-[13px] leading-[1.45] text-white/90 lg:text-[12px] xl:text-[13px] 2xl:text-[16px]">
+                    <p className="font-sans text-[13px] xl:text-[15px] 2xl:text-[20px] leading-[1.45] text-white">
                       {item.text}
                     </p>
                   </div>

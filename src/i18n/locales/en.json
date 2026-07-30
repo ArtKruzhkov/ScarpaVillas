@@ -354,5 +354,65 @@
       "name": "Davide Champion",
       "role": "CEO of Scarpa"
     }
+  },
+  "borgoHero": {
+    "title": "THE BORGO",
+    "subtitle": "A private estate in the heart of Barolo"
+  },
+  "borgoEstate": {
+    "titleLine1": "FOUR VILLAS,",
+    "titleLine2": "ONE SETTING —",
+    "titleLine3": "ENTIRELY YOURS",
+    "text1": "The Borgo can be reserved in its entirety — giving you exclusive access to all four villas, the panoramic pool, and the surrounding estate.",
+    "text2": "No shared spaces, no other guests — just your group, in complete privacy."
+  },
+  "borgoAbout": {
+    "idealFor": "Ideal For:",
+    "includesTitle": "The Borgo Includes:",
+    "cards": {
+      "corporate": "Corporate retreats",
+      "weddings": "Destination weddings",
+      "celebrations": "Private celebrations and gatherings",
+      "family": "Multi-family stays"
+    },
+    "includes": {
+      "villas": "Four independent villas",
+      "spaces": "Private use of all indoor and outdoor spaces",
+      "pool": "Panoramic pool reserved exclusively for your group",
+      "garden": "Private gardens and shared open areas",
+      "kitchen": "Fully equipped kitchens in each villa"
+    }
+  },
+  "borgoMoments": {
+    "title": "AT THE BORGO, TIME IS SHARED DIFFERENTLY",
+    "text1Line1": "Mornings begin slowly, with the landscape unfolding across the hills.",
+    "text1Line2": " Days move between gathering and quiet moments, with space for everyone to find their own rhythm.",
+    "text2Line1": "Evenings bring everyone back together —",
+    "text2Line2": " around long tables, under open skies, or within the warmth of the villas."
+  },
+  "borgoExperiences": {
+    "title": "YOUR STAY CAN BE TAILORED WITH A RANGE OF EXPERIENCES:",
+    "titleLine1": "YOUR STAY CAN BE TAILORED",
+    "titleLine2": "WITH A RANGE OF EXPERIENCES:",
+    "button": "LEARN MORE ABOUT EXPERIENCES",
+    "items": {
+      "chef": "Private chef and in-villa dining",
+      "wine": "Wine tastings and winery visits",
+      "truffle": "Truffle hunting and outdoor activities",
+      "concierge": "Concierge and housekeeping services"
+    }
+  },
+  "borgoPhilosophy": {
+    "titleLine1": "The Borgo is not simply",
+    "titleLine2": "a larger stay — it is a different",
+    "titleLine3": "way of experiencing",
+    "titleLine4": "the villas.",
+    "subtitleLine1": "It offers the freedom of a private estate,",
+    "subtitleLine2": "where the entire setting adapts to your group."
+  },
+  "borgoCTA": {
+    "titleLine1": "Tell us about your plans —",
+    "titleLine2": "we’ll create a tailored proposal for your stay.",
+    "button": "REQUEST AVAILABILITY"
   }
 }

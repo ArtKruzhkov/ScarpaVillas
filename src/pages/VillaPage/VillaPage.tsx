@@ -8,6 +8,7 @@ import { VillaOverview } from '../../sections/VillaPageSections/VillaOverview/Vi
 import { villas } from '../../data/villas';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import { ContactUs } from '../../components/ui/ContactUs';
 
 export function VillaPage() {
   const { villaId } = useParams();
@@ -28,19 +29,15 @@ export function VillaPage() {
   return (
     <>
       <main key={villa.id} className="mx-auto max-w-8xl 2xl:max-w-[1920px]">
-        {/* <VillaHero /> */}
         <VillaHero hero={villa.hero} />
-        {/* <VillaOverview /> */}
         <VillaOverview overview={villa.overview} />
-        {/* <VillaFeatures /> */}
         <VillaFeatures features={villa.features} />
-        {/* <VillaAmenities /> */}
         <VillaAmenities amenities={villa.amenities} />
-        {/* <VillaBookingCTA /> */}
         <VillaBookingCTA bookingCTA={villa.bookingCTA} />
-        {/* <OtherVillas /> */}
         <OtherVillas currentVillaId={villa.id} />
       </main>
+
+      <ContactUs phone="34620165833" className="fixed bottom-4 right-4 z-50" />
     </>
   );
 }

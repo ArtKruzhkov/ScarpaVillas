@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { StoryChapters } from '../../sections/StoryPageSections/StoryChapters/StoryChapters';
 import { StoryHero } from '../../sections/StoryPageSections/StoryHero/StoryHero';
 import { StoryVillasCTA } from '../../sections/StoryPageSections/StoryVillasCTA/StoryVillasCTA';
+import { ContactUs } from '../../components/ui/ContactUs';
 
 export function StoryPage() {
   useEffect(() => {
@@ -15,6 +16,8 @@ export function StoryPage() {
         <StoryChapters />
         <StoryVillasCTA />
       </main>
+
+      <ContactUs phone="34620165833" className="fixed bottom-4 right-4 z-50" />
     </>
   );
 }

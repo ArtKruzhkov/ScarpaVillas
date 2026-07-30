@@ -1,6 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export function BorgoEstate() {
+  const { t } = useTranslation();
   return (
     <section className="bg-[#F7F5F2] overflow-hidden">
       <div className="mx-auto max-w-8xl">
@@ -14,7 +16,8 @@ export function BorgoEstate() {
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="h-[480px] lg:h-auto relative overflow-hidden flex flex-col justify-between px-4 py-10 lg:px-7 lg:py-12 2xl:px-12 2xl:py-16 max-h-[862px]">
+            className="h-[480px] lg:h-auto lg:min-h-[620px] relative overflow-hidden flex flex-col justify-between px-4 py-10 md:px-6 lg:px-7 lg:py-12 2xl:px-12 2xl:py-16 max-h-[862px]">
+            {/* IMG */}
             <img
               src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_estate/estate_left.png`}
               alt=""
@@ -22,27 +25,40 @@ export function BorgoEstate() {
               className="absolute inset-0 h-full w-full object-cover"
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" /> */}
 
-            <div className="overflow-hidden relative z-10 flex h-full flex-col justify-between">
-              <h2 className="font-serif uppercase text-[#2C3654] text-[24px] lg:text-[32px] 2xl:text-[38px] leading-[1] lg:leading-[34px] 2xl:leading-[42px] tracking-[0.06em]">
-                FOUR VILLAS,
-                <br />
-                ONE SETTING —
-                <br />
-                ENTIRELY YOURS
-              </h2>
+            {/* Content */}
+            <div className="relative z-10 flex h-full flex-col justify-between overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={t('borgoEstate.titleLine1')}
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -12 }}
+                  transition={{
+                    duration: 0.35,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                  className="flex h-full flex-col">
+                  <h2 className="font-serif uppercase text-[#2C3654] text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[38px] leading-[1] lg:leading-[34px] 2xl:leading-[42px] tracking-[0.06em]">
+                    {t('borgoEstate.titleLine1')}
+                    <br />
+                    {t('borgoEstate.titleLine2')}
+                    <br />
+                    {t('borgoEstate.titleLine3')}
+                  </h2>
 
-              <div className="lg:mt-12 space-y-4 lg:space-y-8 font-serif text-[15px] lg:text-[19px] 2xl:text-[24px] leading-[18px] lg:leading-[22px] 2xl:leading-[30px] text-white">
-                <p className="max-w-[343px] sm:max-w-none">
-                  The Borgo can be reserved in its entirety — giving you exclusive access to all
-                  four villas, the panoramic pool, and the surrounding estate.
-                </p>
+                  <div className="lg:mt-12 space-y-4 lg:space-y-8 font-serif text-[15px] md:text-[19px] 2xl:text-[24px] leading-[18px] md:leading-[22px] 2xl:leading-[30px] text-[#2C3654]">
+                    <p className="max-w-[343px] sm:max-w-[610px] md:max-w-[530px]">
+                      {t('borgoEstate.text1')}
+                    </p>
 
-                <p className="max-w-[276px] lg:max-w-[330px] 2xl:max-w-[410px]">
-                  No shared spaces, no other guests — just your group, in complete privacy.
-                </p>
-              </div>
+                    <p className="max-w-[276px] md:max-w-[330px] 2xl:max-w-[410px]">
+                      {t('borgoEstate.text2')}
+                    </p>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </motion.div>
 

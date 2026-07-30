@@ -353,5 +353,65 @@
       "name": "Davide Champion",
       "role": "CEO di Scarpa"
     }
+  },
+  "borgoHero": {
+    "title": "IL BORGO",
+    "subtitle": "Una tenuta privata nel cuore del Barolo"
+  },
+  "borgoEstate": {
+    "titleLine1": "QUATTRO VILLE,",
+    "titleLine2": "UN'UNICA DIMORA —",
+    "titleLine3": "INTERAMENTE PER VOI",
+    "text1": "Il Borgo può essere riservato nella sua interezza, offrendo accesso esclusivo alle quattro ville, alla piscina panoramica e all'intera tenuta.",
+    "text2": "Nessuno spazio condiviso, nessun altro ospite: solo il vostro gruppo, in totale privacy."
+  },
+  "borgoAbout": {
+    "idealFor": "Ideale per:",
+    "includesTitle": "Il Borgo comprende:",
+    "cards": {
+      "corporate": "Soggiorni aziendali",
+      "weddings": "Matrimoni in località esclusive",
+      "celebrations": "Feste e incontri privati",
+      "family": "Soggiorni per più famiglie"
+    },
+    "includes": {
+      "villas": "Quattro ville indipendenti",
+      "spaces": "Uso privato di tutti gli spazi interni ed esterni",
+      "pool": "Piscina panoramica riservata esclusivamente al vostro gruppo",
+      "garden": "Giardini privati e aree comuni all'aperto",
+      "kitchen": "Cucine completamente attrezzate in ogni villa"
+    }
+  },
+  "borgoMoments": {
+    "title": "AL BORGO, IL TEMPO SI VIVE INSIEME",
+    "text1Line1": "Le mattine iniziano lentamente, mentre il paesaggio si apre sulle colline.",
+    "text1Line2": " Le giornate scorrono tra momenti condivisi e attimi di quiete, lasciando a ciascuno il proprio ritmo.",
+    "text2Line1": "La sera riunisce tutti ancora una volta —",
+    "text2Line2": " attorno a lunghe tavolate, sotto il cielo aperto o nel calore delle ville."
+  },
+  "borgoExperiences": {
+    "title": "IL VOSTRO SOGGIORNO PUÒ ESSERE PERSONALIZZATO CON UN'AMPIA SCELTA DI ESPERIENZE:",
+    "titleLine1": "IL VOSTRO SOGGIORNO PUÒ ESSERE PERSONALIZZATO",
+    "titleLine2": "CON UN'AMPIA SCELTA DI ESPERIENZE:",
+    "button": "SCOPRI TUTTE LE ESPERIENZE",
+    "items": {
+      "chef": "Chef privato e cene in villa",
+      "wine": "Degustazioni e visite in cantina",
+      "truffle": "Ricerca del tartufo e attività all'aperto",
+      "concierge": "Servizi di concierge e housekeeping"
+    }
+  },
+  "borgoPhilosophy": {
+    "titleLine1": "Il Borgo non è solo",
+    "titleLine2": "un soggiorno più grande —",
+    "titleLine3": "è un modo diverso",
+    "titleLine4": "di vivere le ville.",
+    "subtitleLine1": "Offre la libertà di una tenuta privata,",
+    "subtitleLine2": "dove l'intero ambiente si adatta al vostro gruppo."
+  },
+  "borgoCTA": {
+    "titleLine1": "Raccontaci i tuoi progetti —",
+    "titleLine2": "prepareremo una proposta su misura per il tuo soggiorno.",
+    "button": "RICHIEDI DISPONIBILITÀ"
   }
 }
