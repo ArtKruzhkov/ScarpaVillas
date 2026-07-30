@@ -16,13 +16,13 @@ export function BorgoEstate() {
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="h-[480px] lg:h-auto lg:min-h-[620px] relative overflow-hidden flex flex-col justify-between px-4 py-10 md:px-6 lg:px-7 lg:py-12 2xl:px-12 2xl:py-16 max-h-[862px]">
+            className="h-[520px] md:h-[650px] lg:h-auto lg:min-h-[620px] relative overflow-hidden flex flex-col justify-between px-4 py-10 md:px-6 lg:px-7 lg:py-12 2xl:px-12 2xl:py-16 max-h-[862px]">
             {/* IMG */}
             <img
               src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_estate/estate_left.png`}
               alt=""
               aria-hidden="true"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover object-[center_bottom] lg:object-[center_center]"
             />
             {/* Overlay */}
             {/* <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" /> */}
@@ -48,7 +48,7 @@ export function BorgoEstate() {
                     {t('borgoEstate.titleLine3')}
                   </h2>
 
-                  <div className="lg:mt-12 space-y-4 lg:space-y-8 font-serif text-[15px] md:text-[19px] 2xl:text-[24px] leading-[18px] md:leading-[22px] 2xl:leading-[30px] text-[#2C3654]">
+                  <div className="mt-4 lg:mt-10 2xl:mt-12 space-y-4 lg:space-y-8 font-serif text-[15px] md:text-[19px] 2xl:text-[24px] leading-[18px] md:leading-[22px] 2xl:leading-[30px] text-[#2C3654]">
                     <p className="max-w-[343px] sm:max-w-[610px] md:max-w-[530px]">
                       {t('borgoEstate.text1')}
                     </p>
@@ -64,7 +64,7 @@ export function BorgoEstate() {
 
           {/* CENTER IMAGE */}
           <motion.div
-            className="h-[480px] lg:h-auto overflow-hidden bg-[#C09A60] p-8 max-h-[862px]"
+            className="h-[520px] md:h-[650px] lg:h-auto overflow-hidden bg-[#C09A60] p-8 max-h-[862px]"
             initial={{ opacity: 0, scale: 1.08 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -81,7 +81,7 @@ export function BorgoEstate() {
 
           {/* RIGHT IMAGE */}
           <motion.div
-            className="h-[480px] lg:h-auto overflow-hidden max-h-[862px]"
+            className="h-[520px] md:h-[650px] lg:h-auto overflow-hidden max-h-[862px]"
             initial={{ opacity: 0, scale: 1.08 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
