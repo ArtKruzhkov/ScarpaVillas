@@ -1,48 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-// const cards = [
-//   {
-//     title: 'Corporate retreats',
-//     image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/corporate.png`,
-//   },
-//   {
-//     title: 'Destination weddings',
-//     image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/weddings.png`,
-//   },
-//   {
-//     title: 'Private celebrations and gatherings',
-//     image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/celebrations.png`,
-//   },
-//   {
-//     title: 'Multi-family stays',
-//     image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/family.png`,
-//   },
-// ];
-
-// const includes = [
-//   {
-//     icon: 'villa.svg',
-//     text: 'Four independent villas',
-//   },
-//   {
-//     icon: 'spaces.svg',
-//     text: 'Private use of all indoor and outdoor spaces',
-//   },
-//   {
-//     icon: 'pool.svg',
-//     text: 'Panoramic pool reserved exclusively for your group',
-//   },
-//   {
-//     icon: 'garden.svg',
-//     text: 'Private gardens and shared open areas',
-//   },
-//   {
-//     icon: 'kitchen.svg',
-//     text: 'Fully equipped kitchens in each villa',
-//   },
-// ];
-
 export function BorgoAbout() {
   const { t } = useTranslation();
 
@@ -110,7 +68,7 @@ export function BorgoAbout() {
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="px-5 py-10 md:px-8 md:py-12 xl:px-10 2xl:py-14">
+            className="px-5 py-4 md:px-8 md:py-6 lg:py-10 xl:px-10 2xl:py-14">
             <AnimatePresence mode="wait">
               <motion.h2
                 key={t('borgoAbout.idealFor')}

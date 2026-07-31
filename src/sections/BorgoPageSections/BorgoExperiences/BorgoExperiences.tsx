@@ -1,25 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// const experiences = [
-//   {
-//     icon: 'chef.svg',
-//     text: 'Private chef and in-villa dining',
-//   },
-//   {
-//     icon: 'wine.svg',
-//     text: 'Wine tastings and winery visits',
-//   },
-//   {
-//     icon: 'truffle.svg',
-//     text: 'Truffle hunting and outdoor activities',
-//   },
-//   {
-//     icon: 'concierge.svg',
-//     text: 'Concierge and housekeeping services',
-//   },
-// ];
-
 export function BorgoExperiences() {
   const { t } = useTranslation();
 
@@ -105,7 +86,7 @@ export function BorgoExperiences() {
               ))}
             </div>
 
-            <button className="mt-6 lg:mt-16 2xl:mt-28 h-[44px] md:h-[57px] w-full max-w-[620px] border-2 border-white bg-white py-3 font-sans text-[13px] lg:text-[16px] font-semibold uppercase tracking-[0.16em] text-[#2C3654] transition-opacity duration-300 hover:opacity-80">
+            <button className="mt-6 lg:mt-16 2xl:mt-28 h-[44px] md:h-[57px] w-full max-w-[620px] border-2 border-white bg-white py-3 md:py-[1.1rem] lg:py-4 font-sans text-[13px] lg:text-[16px] font-semibold uppercase tracking-[0.16em] text-[#2C3654] transition-opacity duration-300 hover:opacity-80">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={t('borgoExperiences.button')}

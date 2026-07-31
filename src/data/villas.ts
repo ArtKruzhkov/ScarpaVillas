@@ -45,6 +45,7 @@ export type Villa = {
       italic: string;
       text: string;
     };
+    button: string;
   };
   card: {
     title: string;
@@ -87,23 +88,16 @@ export const villas: Villa[] = [
     id: 'tettineive',
     hero: {
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-tettineive.png`,
-      title: 'Tettineive',
+      title: 'villa.tettineive.hero.title',
       subtitle: {
-        part1: 'A place for gathering,',
-        italic: 'space, and quiet moments',
-        part2: 'in the Langhe.',
+        part1: 'villa.tettineive.hero.subtitle.part1',
+        italic: 'villa.tettineive.hero.subtitle.italic',
+        part2: 'villa.tettineive.hero.subtitle.part2',
       },
     },
     overview: {
-      // title:
-      //   'Tettineive is the most spacious of the Scarpa Villas — designed for families, gatherings, and time spent together without losing a sense of privacy.',
-
-      // description:
-      //   'Five bedrooms, generous living areas, and a large private garden create a setting where each moment unfolds naturally, between shared experiences and quiet personal time.',
-
       title: 'villa.tettineive.overview.title',
       description: 'villa.tettineive.overview.description',
-
       images: {
         left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-left.png`,
         center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-center.png`,
@@ -114,23 +108,23 @@ export const villas: Villa[] = [
       items: [
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/guests.svg`,
-          before: 'Up to',
-          accent: '12 guests',
+          before: 'villa.tettineive.features.items.0.before',
+          accent: 'villa.tettineive.features.items.0.accent',
           alt: 'Up to 12 guests',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bedrooms.svg`,
-          text: '5 bedrooms',
+          text: 'villa.tettineive.features.items.1.text',
           alt: '5 bedrooms',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/garden.svg`,
-          accent: 'Private garden',
+          accent: 'villa.tettineive.features.items.2.accent',
           alt: 'Private garden',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/panoramic_views.svg`,
-          text: 'Panoramic views',
+          text: 'villa.tettineive.features.items.3.text',
           alt: 'Panoramic views',
         },
       ],
@@ -141,15 +135,6 @@ export const villas: Villa[] = [
         bottomObjectPosition: 'object-[97%_center]',
       },
 
-      // text: {
-      //   intro: 'At Tettineive, space becomes part of the experience.',
-
-      //   paragraph1:
-      //     'Mornings begin in the quiet of the garden, with light stretching across the hills. Afternoons unfold slowly — between conversation, rest, and time outdoors.',
-
-      //   paragraph2:
-      //     'In the evening, the villa gathers everyone together again — around the table, in the open air, or simply watching the landscape change with the light.',
-      // },
       text: {
         intro: 'villa.tettineive.features.intro',
         paragraph1: 'villa.tettineive.features.paragraph1',
@@ -158,36 +143,37 @@ export const villas: Villa[] = [
     },
     bookingCTA: {
       title: {
-        bold: 'Villa Tettineive:',
-        italic: 'ideal for families,',
-        text: ' group stays, and private gatherings.',
+        bold: 'villa.tettineive.bookingCTA.title.bold',
+        italic: 'villa.tettineive.bookingCTA.title.italic',
+        text: 'villa.tettineive.bookingCTA.title.text',
       },
+      button: 'villa.tettineive.bookingCTA.button',
     },
     card: {
-      title: 'Tettineive',
-      description: 'The most spacious villa for gatherings, shared moments, and time together.',
+      title: 'villa.tettineive.card.title',
+      description: 'villa.tettineive.card.description',
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettineive.png`,
     },
     amenities: {
       top: {
         includes: {
-          title: 'The Villa Includes:',
+          title: 'villa.tettineive.amenities.top.includes.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/master-bedroom.svg`,
-              text: 'Two master bedrooms with ensuite bathrooms',
+              text: 'villa.tettineive.amenities.top.includes.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/double-bedroom.svg`,
-              text: 'Two double bedrooms with king-size beds',
+              text: 'villa.tettineive.amenities.top.includes.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/twin-bedroom.svg`,
-              text: 'One room with twin beds',
+              text: 'villa.tettineive.amenities.top.includes.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/sofa.svg`,
-              text: 'Additional sleeping options for flexible arrangements',
+              text: 'villa.tettineive.amenities.top.includes.items.3.text',
             },
           ],
         },
@@ -198,35 +184,35 @@ export const villas: Villa[] = [
         },
 
         amenities: {
-          title: 'Amenities:',
+          title: 'villa.tettineive.amenities.top.amenities.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_wifi.svg`,
-              text: 'Free WiFi',
+              text: 'villa.tettineive.amenities.top.amenities.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_air.svg`,
-              text: 'Air conditioning',
+              text: 'villa.tettineive.amenities.top.amenities.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_bathrobe.svg`,
-              text: 'Bathrobe, towels and linens',
+              text: 'villa.tettineive.amenities.top.amenities.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_courtesy.svg`,
-              text: 'Courtesy set (shampoo, shower gel, hand soap, slippers)',
+              text: 'villa.tettineive.amenities.top.amenities.items.3.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_washMachine.svg`,
-              text: 'Private washing machine',
+              text: 'villa.tettineive.amenities.top.amenities.items.4.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_profKitchen.svg`,
-              text: 'Professional kitchen',
+              text: 'villa.tettineive.amenities.top.amenities.items.5.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_areaBBQ.svg`,
-              text: 'Dining area with BBQ',
+              text: 'villa.tettineive.amenities.top.amenities.items.6.text',
             },
           ],
         },
@@ -243,20 +229,14 @@ export const villas: Villa[] = [
     id: 'bogliona',
     hero: {
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-bogliona.png`,
-      title: 'La Bogliona',
+      title: 'villa.bogliona.hero.title',
       subtitle: {
-        part1: 'A quiet retreat for',
-        italic: 'warmth, and slow evenings ',
-        part2: 'in the Langhe.',
+        part1: 'villa.bogliona.hero.subtitle.part1',
+        italic: 'villa.bogliona.hero.subtitle.italic',
+        part2: 'villa.bogliona.hero.subtitle.part2',
       },
     },
     overview: {
-      // title:
-      //   'La Bogliona is the most intimate of the Scarpa Villas — a space designed for couples and small groups who value privacy, warmth, and a slower rhythm of living.',
-
-      // description:
-      //   'With its direct view of the infinity pool and the surrounding vineyards, the villa offers a setting where the landscape becomes part of every moment.',
-
       title: 'villa.bogliona.overview.title',
       description: 'villa.bogliona.overview.description',
 
@@ -270,23 +250,23 @@ export const villas: Villa[] = [
       items: [
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/guests.svg`,
-          before: 'Up to',
-          accent: '9 guests',
+          before: 'villa.bogliona.features.items.0.before',
+          accent: 'villa.bogliona.features.items.0.accent',
           alt: 'Up to 9 guests',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bedrooms.svg`,
-          text: '4 bedrooms',
+          text: 'villa.bogliona.features.items.1.text',
           alt: '4 bedrooms',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/firepit.svg`,
-          accent: 'Private garden & firepit',
+          accent: 'villa.bogliona.features.items.2.accent',
           alt: 'Private garden & firepit',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/pool_view.svg`,
-          text: 'Direct view of the infinity pool',
+          text: 'villa.bogliona.features.items.3.text',
           alt: 'Direct view of the infinity pool',
         },
       ],
@@ -296,15 +276,6 @@ export const villas: Villa[] = [
         bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom.png`,
       },
 
-      // text: {
-      //   intro: 'At La Bogliona, everything feels closer.',
-
-      //   paragraph1:
-      //     'Light enters through wide windows, opening the villa to the surrounding landscape, while inside, the atmosphere remains warm and grounded.',
-
-      //   paragraph2:
-      //     'Evenings unfold slowly — by the fire, in the garden, or around the table — where time seems to soften and extend beyond the moment.',
-      // },
       text: {
         intro: 'villa.bogliona.features.intro',
         paragraph1: 'villa.bogliona.features.paragraph1',
@@ -313,36 +284,37 @@ export const villas: Villa[] = [
     },
     bookingCTA: {
       title: {
-        bold: 'Villa La Bogliona:',
-        italic: 'ideal for couples',
-        text: ' and small groups seeking privacy.',
+        bold: 'villa.bogliona.bookingCTA.title.bold',
+        italic: 'villa.bogliona.bookingCTA.title.italic',
+        text: 'villa.bogliona.bookingCTA.title.text',
       },
+      button: 'villa.bogliona.bookingCTA.button',
     },
     card: {
-      title: 'La Bogliona',
-      description: 'The most intimate villa for couples and quiet stays.',
+      title: 'villa.bogliona.card.title',
+      description: 'villa.bogliona.card.description',
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bogliona.png`,
     },
     amenities: {
       top: {
         includes: {
-          title: 'The Villa Includes:',
+          title: 'villa.bogliona.amenities.top.includes.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/master-bedroom.svg`,
-              text: 'Two master bedrooms with ensuite bathrooms',
+              text: 'villa.bogliona.amenities.top.includes.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/double-bedroom.svg`,
-              text: 'One double bedroom with a king-size bed',
+              text: 'villa.bogliona.amenities.top.includes.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/single-bedroom.svg`,
-              text: 'One single bedroom',
+              text: 'villa.bogliona.amenities.top.includes.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/sofa.svg`,
-              text: 'A studio with a sofa bed',
+              text: 'villa.bogliona.amenities.top.includes.items.3.text',
             },
           ],
         },
@@ -353,35 +325,35 @@ export const villas: Villa[] = [
         },
 
         amenities: {
-          title: 'Amenities:',
+          title: 'villa.bogliona.amenities.top.amenities.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_wifi.svg`,
-              text: 'Free WiFi',
+              text: 'villa.bogliona.amenities.top.amenities.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_air.svg`,
-              text: 'Air conditioning',
+              text: 'villa.bogliona.amenities.top.amenities.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_bathrobe.svg`,
-              text: 'Bathrobe, towels and linens',
+              text: 'villa.bogliona.amenities.top.amenities.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_courtesy.svg`,
-              text: 'Courtesy set (shampoo, shower gel, hand soap, slippers)',
+              text: 'villa.bogliona.amenities.top.amenities.items.3.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_washMachine.svg`,
-              text: 'Private washing machine',
+              text: 'villa.bogliona.amenities.top.amenities.items.4.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_profKitchen.svg`,
-              text: 'Professional kitchen',
+              text: 'villa.bogliona.amenities.top.amenities.items.5.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_firepit.svg`,
-              text: 'Outdoor fire pit',
+              text: 'villa.bogliona.amenities.top.amenities.items.6.text',
             },
           ],
         },
@@ -398,20 +370,14 @@ export const villas: Villa[] = [
     id: 'bricchi',
     hero: {
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-bricchi.png`,
-      title: 'I Bricchi',
+      title: 'villa.bricchi.hero.title',
       subtitle: {
-        part1: 'Light, openness, and a ',
-        italic: 'modern way of living',
-        part2: 'in the Langhe.',
+        part1: 'villa.bricchi.hero.subtitle.part1',
+        italic: 'villa.bricchi.hero.subtitle.italic',
+        part2: 'villa.bricchi.hero.subtitle.part2',
       },
     },
     overview: {
-      // title:
-      //   'I Bricchi is a villa defined by light and openness — where large windows and panoramic views bring the landscape into every room.',
-
-      // description:
-      //   'Designed for shared moments and quiet reflection alike, it offers a contemporary space that feels both expansive and intimate.',
-
       title: 'villa.bricchi.overview.title',
       description: 'villa.bricchi.overview.description',
 
@@ -425,23 +391,23 @@ export const villas: Villa[] = [
       items: [
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/guests.svg`,
-          before: 'Up to',
-          accent: '10 guests',
+          before: 'villa.bricchi.features.items.0.before',
+          accent: 'villa.bricchi.features.items.0.accent',
           alt: 'Up to 10 guests',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bedrooms.svg`,
-          text: '5 bedrooms',
+          text: 'villa.bricchi.features.items.1.text',
           alt: '5 bedrooms',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/large_window.svg`,
-          accent: 'Panoramic balconies & large windows',
+          accent: 'villa.bricchi.features.items.2.accent',
           alt: 'Panoramic balconies & large windows',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/outdoor_space.svg`,
-          text: 'Outdoor pergola space',
+          text: 'villa.bricchi.features.items.3.text',
           alt: 'Outdoor pergola space',
         },
       ],
@@ -451,15 +417,6 @@ export const villas: Villa[] = [
         bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom.png`,
       },
 
-      // text: {
-      //   intro: 'At I Bricchi, light becomes part of the experience.',
-
-      //   paragraph1:
-      //     'Throughout the day, it moves through the villa, shifting the atmosphere from morning clarity to soft evening tones.',
-
-      //   paragraph2:
-      //     'Spaces are designed for both gathering and retreat — from long conversations under the pergola to quiet moments by the fireplace.',
-      // },
       text: {
         intro: 'villa.bricchi.features.intro',
         paragraph1: 'villa.bricchi.features.paragraph1',
@@ -468,36 +425,37 @@ export const villas: Villa[] = [
     },
     bookingCTA: {
       title: {
-        bold: 'Villa I Bricchi:',
-        italic: 'ideal for groups who value light,',
-        text: ' openness, and contemporary design.',
+        bold: 'villa.bricchi.bookingCTA.title.bold',
+        italic: 'villa.bricchi.bookingCTA.title.italic',
+        text: 'villa.bricchi.bookingCTA.title.text',
       },
+      button: 'villa.bricchi.bookingCTA.button',
     },
     card: {
-      title: 'I Bricchi',
-      description: 'A light-filled contemporary villa with panoramic views.',
+      title: 'villa.bricchi.card.title',
+      description: 'villa.bricchi.card.description',
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bricchi.png`,
     },
     amenities: {
       top: {
         includes: {
-          title: 'The Villa Includes:',
+          title: 'villa.bricchi.amenities.top.includes.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/master-bedroom.svg`,
-              text: 'One master bedroom with ensuite bathroom',
+              text: 'villa.bricchi.amenities.top.includes.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/double-bedroom.svg`,
-              text: 'Two double bedrooms with king-size beds',
+              text: 'villa.bricchi.amenities.top.includes.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/ensuite-bath.svg`,
-              text: 'One suite with ensuite bathroom and sofa bed',
+              text: 'villa.bricchi.amenities.top.includes.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/shared-bath.svg`,
-              text: 'Shared bathroom for additional rooms',
+              text: 'villa.bricchi.amenities.top.includes.items.3.text',
             },
           ],
         },
@@ -508,31 +466,31 @@ export const villas: Villa[] = [
         },
 
         amenities: {
-          title: 'Amenities:',
+          title: 'villa.bricchi.amenities.top.amenities.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_wifi.svg`,
-              text: 'Free WiFi',
+              text: 'villa.bricchi.amenities.top.amenities.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_air.svg`,
-              text: 'Air conditioning',
+              text: 'villa.bricchi.amenities.top.amenities.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_bathrobe.svg`,
-              text: 'Bathrobe, towels and linens',
+              text: 'villa.bricchi.amenities.top.amenities.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_courtesy.svg`,
-              text: 'Courtesy set (shampoo, shower gel, hand soap, slippers)',
+              text: 'villa.bricchi.amenities.top.amenities.items.3.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_washMachine.svg`,
-              text: 'Private washing machine',
+              text: 'villa.bricchi.amenities.top.amenities.items.4.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_profKitchen.svg`,
-              text: 'Professional kitchen',
+              text: 'villa.bricchi.amenities.top.amenities.items.5.text',
             },
           ],
         },
@@ -549,20 +507,14 @@ export const villas: Villa[] = [
     id: 'tettimorra',
     hero: {
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-tettimorra.png`,
-      title: 'Tettimorra',
+      title: 'villa.tettimorra.hero.title',
       subtitle: {
-        part1: 'A timeless retreat overlooking ',
-        italic: 'the vineyards of Monvigliero.',
-        part2: '',
+        part1: 'villa.tettimorra.hero.subtitle.part1',
+        italic: 'villa.tettimorra.hero.subtitle.italic',
+        part2: 'villa.tettimorra.hero.subtitle.part2',
       },
     },
     overview: {
-      // title:
-      //   'Tettimorra is a villa rooted in Piedmontese tradition — where the atmosphere of a historic countryside home has been carefully preserved and reimagined.',
-
-      // description:
-      //   'With its restored wooden beams, quiet interiors, and direct views over the Monvigliero vineyard, it offers a stay defined by intimacy, authenticity, and a deep connection to the land.',
-
       title: 'villa.tettimorra.overview.title',
       description: 'villa.tettimorra.overview.description',
 
@@ -576,23 +528,23 @@ export const villas: Villa[] = [
       items: [
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/guests.svg`,
-          before: 'Up to',
-          accent: '10 guests',
+          before: 'villa.tettimorra.features.items.0.before',
+          accent: 'villa.tettimorra.features.items.0.accent',
           alt: 'Up to 10 guests',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bedrooms.svg`,
-          text: '4 - 5 bedrooms',
+          text: 'villa.tettimorra.features.items.1.text',
           alt: '4-5 bedrooms',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/terrace_overlook.svg`,
-          accent: 'Terrace overlooking Monvigliero',
+          accent: 'villa.tettimorra.features.items.2.accent',
           alt: 'Terrace overlooking Monvigliero',
         },
         {
           icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/architectural_details.svg`,
-          text: 'Traditional architectural details',
+          text: 'villa.tettimorra.features.items.3.text',
           alt: 'Traditional architectural details',
         },
       ],
@@ -602,16 +554,6 @@ export const villas: Villa[] = [
         bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom.png`,
       },
 
-      // text: {
-      //   intro:
-      //     'At Tettimorra, time moves differently — slower, more gently, following the rhythm of the vineyards.',
-
-      //   paragraph1:
-      //     'From the terrace, the Monvigliero landscape unfolds like a continuous horizon of vines, changing with the light throughout the day.',
-
-      //   paragraph2:
-      //     'Mornings begin in silence, with coffee overlooking the hills. Evenings settle into a quiet stillness, where the presence of the landscape becomes part of the experience.',
-      // },
       text: {
         intro: 'villa.tettimorra.features.intro',
         paragraph1: 'villa.tettimorra.features.paragraph1',
@@ -620,36 +562,37 @@ export const villas: Villa[] = [
     },
     bookingCTA: {
       title: {
-        bold: 'Villa Tettimorra:',
-        italic: 'ideal for those who seek authenticity',
-        text: ' and a closer connection to the land.',
+        bold: 'villa.tettimorra.bookingCTA.title.bold',
+        italic: 'villa.tettimorra.bookingCTA.title.italic',
+        text: 'villa.tettimorra.bookingCTA.title.text',
       },
+      button: 'villa.tettimorra.bookingCTA.button',
     },
     card: {
-      title: 'Tettimorra',
-      description: 'A traditional villa rooted in the vineyards of Monvigliero',
+      title: 'villa.tettimorra.card.title',
+      description: 'villa.tettimorra.card.description',
       image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettimorra.png`,
     },
     amenities: {
       top: {
         includes: {
-          title: 'The Villa Includes:',
+          title: 'villa.tettimorra.amenities.top.includes.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/master-bedroom.svg`,
-              text: 'One master bedroom with ensuite bathroom',
+              text: 'villa.tettimorra.amenities.top.includes.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/double-bedroom.svg`,
-              text: 'Two double bedrooms with king-size beds',
+              text: 'villa.tettimorra.amenities.top.includes.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/single-bedroom.svg`,
-              text: 'One single bedroom',
+              text: 'villa.tettimorra.amenities.top.includes.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/ensuite-bath.svg`,
-              text: 'One room with twin beds and sofa bed with ensuite bathroom',
+              text: 'villa.tettimorra.amenities.top.includes.items.3.text',
             },
           ],
         },
@@ -660,31 +603,31 @@ export const villas: Villa[] = [
         },
 
         amenities: {
-          title: 'Amenities:',
+          title: 'villa.tettimorra.amenities.top.amenities.title',
           items: [
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_wifi.svg`,
-              text: 'Free WiFi',
+              text: 'villa.tettimorra.amenities.top.amenities.items.0.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_air.svg`,
-              text: 'Air conditioning',
+              text: 'villa.tettimorra.amenities.top.amenities.items.1.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_bathrobe.svg`,
-              text: 'Bathrobe, towels and linens',
+              text: 'villa.tettimorra.amenities.top.amenities.items.2.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_courtesy.svg`,
-              text: 'Courtesy set (shampoo, shower gel, hand soap, slippers)',
+              text: 'villa.tettimorra.amenities.top.amenities.items.3.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_washMachine.svg`,
-              text: 'Private washing machine',
+              text: 'villa.tettimorra.amenities.top.amenities.items.4.text',
             },
             {
               icon: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/amenities_profKitchen.svg`,
-              text: 'Professional kitchen',
+              text: 'villa.tettimorra.amenities.top.amenities.items.5.text',
             },
           ],
         },

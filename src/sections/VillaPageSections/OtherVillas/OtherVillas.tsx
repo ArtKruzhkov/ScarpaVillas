@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { villas } from '../../../data/villas';
 import type { Villa } from '../../../data/villas';
 
@@ -9,6 +10,7 @@ type OtherVillasProps = {
 
 export function OtherVillas({ currentVillaId }: OtherVillasProps) {
   const otherVillas = villas.filter((villa) => villa.id !== currentVillaId);
+  const { t, i18n } = useTranslation();
 
   return (
     <section className="bg-white pt-14 pb-4 lg:pt-20 lg:pb-6">
@@ -22,16 +24,38 @@ export function OtherVillas({ currentVillaId }: OtherVillasProps) {
             duration: 0.8,
             ease: [0.22, 1, 0.36, 1],
           }}>
-          <h2 className="text-center font-serif uppercase tracking-[0.05em] max-w-[344px] mx-auto sm:max-w-none text-[#2C3654] text-[24px] leading-[30px] md:text-[28px] md:leading-[34px] lg:text-[32px] lg:leading-[38px] xl:text-[36px] xl:leading-[42px]">
-            Not sure if this villa is the right fit?
-          </h2>
+          <AnimatePresence mode="wait">
+            <motion.h2
+              key={`other-villas-title-${i18n.language}`}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{
+                duration: 0.35,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="text-center font-serif uppercase tracking-[0.05em] max-w-[344px] mx-auto sm:max-w-none text-[#2C3654] text-[24px] leading-[30px] md:text-[28px] md:leading-[34px] lg:text-[32px] lg:leading-[38px] xl:text-[36px] xl:leading-[42px]">
+              {t('otherVillas.title')}
+            </motion.h2>
+          </AnimatePresence>
 
           <div className="mt-4 md:mt-5 lg:mt-8 flex items-center gap-3 lg:gap-6">
             <div className="h-[2px] flex-1 bg-[#2C3654]" />
 
-            <span className="font-sans text-[13px] md:text-[15px] lg:text-[18px] font-bold uppercase tracking-[0.2em] text-[#2C3654]">
-              Explore other villas:
-            </span>
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={`other-villas-subtitle-${i18n.language}`}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{
+                  duration: 0.35,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="font-sans text-[13px] md:text-[15px] lg:text-[18px] font-bold uppercase tracking-[0.2em] text-[#2C3654]">
+                {t('otherVillas.subtitle')}
+              </motion.span>
+            </AnimatePresence>
 
             <div className="h-[2px] flex-1 bg-[#2C3654]" />
           </div>
@@ -63,15 +87,26 @@ export function OtherVillas({ currentVillaId }: OtherVillasProps) {
 
                   {/* Content */}
                   <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                    <h3 className="font-serif text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[34px] leading-none">
-                      {villa.card.title}
+                    <h3 className="font-serif text-[24px] md:text-[28px] lg:text-[32px] 2xl:text-[34px] leading-none]">
+                      {t(villa.card.title)}
                     </h3>
 
                     <div className="my-3 lg:my-4 h-px bg-white" />
 
-                    <p className="max-w-[310px] font-sans text-[14px] md:text-[15px] lg:text-[16px] leading-[1.55] text-white/90">
-                      {villa.card.description}
-                    </p>
+                    <AnimatePresence mode="wait">
+                      <motion.p
+                        key={`${villa.card.description}-${i18n.language}`}
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -12 }}
+                        transition={{
+                          duration: 0.35,
+                          ease: [0.22, 1, 0.36, 1],
+                        }}
+                        className="max-w-[310px] font-sans text-[14px] md:text-[15px] lg:text-[16px] leading-[1.55] text-white">
+                        {t(villa.card.description)}
+                      </motion.p>
+                    </AnimatePresence>
                   </div>
                 </div>
               </Link>

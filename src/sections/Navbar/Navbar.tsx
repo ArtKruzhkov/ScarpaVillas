@@ -268,27 +268,34 @@ export function Navbar() {
                       }`}>
                       <div className="mx-auto max-w-[1920px] px-6 py-8">
                         <div className="mx-auto grid max-w-[1550px] grid-cols-4 gap-5">
-                          {villas.map((villa) => (
-                            <Link
-                              key={villa.id}
-                              to={villa.href}
-                              onClick={() => setOpenDropdown(null)}
-                              className="group/villa relative block overflow-hidden">
-                              <div className="relative aspect-[1.6/1] overflow-hidden">
-                                <img
-                                  src={villa.image}
-                                  alt={villa.name}
-                                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/villa:scale-105"
-                                />
+                          {villas.map((villa) => {
+                            const isActiveVilla =
+                              location.pathname === villa.href ||
+                              location.pathname.endsWith(villa.href);
+                            return (
+                              <Link
+                                key={villa.id}
+                                to={villa.href}
+                                onClick={() => setOpenDropdown(null)}
+                                className={`group/villa relative block overflow-hidden border-[4px] transition-colors ${
+                                  isActiveVilla ? 'border-[#C09A60]' : 'border-transparent'
+                                }`}>
+                                <div className="relative aspect-[1.6/1] overflow-hidden">
+                                  <img
+                                    src={villa.image}
+                                    alt={villa.name}
+                                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/villa:scale-105"
+                                  />
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+                                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
 
-                                <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
-                                  {villa.name}
-                                </span>
-                              </div>
-                            </Link>
-                          ))}
+                                  <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
+                                    {villa.name}
+                                  </span>
+                                </div>
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
@@ -774,30 +781,39 @@ export function Navbar() {
                       mobileVillasOpen ? 'max-h-[260px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
                     <div className="flex gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
-                      {villas.map((villa) => (
-                        <Link
-                          key={villa.id}
-                          to={villa.href}
-                          onClick={() => {
-                            setOpen(false);
-                            closeMobileDropdowns();
-                          }}
-                          className="w-[44%] shrink-0">
-                          <div className="relative aspect-[1.55/1] overflow-hidden">
-                            <img
-                              src={villa.image}
-                              alt={villa.name}
-                              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                            />
+                      {villas.map((villa) => {
+                        const isActiveVilla =
+                          location.pathname === villa.href ||
+                          location.pathname.endsWith(villa.href);
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
+                        return (
+                          <Link
+                            key={villa.id}
+                            to={villa.href}
+                            onClick={() => {
+                              setOpen(false);
+                              closeMobileDropdowns();
+                            }}
+                            className="w-[44%] shrink-0">
+                            <div
+                              className={`relative aspect-[1.55/1] overflow-hidden border-[2px] transition-colors ${
+                                isActiveVilla ? 'border-[#C09A60]' : 'border-transparent'
+                              }`}>
+                              <img
+                                src={villa.image}
+                                alt={villa.name}
+                                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                              />
 
-                            <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] md:text-[20px] text-white">
-                              {villa.name}
-                            </span>
-                          </div>
-                        </Link>
-                      ))}
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
+
+                              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] md:text-[20px] text-white">
+                                {villa.name}
+                              </span>
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

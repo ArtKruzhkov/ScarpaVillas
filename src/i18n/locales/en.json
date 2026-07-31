@@ -275,73 +275,391 @@
   },
   "villa": {
     "tettineive": {
+      "hero": {
+        "title": "Tettineive",
+        "subtitle": {
+          "part1": "A place for gathering, ",
+          "italic": "space, and quiet moments ",
+          "part2": "in the Langhe."
+        }
+      },
       "overview": {
         "title": "Tettineive is the most spacious of the Scarpa Villas — designed for families, gatherings, and time spent together without losing a sense of privacy.",
         "description": "<strong>Five bedrooms</strong>, generous <strong>living areas</strong>, and a <strong>large private garden</strong> create a setting where each moment unfolds naturally, between shared experiences and quiet personal time."
       },
       "features": {
+        "items": [
+          {
+            "before": "Up to",
+            "accent": "12 guests"
+          },
+          {
+            "text": "5 bedrooms"
+          },
+          {
+            "accent": "Private garden"
+          },
+          {
+            "text": "Panoramic views"
+          }
+        ],
         "intro": "At Tettineive, space becomes part of the experience.",
         "paragraph1": "Mornings begin in the <strong>quiet of the garden</strong>, with light stretching across the hills. Afternoons unfold slowly — between <strong>conversation, rest, and time outdoors.</strong>",
         "paragraph2": "In the evening, the <strong>villa gathers everyone together</strong> again — around the table, in the open air, or simply watching the landscape change with the light."
       },
       "amenities": {
+        "top": {
+          "includes": {
+            "title": "The Villa Includes:",
+            "items": [
+              {
+                "text": "Two master bedrooms with ensuite bathrooms"
+              },
+              {
+                "text": "Two double bedrooms with king-size beds"
+              },
+              {
+                "text": "One room with twin beds"
+              },
+              {
+                "text": "Additional sleeping options for flexible arrangements"
+              }
+            ]
+          },
+          "amenities": {
+            "title": "Amenities:",
+            "items": [
+              {
+                "text": "Free WiFi"
+              },
+              {
+                "text": "Air conditioning"
+              },
+              {
+                "text": "Bathrobe, towels and linens"
+              },
+              {
+                "text": "Courtesy set (shampoo, shower gel, hand soap, slippers)"
+              },
+              {
+                "text": "Private washing machine"
+              },
+              {
+                "text": "Professional kitchen"
+              },
+              {
+                "text": "Dining area with BBQ"
+              }
+            ]
+          }
+        },
         "bottom": {
           "title": "Outside, <strong>a large private garden</strong> opens towards the vineyards, offering <strong>space to relax</strong>, gather, or simply take in the landscape.",
           "description": "Whether for breakfast in the morning light<br/> or a quiet moment at sunset, the outdoors becomes an essential part of the stay."
         }
+      },
+      "bookingCTA": {
+        "title": {
+          "bold": "Villa Tettineive:",
+          "italic": "ideal for families,",
+          "text": " group stays, and private gatherings."
+        },
+        "button": "Check availability"
+      },
+      "card": {
+        "title": "Tettineive",
+        "description": "The most spacious villa for gatherings, shared moments, and time together."
       }
     },
     "bogliona": {
+      "hero": {
+        "title": "La Bogliona",
+        "subtitle": {
+          "part1": "A quiet retreat for ",
+          "italic": "warmth, and slow evenings ",
+          "part2": "in the Langhe."
+        }
+      },
       "overview": {
         "title": "La Bogliona is the most intimate of the Scarpa Villas — a space designed for couples and small groups who value privacy, warmth, and a slower rhythm of living.",
         "description": "With its <strong>direct view of the infinity pool</strong> and the <strong>surrounding vineyards,</strong> the villa offers a setting where the landscape becomes part of every moment."
       },
       "features": {
+        "items": [
+          {
+            "before": "Up to",
+            "accent": "9 guests"
+          },
+          {
+            "text": "4 bedrooms"
+          },
+          {
+            "accent": "Private garden & firepit"
+          },
+          {
+            "text": "Direct view of the infinity pool"
+          }
+        ],
         "intro": "At La Bogliona, everything feels closer.",
         "paragraph1": "Light enters through wide windows, opening the villa to the surrounding landscape, while inside, the <strong>atmosphere remains warm and grounded.</strong>",
         "paragraph2": "Evenings unfold slowly <strong>— by the fire, in the garden, or around the table —</strong> where time seems to soften and extend beyond the moment."
       },
       "amenities": {
+        "top": {
+          "includes": {
+            "title": "The Villa Includes:",
+            "items": [
+              {
+                "text": "Two master bedrooms with ensuite bathrooms"
+              },
+              {
+                "text": "One double bedroom with a king-size bed"
+              },
+              {
+                "text": "One single bedroom"
+              },
+              {
+                "text": "A studio with a sofa bed"
+              }
+            ]
+          },
+          "amenities": {
+            "title": "Amenities:",
+            "items": [
+              {
+                "text": "Free WiFi"
+              },
+              {
+                "text": "Air conditioning"
+              },
+              {
+                "text": "Bathrobe, towels and linens"
+              },
+              {
+                "text": "Courtesy set (shampoo, shower gel, hand soap, slippers)"
+              },
+              {
+                "text": "Private washing machine"
+              },
+              {
+                "text": "Professional kitchen"
+              },
+              {
+                "text": "Outdoor fire pit"
+              }
+            ]
+          }
+        },
         "bottom": {
           "title": "Outside, <strong>a private garden and firepit</strong><br/> create a <strong>space for quiet evenings</strong> under the open sky.",
           "description": "Surrounded by vineyards, the villa offers a rare sense<br/> of stillness — where the world feels distant, and the moment becomes enough."
         }
+      },
+      "bookingCTA": {
+        "title": {
+          "bold": "Villa La Bogliona:",
+          "italic": "ideal for couples",
+          "text": " and small groups seeking privacy."
+        },
+        "button": "Check availability"
+      },
+      "card": {
+        "title": "La Bogliona",
+        "description": "The most intimate villa for couples and quiet stays."
       }
     },
     "bricchi": {
+      "hero": {
+        "title": "I Bricchi",
+        "subtitle": {
+          "part1": "Light, openness, and a ",
+          "italic": "modern way of living ",
+          "part2": "in the Langhe."
+        }
+      },
       "overview": {
         "title": "I Bricchi is a villa defined by light and openness — where large windows and panoramic views bring the landscape into every room.",
         "description": "Designed for <strong>shared moments</strong> and <strong>quiet reflection</strong> alike, it offers a contemporary space that feels both expansive and intimate."
       },
       "features": {
+        "items": [
+          {
+            "before": "Up to",
+            "accent": "10 guests"
+          },
+          {
+            "text": "5 bedrooms"
+          },
+          {
+            "accent": "Panoramic balconies & large windows"
+          },
+          {
+            "text": "Outdoor pergola space"
+          }
+        ],
         "intro": "At I Bricchi, <strong>light becomes part of the experience.</strong>",
         "paragraph1": "Throughout the day, it moves through the villa, shifting the atmosphere from morning clarity to soft evening tones.",
         "paragraph2": "Spaces are designed for <strong>both gathering and retreat —</strong> from long conversations under the pergola to <strong>quiet moments by the fireplace.</strong>"
       },
       "amenities": {
+        "top": {
+          "includes": {
+            "title": "The Villa Includes:",
+            "items": [
+              {
+                "text": "One master bedroom with ensuite bathroom"
+              },
+              {
+                "text": "Two double bedrooms with king-size beds"
+              },
+              {
+                "text": "One suite with ensuite bathroom and sofa bed"
+              },
+              {
+                "text": "Shared bathroom for additional rooms"
+              }
+            ]
+          },
+          "amenities": {
+            "title": "Amenities:",
+            "items": [
+              {
+                "text": "Free WiFi"
+              },
+              {
+                "text": "Air conditioning"
+              },
+              {
+                "text": "Bathrobe, towels and linens"
+              },
+              {
+                "text": "Courtesy set (shampoo, shower gel, hand soap, slippers)"
+              },
+              {
+                "text": "Private washing machine"
+              },
+              {
+                "text": "Professional kitchen"
+              }
+            ]
+          }
+        },
         "bottom": {
           "title": "Outside, <strong>a pergola-covered space</strong> creates a natural extension of the villa — <strong>a place for slow meals,</strong> conversation, and time spent outdoors at any hour of the day.",
           "description": "Surrounded by vineyards, the setting invites both movement and stillness."
         }
+      },
+      "bookingCTA": {
+        "title": {
+          "bold": "Villa I Bricchi:",
+          "italic": "ideal for groups who value light,",
+          "text": " openness, and contemporary design."
+        },
+        "button": "Check availability"
+      },
+      "card": {
+        "title": "I Bricchi",
+        "description": "A light-filled contemporary villa with panoramic views."
       }
     },
     "tettimorra": {
+      "hero": {
+        "title": "Tettimorra",
+        "subtitle": {
+          "part1": "A timeless retreat overlooking ",
+          "italic": "the vineyards of Monvigliero.",
+          "part2": ""
+        }
+      },
       "overview": {
         "title": "Tettimorra is a villa rooted in Piedmontese tradition — where the atmosphere of a historic countryside home has been carefully preserved and reimagined.",
         "description": "With its restored wooden beams, <strong>quiet interiors,</strong> and direct <strong>views over the Monvigliero vineyard,</strong> it offers a stay defined by intimacy, authenticity, and a deep connection to the land."
       },
       "features": {
+        "items": [
+          {
+            "before": "Up to",
+            "accent": "10 guests"
+          },
+          {
+            "text": "4 - 5 bedrooms"
+          },
+          {
+            "accent": "Terrace overlooking Monvigliero"
+          },
+          {
+            "text": "Traditional architectural details"
+          }
+        ],
         "intro": "At Tettimorra, time moves differently — slower, more gently, following the <strong>rhythm of the vineyards.</strong>",
         "paragraph1": "From the terrace, <strong>the Monvigliero landscape</strong> unfolds like a continuous horizon of vines, changing with the light throughout the day.",
         "paragraph2": "Mornings begin in silence, with coffee overlooking the hills. Evenings settle into a quiet stillness, where the <strong>presence of the landscape</strong> becomes part of the experience."
       },
       "amenities": {
+        "top": {
+          "includes": {
+            "title": "The Villa Includes:",
+            "items": [
+              {
+                "text": "One master bedroom with ensuite bathroom"
+              },
+              {
+                "text": "Two double bedrooms with king-size beds"
+              },
+              {
+                "text": "One single bedroom"
+              },
+              {
+                "text": "One room with twin beds and sofa bed with ensuite bathroom"
+              }
+            ]
+          },
+          "amenities": {
+            "title": "Amenities:",
+            "items": [
+              {
+                "text": "Free WiFi"
+              },
+              {
+                "text": "Air conditioning"
+              },
+              {
+                "text": "Bathrobe, towels and linens"
+              },
+              {
+                "text": "Courtesy set (shampoo, shower gel, hand soap, slippers)"
+              },
+              {
+                "text": "Private washing machine"
+              },
+              {
+                "text": "Professional kitchen"
+              }
+            ]
+          }
+        },
         "bottom": {
           "title": "A covered patio opens directly onto the <strong>Monvigliero vineyard,</strong> creating a rare continuity between the <strong>villa and the landscape.</strong>",
           "description": "Here, the view remains uninterrupted — a simple composition of earth, vine, and sky."
         }
+      },
+      "bookingCTA": {
+        "title": {
+          "bold": "Villa Tettimorra:",
+          "italic": "ideal for those who seek authenticity",
+          "text": " and a closer connection to the land."
+        },
+        "button": "Check availability"
+      },
+      "card": {
+        "title": "Tettimorra",
+        "description": "A traditional villa rooted in the vineyards of Monvigliero."
       }
     }
+  },
+  "otherVillas": {
+    "title": "Not sure if this villa is the right fit?",
+    "subtitle": "Explore other villas:"
   },
   "storyLeadership": {
     "owner": {
@@ -365,6 +683,11 @@
     "titleLine3": "ENTIRELY YOURS",
     "text1": "The Borgo can be reserved in its entirety — giving you exclusive access to all four villas, the panoramic pool, and the surrounding estate.",
     "text2": "No shared spaces, no other guests — just your group, in complete privacy."
+  },
+  "borgoEstate2": {
+    "titleLine1": "FOUR VILLAS, ONE SETTING —",
+    "titleLine2": "ENTIRELY YOURS",
+    "text": "The Borgo can be reserved in its entirety — giving you exclusive access to all four villas, the panoramic pool, and the surrounding estate. No shared spaces, no other guests — just your group, in complete privacy."
   },
   "borgoAbout": {
     "idealFor": "Ideal For:",
