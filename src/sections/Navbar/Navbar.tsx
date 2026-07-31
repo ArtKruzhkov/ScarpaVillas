@@ -796,7 +796,7 @@ export function Navbar() {
                             }}
                             className="w-[44%] shrink-0">
                             <div
-                              className={`relative aspect-[1.55/1] overflow-hidden border-[2px] transition-colors ${
+                              className={`relative aspect-[1.55/1] overflow-hidden border-[3px] transition-colors ${
                                 isActiveVilla ? 'border-[#C09A60]' : 'border-transparent'
                               }`}>
                               <img
