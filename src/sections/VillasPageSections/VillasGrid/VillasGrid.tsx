@@ -4,7 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 export function VillasGrid() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language === 'it' ? '/it' : '';
 
   const villas = [
     {
@@ -94,17 +95,6 @@ export function VillasGrid() {
                     </AnimatePresence>
 
                     <AnimatePresence mode="wait">
-                      {/* <motion.a
-                        key={t('villasGrid.discover')}
-                        href="/villas"
-                        className="mt-4 sm:mt-6 lg:mt-8 inline-block border-y border-white py-2 font-sans text-[13px] md:text-[18px] lg:text-[20px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-10"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        whileHover={{ opacity: 0.6 }}
-                        transition={{ duration: 0.25 }}>
-                        {t('villasGrid.discover')}
-                      </motion.a> */}
                       <motion.div
                         key={`${villa.id}-${t('villasGrid.discover')}`}
                         initial={{ opacity: 0 }}
@@ -113,7 +103,7 @@ export function VillasGrid() {
                         transition={{ duration: 0.25 }}
                         className="mt-4 sm:mt-6 lg:mt-8 inline-block">
                         <Link
-                          to={`/villas/${villa.id}`}
+                          to={`${langPrefix}/villas/${villa.id}`}
                           className="inline-block border-y border-white py-2 font-sans text-[13px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-60 md:text-[18px] lg:text-[20px]">
                           {t('villasGrid.discover')}
                         </Link>

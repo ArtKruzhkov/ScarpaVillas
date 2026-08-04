@@ -9,6 +9,26 @@
     "planStay": "Organizza il soggiorno",
     "planStayMob": "Prenota"
   },
+  "navDropdown": {
+    "story": {
+      "origins": "Origini",
+      "scarpaWinery": "Cantina Scarpa",
+      "people": "Persone",
+      "press": "Stampa"
+    },
+    "discover": {
+      "region": "Il Territorio",
+      "journal": "Journal"
+    },
+    "experiences": {
+      "wineTaste": "Vino e Sapori",
+      "natureMovement": "Natura e Movimento",
+      "cultureDiscovery": "Cultura e Scoperta",
+      "wine": "Vino",
+      "nature": "Natura",
+      "culture": "Cultura"
+    }
+  },
   "hero": {
     "titlePart1": "Soggiorna nel",
     "titleItalic": "cuore di Barolo",
@@ -219,6 +239,49 @@
     "text": "Scarpa Villas danno vita a questa storia, offrendo un modo per vivere Barolo attraverso lo spazio, il tempo e il legame con la terra.",
     "button": "Esplora Le Ville"
   },
+  "originsHero": {
+    "title": "Origini",
+    "subtitle": "Un paesaggio plasmato nel corso dei secoli"
+  },
+  "originsIntro": {
+    "titleLine1": "Sulle colline delle Langhe,",
+    "titleLine2": "il tempo non si misura in anni,",
+    "titleLine3": "ma in generazioni",
+    "textLine1": "Ciò che esiste oggi è il risultato di secoli di silenziosa trasformazione —",
+    "textLine2": "un paesaggio modellato lentamente, quasi impercettibilmente, nel tempo."
+  },
+  "originsHistory": {
+    "topText": "Molto prima che Barolo diventasse una delle regioni vinicole più celebrate al mondo, queste colline erano già abitate e coltivate.",
+    "bottomText": "Nel corso dei secoli, le Langhe si sono evolute attraverso stratificazioni storiche — dagli insediamenti preistorici e dalla prima agricoltura in Piemonte fino alla presenza romana, che contribuì a modellare ulteriormente il territorio con strade, coltivazioni e viticoltura."
+  },
+  "originsMedieval": {
+    "titleLine1": "Nel Medioevo, i borghi che oggi definiscono",
+    "titleLine2": " questo territorio iniziarono a prendere forma e il",
+    "titleLine3": " paesaggio vitato continuò a evolversi fino a diventare",
+    "titleLine4": " quello che oggi riconosciamo come Barolo.",
+    "text": "Ciò che vediamo oggi non è un luogo nato in un solo momento, ma modellato nel tempo — da generazioni che hanno vissuto, lavorato e coltivato questa terra."
+  },
+  "originsMonvigliero": {
+    "titleLine1": "Nel cuore di questo",
+    "titleLine2": "paesaggio si trova Monvigliero.",
+
+    "text1": "Situati sopra il borgo di Verduno, sul margine settentrionale della denominazione Barolo, questi vigneti sono da sempre conosciuti per il loro carattere distintivo — raffinato, espressivo e profondamente legato all'identità del territorio.",
+
+    "text2Start": "Oggi Monvigliero è considerato",
+    "text2Bold": "uno dei cru più distintivi del Barolo",
+    "text2End": ", modellato dall'altitudine, dall'esposizione e dal delicato equilibrio tra sole e aria che caratterizza queste colline.",
+
+    "text3Start": "Qui",
+    "text3Bold": "Nebbiolo e Pelaverga",
+    "text3End": " crescono fianco a fianco, continuando una tradizione che riflette la profondità e l'eleganza di questo luogo"
+  },
+  "originsCTA": {
+    "title": "SCARPA VILLAS CONTINUANO STORIA",
+    "textLine1": "CONTEMPORANEE NEL COMFORT, MA RADICATE IN UN PAESAGGIO",
+    "textLine2": "MODELLATO NEL CORSO DEI SECOLI, OFFRONO UN MODO DI VIVERE IL BAROLO",
+    "textLine3": "NON COME VISITATORI, MA COME PARTE DEL SUO RITMO.",
+    "button": "Scopri le Ville"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Quattro modi diversi di vivere il Barolo"
@@ -289,7 +352,7 @@
       "features": {
         "items": [
           {
-            "before": "“Fino a",
+            "before": "Fino a",
             "accent": "12 ospiti"
           },
           {

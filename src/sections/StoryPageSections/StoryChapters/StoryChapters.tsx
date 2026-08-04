@@ -1,10 +1,12 @@
 import { useTranslation, Trans } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const baseUrl = process.env.PUBLIC_URL;
 
 export function StoryChapters() {
   const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language === 'it' ? '/it' : '';
 
   const storyCards = [
     {
@@ -13,6 +15,7 @@ export function StoryChapters() {
       description: t('storyChapters.origins.description'),
       button: t('storyChapters.origins.button'),
       image: `${baseUrl}/images/story_chapters/origins.png`,
+      href: '/story/origins',
     },
     {
       id: 'winery',
@@ -20,6 +23,7 @@ export function StoryChapters() {
       description: t('storyChapters.winery.description'),
       button: t('storyChapters.winery.button'),
       image: `${baseUrl}/images/story_chapters/winery.png`,
+      href: '/story/scarpa-winery',
     },
     {
       id: 'people',
@@ -27,6 +31,7 @@ export function StoryChapters() {
       description: t('storyChapters.people.description'),
       button: t('storyChapters.people.button'),
       image: `${baseUrl}/images/story_chapters/people.png`,
+      href: '/story/people',
     },
     {
       id: 'press',
@@ -34,6 +39,7 @@ export function StoryChapters() {
       description: t('storyChapters.press.description'),
       button: t('storyChapters.press.button'),
       image: `${baseUrl}/images/story_chapters/press.png`,
+      href: '/story/press',
     },
   ];
 
@@ -133,20 +139,11 @@ export function StoryChapters() {
                         {card.description}
                       </p>
 
-                      <button
-                        className="mt-8 w-full max-w-[360px]
-                           border border-[#2C3654]
-                           h-[44px] md:h-[57px]
-                           px-8 py-[0.7rem] md:py-4
-                           text-[#2C3654]
-                           text-[13px] md:text-[15px]
-                           2xl:text-[16px] min-[1680px]:text-[18px]
-                           uppercase font-bold tracking-[0.18em]
-                           transition-colors duration-300
-                           hover:bg-[#2C3654]
-                           hover:text-white">
+                      <Link
+                        to={`${langPrefix}${card.href}`}
+                        className="mt-8 flex h-[44px] w-full max-w-[360px] items-center justify-center border border-[#2C3654] px-8 py-[0.7rem] md:h-[57px] md:py-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#2C3654] transition-colors duration-300 hover:bg-[#2C3654] hover:text-white md:text-[15px] 2xl:text-[16px] min-[1680px]:text-[18px]">
                         {card.button}
-                      </button>
+                      </Link>
                     </motion.div>
                   </AnimatePresence>
 

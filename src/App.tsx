@@ -9,6 +9,7 @@ import { VillaPage } from './pages/VillaPage/VillaPage';
 import { BorgoPage } from './pages/BorgoPage/BorgoPage';
 
 import './App.css';
+import { OriginsPage } from './pages/OriginsPage/OriginsPage';
 
 export default function App() {
   return (
@@ -30,6 +31,9 @@ export default function App() {
 
         <Route path="/borgo" element={<BorgoPage />} />
         <Route path="/:lang/borgo" element={<BorgoPage />} />
+
+        <Route path="/story/origins" element={<OriginsPage />} />
+        <Route path="/:lang/story/origins" element={<OriginsPage />} />
       </Routes>
 
       <Footer />

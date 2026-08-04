@@ -14,6 +14,7 @@ export function Navbar() {
   const [open, setOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState<string | null>(null);
   const location = useLocation();
+  const langPrefix = i18n.language === 'en' ? '' : `/${i18n.language}`;
 
   const [mobileVillasOpen, setMobileVillasOpen] = React.useState(false);
   const [mobileExperiencesOpen, setMobileExperiencesOpen] = React.useState(false);
@@ -131,25 +132,25 @@ export function Navbar() {
   const storyLinks = [
     {
       id: 'origins',
-      name: 'Origins',
+      name: t('navDropdown.story.origins'),
       image: `${process.env.PUBLIC_URL}/images/nav/origins.png`,
       href: '/story/origins',
     },
     {
       id: 'scarpa-winery',
-      name: 'Scarpa Winery',
+      name: t('navDropdown.story.scarpaWinery'),
       image: `${process.env.PUBLIC_URL}/images/nav/scarpawinery.png`,
       href: '/story/scarpa-winery',
     },
     {
       id: 'people',
-      name: 'People',
+      name: t('navDropdown.story.people'),
       image: `${process.env.PUBLIC_URL}/images/nav/people.png`,
       href: '/story/people',
     },
     {
       id: 'press',
-      name: 'Press',
+      name: t('navDropdown.story.press'),
       image: `${process.env.PUBLIC_URL}/images/nav/press.png`,
       href: '/story/press',
     },
@@ -158,13 +159,13 @@ export function Navbar() {
   const discoverLinks = [
     {
       id: 'region',
-      name: 'The Region',
+      name: t('navDropdown.discover.region'),
       image: `${process.env.PUBLIC_URL}/images/nav/theRegion.png`,
       href: '/discover/the-region',
     },
     {
       id: 'journal',
-      name: 'Journal',
+      name: t('navDropdown.discover.journal'),
       image: `${process.env.PUBLIC_URL}/images/nav/journal.png`,
       href: '/discover/journal',
     },
@@ -173,22 +174,22 @@ export function Navbar() {
   const experiencesLinks = [
     {
       id: 'wine-taste',
-      name: 'Wine & Taste',
-      nameMob: 'Wine',
+      name: t('navDropdown.experiences.wineTaste'),
+      nameMob: t('navDropdown.experiences.wine'),
       image: `${process.env.PUBLIC_URL}/images/nav/wineTaste.png`,
       href: `${experiencesUrl}#wine-taste`,
     },
     {
       id: 'nature-movement',
-      name: 'Nature & Movement',
-      nameMob: 'Nature',
+      name: t('navDropdown.experiences.natureMovement'),
+      nameMob: t('navDropdown.experiences.nature'),
       image: `${process.env.PUBLIC_URL}/images/nav/natureMovement.png`,
       href: `${experiencesUrl}#nature-movement`,
     },
     {
       id: 'culture-discovery',
-      name: 'Culture & Discovery',
-      nameMob: 'Culture',
+      name: t('navDropdown.experiences.cultureDiscovery'),
+      nameMob: t('navDropdown.experiences.culture'),
       image: `${process.env.PUBLIC_URL}/images/nav/cultureDiscovery.png`,
       href: `${experiencesUrl}#culture-discovery`,
     },
@@ -275,7 +276,7 @@ export function Navbar() {
                             return (
                               <Link
                                 key={villa.id}
-                                to={villa.href}
+                                to={`${langPrefix}${villa.href}`}
                                 onClick={() => setOpenDropdown(null)}
                                 className={`group/villa relative block overflow-hidden border-[4px] transition-colors ${
                                   isActiveVilla ? 'border-[#C09A60]' : 'border-transparent'
@@ -354,27 +355,34 @@ export function Navbar() {
                       }`}>
                       <div className="mx-auto max-w-[1920px] px-6 py-8">
                         <div className="mx-auto grid max-w-[1550px] grid-cols-4 gap-5">
-                          {storyLinks.map((storyLink) => (
-                            <Link
-                              key={storyLink.id}
-                              to={storyLink.href}
-                              onClick={() => setOpenDropdown(null)}
-                              className="group/story relative block overflow-hidden">
-                              <div className="relative aspect-[1.6/1] overflow-hidden">
-                                <img
-                                  src={storyLink.image}
-                                  alt={storyLink.name}
-                                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/story:scale-105"
-                                />
+                          {storyLinks.map((storyLink) => {
+                            const isActiveStory =
+                              location.pathname === storyLink.href ||
+                              location.pathname.endsWith(storyLink.href);
+                            return (
+                              <Link
+                                key={storyLink.id}
+                                to={`${langPrefix}${storyLink.href}`}
+                                onClick={() => setOpenDropdown(null)}
+                                className={`group/story relative block overflow-hidden border-[4px] transition-colors ${
+                                  isActiveStory ? 'border-[#C09A60]' : 'border-transparent'
+                                }`}>
+                                <div className="relative aspect-[1.6/1] overflow-hidden">
+                                  <img
+                                    src={storyLink.image}
+                                    alt={storyLink.name}
+                                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/story:scale-105"
+                                  />
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+                                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
 
-                                <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
-                                  {storyLink.name}
-                                </span>
-                              </div>
-                            </Link>
-                          ))}
+                                  <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
+                                    {storyLink.name}
+                                  </span>
+                                </div>
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
@@ -789,7 +797,7 @@ export function Navbar() {
                         return (
                           <Link
                             key={villa.id}
-                            to={villa.href}
+                            to={`${langPrefix}${villa.href}`}
                             onClick={() => {
                               setOpen(false);
                               closeMobileDropdowns();
@@ -961,30 +969,39 @@ export function Navbar() {
                       mobileStoryOpen ? 'max-h-[260px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
                     <div className="flex gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
-                      {storyLinks.map((storyLink) => (
-                        <Link
-                          key={storyLink.id}
-                          to={storyLink.href}
-                          onClick={() => {
-                            setOpen(false);
-                            closeMobileDropdowns();
-                          }}
-                          className="w-[44%] shrink-0">
-                          <div className="relative aspect-[1.55/1] overflow-hidden">
-                            <img
-                              src={storyLink.image}
-                              alt={storyLink.name}
-                              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                            />
+                      {storyLinks.map((storyLink) => {
+                        const isActiveStory =
+                          location.pathname === storyLink.href ||
+                          location.pathname.endsWith(storyLink.href);
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+                        return (
+                          <Link
+                            key={storyLink.id}
+                            to={`${langPrefix}${storyLink.href}`}
+                            onClick={() => {
+                              setOpen(false);
+                              closeMobileDropdowns();
+                            }}
+                            className="w-[44%] shrink-0">
+                            <div
+                              className={`relative aspect-[1.55/1] overflow-hidden border-[3px] transition-colors ${
+                                isActiveStory ? 'border-[#C09A60]' : 'border-transparent'
+                              }`}>
+                              <img
+                                src={storyLink.image}
+                                alt={storyLink.name}
+                                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                              />
 
-                            <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white md:text-[20px]">
-                              {storyLink.name}
-                            </span>
-                          </div>
-                        </Link>
-                      ))}
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" />
+
+                              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] md:text-[20px] text-white">
+                                {storyLink.name}
+                              </span>
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

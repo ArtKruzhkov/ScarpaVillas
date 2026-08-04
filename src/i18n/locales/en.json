@@ -9,6 +9,26 @@
     "planStay": "Plan Your Stay",
     "planStayMob": "Your Stay"
   },
+  "navDropdown": {
+    "story": {
+      "origins": "Origins",
+      "scarpaWinery": "Scarpa Winery",
+      "people": "People",
+      "press": "Press"
+    },
+    "discover": {
+      "region": "The Region",
+      "journal": "Journal"
+    },
+    "experiences": {
+      "wineTaste": "Wine & Taste",
+      "natureMovement": "Nature & Movement",
+      "cultureDiscovery": "Culture & Discovery",
+      "wine": "Wine",
+      "nature": "Nature",
+      "culture": "Culture"
+    }
+  },
   "hero": {
     "titlePart1": "Stay in the",
     "titleItalic": "heart of Barolo",
@@ -219,6 +239,49 @@
   "storyVillasCTA": {
     "text": "Scarpa Villas bring this story to life — offering a way to experience Barolo through space, time, and connection to the land.",
     "button": "Explore The Villas"
+  },
+  "originsHero": {
+    "title": "Origins",
+    "subtitle": "A landscape shaped over centuries"
+  },
+  "originsIntro": {
+    "titleLine1": "In the hills of the Langhe,",
+    "titleLine2": "time is not measured in years,",
+    "titleLine3": "but in generations",
+    "textLine1": "What exists today is the result of centuries of quiet transformation —",
+    "textLine2": "a landscape shaped slowly, almost imperceptibly, over time."
+  },
+  "originsHistory": {
+    "topText": "Long before Barolo became one of the world's most celebrated wine regions, these hills were already inhabited and cultivated.",
+    "bottomText": "Over centuries, the Langhe evolved through layered histories — from prehistoric settlement and early agriculture in Piedmont to the Roman presence that further shaped the region through roads, farming, and viticulture."
+  },
+  "originsMedieval": {
+    "titleLine1": "In the Middle Ages, the villages that define the",
+    "titleLine2": " region today began to take form, and the vineyard",
+    "titleLine3": " landscape continued to develop into what we now",
+    "titleLine4": " recognize as Barolo.",
+    "text": "What you see today is not a place that was created at once, but one shaped over time — by generations who lived, worked, and cultivated this land."
+  },
+  "originsMonvigliero": {
+    "titleLine1": "At the heart of this",
+    "titleLine2": "landscape lies Monvigliero.",
+
+    "text1": "Located above the village of Verduno, on the northern edge of the Barolo appellation, these vineyards have long been known for their distinctive character — refined, expressive, and deeply connected to the identity of the region.",
+
+    "text2Start": "Today, Monvigliero is regarded as",
+    "text2Bold": "one of the most distinctive crus of Barolo",
+    "text2End": ", shaped by its altitude, exposure, and the quiet balance between sun and air that defines these hills.",
+
+    "text3Start": "Here,",
+    "text3Bold": "Nebbiolo and Pelaverga",
+    "text3End": " grow side by side, continuing a tradition that reflects both the depth and the quiet elegance of this place."
+  },
+  "originsCTA": {
+    "title": "SCARPA VILLAS CONTINUE THIS STORY",
+    "textLine1": "CONTEMPORARY IN COMFORT, YET ROOTED IN A LANDSCAPE",
+    "textLine2": "THAT HAS EVOLVED OVER CENTURIES, THEY OFFER A WAY TO EXPERIENCE BAROLO",
+    "textLine3": "NOT AS A VISITOR, BUT AS PART OF ITS ONGOING RHYTHM.",
+    "button": "Explore the Villas"
   },
   "villasHero": {
     "title": "Villas",
