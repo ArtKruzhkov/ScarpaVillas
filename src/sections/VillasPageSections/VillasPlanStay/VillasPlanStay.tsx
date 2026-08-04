@@ -1,10 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './villasPlanStay.css';
 
 export function VillasPlanStayCTA() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const langPrefix = i18n.language === 'it' ? '/it' : '';
 
   return (
     <section className="relative section-height overflow-hidden">
@@ -90,7 +93,7 @@ export function VillasPlanStayCTA() {
             </motion.p>
           </AnimatePresence>
 
-          <button className="plan-stay-button">
+          <Link to={`${langPrefix}/borgo`} className="plan-stay-button">
             <AnimatePresence mode="wait">
               <motion.span
                 key={t('villasPlanStayCTA.button')}
@@ -101,7 +104,7 @@ export function VillasPlanStayCTA() {
                 {t('villasPlanStayCTA.button')}
               </motion.span>
             </AnimatePresence>
-          </button>
+          </Link>
         </div>
       </motion.div>
     </section>
