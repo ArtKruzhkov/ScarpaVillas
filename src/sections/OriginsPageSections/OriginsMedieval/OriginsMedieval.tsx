@@ -81,7 +81,7 @@ export function OriginsMedieval() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="mt-6 md:mt-10 lg:mt-16 font-serif text-[18px] leading-[22px] md:text-[22px] md:leading-[26px] lg:text-[26px] lg:leading-[32px] 2xl:text-[32px] 2xl:leading-[40px] text-[#2C3654]">
+              className="mt-6 md:mt-10 lg:mt-16 font-serif text-[18px] leading-[22px] md:text-[22px] md:leading-[26px] lg:text-[26px] lg:leading-[32px] 2xl:text-[32px] 2xl:leading-[38px] text-[#2C3654]">
               {t('originsMedieval.titleLine1')}
               <br className="hidden lg:block" />
               {t('originsMedieval.titleLine2')}

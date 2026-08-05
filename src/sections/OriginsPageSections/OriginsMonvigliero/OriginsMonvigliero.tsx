@@ -130,7 +130,7 @@ export function OriginsMonvigliero() {
                 delay: 0.1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="font-serif text-[42px] uppercase tracking-[0.2em] text-white sm:text-[56px] lg:text-[64px] 2xl:text-[68px]">
+              className="font-serif text-[42px] uppercase tracking-[0.2em] text-white sm:text-[56px] lg:text-[62px]">
               MONVIGLIERO
             </motion.h2>
           </div>
@@ -167,7 +167,7 @@ export function OriginsMonvigliero() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif text-[22px] leading-[26px] md:text-[28px] md:leading-[32px] lg:text-[32px] lg:leading-[38px] 2xl:text-[36px] 2xl:leading-[42px] text-[#2C3654]">
+                className="font-serif text-[22px] leading-[26px] md:text-[28px] md:leading-[32px] lg:text-[32px] lg:leading-[38px] text-[#2C3654]">
                 {t('originsMonvigliero.titleLine1')}
                 <br />
                 {t('originsMonvigliero.titleLine2')}
