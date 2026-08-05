@@ -10,7 +10,7 @@ export function ScarpaWineryVillas() {
   const langPrefix = i18n.language === 'it' ? '/it' : '';
 
   return (
-    <section className="bg-white pt-8 lg:pb-6 lg:pt-10 overflow-hidden">
+    <section className="bg-white pt-8 lg:pb-6 lg:pt-20 overflow-hidden">
       <div className="mx-auto grid max-w-8xl gap-6 xl:gap-0 px-4 lg:px-8 lg:grid-cols-[1.2fr_2.8fr]">
         {/* LEFT */}
         <motion.div
