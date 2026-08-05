@@ -9,7 +9,7 @@ export function ScarpaWineryLove() {
 
   return (
     <section className="bg-white overflow-hidden">
-      <div className="mx-auto grid max-w-8xl lg:grid-cols-[43%_57%]">
+      <div className="mx-auto grid max-w-8xl lg:grid-cols-[45%_55%]">
         {/* LEFT */}
         <motion.div
           viewport={{ once: true, amount: 0.25 }}
@@ -19,7 +19,7 @@ export function ScarpaWineryLove() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="flex items-center bg-[#2C3654] px-6 sm:px-10 lg:px-16 py-10 lg:py-16 text-white">
+          className="flex items-center bg-[#2C3654] px-6 sm:px-10 lg:px-6 2xl:px-16 py-10 lg:py-16 text-white">
           <div className="w-full">
             {/* Title */}
             <AnimatePresence mode="wait">
@@ -32,12 +32,12 @@ export function ScarpaWineryLove() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif text-[28px] leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] 2xl:text-[42px] 2xl:leading-[50px]">
+                className="font-serif text-[26px] leading-[30px] md:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] 2xl:text-[42px] 2xl:leading-[50px]">
                 {t('scarpaWineryLove.title')}
               </motion.h2>
             </AnimatePresence>
 
-            <div className="mt-6 lg:mt-8 h-[2px] w-[140px] md:w-[175px] lg:w-[195px] 2xl:w-[215px] bg-white" />
+            <div className="mt-6 lg:mt-8 h-[2px] w-[140px] md:w-[175px] lg:w-[195px] 2xl:w-[205px] bg-white" />
 
             {/* Text */}
             <AnimatePresence mode="wait">
@@ -69,7 +69,7 @@ export function ScarpaWineryLove() {
                   />
                 </p>
 
-                <p>
+                <p className="2xl:max-w-[650px]">
                   <Trans
                     i18nKey="scarpaWineryLove.paragraph3"
                     components={{
@@ -91,7 +91,7 @@ export function ScarpaWineryLove() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="relative min-h-[440px] overflow-hidden lg:min-h-[760px]">
+          className="relative min-h-[440px] overflow-hidden lg:min-h-[740px]">
           <motion.img
             src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_love/right.png`}
             alt="Scarpa Winery"

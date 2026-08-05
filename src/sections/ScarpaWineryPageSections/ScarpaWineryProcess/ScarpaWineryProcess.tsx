@@ -9,7 +9,7 @@ export function ScarpaWineryProcess() {
 
   return (
     <section className="bg-white overflow-hidden">
-      <div className="mx-auto grid max-w-8xl lg:grid-cols-[57%_43%]">
+      <div className="mx-auto grid max-w-8xl lg:grid-cols-[55%_45%]">
         {/* LEFT IMAGE */}
         <motion.div
           viewport={{ once: true, amount: 0.25 }}
@@ -19,7 +19,7 @@ export function ScarpaWineryProcess() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="relative min-h-[440px] overflow-hidden lg:min-h-[760px] order-2 lg:order-1">
+          className="relative min-h-[440px] overflow-hidden lg:min-h-[740px] order-2 lg:order-1">
           <motion.img
             src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_process/process.png`}
             alt="Scarpa Winery"
@@ -43,7 +43,7 @@ export function ScarpaWineryProcess() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="flex order-1 lg:order-2 items-center bg-[#2C3654] px-6 py-10 text-white sm:px-10 lg:px-16 lg:py-16">
+          className="flex order-1 lg:order-2 items-center bg-[#2C3654] px-6 py-10 text-white sm:px-10 lg:px-6 2xl:px-16 lg:py-16">
           <div className="w-full">
             <AnimatePresence mode="wait">
               <motion.h2
@@ -55,12 +55,12 @@ export function ScarpaWineryProcess() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif max-w-[190px] sm:max-w-none text-[28px] leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] 2xl:text-[42px] 2xl:leading-[50px]">
+                className="font-serif text-[26px] leading-[30px] md:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] 2xl:text-[42px] 2xl:leading-[50px]">
                 {t('scarpaWineryProcess.title')}
               </motion.h2>
             </AnimatePresence>
 
-            <div className="mt-6 lg:mt-8 h-[2px] w-[175px] md:w-[190px] lg:w-[220px] bg-white" />
+            <div className="mt-6 lg:mt-8 h-[2px] w-[140px] md:w-[190px] lg:w-[200px] 2xl:w-[220px] bg-white" />
 
             <AnimatePresence mode="wait">
               <motion.div
@@ -72,8 +72,8 @@ export function ScarpaWineryProcess() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="mt-6 lg:mt-10 space-y-6 lg:space-y-10 font-sans text-[15px] leading-[1.5] text-white md:text-[17px] lg:text-[18px] lg:leading-[30px]">
-                <p>
+                className="mt-6 lg:mt-10 space-y-6 lg:space-y-10 font-sans text-[14.8px] leading-[1.5] text-white md:text-[17px] lg:text-[18px] lg:leading-[30px]">
+                <p className="max-w-[240px] sm:max-w-none">
                   <Trans
                     i18nKey="scarpaWineryProcess.paragraph1"
                     components={{

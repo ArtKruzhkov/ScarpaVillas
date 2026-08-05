@@ -11,7 +11,7 @@ export function ScarpaWineryEvolution() {
       <div className="mx-auto grid max-w-8xl lg:gap-5 lg:grid-cols-[1fr_3fr_1fr] px-4">
         {/* LEFT */}
         <motion.div
-          className="flex flex-col justify-end px-6 py-8 lg:px-0 lg:py-0"
+          className="flex flex-col justify-end px-2 py-8 lg:px-0 lg:py-0"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.25 }}
@@ -30,7 +30,7 @@ export function ScarpaWineryEvolution() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif text-[28px] leading-[32px] md:text-[34px] md:leading-[40px] text-[#2C3654]">
+                className="font-serif text-[26px] leading-[30px] md:text-[34px] md:leading-[40px] text-[#2C3654]">
                 {t('scarpaWineryEvolution.title')}
               </motion.h2>
             </AnimatePresence>
@@ -67,7 +67,7 @@ export function ScarpaWineryEvolution() {
 
         {/* CENTER IMAGE */}
         <motion.div
-          className="relative overflow-hidden"
+          className="relative overflow-hidden px-2 lg:px-0"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.25 }}
@@ -98,7 +98,7 @@ export function ScarpaWineryEvolution() {
 
         {/* RIGHT */}
         <motion.div
-          className="flex flex-col px-6 py-8 lg:px-0 lg:py-0"
+          className="flex flex-col px-2 py-8 lg:px-0 lg:py-0"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.25 }}

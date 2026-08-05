@@ -33,12 +33,12 @@ export function ScarpaWineryVillas() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif text-[28px] leading-[32px] md:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] 2xl:text-[42px] 2xl:leading-[50px] text-[#2C3654]">
+                className="text-center lg:text-start font-serif text-[26px] leading-[30px] md:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] 2xl:text-[42px] 2xl:leading-[50px] text-[#2C3654]">
                 {t('scarpaWineryVillas.title')}
               </motion.h2>
             </AnimatePresence>
 
-            <div className="mt-6 lg:mt-8 h-[2px] w-[175px] md:w-[205px] lg:w-[220px] bg-[#2C3654]" />
+            <div className="mx-auto lg:mx-0 mt-6 lg:mt-8 h-[2px] w-[175px] md:w-[205px] lg:w-[220px] bg-[#2C3654]" />
 
             <AnimatePresence mode="wait">
               <motion.div
@@ -50,11 +50,11 @@ export function ScarpaWineryVillas() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}>
-                <p className="text-[#2C3654] mt-6 lg:mt-8 font-sans text-[15px] leading-[1.5] md:text-[17px] lg:text-[18px] lg:leading-[30px] max-w-[220px] md:max-w-[260px] lg:max-w-[270px]">
+                <p className="mx-auto lg:mx-0 text-center lg:text-start text-[#2C3654] mt-6 lg:mt-8 font-sans text-[15px] leading-[1.5] md:text-[17px] lg:text-[18px] lg:leading-[30px] max-w-[220px] sm:max-w-none lg:max-w-[270px]">
                   {t('scarpaWineryVillas.paragraph1')}
                 </p>
 
-                <p className="text-[#2C3654] mt-6 lg:mt-8 font-sans text-[15px] leading-[1.5] md:text-[17px] lg:text-[18px] lg:leading-[30px] lg:max-w-[380px]">
+                <p className="text-center lg:text-start text-[#2C3654] mt-6 lg:mt-8 font-sans text-[15px] leading-[1.5] md:text-[17px] lg:text-[18px] lg:leading-[30px] lg:max-w-[380px]">
                   {t('scarpaWineryVillas.paragraph2')}
                 </p>
               </motion.div>

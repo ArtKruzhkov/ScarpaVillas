@@ -90,7 +90,7 @@ export function ScarpaWineryCellar() {
                     duration: 0.35,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="font-serif text-[24px] md:text-[32px] lg:text-[34px] 2xl:text-[38px] uppercase tracking-[0.1em] text-[#2C3654]">
+                  className="font-serif text-[22px] md:text-[32px] lg:text-[34px] 2xl:text-[38px] uppercase tracking-[0.1em] text-[#2C3654]">
                   {t('scarpaWineryCellar.title')}
                 </motion.h2>
               </AnimatePresence>
