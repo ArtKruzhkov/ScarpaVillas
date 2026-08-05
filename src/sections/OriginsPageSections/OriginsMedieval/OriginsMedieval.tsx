@@ -103,7 +103,7 @@ export function OriginsMedieval() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="mt-6 md:mt-8 lg:mt-10 max-w-[390px] lg:max-w-[450px] font-sans text-[13px] leading-[18px] lg:text-[15px] lg:leading-[23px] text-[#2C3654]/80">
+              className="mt-6 md:mt-8 lg:mt-10 max-w-[390px] lg:max-w-[450px] xl:max-w-[480px] font-sans text-[13px] leading-[18px] lg:text-[15px] lg:leading-[23px] xl:text-[18px] xl:leading-[26px] text-[#2C3654]/80">
               {t('originsMedieval.text')}
             </motion.p>
           </AnimatePresence>

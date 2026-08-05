@@ -139,7 +139,7 @@ export function OriginsHistory() {
             <AnimatePresence mode="wait">
               <motion.p
                 key={t('originsHistory.bottomText')}
-                className="max-w-[760px] font-sans text-[13px] leading-[18px] text-white/90 sm:text-[15px] sm:leading-[23px] xl:text-[16px] xl:leading-[24px]"
+                className="max-w-[760px] font-sans text-[13px] leading-[18px] text-white/90 sm:text-[15px] sm:leading-[23px] xl:text-[18px] xl:leading-[26px]"
                 initial={{
                   opacity: 0,
                   y: 14,
