@@ -95,7 +95,7 @@ export function ScarpaWineryVillas() {
 
           <Link
             to={`${langPrefix}/villas`}
-            className="mt-4 lg:mt-6 flex h-[44px] w-full items-center justify-center bg-[#2C3654] font-sans text-[12px] font-semibold uppercase tracking-[0.24em] text-white transition-colors duration-300 hover:bg-[#3A476E] md:h-[57px] md:text-[18px] xl:w-[60%]">
+            className="mt-4 lg:mt-6 flex h-[44px] w-full items-center justify-center bg-[#2C3654] font-sans text-[12px] font-semibold uppercase tracking-[0.24em] text-white transition-opacity duration-300 hover:opacity-80 md:h-[57px] md:text-[18px] xl:w-[60%]">
             <AnimatePresence mode="wait">
               <motion.span
                 key={t('scarpaWineryVillas.button')}
