@@ -282,6 +282,48 @@
     "textLine3": "NON COME VISITATORI, MA COME PARTE DEL SUO RITMO.",
     "button": "Scopri le Ville"
   },
+  "scarpaWineryHero": {
+    "title": "La Cantina Scarpa",
+    "subtitle": "Sappiamo aspettare"
+  },
+  "scarpaWineryIntro": {
+    "title": "Da oltre un secolo, <brMobile/><italic>Scarpa racconta il vino</italic><br/>attraverso il tempo, il territorio e l'attesa",
+    "textLine1": "Radicata in Piemonte, la sua filosofia va oltre la produzione —",
+    "textLine2": "è un modo di intendere il vino."
+  },
+  "scarpaWineryLove": {
+    "title": "Vino per Amore",
+    "paragraph1": "<strong>Scarpa nasce nel 1900</strong> grazie ad Antonio Scarpa, che lasciò Venezia per Nizza Monferrato in cerca di opportunità — trovando molto di più.",
+    "paragraph2": "<strong>Due legami lo convinsero a restare:</strong> il potenziale ancora inesplorato di questa terra e l'amore per Ernestina Ottavia Deantonio, che sposò nel 1908.",
+    "paragraph3": "Insieme diedero vita a una cantina con un obiettivo preciso: rivelare il vero potenziale dei vini piemontesi, <strong>partendo dalla Barbera</strong>, quando era ancora poco valorizzata."
+  },
+  "scarpaWineryEvolution": {
+    "title": "Evoluzione",
+    "leftText": "Nel corso dei decenni, Scarpa si è evoluta grazie a una successione di visionari — da Antonio Scarpa a Mario Pesce, Carlo Castino e Silvio Pinchera.",
+    "rightText": "Ognuno contribuì ad approfondire la conoscenza del territorio, affinando uno stile fondato su eleganza, longevità e rispetto per la vigna."
+  },
+  "scarpaWineryProcess": {
+    "title": "Tempo, Purezza e Pazienza",
+    "paragraph1": "<strong>I vini Scarpa non vengono forzati</strong> — sono lasciati evolvere naturalmente.",
+    "paragraph2": "Lungo affinamento, <strong>intervento minimo</strong> e profondo rispetto per i vitigni autoctoni definiscono uno stile fondato su purezza ed espressione.",
+    "paragraph3": "Ogni scelta, dalla vigna alla cantina, è guidata da una convinzione semplice: <strong>i grandi vini si rivelano con il tempo.</strong>"
+  },
+  "scarpaWineryVineyards": {
+    "title": "Vigneti",
+    "paragraph1": "Scarpa coltiva vigneti tra Monferrato e Langhe, unendo tenute storiche e cru accuratamente selezionati.",
+    "paragraph2": "Dal vigneto a corpo unico di Poderi Bricchi alle colline di Barolo e Barbaresco — incluso Monvigliero a Verduno — ogni luogo contribuisce a una visione più ampia dell'identità del Piemonte."
+  },
+  "scarpaWineryCellar": {
+    "title": "Cantina",
+    "paragraph1": "Nelle storiche cantine di Nizza Monferrato, il vino segue il proprio ritmo.",
+    "paragraph2": "Grandi botti, lunghi affinamenti e il tempo stesso danno forma a vini pensati non solo per il presente, ma per i decenni a venire."
+  },
+  "scarpaWineryVillas": {
+    "title": "Ville",
+    "paragraph1": "Scarpa Villas porta questa filosofia oltre il calice.",
+    "paragraph2": "Immersa tra i vigneti, offre un modo di vivere gli stessi valori — tempo, spazio e legame con la terra — attraverso il soggiorno, non solo la degustazione.",
+    "button": "Scopri l'esperienza Scarpa"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Quattro modi diversi di vivere il Barolo"

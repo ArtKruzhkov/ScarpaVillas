@@ -141,7 +141,7 @@ export function StoryChapters() {
 
                       <Link
                         to={`${langPrefix}${card.href}`}
-                        className="mt-8 flex h-[44px] w-full max-w-[360px] items-center justify-center border border-[#2C3654] px-8 py-[0.7rem] md:h-[57px] md:py-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#2C3654] transition-colors duration-300 hover:bg-[#2C3654] hover:text-white md:text-[15px] 2xl:text-[16px] min-[1680px]:text-[18px]">
+                        className="mt-8 flex h-[44px] w-full max-w-[400px] items-center justify-center border border-[#2C3654] px-8 py-[0.7rem] md:h-[57px] md:py-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#2C3654] transition-colors duration-300 hover:bg-[#2C3654] hover:text-white md:text-[15px] 2xl:text-[16px] min-[1680px]:text-[18px]">
                         {card.button}
                       </Link>
                     </motion.div>

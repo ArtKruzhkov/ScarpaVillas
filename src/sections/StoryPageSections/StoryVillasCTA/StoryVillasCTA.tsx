@@ -1,11 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './storyVillasCTA.css';
 
 const baseUrl = process.env.PUBLIC_URL;
 
 export function StoryVillasCTA() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const langPrefix = i18n.language === 'it' ? '/it' : '';
 
   return (
     <section className="bg-white">
@@ -59,9 +62,11 @@ export function StoryVillasCTA() {
                   {t('storyVillasCTA.text')}
                 </p>
 
-                <button className="mt-6 min-w-[220px] md:min-w-[440px] lg:min-w-[510px] bg-white px-12 py-3 h-[44px] md:h-[57px] font-sans text-[13px] md:text-[18px] font-bold uppercase tracking-[0.2em] text-[#2C3654] transition-all duration-300 hover:bg-[#2C3654] hover:text-white">
+                <Link
+                  to={`${langPrefix}/villas`}
+                  className="mt-6 flex h-[44px] min-w-[220px] items-center justify-center bg-white px-12 font-sans text-[13px] font-bold uppercase tracking-[0.2em] text-[#2C3654] transition-all duration-300 hover:bg-[#2C3654] hover:text-white md:h-[57px] md:min-w-[440px] md:text-[18px] lg:min-w-[510px]">
                   {t('storyVillasCTA.button')}
-                </button>
+                </Link>
               </motion.div>
             </AnimatePresence>
           </motion.div>

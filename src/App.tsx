@@ -7,9 +7,10 @@ import { StoryPage } from './pages/StoryPage/StoryPage';
 import { VillasPage } from './pages/VillasPage/VillasPage';
 import { VillaPage } from './pages/VillaPage/VillaPage';
 import { BorgoPage } from './pages/BorgoPage/BorgoPage';
+import { OriginsPage } from './pages/OriginsPage/OriginsPage';
+import { ScarpaWineryPage } from './pages/ScarpaWineryPage/ScarpaWineryPage';
 
 import './App.css';
-import { OriginsPage } from './pages/OriginsPage/OriginsPage';
 
 export default function App() {
   return (
@@ -23,6 +24,12 @@ export default function App() {
         <Route path="/story" element={<StoryPage />} />
         <Route path="/:lang/story" element={<StoryPage />} />
 
+        <Route path="/story/origins" element={<OriginsPage />} />
+        <Route path="/:lang/story/origins" element={<OriginsPage />} />
+
+        <Route path="/story/scarpa-winery" element={<ScarpaWineryPage />} />
+        <Route path="/:lang/story/scarpa-winery" element={<ScarpaWineryPage />} />
+
         <Route path="/villas" element={<VillasPage />} />
         <Route path="/:lang/villas" element={<VillasPage />} />
 
@@ -31,9 +38,6 @@ export default function App() {
 
         <Route path="/borgo" element={<BorgoPage />} />
         <Route path="/:lang/borgo" element={<BorgoPage />} />
-
-        <Route path="/story/origins" element={<OriginsPage />} />
-        <Route path="/:lang/story/origins" element={<OriginsPage />} />
       </Routes>
 
       <Footer />

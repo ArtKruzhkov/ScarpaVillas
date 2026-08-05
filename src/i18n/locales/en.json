@@ -283,6 +283,48 @@
     "textLine3": "NOT AS A VISITOR, BUT AS PART OF ITS ONGOING RHYTHM.",
     "button": "Explore the Villas"
   },
+  "scarpaWineryHero": {
+    "title": "Scarpa Winery",
+    "subtitle": "We know how to wait"
+  },
+  "scarpaWineryIntro": {
+    "title": "For over a century, <brMobile/><italic>Scarpa has been sharing wines</italic><br/>that reflect time, place, and patience",
+    "textLine1": "Rooted in Piedmont, its philosophy goes beyond production —",
+    "textLine2": "it is a way of understanding wine."
+  },
+  "scarpaWineryLove": {
+    "title": "Wine For Love",
+    "paragraph1": "<strong>Scarpa was founded in 1900</strong> by Antonio Scarpa, who moved from Venice to Nizza Monferrato in search of opportunity — and found something more.",
+    "paragraph2": "<strong>Two connections made him stay:</strong> the untapped potential of the land, and his love for Ernestina Ottavia Deantonio, who became his wife in 1908.",
+    "paragraph3": "Together, they built a winery with a clear ambition — to reveal the true potential of Piedmontese wines, <strong>starting with Barbera</strong>, at a time when it was still underestimated."
+  },
+  "scarpaWineryEvolution": {
+    "title": "Evolution",
+    "leftText": "Over the decades, Scarpa evolved through a succession of visionaries — from Antonio Scarpa to Mario Pesce, Carlo Castino, and Silvio Pinchera.",
+    "rightText": "Each brought a deeper understanding of the land, refining a style built on elegance, longevity, and respect for the vineyard."
+  },
+  "scarpaWineryProcess": {
+    "title": "Time, Purity, And Patience",
+    "paragraph1": "<strong>Scarpa wines are not forced</strong> — they are allowed to evolve.",
+    "paragraph2": "Long aging, <strong>minimal intervention</strong>, and a deep respect for native grape varieties define a style rooted in purity and expression.",
+    "paragraph3": "Each decision, from vineyard to cellar, is guided by a simple belief: <strong>great wine reveals itself over time.</strong>"
+  },
+  "scarpaWineryVineyards": {
+    "title": "Vineyards",
+    "paragraph1": "Scarpa cultivates vineyards across Monferrato and Langhe, combining historic estates with carefully selected crus.",
+    "paragraph2": "From the single-body vineyard of Poderi Bricchi to the hills of Barolo and Barbaresco — including Monvigliero in Verduno — each site contributes to a broader understanding of Piedmont's identity."
+  },
+  "scarpaWineryCellar": {
+    "title": "Cellar",
+    "paragraph1": "In the historic cellars of Nizza Monferrato, wine follows its own rhythm.",
+    "paragraph2": "Large barrels, long aging, and time itself shape wines designed not only for the present, but for decades to come."
+  },
+  "scarpaWineryVillas": {
+    "title": "Villas",
+    "paragraph1": "Scarpa Villas extend this philosophy beyond the glass.",
+    "paragraph2": "Set among the vineyards, they offer a way to experience the same values — time, space, and connection to the land — through living, not just tasting.",
+    "button": "Discover the Scarpa Experience"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"
