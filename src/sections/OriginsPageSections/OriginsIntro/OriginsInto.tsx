@@ -26,7 +26,7 @@ export function OriginsIntro() {
               duration: 0.35,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="font-serif text-[19px] sm:text-[23px] md:text-[28px] xl:text-[32px] leading-[1.25] xl:leading-[38px] tracking-[-0.02rem] text-[#2C3654]">
+            className="font-serif text-[18px] sm:text-[24px] md:text-[28px] xl:text-[32px] leading-[1.25] xl:leading-[38px] tracking-[-0.02rem] text-[#2C3654]">
             {t('originsIntro.titleLine1')}
             <br />
             {t('originsIntro.titleLine2')}

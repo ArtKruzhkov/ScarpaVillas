@@ -9,8 +9,10 @@ import { VillaPage } from './pages/VillaPage/VillaPage';
 import { BorgoPage } from './pages/BorgoPage/BorgoPage';
 import { OriginsPage } from './pages/OriginsPage/OriginsPage';
 import { ScarpaWineryPage } from './pages/ScarpaWineryPage/ScarpaWineryPage';
+import { PeoplePage } from './pages/PeoplePage/PeoplePage';
 
 import './App.css';
+import { PressPage } from './pages/PressPage/PressPage';
 
 export default function App() {
   return (
@@ -29,6 +31,12 @@ export default function App() {
 
         <Route path="/story/scarpa-winery" element={<ScarpaWineryPage />} />
         <Route path="/:lang/story/scarpa-winery" element={<ScarpaWineryPage />} />
+
+        <Route path="/story/people" element={<PeoplePage />} />
+        <Route path="/:lang/story/people" element={<PeoplePage />} />
+
+        <Route path="/story/press" element={<PressPage />} />
+        <Route path="/:lang/story/press" element={<PressPage />} />
 
         <Route path="/villas" element={<VillasPage />} />
         <Route path="/:lang/villas" element={<VillasPage />} />

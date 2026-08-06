@@ -188,7 +188,7 @@ export function OriginsMonvigliero() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="mt-6 lg:mt-10 space-y-10 font-sans text-[13px] leading-[18px] md:text-[16px] md:leading-[20px] lg:text-[18px] lg:leading-[26px] text-[#2C3654]/80">
+                className="mt-6 lg:mt-10 space-y-10 font-sans text-[13px] leading-[18px] md:text-[15px] md:leading-[20px] lg:text-[18px] lg:leading-[26px] text-[#2C3654]">
                 <p>{t('originsMonvigliero.text1')}</p>
 
                 <p>

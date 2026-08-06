@@ -204,7 +204,7 @@ export function VillaAmenities({ amenities }: VillaAmenitiesProps) {
                 <Trans i18nKey={amenities.bottom.title} components={transComponents} />
               </h3>
 
-              <p className="mt-3 hidden font-sans text-[16px] leading-[1.35] text-white/90 md:block 2xl:mt-6 2xl:leading-[1.5]">
+              <p className="mt-3 hidden font-sans text-[16px] leading-[1.35] text-white md:block 2xl:mt-6 2xl:leading-[1.5]">
                 <Trans i18nKey={amenities.bottom.description} components={transComponents} />
               </p>
             </motion.div>

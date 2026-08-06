@@ -211,7 +211,7 @@ export function Footer() {
                 <AnimatePresence mode="wait">
                   <motion.h3
                     key={`footer-title-desktop-${i18n.language}`}
-                    className="font-serif text-[40px] leading-[50px] text-[#2C3654] mt-[-0.5rem]"
+                    className="font-serif text-[38px] leading-[50px] text-[#2C3654] mt-[-0.5rem]"
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}>
@@ -241,7 +241,7 @@ export function Footer() {
                 <AnimatePresence mode="wait">
                   <motion.p
                     key={`footer-description-desktop-${i18n.language}`}
-                    className="mt-5 font-sans text-[19px] leading-[28px] text-[#2C3654]"
+                    className="mt-5 font-sans text-[18px] leading-[28px] text-[#2C3654]"
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}>

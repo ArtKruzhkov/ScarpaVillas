@@ -324,8 +324,99 @@
     "paragraph2": "Immersa tra i vigneti, offre un modo di vivere gli stessi valori — tempo, spazio e legame con la terra — attraverso il soggiorno, non solo la degustazione.",
     "button": "Scopri l'esperienza Scarpa"
   },
+  "peopleHero": {
+    "title": "Persone",
+    "subtitle": "Le persone dietro l'esperienza Scarpa"
+  },
+  "peopleIntro": {
+    "titleLine1": "DIETRO OGNI ESPERIENZA SCARPA C'È UN GRUPPO DI PERSONE CHE CONDIVIDE GLI STESSI VALORI – CURA,",
+    "titleHighlight": "ATTENZIONE AI DETTAGLI,",
+    "titleLine3": "E UN PROFONDO LEGAME CON CIÒ CHE FA.",
+    "paragraph": "Dal vigneto alle ville, ogni persona contribuisce a creare un'esperienza personale e destinata a lasciare il segno."
+  },
+  "peopleTeam": {
+    "people": [
+      {
+        "name": "Davide Champion",
+        "position": "CEO",
+        "description": "Con grande orgoglio e un profondo senso di responsabilità, ho la fortuna di guidare questa straordinaria azienda, forte di secoli di storia e di una visione rivolta al futuro."
+      },
+      {
+        "name": "Paola Barbieri",
+        "position": "Responsabile dell'Ospitalità",
+        "description": "Insieme allo straordinario team di Scarpa Villas e della Tasting Room, mi occupo di rendere indimenticabile l'esperienza di ogni ospite."
+      },
+      {
+        "name": "Flavia Nikaj",
+        "position": "Villa Care",
+        "description": "Ogni giorno mi prendo cura di Scarpa Villas con attenzione ai dettagli, affinché ogni ospite possa sentirsi davvero come a casa durante il soggiorno."
+      },
+      {
+        "name": "Elena Rossi",
+        "position": "Servizio clienti",
+        "description": "Accolgo i nostri ospiti e li accompagno durante il soggiorno, facendo in modo che ogni momento sia piacevole, sereno e memorabile."
+      },
+      {
+        "name": "Marco Ferrero",
+        "position": "Gestione immobiliare",
+        "description": "Ogni giorno mi assicuro che le ville e la tenuta siano perfettamente pronte, così che gli ospiti possano rilassarsi e vivere appieno il loro soggiorno."
+      },
+      {
+        "name": "Luca Bianchi",
+        "position": "Manutenzione",
+        "description": "Mi occupo della manutenzione della tenuta dietro le quinte, affinché ogni ospite possa vivere un'esperienza confortevole e senza pensieri."
+      }
+    ]
+  },
+  "pressHero": {
+    "title": "Stampa",
+    "subtitle": "Menzioni e articoli selezionati"
+  },
+  "pressIntro": {
+    "textLine1": "Scarpa Villas",
+    "textItalic": "è stata protagonista",
+    "textLine2": "di una selezione",
+    "textLine3": "di pubblicazioni dedicate",
+    "textLine4": "ai viaggi e allo stile di vita,",
+    "textLine5": "che raccontano la sua posizione",
+    "textLine6": "unica tra i vigneti del Barolo."
+  },
+  "pressArticles": {
+    "articles": [
+      {
+        "title": "GALA",
+        "date": "18 GIUGNO 2026",
+        "text": "Nel cuore del Piemonte, ville segrete dove vivere come un italiano per il tempo di un fine settimana."
+      },
+      {
+        "title": "MONACO LIFE",
+        "date": "8 LUGLIO 2026",
+        "text": "A poco più di due ore e mezza da Monaco, le dolci colline delle Langhe si estendono nel cuore del Piemonte, patria di alcuni dei vini più celebri al mondo e di una delle grandi destinazioni gastronomiche italiane. Un viaggio che lascia il Mediterraneo per immergersi tra vigneti, borghi medievali e un ritmo di vita più lento."
+      },
+      {
+        "title": "TIMES RIVIERA",
+        "date": "8 LUGLIO 2026",
+        "text": "Scarpa Villas: un'esperienza immersiva nel cuore del territorio del vino piemontese."
+      },
+      {
+        "title": "CELLAR TOURS",
+        "date": "5 FEBBRAIO 2025",
+        "text": "Nel cuore delle colline del Barolo, quattro ville si affacciano su una piscina panoramica con vista sul paesaggio delle Langhe."
+      },
+      {
+        "title": "THE ITALY EDIT",
+        "date": "26 APRILE 2022",
+        "text": "Una splendida villa immersa nell'ampio paesaggio dei vigneti del Barolo."
+      },
+      {
+        "title": "THE FASHION PRINCESS",
+        "date": "4 AGOSTO 2020",
+        "text": "Monvigliero Vineyard Villas, la residenza perfetta per una vacanza nelle Langhe."
+      }
+    ]
+  },
   "villasHero": {
-    "title": "Villas",
+    "title": "Ville",
     "subtitle": "Quattro modi diversi di vivere il Barolo"
   },
   "villasShare": {

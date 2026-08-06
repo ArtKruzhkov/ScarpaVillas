@@ -325,6 +325,97 @@
     "paragraph2": "Set among the vineyards, they offer a way to experience the same values — time, space, and connection to the land — through living, not just tasting.",
     "button": "Discover the Scarpa Experience"
   },
+  "peopleHero": {
+    "title": "People",
+    "subtitle": "The people behind the Scarpa experience"
+  },
+  "peopleIntro": {
+    "titleLine1": "BEHIND EVERY SCARPA EXPERIENCE IS A GROUP OF PEOPLE WHO SHARE THE SAME VALUES – CARE,",
+    "titleHighlight": "ATTENTION TO DETAIL,",
+    "titleLine3": "AND A DEEP CONNECTION TO WHAT THEY DO.",
+    "paragraph": "From the vineyard to the villas, each person plays a part in shaping an experience that feels personal, genuine, and lasting."
+  },
+  "peopleTeam": {
+    "people": [
+      {
+        "name": "Davide Champion",
+        "position": "CEO",
+        "description": "With immense pride and a strong sense of responsibility, I am lucky to lead this fantastic company that boasts centuries of history and a visionary future."
+      },
+      {
+        "name": "Paola Barbieri",
+        "position": "Hospitality Manager",
+        "description": "Together with the fantastic team working at Scarpa Villas and Tasting Room, I'm in charge of making every guest experience unforgettable."
+      },
+      {
+        "name": "Flavia Nikaj",
+        "position": "Villa Care",
+        "description": "I keep the Scarpa Villas welcoming every day, caring for every space with attention to detail so that each guest feels truly at home throughout their stay."
+      },
+      {
+        "name": "Elena Rossi",
+        "position": "Guest Relations",
+        "description": "I welcome our guests and help make every stay smooth, warm and memorable from arrival to departure."
+      },
+      {
+        "name": "Marco Ferrero",
+        "position": "Estate Operations",
+        "description": "Every day I help ensure the villas and estate are perfectly prepared so guests can simply relax and enjoy their stay."
+      },
+      {
+        "name": "Luca Bianchi",
+        "position": "Maintenance",
+        "description": "I take care of the estate behind the scenes so that every guest can enjoy a comfortable and worry-free experience."
+      }
+    ]
+  },
+  "pressHero": {
+    "title": "Press",
+    "subtitle": "Selected mentions and features"
+  },
+  "pressIntro": {
+    "textLine1": "Scarpa Villas",
+    "textItalic": "has been featured",
+    "textLine2": "in a selection",
+    "textLine3": "of travel and lifestyle",
+    "textLine4": "publications, highlighting its",
+    "textLine5": "unique setting in the vineyards",
+    "textLine6": "of Barolo."
+  },
+  "pressArticles": {
+    "articles": [
+      {
+        "title": "GALA",
+        "date": "JUNE 18, 2026",
+        "text": "Au cœur du Piémont, ces villas secrètes où l'on vit comme un Italien le temps d'un week-end."
+      },
+      {
+        "title": "MONACO LIFE",
+        "date": "JULY 8, 2026",
+        "text": "Just over two and a half hours from Monaco, the rolling vineyards of Italy's Langhe unfold across the hills of Piedmont, home to one of the world's most celebrated wines and one of the country's great gastronomic regions. It's a journey that swaps the Mediterranean for vineyard-covered hills, medieval villages and a slower pace of life."
+      },
+      {
+        "title": "TIMES RIVIERA",
+        "date": "JULY 8, 2026",
+        "text": "Scarpa Villas: An Immersive Escape into the Heart of Piedmont's Wine Country."
+      },
+      {
+        "title": "CELLAR TOURS",
+        "date": "FEBRUARY 5, 2025",
+        "text": "In the heart of Barolo wine country, four villas are set around a panoramic pool overlooking the Langhe countryside."
+      },
+      {
+        "title": "THE ITALY EDIT",
+        "date": "APRIL 26, 2022",
+        "text": "A heavenly villa surrounded by the expansive Barolo vineyard landscape."
+      },
+      {
+        "title": "THE FASHION PRINCESS",
+        "date": "AUGUST 4, 2020",
+        "text": "Monvigliero Vineyard Villas, la residenza perfetta per una vacanza nelle Langhe."
+      }
+    ]
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"
