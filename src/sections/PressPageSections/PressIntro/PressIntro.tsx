@@ -7,7 +7,7 @@ export function PressIntro() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white py-6 lg:p-6 overflow-hidden">
+    <section className="bg-white pt-6 lg:p-6 overflow-hidden">
       <div className="mx-auto grid max-w-8xl lg:grid-cols-3 gap-6 lg:gap-10">
         {/* LEFT IMAGE */}
         <motion.div
@@ -68,7 +68,7 @@ export function PressIntro() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif text-[22px] leading-[28px] lg:text-[28px] lg:leading-[36px] 2xl:text-[32px] 2xl:leading-[40px] text-[#2C3654]">
+                className="font-serif text-[18px] leading-[22px] lg:text-[28px] lg:leading-[36px] 2xl:text-[32px] 2xl:leading-[40px] text-[#2C3654]">
                 {t('pressIntro.textLine1')}
                 <br />
                 <em>{t('pressIntro.textItalic')}</em> {t('pressIntro.textLine2')}
