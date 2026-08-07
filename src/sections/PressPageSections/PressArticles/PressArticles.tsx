@@ -174,7 +174,7 @@ export function PressArticles() {
                   }}
                   transition={{
                     duration: 0.7,
-                    delay: index * 0.08,
+                    delay: index * 0.05,
                     ease: [0.22, 1, 0.36, 1],
                   }}>
                   <article className="flex h-full w-full flex-col bg-[#2C3654] text-white">
