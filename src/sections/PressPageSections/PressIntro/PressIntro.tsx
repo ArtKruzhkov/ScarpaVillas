@@ -8,7 +8,7 @@ export function PressIntro() {
 
   return (
     <section className="bg-white pt-6 lg:p-6 overflow-hidden">
-      <div className="mx-auto grid max-w-8xl lg:grid-cols-3 gap-6 lg:gap-10">
+      <div className="mx-auto grid max-w-8xl lg:grid-cols-3 gap-6 lg:gap-6 2xl:gap-10">
         {/* LEFT IMAGE */}
         <motion.div
           viewport={{ once: true, amount: 0.25 }}
@@ -22,7 +22,7 @@ export function PressIntro() {
           <motion.img
             src={`${baseUrl}/images/PressPage/press_intro/left.png`}
             alt="Wine glass"
-            className="h-full w-full object-cover md:max-h-[620px] lg:max-h-full"
+            className="h-full w-full object-cover md:max-h-[620px] lg:max-h-full min-[1440px]:min-h-[440px]"
             initial={{ scale: 1.08 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -45,13 +45,13 @@ export function PressIntro() {
           className="flex items-center justify-center px-6 lg:px-0 order-1 lg:order-2">
           <div className="relative flex flex-col items-center text-center w-full">
             {/* Logo + decorative lines */}
-            <div className="mb-5 lg:mb-10 flex w-full items-center justify-center gap-4">
+            <div className="mb-5 lg:mb-2 xl:mb-10 flex w-full items-center justify-center gap-4">
               <div className="h-[2px] flex-1 bg-[#2C3654]" />
 
               <img
                 src={`${baseUrl}/images/PressPage/press_intro/logo.svg`}
                 alt="Scarpa Villas"
-                className="h-[74px] w-auto shrink-0"
+                className="h-[74px] lg:h-[54px] xl:h-[74px] w-auto shrink-0"
               />
 
               <div className="h-[2px] flex-1 bg-[#2C3654]" />
@@ -68,7 +68,7 @@ export function PressIntro() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="font-serif text-[18px] leading-[22px] lg:text-[28px] lg:leading-[36px] 2xl:text-[32px] 2xl:leading-[40px] text-[#2C3654]">
+                className="font-serif text-[18px] leading-[22px] md:text-[28px] md:leading-[34px] lg:text-[18px] lg:leading-[22px] min-[1440px]:text-[28px] min-[1440px]:leading-[34px] min-[1680px]:text-[32px] min-[1680px]:leading-[38px] text-[#2C3654]">
                 {t('pressIntro.textLine1')}
                 <br />
                 <em>{t('pressIntro.textItalic')}</em> {t('pressIntro.textLine2')}
@@ -78,12 +78,10 @@ export function PressIntro() {
                 {t('pressIntro.textLine4')}
                 <br />
                 {t('pressIntro.textLine5')}
-                <br />
-                {t('pressIntro.textLine6')}
               </motion.p>
             </AnimatePresence>
 
-            <div className="mt-8 lg:mt-14 h-[2px] w-full bg-[#2C3654]" />
+            <div className="mt-8 lg:mt-4 xl:mt-14 h-[2px] w-full bg-[#2C3654]" />
           </div>
         </motion.div>
 
@@ -96,7 +94,7 @@ export function PressIntro() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="overflow-hidden hidden lg:block order-3">
+          className="overflow-hidden hidden lg:block order-3 min-[1440px]:min-h-[440px]">
           <motion.img
             src={`${baseUrl}/images/PressPage/press_intro/right.png`}
             alt="Scarpa Villas"

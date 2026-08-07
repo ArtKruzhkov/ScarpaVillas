@@ -62,7 +62,7 @@ export function ScarpaWineryCellar() {
             <motion.img
               src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_cellar/card.png`}
               alt="Historic bottle"
-              className="w-full object-cover h-[260px] sm:h-[300px] md:h-[450px] lg:h-[460px] 2xl:h-[540px]"
+              className="w-full object-cover h-[260px] sm:h-[300px] md:h-[450px] min-[1820px]:h-[540px]"
               initial={{
                 scale: 1.08,
               }}

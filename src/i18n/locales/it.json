@@ -374,12 +374,11 @@
   },
   "pressIntro": {
     "textLine1": "Scarpa Villas",
-    "textItalic": "è stata protagonista",
-    "textLine2": "di una selezione",
-    "textLine3": "di pubblicazioni dedicate",
-    "textLine4": "ai viaggi e allo stile di vita,",
-    "textLine5": "che raccontano la sua posizione",
-    "textLine6": "unica tra i vigneti del Barolo."
+    "textItalic": "è stata raccontata",
+    "textLine2": "in una selezione",
+    "textLine3": "di riviste di viaggi e lifestyle",
+    "textLine4": "che raccontano la sua posizione",
+    "textLine5": "tra i vigneti del Barolo."
   },
   "pressArticles": {
     "articles": [
