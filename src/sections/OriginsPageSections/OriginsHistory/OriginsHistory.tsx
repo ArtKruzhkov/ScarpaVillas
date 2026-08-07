@@ -94,7 +94,7 @@ export function OriginsHistory() {
               </motion.p>
             </AnimatePresence>
 
-            {/* ARCHIVE IMAGE */}
+            {/* IMAGE */}
             <motion.div
               className="overflow-hidden"
               initial={{

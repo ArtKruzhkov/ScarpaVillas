@@ -7,7 +7,7 @@ export function PressIntro() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white pt-6 lg:p-6 overflow-hidden">
+    <section className="bg-white pt-8 lg:p-6 overflow-hidden">
       <div className="mx-auto grid max-w-8xl lg:grid-cols-3 gap-6 lg:gap-6 2xl:gap-10">
         {/* LEFT IMAGE */}
         <motion.div
@@ -18,11 +18,8 @@ export function PressIntro() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="overflow-hidden order-2 lg:order-1">
-          <motion.img
-            src={`${baseUrl}/images/PressPage/press_intro/left.png`}
-            alt="Wine glass"
-            className="h-full w-full object-cover md:max-h-[620px] lg:max-h-full min-[1440px]:min-h-[440px]"
+          className="overflow-hidden order-2 lg:order-1 p-6 lg:p-0">
+          <motion.picture
             initial={{ scale: 1.08 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -30,7 +27,18 @@ export function PressIntro() {
               duration: 1.8,
               ease: [0.22, 1, 0.36, 1],
             }}
-          />
+            className="block h-full w-full">
+            <source
+              media="(max-width: 1023px)"
+              srcSet={`${baseUrl}/images/PressPage/press_intro/left_mob.png`}
+            />
+
+            <motion.img
+              src={`${baseUrl}/images/PressPage/press_intro/left.png`}
+              alt="Wine glass"
+              className="h-full w-full object-cover max-h-[380px] md:max-h-[620px] lg:max-h-full min-[1440px]:min-h-[440px]"
+            />
+          </motion.picture>
         </motion.div>
 
         {/* CENTER */}
@@ -51,7 +59,7 @@ export function PressIntro() {
               <img
                 src={`${baseUrl}/images/PressPage/press_intro/logo.svg`}
                 alt="Scarpa Villas"
-                className="h-[74px] lg:h-[54px] xl:h-[74px] w-auto shrink-0"
+                className="h-[54px] xl:h-[74px] w-auto shrink-0"
               />
 
               <div className="h-[2px] flex-1 bg-[#2C3654]" />
