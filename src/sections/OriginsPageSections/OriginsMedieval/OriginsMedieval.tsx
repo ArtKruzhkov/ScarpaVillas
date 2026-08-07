@@ -64,7 +64,7 @@ export function OriginsMedieval() {
             <img
               src={`${baseUrl}/images/OriginsPage/origins_medieval/logo.svg`}
               alt=""
-              className="h-[56px] w-auto shrink-0"
+              className="h-[54px] xl:h-[74px] w-auto shrink-0"
             />
 
             <div className="h-[2px] flex-1 bg-[#2C3654]" />
