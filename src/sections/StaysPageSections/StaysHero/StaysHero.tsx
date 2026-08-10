@@ -20,7 +20,7 @@ export function StaysHero() {
 
       {/* CONTENT */}
       <div className="relative z-10 flex w-full justify-center px-6">
-        <div className="flex flex-col items-center text-center mb-60 lg:mb-80">
+        <div className="flex flex-col items-center text-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={t('staysHero.title')}

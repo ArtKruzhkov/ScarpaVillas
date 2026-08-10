@@ -71,7 +71,7 @@ export function ExperiencesPlanStay() {
               }}
               className="flex w-full flex-col items-center">
               {/* Title */}
-              <h2 className="font-serif sm:max-w-[520px] md:max-w-[680px] lg:max-w-none text-[18px] leading-[20px] tracking-[0.02em] text-[#2C3654] md:text-[28px] md:leading-[30px] lg:text-[32px] lg:leading-[36px] 2xl:text-[38px] 2xl:leading-[44px]">
+              <h2 className="font-serif max-w-[295px] sm:max-w-[520px] md:max-w-[680px] lg:max-w-none text-[18px] leading-[20px] tracking-[0.02em] text-[#2C3654] md:text-[28px] md:leading-[30px] lg:text-[32px] lg:leading-[36px] 2xl:text-[38px] 2xl:leading-[44px]">
                 {t('experiencesPlanStay.titleLine1')}
                 <br className="hidden lg:block" />
                 {t('experiencesPlanStay.titleLine2')}
