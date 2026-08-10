@@ -31,7 +31,7 @@ export function VillasHero() {
           playsInline
           preload="auto">
           <source
-            src={`${process.env.PUBLIC_URL}/images/villas_hero/villas_hero_vid_mob.mp4`}
+            src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_hero/villas_hero_vid_mob.mp4`}
             type="video/mp4"
           />
         </video>
@@ -45,7 +45,7 @@ export function VillasHero() {
           playsInline
           preload="auto">
           <source
-            src={`${process.env.PUBLIC_URL}/images/villas_hero/villas_hero_vid_laptop.mp4`}
+            src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_hero/villas_hero_vid_laptop.mp4`}
             type="video/mp4"
           />
         </video>
@@ -59,7 +59,7 @@ export function VillasHero() {
           playsInline
           preload="auto">
           <source
-            src={`${process.env.PUBLIC_URL}/images/villas_hero/villas_hero_vid_desk.mp4`}
+            src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_hero/villas_hero_vid_desk.mp4`}
             type="video/mp4"
           />
         </video>

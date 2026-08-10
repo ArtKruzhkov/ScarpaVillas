@@ -1,30 +1,29 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import './storyHero.css';
+import { useTranslation } from 'react-i18next';
 
-export function StoryHero() {
+export function ExperiencesHero() {
   const { t } = useTranslation();
 
   return (
     <section
-      id="story-top"
+      id="experiences-top"
       className="relative flex section-height items-center justify-center overflow-hidden">
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/StoryPage/story_hero/story-hero.png`}
-          alt="The Story"
+          src={`${process.env.PUBLIC_URL}/images/ExperiencesPage/experiences_hero/experiences_hero.png`}
+          alt={t('experiencesHero.title')}
           className="h-full w-full object-cover"
         />
       </div>
 
       {/* CONTENT */}
       <div className="relative z-10 flex w-full justify-center px-6">
-        <div className="flex max-w-[900px] flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center">
           <AnimatePresence mode="wait">
             <motion.div
-              key={t('storyHero.title')}
+              key={t('experiencesHero.title')}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -32,10 +31,10 @@ export function StoryHero() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <h1 className="story_hero-title">{t('storyHero.title')}</h1>
+              <h1 className="top-hero-title">{t('experiencesHero.title')}</h1>
 
-              <p className="mt-2 xl:mt-4 font-serif text-[22px] leading-[28px] sm:leading-normal sm:text-[28px] lg:text-[32px] text-white">
-                {t('storyHero.subtitle')}
+              <p className="mt-2 font-serif text-[22px] leading-[28px] text-white sm:text-[28px] sm:leading-normal lg:text-[32px] xl:mt-4">
+                {t('experiencesHero.subtitle')}
               </p>
             </motion.div>
           </AnimatePresence>

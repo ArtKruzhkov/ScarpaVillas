@@ -13,7 +13,7 @@ export function VillasGrid() {
       title: t('villasGrid.tettineive.title'),
       text1: t('villasGrid.tettineive.text1'),
       text2: t('villasGrid.tettineive.text2'),
-      image: `${process.env.PUBLIC_URL}/images/villas_villasGrid/tettineive.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillasPage/villas_villasGrid/tettineive.png`,
       framed: true,
     },
     {
@@ -21,7 +21,7 @@ export function VillasGrid() {
       title: t('villasGrid.bogliona.title'),
       text1: t('villasGrid.bogliona.text1'),
       text2: t('villasGrid.bogliona.text2'),
-      image: `${process.env.PUBLIC_URL}/images/villas_villasGrid/bogliona.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillasPage/villas_villasGrid/bogliona.png`,
       framed: false,
     },
     {
@@ -29,7 +29,7 @@ export function VillasGrid() {
       title: t('villasGrid.bricchi.title'),
       text1: t('villasGrid.bricchi.text1'),
       text2: t('villasGrid.bricchi.text2'),
-      image: `${process.env.PUBLIC_URL}/images/villas_villasGrid/bricchi.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillasPage/villas_villasGrid/bricchi.png`,
       framed: false,
     },
     {
@@ -37,7 +37,7 @@ export function VillasGrid() {
       title: t('villasGrid.tettimorra.title'),
       text1: t('villasGrid.tettimorra.text1'),
       text2: t('villasGrid.tettimorra.text2'),
-      image: `${process.env.PUBLIC_URL}/images/villas_villasGrid/tettimorra.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillasPage/villas_villasGrid/tettimorra.png`,
       framed: true,
     },
   ];

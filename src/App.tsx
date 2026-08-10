@@ -13,6 +13,8 @@ import { PeoplePage } from './pages/PeoplePage/PeoplePage';
 
 import './App.css';
 import { PressPage } from './pages/PressPage/PressPage';
+import { ExperiencesPage } from './pages/ExperiencesPage/ExperiencesPage';
+import { StaysPage } from './pages/StaysPage/StaysPage';
 
 export default function App() {
   return (
@@ -22,6 +24,18 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/:lang" element={<HomePage />} />
+
+        <Route path="/villas" element={<VillasPage />} />
+        <Route path="/:lang/villas" element={<VillasPage />} />
+
+        <Route path="/villas/:villaId" element={<VillaPage />} />
+        <Route path="/:lang/villas/:villaId" element={<VillaPage />} />
+
+        <Route path="/borgo" element={<BorgoPage />} />
+        <Route path="/:lang/borgo" element={<BorgoPage />} />
+
+        <Route path="/experiences" element={<ExperiencesPage />} />
+        <Route path="/:lang/experiences" element={<ExperiencesPage />} />
 
         <Route path="/story" element={<StoryPage />} />
         <Route path="/:lang/story" element={<StoryPage />} />
@@ -38,14 +52,8 @@ export default function App() {
         <Route path="/story/press" element={<PressPage />} />
         <Route path="/:lang/story/press" element={<PressPage />} />
 
-        <Route path="/villas" element={<VillasPage />} />
-        <Route path="/:lang/villas" element={<VillasPage />} />
-
-        <Route path="/villas/:villaId" element={<VillaPage />} />
-        <Route path="/:lang/villas/:villaId" element={<VillaPage />} />
-
-        <Route path="/borgo" element={<BorgoPage />} />
-        <Route path="/:lang/borgo" element={<BorgoPage />} />
+        <Route path="/stays" element={<StaysPage />} />
+        <Route path="/:lang/stays" element={<StaysPage />} />
       </Routes>
 
       <Footer />

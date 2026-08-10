@@ -414,6 +414,91 @@
       }
     ]
   },
+  "experiencesHero": {
+    "title": "Esperienze",
+    "subtitle": "Modi per vivere il Barolo oltre il soggiorno"
+  },
+  "experiencesIntro": {
+    "titleLine1": "Ogni esperienza è pensata",
+    "titleLine2": "per metterti in contatto con il paesaggio, la cultura,",
+    "titleLine3": "e il ritmo delle Langhe.",
+    "text1": "A Scarpa Villas, il tuo soggiorno può essere modellato su ciò che più ti sta a cuore: dal vino e dalla gastronomia alla natura e alla scoperta.",
+    "text2": "Ogni esperienza è curata per farti sentire a tuo agio, senza fretta e profondamente in sintonia con il luogo."
+  },
+  "experiencesCategories": {
+    "wineTaste": {
+      "title": "Wine & Taste",
+      "subtitle": "Scopri l'essenza del Piemonte attraverso il vino, il cibo e le tradizioni locali.",
+      "cards": {
+        "privateWineTastings": {
+          "title": "Degustazioni private",
+          "description": "Degustazioni guidate dei vini Scarpa, dalle etichette iconiche alle annate rare."
+        },
+        "scarpaWinery": {
+          "title": "Cantina Scarpa",
+          "description": "Entra nelle cantine Scarpa ed esplora l’arte dietro ogni bottiglia."
+        },
+        "merendaSinoira": {
+          "title": "Merenda Sinoira",
+          "description": "Un tradizionale aperitivo piemontese di fine pomeriggio con piatti e vini locali."
+        },
+        "cookingClasses": {
+          "title": "Corsi di cucina",
+          "description": "Scoprite le tradizioni della cucina piemontese attraverso esperienze pratiche."
+        }
+      }
+    },
+    "cultureDiscovery": {
+      "title": "Cultura e scoperte",
+      "subtitle": "Alla scoperta del patrimonio, dei paesi e della vita quotidiana\u00A0del\u00A0Piemonte.",
+      "cards": {
+        "langheBaroloTours": {
+          "title": "Tour delle Langhe e del Barolo",
+          "description": "Visita borghi storici, mercati locali e angoli nascosti delle Langhe."
+        },
+        "localProducers": {
+          "title": "Produttori locali e degustazioni",
+          "description": "Scopri i piccoli produttori artigianali — dai formaggi alle nocciole — nelle zone meno conosciute del Piemonte."
+        },
+        "turinExperiences": {
+          "title": "Esperienze a Torino",
+          "description": "Scopri l’eleganza del capoluogo piemontese, dai caffè ai monumenti storici."
+        }
+      }
+    },
+    "natureMovement": {
+      "title": "Natura e movimento",
+      "subtitle": "Scopri il paesaggio attraverso il movimento, l'esplorazione e il tempo trascorso all'aria aperta.",
+      "cards": {
+        "truffleHunting": {
+          "title": "Caccia al tartufo",
+          "description": "Passeggia nei boschi con un trifolau e scopri una delle tradizioni più uniche della regione."
+        },
+        "hotAirBalloon": {
+          "title": "Voli in mongolfiera",
+          "description": "Ammira le Langhe dall’alto all’alba, in completo silenzio."
+        },
+        "vineyardPicnics": {
+          "title": "Picnic tra i vigneti",
+          "description": "Una tavola semplice apparecchiata tra i vigneti, dove il tempo rallenta."
+        },
+        "vespaEbike": {
+          "title": "Tour in Vespa ed e-bike",
+          "description": "Muovetevi liberamente tra borghi e vigneti al vostro ritmo."
+        }
+      }
+    }
+  },
+  "experiencesPlanStay": {
+    "titleLine1": "Tutte le esperienze si possono organizzare prima o durante",
+    "titleLine2": " il soggiorno e adattare alle tue preferenze.",
+    "subtitle": "Dicci cosa vorresti vivere — al resto pensiamo noi.",
+    "button": "Pianifica soggiorno"
+  },
+  "staysHero": {
+    "title": "Soggiorni esclusivi",
+    "subtitle": "Soggiorni curati in ogni dettaglio, pensati per te"
+  },
   "villasHero": {
     "title": "Ville",
     "subtitle": "Quattro modi diversi di vivere il Barolo"

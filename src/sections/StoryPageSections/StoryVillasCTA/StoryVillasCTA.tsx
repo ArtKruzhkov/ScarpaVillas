@@ -16,7 +16,7 @@ export function StoryVillasCTA() {
         <div className="relative overflow-hidden">
           {/* Background image */}
           <motion.img
-            src={`${baseUrl}/images/story_cta/storyCTA.png`}
+            src={`${baseUrl}/images/StoryPage/story_cta/storyCTA.png`}
             alt="Scarpa Villas"
             className="storyVillasCTA_image-height w-full object-cover"
             initial={{

@@ -415,6 +415,91 @@
       }
     ]
   },
+  "experiencesHero": {
+    "title": "Experiences",
+    "subtitle": "Ways to experience Barolo beyond the stay"
+  },
+  "experiencesIntro": {
+    "titleLine1": "Each experience is designed",
+    "titleLine2": "to connect you with the landscape, the culture,",
+    "titleLine3": "and the rhythm of the Langhe.",
+    "text1": "At Scarpa Villas, your stay can be shaped around what you value most — from wine and gastronomy to nature and discovery.",
+    "text2": "Each experience is curated to feel natural, unhurried, and deeply connected to the place."
+  },
+  "experiencesCategories": {
+    "wineTaste": {
+      "title": "Wine & Taste",
+      "subtitle": "Discover the essence of Piedmont through wine, food, and local traditions.",
+      "cards": {
+        "privateWineTastings": {
+          "title": "Private Wine Tastings",
+          "description": "Guided tastings of Scarpa wines, from iconic labels to rare vintages."
+        },
+        "scarpaWinery": {
+          "title": "Scarpa Winery Experience",
+          "description": "Step inside the historic Scarpa cellars and explore the craft behind each bottle."
+        },
+        "merendaSinoira": {
+          "title": "Merenda Sinoira",
+          "description": "A traditional Piedmontese late-afternoon aperitivo with local dishes and wines."
+        },
+        "cookingClasses": {
+          "title": "Cooking Classes",
+          "description": "Learn the traditions of Piedmontese cuisine through hands-on experiences."
+        }
+      }
+    },
+    "cultureDiscovery": {
+      "title": "Culture & Discovery",
+      "subtitle": "Explore the heritage, towns, and everyday life\u00A0of\u00A0Piedmont.",
+      "cards": {
+        "langheBaroloTours": {
+          "title": "Langhe & Barolo Tours",
+          "description": "Visit historic villages, local markets, and hidden corners of the Langhe."
+        },
+        "localProducers": {
+          "title": "Local Producers & Tastings",
+          "description": "Discover small artisan producers — from cheeses to hazelnuts — across lesser-known parts of Piedmont."
+        },
+        "turinExperiences": {
+          "title": "Turin Experiences",
+          "description": "Experience the elegance of Piedmont’s capital, from cafés to historic landmarks."
+        }
+      }
+    },
+    "natureMovement": {
+      "title": "Nature & Movement",
+      "subtitle": "Experience the landscape through movement, exploration, and time outdoors.",
+      "cards": {
+        "truffleHunting": {
+          "title": "Truffle Hunting",
+          "description": "Walk through the woods with a truffleu and discover one of the region’s most unique traditions."
+        },
+        "hotAirBalloon": {
+          "title": "Hot-Air Balloon Flights",
+          "description": "See the Langhe from above at sunrise, in complete silence."
+        },
+        "vineyardPicnics": {
+          "title": "Vineyard Picnics",
+          "description": "A simple table set among the vines, where time slows down."
+        },
+        "vespaEbike": {
+          "title": "Vespa & E-Bike Tours",
+          "description": "Move freely between villages and vineyards at your own rhythm."
+        }
+      }
+    }
+  },
+  "experiencesPlanStay": {
+    "titleLine1": "All experiences can be arranged before or during",
+    "titleLine2": " your stay, and tailored to your preferences.",
+    "subtitle": "Tell us what you’d like to experience — we’ll take care of the rest.",
+    "button": "Plan Your Stay"
+  },
+  "staysHero": {
+    "title": "Signature Stays",
+    "subtitle": "Fully curated stays — where every detail is planned for you"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"

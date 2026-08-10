@@ -14,7 +14,7 @@ export function StoryChapters() {
       title: t('storyChapters.origins.title'),
       description: t('storyChapters.origins.description'),
       button: t('storyChapters.origins.button'),
-      image: `${baseUrl}/images/story_chapters/origins.png`,
+      image: `${baseUrl}/images/StoryPage/story_chapters/origins.png`,
       href: '/story/origins',
     },
     {
@@ -22,7 +22,7 @@ export function StoryChapters() {
       title: t('storyChapters.winery.title'),
       description: t('storyChapters.winery.description'),
       button: t('storyChapters.winery.button'),
-      image: `${baseUrl}/images/story_chapters/winery.png`,
+      image: `${baseUrl}/images/StoryPage/story_chapters/winery.png`,
       href: '/story/scarpa-winery',
     },
     {
@@ -30,7 +30,7 @@ export function StoryChapters() {
       title: t('storyChapters.people.title'),
       description: t('storyChapters.people.description'),
       button: t('storyChapters.people.button'),
-      image: `${baseUrl}/images/story_chapters/people.png`,
+      image: `${baseUrl}/images/StoryPage/story_chapters/people.png`,
       href: '/story/people',
     },
     {
@@ -38,7 +38,7 @@ export function StoryChapters() {
       title: t('storyChapters.press.title'),
       description: t('storyChapters.press.description'),
       button: t('storyChapters.press.button'),
-      image: `${baseUrl}/images/story_chapters/press.png`,
+      image: `${baseUrl}/images/StoryPage/story_chapters/press.png`,
       href: '/story/press',
     },
   ];

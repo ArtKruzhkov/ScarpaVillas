@@ -52,6 +52,7 @@ export function Navbar() {
   const discoverUrl = i18n.language === 'en' ? '/discover' : `/${i18n.language}/discover`;
   const experiencesUrl = i18n.language === 'en' ? '/experiences' : `/${i18n.language}/experiences`;
   const borgoUrl = i18n.language === 'en' ? '/borgo' : `/${i18n.language}/borgo`;
+  const staysUrl = i18n.language === 'en' ? '/stays' : `/${i18n.language}/stays`;
 
   const nav: NavItem[] = [
     { id: 'villas', label: t('nav.villas'), href: villasUrl, isRoute: true, routeId: 'villas' },
@@ -64,7 +65,7 @@ export function Navbar() {
       routeId: 'experiences',
     },
     { id: 'story', label: t('nav.story'), href: storyUrl, isRoute: true, routeId: 'story' },
-    { id: 'stays', label: t('nav.stays'), href: '#stays' },
+    { id: 'stays', label: t('nav.stays'), href: staysUrl, isRoute: true, routeId: 'stays' },
     {
       id: 'discover',
       label: t('nav.discover'),
@@ -79,6 +80,7 @@ export function Navbar() {
   const storyItem = nav.find((item) => item.id === 'story');
   const discoverItem = nav.find((item) => item.id === 'discover');
   const borgoItem = nav.find((item) => item.id === 'borgo');
+  const staysItem = nav.find((item) => item.id === 'stays');
 
   const isVillasActiveRoute =
     villasItem?.routeId && location.pathname.includes(`/${villasItem.routeId}`);
@@ -94,6 +96,9 @@ export function Navbar() {
 
   const isBorgoActiveRoute =
     borgoItem?.routeId && location.pathname.includes(`/${borgoItem.routeId}`);
+
+  const isStaysActiveRoute =
+    staysItem?.routeId && location.pathname.includes(`/${staysItem.routeId}`);
 
   const closeMobileDropdowns = () => {
     setMobileVillasOpen(false);
@@ -180,18 +185,18 @@ export function Navbar() {
       href: `${experiencesUrl}#wine-taste`,
     },
     {
-      id: 'nature-movement',
-      name: t('navDropdown.experiences.natureMovement'),
-      nameMob: t('navDropdown.experiences.nature'),
-      image: `${process.env.PUBLIC_URL}/images/nav/natureMovement.png`,
-      href: `${experiencesUrl}#nature-movement`,
-    },
-    {
       id: 'culture-discovery',
       name: t('navDropdown.experiences.cultureDiscovery'),
       nameMob: t('navDropdown.experiences.culture'),
       image: `${process.env.PUBLIC_URL}/images/nav/cultureDiscovery.png`,
       href: `${experiencesUrl}#culture-discovery`,
+    },
+    {
+      id: 'nature-movement',
+      name: t('navDropdown.experiences.natureMovement'),
+      nameMob: t('navDropdown.experiences.nature'),
+      image: `${process.env.PUBLIC_URL}/images/nav/natureMovement.png`,
+      href: `${experiencesUrl}#nature-movement`,
     },
   ];
 
@@ -441,27 +446,35 @@ export function Navbar() {
                       }`}>
                       <div className="mx-auto max-w-[1920px] px-6 py-8">
                         <div className="mx-auto grid max-w-[1157.5px] grid-cols-3 gap-5">
-                          {experiencesLinks.map((experience) => (
-                            <Link
-                              key={experience.id}
-                              to={experience.href}
-                              onClick={() => setOpenDropdown(null)}
-                              className="group/experience relative block overflow-hidden">
-                              <div className="relative aspect-[1.6/1] overflow-hidden">
-                                <img
-                                  src={experience.image}
-                                  alt={experience.name}
-                                  className="h-full max-h-[232.81px] max-w-[372.5px] w-full object-cover transition-transform duration-700 ease-out group-hover/experience:scale-105"
-                                />
+                          {experiencesLinks.map((experience) => {
+                            const isActiveExperience =
+                              location.pathname.includes('/experiences') &&
+                              location.hash === `#${experience.id}`;
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+                            return (
+                              <Link
+                                key={experience.id}
+                                to={experience.href}
+                                onClick={() => setOpenDropdown(null)}
+                                className={`group/experience relative block overflow-hidden border-[4px] transition-colors ${
+                                  isActiveExperience ? 'border-[#C09A60]' : 'border-transparent'
+                                }`}>
+                                <div className="relative aspect-[1.6/1] overflow-hidden">
+                                  <img
+                                    src={experience.image}
+                                    alt={experience.name}
+                                    className="h-full max-h-[232.81px] max-w-[372.5px] w-full object-cover transition-transform duration-700 ease-out group-hover/experience:scale-105"
+                                  />
 
-                                <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
-                                  {experience.name}
-                                </span>
-                              </div>
-                            </Link>
-                          ))}
+                                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+
+                                  <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
+                                    {experience.name}
+                                  </span>
+                                </div>
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
@@ -890,30 +903,39 @@ export function Navbar() {
                       mobileExperiencesOpen ? 'max-h-[260px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
                     <div className="flex gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
-                      {experiencesLinks.map((experience) => (
-                        <Link
-                          key={experience.id}
-                          to={experience.href}
-                          onClick={() => {
-                            setOpen(false);
-                            closeMobileDropdowns();
-                          }}
-                          className="w-[44%] shrink-0">
-                          <div className="relative aspect-[1.55/1] overflow-hidden">
-                            <img
-                              src={experience.image}
-                              alt={experience.name}
-                              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                            />
+                      {experiencesLinks.map((experience) => {
+                        const isActiveExperience =
+                          location.pathname.includes('/experiences') &&
+                          location.hash === `#${experience.id}`;
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+                        return (
+                          <Link
+                            key={experience.id}
+                            to={experience.href}
+                            onClick={() => {
+                              setOpen(false);
+                              closeMobileDropdowns();
+                            }}
+                            className="w-[44%] shrink-0">
+                            <div
+                              className={`relative aspect-[1.55/1] overflow-hidden border-[3px] transition-colors ${
+                                isActiveExperience ? 'border-[#C09A60]' : 'border-transparent'
+                              }`}>
+                              <img
+                                src={experience.image}
+                                alt={experience.name}
+                                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                              />
 
-                            <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white md:text-[20px]">
-                              {experience.nameMob}
-                            </span>
-                          </div>
-                        </Link>
-                      ))}
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+
+                              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white md:text-[20px]">
+                                {experience.nameMob}
+                              </span>
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -1007,9 +1029,20 @@ export function Navbar() {
                 </div>
 
                 {/* STAYS */}
-                <a href="#stays" className="border-b border-[#2c3654] py-3 nav-link_mob">
+                {/* <a href="#stays" className="border-b border-[#2c3654] py-3 nav-link_mob">
                   {t('nav.stays')}
-                </a>
+                </a> */}
+                <Link
+                  to={staysUrl}
+                  onClick={() => {
+                    setOpen(false);
+                    closeMobileDropdowns();
+                  }}
+                  className={`border-b border-[#2c3654] py-3 nav-link_mob ${
+                    isStaysActiveRoute ? 'active' : ''
+                  }`}>
+                  {t('nav.stays')}
+                </Link>
 
                 {/* DISCOVER */}
                 <div>

@@ -14,7 +14,7 @@ export function VillasPlanStayCTA() {
       {/* Background */}
       <div className="absolute inset-0">
         <motion.img
-          src={`${process.env.PUBLIC_URL}/images/villas_planStay/villas-plan-stay.png`}
+          src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_planStay/villas-plan-stay.png`}
           alt="Scarpa Villas"
           className="h-full w-full object-cover"
           initial={{

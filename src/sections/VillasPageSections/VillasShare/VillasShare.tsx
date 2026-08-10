@@ -75,21 +75,21 @@ export function VillasShare() {
             }}>
             {/* Mobile */}
             <img
-              src={`${process.env.PUBLIC_URL}/images/villas_villasShare/villas_mob.png`}
+              src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_villasShare/villas_mob.png`}
               alt="Scarpa Villas"
               className="block w-full object-cover md:hidden max-h-[786px] sm:max-h-[1000px] sm:h-full"
             />
 
             {/* Tablet */}
             <img
-              src={`${process.env.PUBLIC_URL}/images/villas_villasShare/villas_tablet.png`}
+              src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_villasShare/villas_tablet.png`}
               alt="Scarpa Villas"
               className="hidden w-full h-full object-cover object-[center_55%] md:block lg:hidden"
             />
 
             {/* Desktop */}
             <img
-              src={`${process.env.PUBLIC_URL}/images/villas_villasShare/villas.png`}
+              src={`${process.env.PUBLIC_URL}/images/VillasPage/villas_villasShare/villas.png`}
               alt="Scarpa Villas"
               className="hidden w-full object-cover lg:block"
             />
