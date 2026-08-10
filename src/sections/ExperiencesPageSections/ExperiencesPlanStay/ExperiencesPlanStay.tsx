@@ -7,7 +7,7 @@ export function ExperiencesPlanStay() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className="bg-[#2C3654] mt-8 lg:mt-0 p-4 md:p-6 lg:p-8 2xl:p-10">
+    <section className="bg-[#2C3654] mt-4 lg:mt-0 p-4 md:p-6 lg:p-8 2xl:p-10">
       <div className="relative mx-auto max-w-[1920px] overflow-hidden">
         {/* Background */}
         <motion.img
