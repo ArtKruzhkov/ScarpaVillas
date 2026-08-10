@@ -4,7 +4,7 @@ import { ContactUs } from '../../components/ui/ContactUs';
 import { ExperiencesHero } from '../../sections/ExperiencesPageSections/ExperiencesHero/ExperiencesHero';
 import { ExperiencesIntro } from '../../sections/ExperiencesPageSections/ExperiencesIntro/ExperiencesIntro';
 import { ExperiencesCategory } from '../../sections/ExperiencesPageSections/ExperiencesCategory/ExperiencesCategory';
-import { ExperiencesPlanStay } from '../../sections/ExperiencesPageSections/ExperiencesPlanStay/EsperiencesPlanStay';
+import { ExperiencesPlanStay } from '../../sections/ExperiencesPageSections/ExperiencesPlanStay/ExperiencesPlanStay';
 
 export function ExperiencesPage() {
   const location = useLocation();
