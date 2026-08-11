@@ -39,13 +39,6 @@ const villas: Villa[] = [
 ];
 
 const villaMasks = {
-  // desktop: {
-  //   TETTIMORA: { cx: 600, cy: 610, r: 180 },
-  //   BRICCHI: { cx: 855, cy: 473, r: 150 },
-  //   BOGLIONA: { cx: 1104, cy: 545, r: 160 },
-  //   TETTINEIVE: { cx: 1392, cy: 674, r: 182 },
-  // },
-
   desktop: {
     TETTIMORA: {
       topX: 540,
@@ -99,13 +92,6 @@ const villaMasks = {
       curveY: 920,
     },
   },
-
-  // laptop: {
-  //   TETTIMORA: { cx: 575, cy: 610, r: 200 },
-  //   BRICCHI: { cx: 850, cy: 480, r: 150 },
-  //   BOGLIONA: { cx: 1110, cy: 570, r: 160 },
-  //   TETTINEIVE: { cx: 1415, cy: 674, r: 170 },
-  // },
 
   laptop: {
     TETTIMORA: {
@@ -235,7 +221,7 @@ export function Gallery() {
               ease: [0.22, 1, 0.36, 1],
             }}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/gallery/gallery-hero.png`}
+              src={`${process.env.PUBLIC_URL}/images/gallery/gallery-hero.webp`}
               alt="Scarpa Villas"
               className="h-full w-full object-cover"
             />
@@ -255,16 +241,6 @@ export function Gallery() {
                     </filter>
                     <mask id="villaMask">
                       <rect width="100%" height="100%" fill="white" />
-                      {/* {activeMask && (
-                        <circle
-                          cx={activeMask.cx}
-                          cy={activeMask.cy}
-                          r={activeMask.r}
-                          fill="black"
-                          filter="url(#blurCircle)"
-                        />
-                      )} */}
-
                       {activeMask && (
                         <path
                           d={`

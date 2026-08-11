@@ -33,20 +33,17 @@ export function Borgo() {
             <picture>
               <source
                 media="(max-width: 639px)"
-                srcSet={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero_mob.png`}
+                srcSet={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero_mob.webp`}
               />
 
               <img
-                src={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero.png`}
+                src={`${process.env.PUBLIC_URL}/images/borgo/borgo-hero.webp`}
                 alt="The Borgo"
                 className="borgo-hero-image"
               />
             </picture>
           </motion.div>
         </div>
-
-        {/* LIGHT OVERLAY */}
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/11 to-black/14" /> */}
 
         {/* CONTENT */}
         <motion.div

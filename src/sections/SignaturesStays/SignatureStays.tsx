@@ -4,7 +4,6 @@ import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import 'swiper/css';
 import './signaturesStays.css';
-// import { ScarpaLeadership } from '../ScarpaLeadership/ScarpaLeadership';
 
 type Stay = {
   title: string;
@@ -22,7 +21,7 @@ const stays: Stay[] = [
   {
     title: 'signatureStays',
     description: 'signatureStaysDescription',
-    image: `${baseUrl}/images/stays/signature-stays.png`,
+    image: `${baseUrl}/images/stays/signature-stays.webp`,
   },
   {
     title: 'tasteOfLanghe',
@@ -31,7 +30,7 @@ const stays: Stay[] = [
     nights: 5,
     startMonth: 'january',
     endMonth: 'may',
-    image: `${baseUrl}/images/stays/taste-of-langhe.png`,
+    image: `${baseUrl}/images/stays/taste-of-langhe.webp`,
   },
   {
     title: 'luxRetreat',
@@ -40,7 +39,7 @@ const stays: Stay[] = [
     nights: 3,
     startMonth: 'january',
     endMonth: 'april',
-    image: `${baseUrl}/images/stays/lux-retreat.png`,
+    image: `${baseUrl}/images/stays/lux-retreat.webp`,
   },
   {
     title: 'autumnGems',
@@ -49,7 +48,7 @@ const stays: Stay[] = [
     nights: 5,
     startMonth: 'october',
     endMonth: 'november',
-    image: `${baseUrl}/images/stays/autumn-gems.png`,
+    image: `${baseUrl}/images/stays/autumn-gems.webp`,
   },
   {
     title: 'piemonteEscape',
@@ -58,21 +57,21 @@ const stays: Stay[] = [
     nights: 7,
     startMonth: 'january',
     endMonth: 'may',
-    image: `${baseUrl}/images/stays/piemonte-escape.png`,
+    image: `${baseUrl}/images/stays/piemonte-escape.webp`,
   },
 ];
 
 const momentSlides = [
-  `${baseUrl}/images/stays/moment-left.png`,
-  `${baseUrl}/images/stays/moment-right.png`,
-  `${baseUrl}/images/stays/moment-left2.png`,
-  `${baseUrl}/images/stays/moment-right2.png`,
-  `${baseUrl}/images/stays/moment-left3.png`,
-  `${baseUrl}/images/stays/moment-right3.png`,
-  `${baseUrl}/images/stays/moment-left4.png`,
-  `${baseUrl}/images/stays/moment-right4.png`,
-  `${baseUrl}/images/stays/moment-left5.png`,
-  `${baseUrl}/images/stays/moment-right5.png`,
+  `${baseUrl}/images/stays/moment-left.webp`,
+  `${baseUrl}/images/stays/moment-right.webp`,
+  `${baseUrl}/images/stays/moment-left2.webp`,
+  `${baseUrl}/images/stays/moment-right2.webp`,
+  `${baseUrl}/images/stays/moment-left3.webp`,
+  `${baseUrl}/images/stays/moment-right3.webp`,
+  `${baseUrl}/images/stays/moment-left4.webp`,
+  `${baseUrl}/images/stays/moment-right4.webp`,
+  `${baseUrl}/images/stays/moment-left5.webp`,
+  `${baseUrl}/images/stays/moment-right5.webp`,
 ];
 
 const cardsContainer: Variants = {
@@ -244,8 +243,6 @@ export function SignatureStays() {
             </AnimatePresence>
           </div>
         </div>
-
-        {/* <ScarpaLeadership /> */}
 
         {/* STAYS GRID */}
         <div

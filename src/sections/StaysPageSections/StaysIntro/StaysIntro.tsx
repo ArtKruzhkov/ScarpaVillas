@@ -121,7 +121,7 @@ export function StaysIntro() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="mt-4 md:mt-8 max-w-[180px] font-sans text-[13px] leading-[18px] text-[#2C3654] md:max-w-[410px] md:text-[15px] md:leading-[21px] xl:max-w-[490px] xl:text-[18px] xl:leading-[26px]">
+              className="mt-4 md:mt-8 max-w-[180px] font-sans text-[13px] md:text-[16px] xl:text-[18px] leading-[18px] text-[#2C3654] md:max-w-[410px] md:text-[16px] md:leading-[21px] xl:max-w-[490px] xl:leading-[26px]">
               <p>
                 {t('staysIntro.text1')}
                 <br />

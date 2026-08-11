@@ -148,7 +148,7 @@ export function StaysProgramme({
                     {t(titleKey)}
                   </h2>
 
-                  <p className="mt-4 lg:mt-8 font-sans text-[15px] sm:text-[16px] xl:text-[18px] font-semibold italic leading-[1.4] text-[#2C3654]">
+                  <p className="mt-4 lg:mt-8 font-sans text-[15px] sm:text-[16px] min-[1680px]:text-[18px] font-semibold italic leading-[1.4] text-[#2C3654]">
                     {t(subtitleKey)}
                   </p>
 
@@ -156,13 +156,13 @@ export function StaysProgramme({
                     {descriptionKeys.map((key) => (
                       <p
                         key={key}
-                        className="font-sans text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.4] text-[#2C3654]">
+                        className="font-sans text-[15px] sm:text-[16px] min-[1680px]:text-[18px] leading-[1.4] text-[#2C3654]">
                         {t(key)}
                       </p>
                     ))}
                   </div>
 
-                  <p className="mt-6 font-sans text-[15px] sm:text-[16px] xl:text-[18px] font-bold text-[#2C3654]">
+                  <p className="mt-6 font-sans text-[15px] sm:text-[16px] min-[1680px]:text-[18px] font-bold text-[#2C3654]">
                     {t(durationKey)}
                   </p>
                 </motion.div>
@@ -173,7 +173,7 @@ export function StaysProgramme({
                 type="button"
                 onClick={() => setIsOpen((prev) => !prev)}
                 aria-expanded={isOpen}
-                className="mt-8 lg:mt-16 h-[44px] md:h-[57px] overflow-hidden border-y-[2px] border-[#2C3654] px-4 font-sans text-[15px] md:text-[18px] font-semibold uppercase tracking-[0.2em] text-[#2C3654] transition-opacity duration-300 hover:opacity-60">
+                className="mt-8 lg:mt-16 h-[44px] md:h-[57px] overflow-hidden border-y-[2px] border-[#2C3654] px-4 font-sans text-[13px] md:text-[16px] min-[1680px]:text-[18px] font-semibold uppercase tracking-[0.2em] text-[#2C3654] transition-opacity duration-300 hover:opacity-60">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={`${i18n.language}-${isOpen}`}
@@ -244,7 +244,7 @@ export function StaysProgramme({
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
                           transition={{ duration: 0.25 }}
-                          className="block font-sans text-[15px] lg:text-[18px] font-semibold uppercase tracking-[0.12em] text-white">
+                          className="block font-sans text-[15px] sm:text-[16px] min-[1680px]:text-[18px] font-semibold uppercase tracking-[0.12em] text-white">
                           {t(item.dayKey)}
                         </motion.span>
                       </AnimatePresence>
@@ -268,7 +268,7 @@ export function StaysProgramme({
                             duration: 0.25,
                             ease: [0.22, 1, 0.36, 1],
                           }}>
-                          <h3 className="font-sans pr-4 text-[15px] lg:text-[18px] font-semibold uppercase leading-[1.25] tracking-[0.12em] text-[#2C3654]">
+                          <h3 className="font-sans pr-4 text-[15px] sm:text-[16px] min-[1680px]:text-[18px] font-semibold uppercase leading-[1.25] tracking-[0.12em] text-[#2C3654]">
                             {t(item.titleKey)}
                           </h3>
 
@@ -276,7 +276,7 @@ export function StaysProgramme({
                             {item.descriptionKeys.map((translationKey) => (
                               <p
                                 key={translationKey}
-                                className="font-sans text-[15px] lg:text-[18px] leading-[1.4] text-[#2C3654]">
+                                className="font-sans text-[15px] sm:text-[16px] min-[1680px]:text-[18px] leading-[1.4] text-[#2C3654]">
                                 <Trans
                                   i18nKey={translationKey}
                                   components={{

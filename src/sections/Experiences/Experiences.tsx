@@ -22,61 +22,61 @@ export function Experiences() {
       category: 'Wine & Taste',
       title: 'wineryVisits',
       description: 'wineryVisitsDescription',
-      image: `${baseUrl}/images/experiences/winery-visits.png`,
+      image: `${baseUrl}/images/experiences/winery-visits.webp`,
     },
     {
       category: 'Wine & Taste',
       title: 'privateWineTastings',
       description: 'privateWineTastingsDescription',
-      image: `${baseUrl}/images/experiences/wine-tastings.png`,
+      image: `${baseUrl}/images/experiences/wine-tastings.webp`,
     },
     {
       category: 'Wine & Taste',
       title: 'chefPrivateDining',
       description: 'chefPrivateDiningDescription',
-      image: `${baseUrl}/images/experiences/private-dining.png`,
+      image: `${baseUrl}/images/experiences/private-dining.webp`,
     },
     {
       category: 'Wine & Taste',
       title: 'cookingClasses',
       description: 'cookingClassesDescription',
-      image: `${baseUrl}/images/experiences/cooking-classes.png`,
+      image: `${baseUrl}/images/experiences/cooking-classes.webp`,
     },
     {
       category: 'Culture & Discovery',
       title: 'langheBaroloTours',
       description: 'langheBaroloToursDescription',
-      image: `${baseUrl}/images/experiences/langhe-tours.png`,
+      image: `${baseUrl}/images/experiences/langhe-tours.webp`,
     },
     {
       category: 'Culture & Discovery',
       title: 'turinExperiences',
       description: 'turinExperiencesDescription',
-      image: `${baseUrl}/images/experiences/turin-experiences.png`,
+      image: `${baseUrl}/images/experiences/turin-experiences.webp`,
     },
     {
       category: 'Nature & Movement',
       title: 'truffleHunting',
       description: 'truffleHuntingDescription',
-      image: `${baseUrl}/images/experiences/truffle-hunting.png`,
+      image: `${baseUrl}/images/experiences/truffle-hunting.webp`,
     },
     {
       category: 'Nature & Movement',
       title: 'vineyardPicnics',
       description: 'vineyardPicnicsDescription',
-      image: `${baseUrl}/images/experiences/vineyard-picnics.png`,
+      image: `${baseUrl}/images/experiences/vineyard-picnics.webp`,
     },
     {
       category: 'Nature & Movement',
       title: 'hotAirBalloonFlights',
       description: 'hotAirBalloonFlightsDescription',
-      image: `${baseUrl}/images/experiences/hot-air-balloon.png`,
+      image: `${baseUrl}/images/experiences/hot-air-balloon.webp`,
     },
     {
       category: 'Nature & Movement',
       title: 'vespaEBikeTours',
       description: 'vespaEBikeToursDescription',
-      image: `${baseUrl}/images/experiences/vespa-ebike.png`,
+      image: `${baseUrl}/images/experiences/vespa-ebike.webp`,
     },
   ];
 
@@ -127,7 +127,7 @@ export function Experiences() {
   };
 
   return (
-    <section id="experiences" className="scroll-mt-[86px] bg-white py-12 lg:py-16 xl:py-24">
+    <section id="experiences" className="scroll-mt-[86px] bg-white py-12 lg:py-16 xl:py-20">
       <Container className="px-4 sm:px-8">
         {/* HEADER */}
         <motion.div
@@ -538,7 +538,7 @@ export function Experiences() {
 
         {/* DISCOVER BTN */}
         <motion.div
-          className="mt-10 lg:mt-14 xl:mt-24 flex justify-center"
+          className="mt-10 lg:mt-14 xl:mt-20 flex justify-center"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"

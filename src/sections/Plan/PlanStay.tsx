@@ -9,7 +9,7 @@ export function PlanStay() {
     <section id="plan" className="relative section-height w-full overflow-hidden">
       {/* IMAGE */}
       <motion.img
-        src={`${process.env.PUBLIC_URL}/images/plan/plan-stay.png`}
+        src={`${process.env.PUBLIC_URL}/images/plan/plan-stay.webp`}
         alt="Scarpa Villas at night"
         className="absolute inset-0 h-full w-full object-cover object-[center_5%]"
         initial={{
@@ -68,7 +68,7 @@ export function PlanStay() {
         <AnimatePresence mode="wait">
           <motion.p
             key={`plan-text-${i18n.language}`}
-            className="mt-4 lg:mt-6 tracking-[-0.03em] max-w-[920px] font-serif text-[17.5px] leading-[25px] sm:text-[24px] sm:leading-[34px] lg:text-[32px] lg:leading-[44px] xl:text-[34px] xl:leading-[50px]"
+            className="mt-4 lg:mt-6 tracking-[-0.03em] max-w-[920px] font-serif text-[17.5px] leading-[25px] sm:text-[24px] sm:leading-[34px] lg:text-[32px] lg:leading-[44px] xl:text-[34px] xl:leading-[46px]"
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}

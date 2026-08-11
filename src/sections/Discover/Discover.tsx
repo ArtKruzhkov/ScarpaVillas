@@ -21,39 +21,38 @@ const langheSlides: LangheSlide[] = [
     title: 'villageMuseum',
     subtitle: 'villageMuseumSubtitle',
     description: 'villageMuseumDescription',
-    image: `${baseUrl}/images/discover/village-museum.png`,
+    image: `${baseUrl}/images/discover/village-museum.webp`,
   },
   {
     title: 'laMorraBelvedere',
     subtitle: 'laMorraBelvedereSubtitle',
     description: 'laMorraBelvedereDescription',
-    image: `${baseUrl}/images/discover/la-morra.png`,
+    image: `${baseUrl}/images/discover/la-morra.webp`,
   },
   {
     title: 'albaTruffleCulture',
     subtitle: 'albaTruffleCultureSubtitle',
     description: 'albaTruffleCultureDescription',
-    image: `${baseUrl}/images/discover/truffle.png`,
+    image: `${baseUrl}/images/discover/truffle.webp`,
   },
 
-  // дубликаты для loop
   {
     title: 'villageMuseum',
     subtitle: 'villageMuseumSubtitle',
     description: 'villageMuseumDescription',
-    image: `${baseUrl}/images/discover/village-museum.png`,
+    image: `${baseUrl}/images/discover/village-museum.webp`,
   },
   {
     title: 'laMorraBelvedere',
     subtitle: 'laMorraBelvedereSubtitle',
     description: 'laMorraBelvedereDescription',
-    image: `${baseUrl}/images/discover/la-morra.png`,
+    image: `${baseUrl}/images/discover/la-morra.webp`,
   },
   {
     title: 'albaTruffleCulture',
     subtitle: 'albaTruffleCultureSubtitle',
     description: 'albaTruffleCultureDescription',
-    image: `${baseUrl}/images/discover/truffle.png`,
+    image: `${baseUrl}/images/discover/truffle.webp`,
   },
 ];
 
@@ -62,7 +61,7 @@ export function DiscoverLanghe() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section id="discover" className="scroll-mt-[86px] overflow-hidden bg-white py-16 xl:py-24">
+    <section id="discover" className="scroll-mt-[86px] overflow-hidden bg-white py-16 xl:py-20">
       <div className="mx-auto px-0">
         {/* HEADER */}
         <motion.div

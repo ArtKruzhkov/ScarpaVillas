@@ -26,19 +26,14 @@ export function About() {
           duration: 1.2,
           ease: [0.22, 1, 0.36, 1],
         }}>
-        {/* <img
-          src={`${process.env.PUBLIC_URL}/images/about/about-hero1.png`}
-          alt="Scarpa Villas Landscape"
-          className="h-full w-full object-cover"
-        /> */}
         <picture>
           <source
             media="(max-width: 639px)"
-            srcSet={`${process.env.PUBLIC_URL}/images/about/about-hero_mob.png`}
+            srcSet={`${process.env.PUBLIC_URL}/images/about/about-hero_mob.webp`}
           />
 
           <img
-            src={`${process.env.PUBLIC_URL}/images/about/about-hero1.png`}
+            src={`${process.env.PUBLIC_URL}/images/about/about-hero.webp`}
             alt="Scarpa Villas Landscape"
             className="h-full w-full object-cover"
           />

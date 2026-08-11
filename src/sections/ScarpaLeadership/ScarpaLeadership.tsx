@@ -50,11 +50,11 @@ export function ScarpaLeadership() {
                 className="absolute inset-0">
                 <source
                   media="(max-width: 639px)"
-                  srcSet={`${baseUrl}/images/scarpaLeadership/owner_photo_mobile.png`}
+                  srcSet={`${baseUrl}/images/scarpaLeadership/owner_photo_mobile.webp`}
                 />
 
                 <img
-                  src={`${baseUrl}/images/scarpaLeadership/owner_photo.png`}
+                  src={`${baseUrl}/images/scarpaLeadership/owner_photo.webp`}
                   alt={t('storyLeadership.owner.name')}
                   className="h-full w-full object-cover object-center"
                 />
@@ -107,7 +107,7 @@ export function ScarpaLeadership() {
             }}
             className="relative overflow-hidden scarpaLeadership_image-height">
             <motion.img
-              src={`${baseUrl}/images/scarpaLeadership/CEO_photo.png`}
+              src={`${baseUrl}/images/scarpaLeadership/CEO_photo.webp`}
               alt={t('storyLeadership.ceo.name')}
               className="absolute inset-0 h-full w-full object-cover object-[62%_center] sm:object-center"
               initial={{

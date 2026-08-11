@@ -84,7 +84,7 @@ export function Experience() {
                 ease: [0.22, 1, 0.36, 1],
               }}>
               <img
-                src={`${process.env.PUBLIC_URL}/images/experience/experience-img.png`}
+                src={`${process.env.PUBLIC_URL}/images/experience/experience.webp`}
                 alt="Luxury wine villa interior"
                 className="h-full min-h-[380px] lg:min-h-[620px] lg:max-h-[675px] w-full object-cover"
               />
@@ -158,7 +158,7 @@ export function Experience() {
                   ease: [0.22, 1, 0.36, 1],
                 }}>
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/experience/experience-img_mob.png`}
+                  src={`${process.env.PUBLIC_URL}/images/experience/experience_mob.webp`}
                   alt="Luxury wine villa interior"
                   className="w-full max-h-[585px] object-cover object-[center_65%]"
                 />

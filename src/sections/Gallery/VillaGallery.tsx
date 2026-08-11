@@ -20,29 +20,28 @@ export function VillaGallery() {
       id: 'tettineive',
       name: 'Villa Tettineive',
       description: t('villaGallery.tettineiveDescription'),
-      image: `${baseUrl}/images/gallery/tettineive.png`,
+      image: `${baseUrl}/images/gallery/tettineive.webp`,
     },
     {
       id: 'la-bogliona',
       name: 'Villa La Bogliona',
       description: t('villaGallery.boglionaDescription'),
-      image: `${baseUrl}/images/gallery/bogliona.png`,
+      image: `${baseUrl}/images/gallery/bogliona.webp`,
     },
     {
       id: 'i-bricchi',
       name: 'Villa I Bricchi',
       description: t('villaGallery.bricchiDescription'),
-      image: `${baseUrl}/images/gallery/bricchi.png`,
+      image: `${baseUrl}/images/gallery/bricchi.webp`,
     },
     {
       id: 'tettimora',
       name: 'Villa Tettimora',
       description: t('villaGallery.tettimoraDescription'),
-      image: `${baseUrl}/images/gallery/tettimora.png`,
+      image: `${baseUrl}/images/gallery/tettimora.webp`,
     },
   ];
 
-  // const [activeVilla, setActiveVilla] = useState<VillaGalleryItem>(villaSlides[3]);
   const [activeVillaId, setActiveVillaId] = useState('tettimora');
   const activeVilla = villaSlides.find((villa) => villa.id === activeVillaId) ?? villaSlides[3];
   const galleryRef = useRef<HTMLDivElement>(null);
@@ -104,10 +103,6 @@ export function VillaGallery() {
                   </motion.p>
                 </AnimatePresence>
               </div>
-
-              {/* <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
-                Discover The Villa
-              </a> */}
 
               <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
                 <AnimatePresence mode="wait">
