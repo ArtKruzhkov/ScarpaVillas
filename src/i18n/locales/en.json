@@ -500,6 +500,181 @@
     "title": "Signature Stays",
     "subtitle": "Fully curated stays — where every detail is planned for you"
   },
+  "staysIntro": {
+    "titleLine1": "If you prefer to arrive and experience Barolo",
+    "titleLine2": " without planning every step, these stays combine",
+    "titleLine3": " accommodation, wine, gastronomy, and activities",
+    "titleLine4": " into a seamless journey.",
+    "text1": "Choose the one that fits your time, your season,",
+    "text2": "and your way of travelling."
+  },
+  "staysProgramme": {
+    "viewFullProgramme": "View Full Programme",
+    "closeProgramme": "Close Programme"
+  },
+  "staysLuxRetreat": {
+    "title": "The Lux Retreat",
+    "subtitle": "A short escape into the rhythm of Barolo.",
+    "description1": "A three-night stay designed to slow down and reconnect, combining truffle hunting, vineyard exploration, and private dining in your villa.",
+    "duration": "3 nights · January – April",
+
+    "days": {
+      "day1": {
+        "label": "Day 1",
+        "title": "Arrival",
+        "description1": "Arrival at the villa and welcome by the hospitality team.",
+        "description2": "A private aperitif is served in your living space, with local cheeses, charcuterie, hazelnuts, and a bottle of Scarpa wine."
+      },
+      "day2": {
+        "label": "Day 2",
+        "title": "Truffle & Picnic",
+        "description1": "A morning walk through the Langhe woods\u00A0with a local trifolau, discovering the\u00A0world\u00A0of\u00A0truffles.",
+        "description2": "The experience ends with a vineyard picnic featuring local specialties and wine.",
+        "description3": "Free afternoon to relax<br/>or explore at your own pace."
+      },
+      "day3": {
+        "label": "Day 3",
+        "title": "Exploration & Private Dinner",
+        "description1": "Explore the hills on e-bikes, moving freely through vineyards and villages.",
+        "description2": "In the evening, a private chef prepares a three-course dinner in your villa, paired with Scarpa\u00A0wines."
+      },
+      "day4": {
+        "label": "Day 4",
+        "title": "Departure",
+        "description1": "Programmes can be adapted based on availability and your preferences."
+      }
+    }
+  },
+  "staysTasteOfLanghe": {
+    "title": "Taste of Langhe",
+    "subtitle": "A journey through the flavors of Piedmont.",
+    "description1": "An immersive stay focused on wine, food, and local traditions — from tastings and restaurants to cooking classes and vineyard tours.",
+    "duration": "5 nights · January – May",
+
+    "days": {
+      "day1": {
+        "label": "Day 1",
+        "title": "Arrival",
+        "description1": "Welcome at the villa with a private aperitif and a selection of local products."
+      },
+      "day2": {
+        "label": "Day 2",
+        "title": "Signature Wine\u00A0Tour",
+        "description1": "Welcome at the villa with a private aperitif and a selection of local products.",
+        "description2": "Visits to two wineries, tastings of Barolo, Barbaresco or Roero wines, and lunch in a local restaurant with panoramic\u00A0views."
+      },
+      "day3": {
+        "label": "Day 3",
+        "title": "Free Exploration",
+        "description1": "A day at your own pace, with e-bikes available to explore the surrounding hills."
+      },
+      "day4": {
+        "label": "Day 4",
+        "title": "Cooking Experience",
+        "description1": "A hands-on cooking class with a personal chef, followed by a lunch or dinner paired with Scarpa wines."
+      },
+      "day5": {
+        "label": "Day 5",
+        "title": "Langhe at Your Own Rhythm",
+        "description1": "Time to explore independently, with recommendations from the\u00A0team.",
+        "description2": "In the afternoon, a traditional Merenda Sinoira is served at the villa."
+      },
+      "day6": {
+        "label": "Day 6",
+        "title": "Departure",
+        "description1": "Programmes can be adapted based on availability and your preferences."
+      }
+    }
+  },
+  "staysAutumnGems": {
+    "title": "Autumn Gems",
+    "subtitle": "The most atmospheric season in the Langhe",
+    "description1": "Experience truffle season, autumn colors, and the depth of Barolo and Barbaresco through curated seasonal experiences.",
+    "duration": "5 nights · October – November",
+
+    "days": {
+      "day1": {
+        "label": "Day 1",
+        "title": "Arrival",
+        "description1": "Welcome at the villa with a private aperitif and local specialties."
+      },
+      "day2": {
+        "label": "Day 2",
+        "title": "Jewels of Langhe",
+        "description1": "A full-day wine tour with a sommelier, including vineyard visits, tastings of Nebbiolo-based wines, and lunch in a panoramic restaurant."
+      },
+      "day3": {
+        "label": "Day 3",
+        "title": "Free Exploration",
+        "description1": "A day to explore the region at your own pace, with e-bikes available."
+      },
+      "day4": {
+        "label": "Day 4",
+        "title": "Truffle Cooking Experience",
+        "description1": "A cooking class dedicated to truffle, followed by a lunch or dinner paired with premium Scarpa wines and white truffle."
+      },
+      "day5": {
+        "label": "Day 5",
+        "title": "Monferrato & Truffle Hunt",
+        "description1": "A full-day experience including a visit to the historic Scarpa winery, tastings, and a traditional lunch.",
+        "description2": "In the afternoon, a truffle hunting experience in the Langhe woods."
+      },
+      "day6": {
+        "label": "Day 6",
+        "title": "Departure",
+        "description1": "Programmes can be adapted based on availability and your preferences."
+      }
+    }
+  },
+  "staysPiemonteEscape": {
+    "title": "Piemonte Escape",
+    "subtitle": "A complete immersion in the region",
+    "description1": "An extended stay exploring wine, culture, and landscapes across Langhe, Monferrato, and Turin.",
+    "duration": "7 nights · January – May",
+
+    "days": {
+      "day1": {
+        "label": "Day 1",
+        "title": "Arrival",
+        "description1": "Welcome at the villa with a private aperitif and local products."
+      },
+      "day2": {
+        "label": "Day 2",
+        "title": "Signature Wine Tour",
+        "description1": "A full-day guided experience through the Langhe or Roero, with winery visits, tastings, and lunch."
+      },
+      "day3": {
+        "label": "Day 3",
+        "title": "Free Exploration",
+        "description1": "A day at your own pace, with e-bikes available."
+      },
+      "day4": {
+        "label": "Day 4",
+        "title": "Turin Experience",
+        "description1": "A full-day guided visit of Turin, including historic landmarks and a light lunch."
+      },
+      "day5": {
+        "label": "Day 5",
+        "title": "Truffle Hunting",
+        "description1": "A half-day experience in the woods with a local trifolau, discovering the secrets of truffles."
+      },
+      "day6": {
+        "label": "Day 6",
+        "title": "Scarpa Winery & Private Dinner",
+        "description1": "A full-day guided experience through the Langhe or Roero, with winery visits, tastings, and lunch."
+      },
+      "day7": {
+        "label": "Day 7",
+        "title": "Alta Langa Experience",
+        "description1": "A full-day journey through a lesser-known part of Piemonte, including visits to a traditional cheese producer and a hazelnut laboratory, with tastings along the way."
+      },
+      "day8": {
+        "label": "Day 8",
+        "title": "Departure",
+        "description1": "Programmes can be adapted based on availability and your preferences."
+      }
+    }
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"

@@ -6,7 +6,7 @@
     "story": "La Storia",
     "stays": "Soggiorni",
     "discover": "Scopri",
-    "planStay": "Organizza il soggiorno",
+    "planStay": "Pianifica soggiorno",
     "planStayMob": "Prenota"
   },
   "navDropdown": {
@@ -170,7 +170,7 @@
     "text1": "Organizza il tuo soggiorno",
     "text2": "presso Scarpa Villas",
     "text3": "e vivi le Langhe a modo tuo.",
-    "button": "Organizza il Soggiorno"
+    "button": "Pianifica soggiorno"
   },
   "footer": {
     "title": "Rimani in contatto con le Langhe",
@@ -498,6 +498,181 @@
   "staysHero": {
     "title": "Soggiorni esclusivi",
     "subtitle": "Soggiorni curati in ogni dettaglio, pensati per te"
+  },
+  "staysIntro": {
+    "titleLine1": "Se preferisci arrivare e vivere l'esperienza di Barolo",
+    "titleLine2": " senza pianificare tutto, questi soggiorni combinano",
+    "titleLine3": " alloggio, vino, gastronomia e attività",
+    "titleLine4": " in un viaggio senza soluzione di continuità.",
+    "text1": "Scegli quello più adatto al tuo tempo e alla stagione",
+    "text2": "e al tuo modo di viaggiare."
+  },
+  "staysProgramme": {
+    "viewFullProgramme": "Scopri il programma",
+    "closeProgramme": "Chiudi il programma"
+  },
+  "staysLuxRetreat": {
+    "title": "Il Lux Retreat",
+    "subtitle": "Una breve fuga al ritmo di Barolo.",
+    "description1": "Un soggiorno di tre notti pensato per rallentare e ritrovarsi, tra caccia al tartufo, scoperta dei vigneti e cene private nella propria villa.",
+    "duration": "3 notti · Gennaio – Aprile",
+
+    "days": {
+      "day1": {
+        "label": "Giorno 1",
+        "title": "Arrivo",
+        "description1": "Arrivo alla villa e benvenuto da parte del team di accoglienza.",
+        "description2": "Un aperitivo privato viene servito nel vostro salotto, con formaggi locali, salumi, nocciole e una bottiglia di vino Scarpa."
+      },
+      "day2": {
+        "label": "Giorno 2",
+        "title": "Tartufi e picnic",
+        "description1": "Una passeggiata mattutina nei boschi delle Langhe in compagnia di un trifolau del posto, alla scoperta del mondo dei tartufi.”",
+        "description2": "L’esperienza si conclude con un picnic tra i vigneti a base di specialità locali e vino.",
+        "description3": "Pomeriggio libero per rilassarsi<br/>o esplorare al proprio ritmo."
+      },
+      "day3": {
+        "label": "Giorno 3",
+        "title": "Esplorazione e cena privata",
+        "description1": "Esplorate le colline in e-bike, muovendovi liberamente tra vigneti e borghi.",
+        "description2": "La sera, uno chef privato preparerà una cena di tre portate nella vostra villa, abbinata ai vini Scarpa."
+      },
+      "day4": {
+        "label": "Giorno 4",
+        "title": "Partenza",
+        "description1": "I programmi possono essere adattati in base alla disponibilità e alle tue preferenze."
+      }
+    }
+  },
+  "staysTasteOfLanghe": {
+    "title": "Sapori delle Langhe",
+    "subtitle": "Un viaggio tra i sapori del Piemonte.",
+    "description1": "Un soggiorno immersivo dedicato al vino, alla cucina e alle tradizioni locali — tra degustazioni, ristoranti, lezioni di cucina e visite ai vigneti.",
+    "duration": "5 notti · Gennaio – Maggio",
+
+    "days": {
+      "day1": {
+        "label": "Giorno 1",
+        "title": "Arrivo",
+        "description1": "Benvenuto in villa con aperitivo privato e una selezione di prodotti locali."
+      },
+      "day2": {
+        "label": "Giorno 2",
+        "title": "Wine Tour d’Autore",
+        "description1": "Benvenuto in villa con aperitivo privato e una selezione di prodotti locali.",
+        "description2": "Visita a due cantine, degustazioni di Barolo, Barbaresco o vini del Roero e pranzo in un ristorante locale con vista panoramica."
+      },
+      "day3": {
+        "label": "Giorno 3",
+        "title": "Esplorazione libera",
+        "description1": "Una giornata al tuo ritmo, con e-bike a disposizione per esplorare le colline circostanti."
+      },
+      "day4": {
+        "label": "Giorno 4",
+        "title": "Esperienza di cucina",
+        "description1": "Una lezione pratica di cucina con chef personale, seguita da pranzo o cena in abbinamento ai vini Scarpa."
+      },
+      "day5": {
+        "label": "Giorno 5",
+        "title": "Le Langhe al tuo ritmo",
+        "description1": "Tempo per esplorare in autonomia, con i consigli del nostro team.",
+        "description2": "Nel pomeriggio, in villa viene servita una tradizionale Merenda Sinoira."
+      },
+      "day6": {
+        "label": "Giorno 6",
+        "title": "Partenza",
+        "description1": "I programmi possono essere adattati in base alla disponibilità e alle tue preferenze."
+      }
+    }
+  },
+  "staysAutumnGems": {
+    "title": "Gemme d’Autunno",
+    "subtitle": "La stagione più suggestiva nelle Langhe",
+    "description1": "Vivi la stagione del tartufo, i colori autunnali e la profondità di Barolo e Barbaresco attraverso esperienze stagionali curate nei dettagli.",
+    "duration": "5 notti · Ottobre – Novembre",
+
+    "days": {
+      "day1": {
+        "label": "Giorno 1",
+        "title": "Arrivo",
+        "description1": "Benvenuto in villa con aperitivo privato e specialità locali."
+      },
+      "day2": {
+        "label": "Giorno 2",
+        "title": "Gioielli delle Langhe",
+        "description1": "Un wine tour di un’intera giornata con sommelier, tra visite ai vigneti, degustazioni di vini a base Nebbiolo e pranzo in un ristorante panoramico."
+      },
+      "day3": {
+        "label": "Giorno 3",
+        "title": "Esplorazione libera",
+        "description1": "Una giornata per esplorare la regione al tuo ritmo, con e-bike a disposizione."
+      },
+      "day4": {
+        "label": "Giorno 4",
+        "title": "Esperienza di cucina al tartufo",
+        "description1": "Una lezione di cucina dedicata al tartufo, seguita da pranzo o cena in abbinamento ai vini premium Scarpa e al tartufo bianco."
+      },
+      "day5": {
+        "label": "Giorno 5",
+        "title": "Monferrato e caccia al tartufo",
+        "description1": "Un’esperienza di un’intera giornata con visita alla storica cantina Scarpa, degustazioni e pranzo tradizionale.",
+        "description2": "Nel pomeriggio, un’esperienza di caccia al tartufo nei boschi delle Langhe."
+      },
+      "day6": {
+        "label": "Giorno 6",
+        "title": "Partenza",
+        "description1": "I programmi possono essere adattati in base alla disponibilità e alle tue preferenze."
+      }
+    }
+  },
+  "staysPiemonteEscape": {
+    "title": "Fuga in Piemonte",
+    "subtitle": "Un’immersione completa nella regione",
+    "description1": "Un soggiorno prolungato alla scoperta di vini, cultura e paesaggi tra Langhe, Monferrato e Torino.",
+    "duration": "7 notti · Gennaio – Maggio",
+
+    "days": {
+      "day1": {
+        "label": "Giorno 1",
+        "title": "Arrivo",
+        "description1": "Benvenuto in villa con aperitivo privato e prodotti locali."
+      },
+      "day2": {
+        "label": "Giorno 2",
+        "title": "Wine Tour Signature",
+        "description1": "Un’esperienza guidata di un’intera giornata tra Langhe o Roero, con visite in cantina, degustazioni e pranzo."
+      },
+      "day3": {
+        "label": "Giorno 3",
+        "title": "Esplorazione libera",
+        "description1": "Una giornata al tuo ritmo, con e-bike a disposizione."
+      },
+      "day4": {
+        "label": "Giorno 4",
+        "title": "Esperienza a Torino",
+        "description1": "Una visita guidata di un’intera giornata a Torino, tra luoghi storici e un pranzo leggero."
+      },
+      "day5": {
+        "label": "Giorno 5",
+        "title": "Caccia al tartufo",
+        "description1": "Un’esperienza di mezza giornata nei boschi con un trifolau locale, alla scoperta dei segreti del tartufo."
+      },
+      "day6": {
+        "label": "Giorno 6",
+        "title": "Cantina Scarpa e cena privata",
+        "description1": "Un’esperienza guidata di un’intera giornata tra Langhe o Roero, con visite in cantina, degustazioni e pranzo."
+      },
+      "day7": {
+        "label": "Giorno 7",
+        "title": "Esperienza in Alta Langa",
+        "description1": "Un viaggio di un’intera giornata in una zona meno conosciuta del Piemonte, con visite a un produttore tradizionale di formaggi e a un laboratorio di nocciole, accompagnate da degustazioni."
+      },
+      "day8": {
+        "label": "Giorno 8",
+        "title": "Partenza",
+        "description1": "I programmi possono essere adattati in base alla disponibilità e alle tue preferenze."
+      }
+    }
   },
   "villasHero": {
     "title": "Ville",
