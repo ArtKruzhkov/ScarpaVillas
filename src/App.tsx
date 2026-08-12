@@ -15,6 +15,7 @@ import './App.css';
 import { PressPage } from './pages/PressPage/PressPage';
 import { ExperiencesPage } from './pages/ExperiencesPage/ExperiencesPage';
 import { StaysPage } from './pages/StaysPage/StaysPage';
+import { DiscoverPage } from './pages/DiscoverPage/DiscoverPage';
 
 export default function App() {
   return (
@@ -54,6 +55,9 @@ export default function App() {
 
         <Route path="/stays" element={<StaysPage />} />
         <Route path="/:lang/stays" element={<StaysPage />} />
+
+        <Route path="/discover" element={<DiscoverPage />} />
+        <Route path="/:lang/discover" element={<DiscoverPage />} />
       </Routes>
 
       <Footer />

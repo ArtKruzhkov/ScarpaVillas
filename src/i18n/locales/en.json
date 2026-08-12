@@ -675,6 +675,69 @@
       }
     }
   },
+  "discoverHero": {
+    "title": "Discover",
+    "subtitle": "How to experience the Langhe"
+  },
+  "discoverIntro": {
+    "titleLine1": "Not just where to go —",
+    "titleLine2": "but how to spend your time here.",
+    "text1": "The Langhe is not defined by a single route or a list of places.",
+    "text2": "It is a region best understood through rhythm —",
+    "text3": " through what you choose to do, see, and experience along the way."
+  },
+  "discoverExplore": {
+    "heading": "CHOOSE YOUR WAY TO EXPLORE",
+    "subtitle": "Different ways to experience the same landscape",
+
+    "wine": {
+      "title": "FOR WINE LOVERS",
+      "description": "Discover Barolo through tastings, vineyards, and the craft behind each bottle.",
+      "button": "DISCOVER"
+    },
+
+    "food": {
+      "title": "FOR FOOD LOVERS",
+      "description": "From truffles to local tables, explore the flavors that define the region.",
+      "button": "DISCOVER"
+    },
+
+    "nature": {
+      "title": "FOR NATURE & SLOW TRAVEL",
+      "description": "Move through the landscape — by foot, bike, or simply taking your time.",
+      "button": "DISCOVER"
+    },
+
+    "culture": {
+      "title": "FOR CULTURE & VILLAGES",
+      "description": "Walk through historic towns and discover the structure of the Langhe.",
+      "button": "DISCOVER"
+    }
+  },
+  "discoverLinks": {
+    "region": {
+      "title": "The Region",
+      "description": "Discover what lies beyond the villas — from vineyards and villages to local traditions and hidden places.",
+      "button": "EXPLORE THE REGION"
+    },
+    "experiences": {
+      "title": "Experiences",
+      "description": "Curated experiences designed to connect you with the Langhe — from wine tastings and truffle hunting to private dining and guided tours.",
+      "button": "CHOOSE YOUR EXPERIENCES"
+    },
+    "journal": {
+      "title": "Journal",
+      "description": "Stories, places, and moments that shape the experience of the Langhe.",
+      "button": "READ THE JOURNAL"
+    }
+  },
+  "discoverPlanStay": {
+    "titleLine1": "THE LANGHE IS NOT A PLACE",
+    "titleLine2": "TO SEE ALL AT ONCE",
+    "subtitleLine1": "IT IS A PLACE TO RETURN TO —",
+    "subtitleLine2": " AND TO EXPERIENCE IN YOUR OWN WAY",
+    "button": "PLAN YOUR STAY"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"

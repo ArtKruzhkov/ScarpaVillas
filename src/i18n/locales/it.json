@@ -17,8 +17,8 @@
       "press": "Stampa"
     },
     "discover": {
-      "region": "Il Territorio",
-      "journal": "Journal"
+      "region": "Regione",
+      "journal": "Giornale"
     },
     "experiences": {
       "wineTaste": "Vino e Sapori",
@@ -673,6 +673,69 @@
         "description1": "I programmi possono essere adattati in base alla disponibilità e alle tue preferenze."
       }
     }
+  },
+  "discoverHero": {
+    "title": "Scopri",
+    "subtitle": "Come vivere le Langhe"
+  },
+  "discoverIntro": {
+    "titleLine1": "Non solo dove andare —",
+    "titleLine2": "ma come vivere il tempo qui.",
+    "text1": "Le Langhe non si definiscono con un solo itinerario o una lista di luoghi.",
+    "text2": "È una terra che si comprende meglio attraverso il suo ritmo —",
+    "text3": "attraverso ciò che scegli di fare, vedere e vivere lungo il cammino."
+  },
+  "discoverExplore": {
+    "heading": "SCEGLI IL TUO MODO DI ESPLORARE",
+    "subtitle": "Modi diversi di vivere lo stesso paesaggio",
+
+    "wine": {
+      "title": "PER GLI AMANTI DEL VINO",
+      "description": "Scopri Barolo attraverso degustazioni, vigneti e l'arte che si cela dietro ogni bottiglia.",
+      "button": "SCOPRI"
+    },
+
+    "food": {
+      "title": "PER GLI AMANTI DELLA CUCINA",
+      "description": "Dai tartufi alle tavole locali, scopri i sapori che definiscono il territorio.",
+      "button": "SCOPRI"
+    },
+
+    "nature": {
+      "title": "PER LA NATURA E LO SLOW TRAVEL",
+      "description": "Attraversa il paesaggio — a piedi, in bici o semplicemente prendendoti il tuo tempo.",
+      "button": "SCOPRI"
+    },
+
+    "culture": {
+      "title": "PER LA CULTURA E PAESI",
+      "description": "Passeggia tra borghi storici e scopri l'essenza delle Langhe.",
+      "button": "SCOPRI"
+    }
+  },
+  "discoverLinks": {
+    "region": {
+      "title": "La Regione",
+      "description": "Scopri cosa si trova oltre le ville — dai vigneti e borghi alle tradizioni locali e ai luoghi più nascosti.",
+      "button": "ESPLORA LA REGIONE"
+    },
+    "experiences": {
+      "title": "Esperienze",
+      "description": "Esperienze curate per farti vivere le Langhe — dalle degustazioni e dalla ricerca del tartufo alle cene private e visite guidate.",
+      "button": "SCEGLI LE TUE ESPERIENZE"
+    },
+    "journal": {
+      "title": "Giornale",
+      "description": "Storie, luoghi e momenti che danno forma all'esperienza delle Langhe.",
+      "button": "LEGGI IL GIORNALE"
+    }
+  },
+  "discoverPlanStay": {
+    "titleLine1": "LE LANGHE NON SONO UN LUOGO",
+    "titleLine2": "DA SCOPRIRE TUTTO IN UNA VOLTA",
+    "subtitleLine1": "SONO UN LUOGO IN CUI TORNARE —",
+    "subtitleLine2": " E DA VIVERE OGNI VOLTA A MODO TUO",
+    "button": "PIANIFICA SOGGIORNO"
   },
   "villasHero": {
     "title": "Ville",

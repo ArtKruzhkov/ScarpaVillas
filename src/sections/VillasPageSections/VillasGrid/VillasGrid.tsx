@@ -68,7 +68,7 @@ export function VillasGrid() {
                     <AnimatePresence mode="wait">
                       <motion.h3
                         key={villa.title}
-                        className="font-serif text-[28px] sm:text-[36px] lg:text-[42px] leading-none"
+                        className="font-serif text-[28px] sm:text-[32px] 2xl:text-[38px] leading-none"
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -12 }}
@@ -83,7 +83,7 @@ export function VillasGrid() {
                     <AnimatePresence mode="wait">
                       <motion.p
                         key={`${villa.text1}-${villa.text2}`}
-                        className="mt-2 sm:mt-3 max-w-[720px] xl:max-w-none font-sans text-[15px] leading-[21px] sm:text-[18px] sm:leading-[24px] lg:text-[20px] lg:leading-[30px]"
+                        className="mt-2 sm:mt-3 max-w-[720px] xl:max-w-none font-sans text-[15px] leading-[21px] md:text-[16px] md:leading-[22px] 2xl:text-[18px] 2xl:leading-[26px]"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -94,21 +94,25 @@ export function VillasGrid() {
                       </motion.p>
                     </AnimatePresence>
 
-                    <AnimatePresence mode="wait">
-                      <motion.div
-                        key={`${villa.id}-${t('villasGrid.discover')}`}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.25 }}
-                        className="mt-4 sm:mt-6 lg:mt-8 inline-block">
-                        <Link
-                          to={`${langPrefix}/villas/${villa.id}`}
-                          className="inline-block border-y border-white py-2 font-sans text-[13px] font-semibold uppercase tracking-[0.18em] transition-opacity duration-300 hover:opacity-60 md:text-[18px] lg:text-[20px]">
-                          {t('villasGrid.discover')}
-                        </Link>
-                      </motion.div>
-                    </AnimatePresence>
+                    <div className="mt-4 sm:mt-6 lg:mt-8 inline-block">
+                      <Link
+                        to={`${langPrefix}/villas/${villa.id}`}
+                        className="flex items-center justify-center h-[40px] md:h-[52px] border-y border-white font-sans text-[13px] md:text-[16px] 2xl:text-[18px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60">
+                        <AnimatePresence mode="wait">
+                          <motion.span
+                            key={t('villasGrid.discover')}
+                            initial={{ opacity: 0, y: 6 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -6 }}
+                            transition={{
+                              duration: 0.25,
+                              ease: [0.22, 1, 0.36, 1],
+                            }}>
+                            {t('villasGrid.discover')}
+                          </motion.span>
+                        </AnimatePresence>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

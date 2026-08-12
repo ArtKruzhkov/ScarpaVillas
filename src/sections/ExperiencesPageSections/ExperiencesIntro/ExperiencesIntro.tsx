@@ -7,7 +7,7 @@ export function ExperiencesIntro() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative flex items-start justify-center overflow-hidden pb-10 min-h-[720px] md:min-h-[920px] lg:min-h-min 2xl:min-h-[620px]">
+    <section className="relative flex items-start justify-center overflow-hidden pb-10 min-h-[720px] md:min-h-[920px] lg:min-h-min">
       {/* Background */}
       <motion.picture
         initial={{

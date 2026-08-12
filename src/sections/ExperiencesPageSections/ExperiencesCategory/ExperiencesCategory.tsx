@@ -29,7 +29,9 @@ export function ExperiencesCategory({
   const subtitle = t(`${translationKey}.subtitle`);
 
   return (
-    <section id={id} className="scroll-mt-[86px] bg-white px-4 pt-8 md:px-6 lg:py-8 2xl:p-8">
+    <section
+      id={id}
+      className="scroll-mt-[73px] lg:scroll-mt-[86px] bg-white px-4 pt-8 md:px-6 lg:py-8 2xl:p-8">
       <div className="mx-auto max-w-[1920px]">
         {/* Heading */}
         <motion.div

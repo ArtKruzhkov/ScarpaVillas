@@ -1,54 +1,54 @@
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const baseUrl = process.env.PUBLIC_URL;
 
-export function StoryChapters() {
+export function DiscoverExplore() {
   const { t, i18n } = useTranslation();
   const langPrefix = i18n.language === 'it' ? '/it' : '';
 
-  const storyCards = [
+  const discoverCards = [
     {
-      id: 'origins',
-      title: t('storyChapters.origins.title'),
-      description: t('storyChapters.origins.description'),
-      button: t('storyChapters.origins.button'),
-      image: `${baseUrl}/images/StoryPage/story_chapters/origins.png`,
-      href: '/story/origins',
+      id: 'wine',
+      title: t('discoverExplore.wine.title'),
+      description: t('discoverExplore.wine.description'),
+      button: t('discoverExplore.wine.button'),
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/wine.png`,
+      href: '/experiences#wine-taste',
     },
     {
-      id: 'winery',
-      title: t('storyChapters.winery.title'),
-      description: t('storyChapters.winery.description'),
-      button: t('storyChapters.winery.button'),
-      image: `${baseUrl}/images/StoryPage/story_chapters/winery.png`,
-      href: '/story/scarpa-winery',
+      id: 'food',
+      title: t('discoverExplore.food.title'),
+      description: t('discoverExplore.food.description'),
+      button: t('discoverExplore.food.button'),
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/food.png`,
+      href: '/region#food',
     },
     {
-      id: 'people',
-      title: t('storyChapters.people.title'),
-      description: t('storyChapters.people.description'),
-      button: t('storyChapters.people.button'),
-      image: `${baseUrl}/images/StoryPage/story_chapters/people.png`,
-      href: '/story/people',
+      id: 'nature',
+      title: t('discoverExplore.nature.title'),
+      description: t('discoverExplore.nature.description'),
+      button: t('discoverExplore.nature.button'),
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/nature.png`,
+      href: '/region#routes',
     },
     {
-      id: 'press',
-      title: t('storyChapters.press.title'),
-      description: t('storyChapters.press.description'),
-      button: t('storyChapters.press.button'),
-      image: `${baseUrl}/images/StoryPage/story_chapters/press.png`,
-      href: '/story/press',
+      id: 'culture',
+      title: t('discoverExplore.culture.title'),
+      description: t('discoverExplore.culture.description'),
+      button: t('discoverExplore.culture.button'),
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/culture.png`,
+      href: '/region#vilages',
     },
   ];
 
   return (
-    <section className="bg-[#FFFFFF] pt-10 lg:pt-20 pb-4">
-      <div className="mx-auto max-w-8xl px-8">
-        {/* Heading */}
+    <section className="bg-[#FFFFFF] pb-4">
+      {/* Heading */}
+      <div className="bg-[#2C3654] px-6 py-10 lg:py-14">
         <motion.div
-          className="mx-auto mb-10 lg:mb-20 md:max-w-[704px] lg:max-w-[580px] xl:max-w-[932px] text-center"
+          className="mx-auto text-center text-white"
           initial={{
             opacity: 0,
             y: 40,
@@ -67,7 +67,7 @@ export function StoryChapters() {
           }}>
           <AnimatePresence mode="wait">
             <motion.div
-              key={t('storyChapters.heading')}
+              key={`${t('discoverExplore.heading')}-${i18n.language}`}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -75,22 +75,22 @@ export function StoryChapters() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              <h2 className="font-serif text-[21px] leading-[25px] sm:text-[27px] sm:leading-[32px] md:text-[28px] md:leading-[32px] xl:text-[32px] xl:leading-[38px] text-[#2C3654]">
-                <Trans
-                  i18nKey="storyChapters.heading"
-                  components={{
-                    italic1: <span className="italic" />,
-                    italic2: <span className="italic" />,
-                  }}
-                />
+              <h2 className="font-serif tracking-[0.08em] max-w-[280px] sm:max-w-none mx-auto text-[22px] leading-[26px] md:text-[32px] md:leading-[36px] xl:text-[38px] xl:leading-[42px] uppercase">
+                {t('discoverExplore.heading')}
               </h2>
+
+              <p className="mt-3 lg:mt-6 font-sans text-[13px] leading-[16px] md:text-[14px] md:leading-[20px] lg:text-[18px] lg:leading-[26px]">
+                {t('discoverExplore.subtitle')}
+              </p>
             </motion.div>
           </AnimatePresence>
         </motion.div>
+      </div>
 
-        {/* Cards */}
+      {/* Cards */}
+      <div className="mx-auto max-w-8xl px-4 lg:px-8 pt-10">
         <div className="flex flex-col">
-          {storyCards.map((card, index) => {
+          {discoverCards.map((card, index) => {
             const textOrder = index % 2 === 0 ? 'lg:order-1' : 'lg:order-2';
             const imageOrder = index % 2 === 0 ? 'lg:order-2' : 'lg:order-1';
 
@@ -117,7 +117,7 @@ export function StoryChapters() {
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                   {/* TEXT */}
                   <div
-                    className={`order-2 ${textOrder} mt-4 flex flex-col items-center text-center lg:mt-0 lg:w-[23%] lg:min-w-[422px] lg:items-start lg:text-left lg:mr-auto lg:ml-auto`}>
+                    className={`order-2 ${textOrder} mt-4 flex flex-col items-center text-center lg:mt-0 lg:w-[23%] xl:min-w-[440px] lg:items-start lg:text-left lg:mr-auto lg:ml-auto`}>
                     {/* TITLE */}
                     <AnimatePresence mode="wait">
                       <motion.h3
@@ -138,7 +138,7 @@ export function StoryChapters() {
                     <AnimatePresence mode="wait">
                       <motion.p
                         key={`${card.description}-${i18n.language}`}
-                        className="mt-2 lg:mt-3 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[28px]"
+                        className="mt-2 lg:mt-3 max-w-full text-[#2C3654] text-[16px] leading-[24px] lg:text-[18px] lg:leading-[26px] xl:max-w-[406px]"
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -12 }}

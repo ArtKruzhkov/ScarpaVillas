@@ -166,7 +166,7 @@ export function Navbar() {
       id: 'region',
       name: t('navDropdown.discover.region'),
       image: `${process.env.PUBLIC_URL}/images/nav/theRegion.png`,
-      href: '/discover/the-region',
+      href: '/discover/region',
     },
     {
       id: 'journal',
@@ -592,27 +592,35 @@ export function Navbar() {
                       }`}>
                       <div className="mx-auto max-w-[1920px] px-6 py-8">
                         <div className="mx-auto grid max-w-[765px] grid-cols-2 gap-5">
-                          {discoverLinks.map((link) => (
-                            <Link
-                              key={link.id}
-                              to={link.href}
-                              onClick={() => setOpenDropdown(null)}
-                              className="group/discover relative block overflow-hidden">
-                              <div className="relative aspect-[1.6/1] overflow-hidden">
-                                <img
-                                  src={link.image}
-                                  alt={link.name}
-                                  className="h-full w-full max-h-[232.81px] object-cover transition-transform duration-700 ease-out group-hover/discover:scale-105"
-                                />
+                          {discoverLinks.map((link) => {
+                            const isActiveDiscover =
+                              location.pathname === `${langPrefix}${link.href}` ||
+                              location.pathname.endsWith(link.href);
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+                            return (
+                              <Link
+                                key={link.id}
+                                to={`${langPrefix}${link.href}`}
+                                onClick={() => setOpenDropdown(null)}
+                                className={`group/discover relative block overflow-hidden border-[4px] transition-colors ${
+                                  isActiveDiscover ? 'border-[#C09A60]' : 'border-transparent'
+                                }`}>
+                                <div className="relative aspect-[1.6/1] overflow-hidden">
+                                  <img
+                                    src={link.image}
+                                    alt={link.name}
+                                    className="h-full w-full max-h-[232.81px] object-cover transition-transform duration-700 ease-out group-hover/discover:scale-105"
+                                  />
 
-                                <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
-                                  {link.name}
-                                </span>
-                              </div>
-                            </Link>
-                          ))}
+                                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+
+                                  <span className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[24px] text-white">
+                                    {link.name}
+                                  </span>
+                                </div>
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
@@ -1029,9 +1037,6 @@ export function Navbar() {
                 </div>
 
                 {/* STAYS */}
-                {/* <a href="#stays" className="border-b border-[#2c3654] py-3 nav-link_mob">
-                  {t('nav.stays')}
-                </a> */}
                 <Link
                   to={staysUrl}
                   onClick={() => {
@@ -1097,30 +1102,38 @@ export function Navbar() {
                       mobileDiscoverOpen ? 'max-h-[260px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
                     <div className="flex justify-center gap-2 overflow-x-auto pb-3 pt-2 scrollbar-hide">
-                      {discoverLinks.map((discoverLink) => (
-                        <Link
-                          key={discoverLink.id}
-                          to={discoverLink.href}
-                          onClick={() => {
-                            setOpen(false);
-                            closeMobileDropdowns();
-                          }}
-                          className="w-[44%] shrink-0">
-                          <div className="relative aspect-[1.55/1] overflow-hidden">
-                            <img
-                              src={discoverLink.image}
-                              alt={discoverLink.name}
-                              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                            />
+                      {discoverLinks.map((discoverLink) => {
+                        const isActiveDiscover =
+                          location.pathname === discoverLink.href ||
+                          location.pathname.endsWith(discoverLink.href);
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+                        return (
+                          <Link
+                            key={discoverLink.id}
+                            to={`${langPrefix}${discoverLink.href}`}
+                            onClick={() => {
+                              setOpen(false);
+                              closeMobileDropdowns();
+                            }}
+                            className={`w-[44%] shrink-0 border-[3px] transition-colors ${
+                              isActiveDiscover ? 'border-[#C09A60]' : 'border-transparent'
+                            }`}>
+                            <div className="relative aspect-[1.55/1] overflow-hidden">
+                              <img
+                                src={discoverLink.image}
+                                alt={discoverLink.name}
+                                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                              />
 
-                            <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white md:text-[20px]">
-                              {discoverLink.name}
-                            </span>
-                          </div>
-                        </Link>
-                      ))}
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+
+                              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap font-serif text-[16px] text-white md:text-[20px]">
+                                {discoverLink.name}
+                              </span>
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
