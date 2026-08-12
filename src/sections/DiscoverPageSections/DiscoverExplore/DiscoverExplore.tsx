@@ -175,7 +175,7 @@ export function DiscoverExplore() {
                     <img
                       src={card.image}
                       alt={card.title}
-                      className="h-[260px] w-full object-cover sm:h-[380px] lg:h-[425px] xl:h-[540px]"
+                      className="h-[260px] w-full object-cover sm:h-[380px] lg:h-[425px] xl:h-[540px] 2xl:h-[620px]"
                     />
                   </div>
                 </div>

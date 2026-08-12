@@ -38,7 +38,9 @@ export function VillaBookingCTA({ bookingCTA }: VillaBookingCTAProps) {
         </AnimatePresence>
 
         <a
-          href="#availability"
+          href="https://www.simplebooking.it/ibe2/hotel/9131"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-6 inline-flex h-[44px] min-w-[280px] items-center justify-center bg-white px-8 font-sans text-[13px] font-semibold uppercase tracking-[0.18em] text-[#2C3654] transition-colors duration-300 hover:bg-white/80 md:mt-8 md:h-[57px] lg:min-w-[400px] lg:text-[16px]">
           <AnimatePresence mode="wait">
             <motion.span

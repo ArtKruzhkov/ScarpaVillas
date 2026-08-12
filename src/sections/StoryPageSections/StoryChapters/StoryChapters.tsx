@@ -117,7 +117,7 @@ export function StoryChapters() {
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                   {/* TEXT */}
                   <div
-                    className={`order-2 ${textOrder} mt-4 flex flex-col items-center text-center lg:mt-0 lg:w-[23%] lg:min-w-[422px] lg:items-start lg:text-left lg:mr-auto lg:ml-auto`}>
+                    className={`order-2 ${textOrder} mt-4 flex flex-col items-center text-center lg:mt-0 lg:w-[23%] xl:min-w-[422px] lg:items-start lg:text-left lg:mr-auto lg:ml-auto`}>
                     {/* TITLE */}
                     <AnimatePresence mode="wait">
                       <motion.h3
@@ -175,7 +175,7 @@ export function StoryChapters() {
                     <img
                       src={card.image}
                       alt={card.title}
-                      className="h-[260px] w-full object-cover sm:h-[380px] lg:h-[425px] xl:h-[540px]"
+                      className="h-[260px] w-full object-cover sm:h-[380px] lg:h-[425px] xl:h-[540px] 2xl:h-[620px]"
                     />
                   </div>
                 </div>

@@ -103,7 +103,7 @@ export function OtherVillas({ currentVillaId }: OtherVillasProps) {
                           duration: 0.35,
                           ease: [0.22, 1, 0.36, 1],
                         }}
-                        className="max-w-[310px] font-sans text-[14px] md:text-[15px] lg:text-[16px] leading-[1.55] text-white">
+                        className="max-w-[310px] font-sans text-[14px] md:text-[15px] lg:text-[16px] 2xl:text-[18px] leading-[1.55] text-white">
                         {t(villa.card.description)}
                       </motion.p>
                     </AnimatePresence>

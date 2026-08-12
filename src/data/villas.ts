@@ -87,7 +87,7 @@ export const villas: Villa[] = [
   {
     id: 'tettineive',
     hero: {
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-tettineive.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-tettineive.webp`,
       title: 'villa.tettineive.hero.title',
       subtitle: {
         part1: 'villa.tettineive.hero.subtitle.part1',
@@ -99,9 +99,9 @@ export const villas: Villa[] = [
       title: 'villa.tettineive.overview.title',
       description: 'villa.tettineive.overview.description',
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-left.png`,
-        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-center.png`,
-        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-right.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-left.webp`,
+        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-center.webp`,
+        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettineive-right.webp`,
       },
     },
     features: {
@@ -130,8 +130,8 @@ export const villas: Villa[] = [
       ],
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-left.png`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-left.webp`,
+        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom.webp`,
         bottomObjectPosition: 'object-[97%_center]',
       },
 
@@ -152,7 +152,7 @@ export const villas: Villa[] = [
     card: {
       title: 'villa.tettineive.card.title',
       description: 'villa.tettineive.card.description',
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettineive.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettineive.webp`,
     },
     amenities: {
       top: {
@@ -179,8 +179,8 @@ export const villas: Villa[] = [
         },
 
         images: {
-          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettineive-left.png`,
-          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettineive-right.png`,
+          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettineive-left.webp`,
+          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettineive-right.webp`,
         },
 
         amenities: {
@@ -218,7 +218,7 @@ export const villas: Villa[] = [
         },
       },
       bottom: {
-        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettineive-bottom.png`,
+        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettineive-bottom.webp`,
         title: 'villa.tettineive.amenities.bottom.title',
         description: 'villa.tettineive.amenities.bottom.description',
       },
@@ -228,7 +228,7 @@ export const villas: Villa[] = [
   {
     id: 'bogliona',
     hero: {
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-bogliona.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-bogliona.webp`,
       title: 'villa.bogliona.hero.title',
       subtitle: {
         part1: 'villa.bogliona.hero.subtitle.part1',
@@ -241,9 +241,9 @@ export const villas: Villa[] = [
       description: 'villa.bogliona.overview.description',
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bogliona-left.png`,
-        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bogliona-center.png`,
-        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bogliona-right.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bogliona-left.webp`,
+        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bogliona-center.webp`,
+        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bogliona-right.webp`,
       },
     },
     features: {
@@ -272,8 +272,8 @@ export const villas: Villa[] = [
       ],
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-left.png`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-left.webp`,
+        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom.webp`,
       },
 
       text: {
@@ -293,7 +293,7 @@ export const villas: Villa[] = [
     card: {
       title: 'villa.bogliona.card.title',
       description: 'villa.bogliona.card.description',
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bogliona.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bogliona.webp`,
     },
     amenities: {
       top: {
@@ -320,8 +320,8 @@ export const villas: Villa[] = [
         },
 
         images: {
-          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bogliona-left.png`,
-          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bogliona-right.png`,
+          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bogliona-left.webp`,
+          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bogliona-right.webp`,
         },
 
         amenities: {
@@ -359,7 +359,7 @@ export const villas: Villa[] = [
         },
       },
       bottom: {
-        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bogliona-bottom.png`,
+        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bogliona-bottom.webp`,
         title: 'villa.bogliona.amenities.bottom.title',
         description: 'villa.bogliona.amenities.bottom.description',
       },
@@ -369,7 +369,7 @@ export const villas: Villa[] = [
   {
     id: 'bricchi',
     hero: {
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-bricchi.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-bricchi.webp`,
       title: 'villa.bricchi.hero.title',
       subtitle: {
         part1: 'villa.bricchi.hero.subtitle.part1',
@@ -382,9 +382,9 @@ export const villas: Villa[] = [
       description: 'villa.bricchi.overview.description',
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bricchi-left.png`,
-        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bricchi-center.png`,
-        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bricchi-right.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bricchi-left.webp`,
+        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bricchi-center.webp`,
+        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-bricchi-right.webp`,
       },
     },
     features: {
@@ -413,8 +413,8 @@ export const villas: Villa[] = [
       ],
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-left.png`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-left.webp`,
+        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom.webp`,
       },
 
       text: {
@@ -434,7 +434,7 @@ export const villas: Villa[] = [
     card: {
       title: 'villa.bricchi.card.title',
       description: 'villa.bricchi.card.description',
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bricchi.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/bricchi.webp`,
     },
     amenities: {
       top: {
@@ -461,8 +461,8 @@ export const villas: Villa[] = [
         },
 
         images: {
-          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bricchi-left.png`,
-          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bricchi-right.png`,
+          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bricchi-left.webp`,
+          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bricchi-right.webp`,
         },
 
         amenities: {
@@ -496,7 +496,7 @@ export const villas: Villa[] = [
         },
       },
       bottom: {
-        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bricchi-bottom.png`,
+        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/bricchi-bottom.webp`,
         title: 'villa.bricchi.amenities.bottom.title',
         description: 'villa.bricchi.amenities.bottom.description',
       },
@@ -506,7 +506,7 @@ export const villas: Villa[] = [
   {
     id: 'tettimorra',
     hero: {
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-tettimorra.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_hero/hero-tettimorra.webp`,
       title: 'villa.tettimorra.hero.title',
       subtitle: {
         part1: 'villa.tettimorra.hero.subtitle.part1',
@@ -519,9 +519,9 @@ export const villas: Villa[] = [
       description: 'villa.tettimorra.overview.description',
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettimorra-left.png`,
-        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettimorra-center.png`,
-        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettimorra-right.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettimorra-left.webp`,
+        center: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettimorra-center.webp`,
+        right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_overview/villa-tettimorra-right.webp`,
       },
     },
     features: {
@@ -550,8 +550,8 @@ export const villas: Villa[] = [
       ],
 
       images: {
-        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-left.png`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom.png`,
+        left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-left.webp`,
+        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom.webp`,
       },
 
       text: {
@@ -571,7 +571,7 @@ export const villas: Villa[] = [
     card: {
       title: 'villa.tettimorra.card.title',
       description: 'villa.tettimorra.card.description',
-      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettimorra.png`,
+      image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_otherVillas/tettimorra.webp`,
     },
     amenities: {
       top: {
@@ -598,8 +598,8 @@ export const villas: Villa[] = [
         },
 
         images: {
-          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettimorra-left.png`,
-          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettimorra-right.png`,
+          left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettimorra-left.webp`,
+          right: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettimorra-right.webp`,
         },
 
         amenities: {
@@ -633,7 +633,7 @@ export const villas: Villa[] = [
         },
       },
       bottom: {
-        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettimorra-bottom.png`,
+        image: `${process.env.PUBLIC_URL}/images/VillaPage/villa_amenities/tettimorra-bottom.webp`,
         title: 'villa.tettimorra.amenities.bottom.title',
         description: 'villa.tettimorra.amenities.bottom.description',
       },
