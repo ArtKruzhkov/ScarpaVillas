@@ -15,7 +15,8 @@ export function DiscoverExplore() {
       description: t('discoverExplore.wine.description'),
       button: t('discoverExplore.wine.button'),
       image: `${baseUrl}/images/DiscoverPage/discover_explore/wine.png`,
-      href: '/experiences#wine-taste',
+      // href: '/experiences#wine-taste',
+      href: '/discover/region#wine',
     },
     {
       id: 'food',
@@ -23,7 +24,7 @@ export function DiscoverExplore() {
       description: t('discoverExplore.food.description'),
       button: t('discoverExplore.food.button'),
       image: `${baseUrl}/images/DiscoverPage/discover_explore/food.png`,
-      href: '/region#food',
+      href: '/discover/region#food',
     },
     {
       id: 'nature',
@@ -31,7 +32,7 @@ export function DiscoverExplore() {
       description: t('discoverExplore.nature.description'),
       button: t('discoverExplore.nature.button'),
       image: `${baseUrl}/images/DiscoverPage/discover_explore/nature.png`,
-      href: '/region#routes',
+      href: '/discover/region#routes',
     },
     {
       id: 'culture',
@@ -39,7 +40,7 @@ export function DiscoverExplore() {
       description: t('discoverExplore.culture.description'),
       button: t('discoverExplore.culture.button'),
       image: `${baseUrl}/images/DiscoverPage/discover_explore/culture.png`,
-      href: '/region#vilages',
+      href: '/discover/region#villages',
     },
   ];
 

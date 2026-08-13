@@ -738,6 +738,143 @@
     "subtitleLine2": " AND TO EXPERIENCE IN YOUR OWN WAY",
     "button": "PLAN YOUR STAY"
   },
+  "regionHero": {
+    "title": "The Region",
+    "subtitle": "Discover the Langhe beyond the villas"
+  },
+  "regionIntro": {
+    "titleLine1": "A landscape shaped by vineyards, villages,",
+    "titleLine2": "and traditions — where every road leads",
+    "titleLine3": "to a new perspective",
+    "paragraph1": "Piedmont is a region in the north of Italy defined by contrast — between mountains and rolling hills, between cities and countryside, between history and a way of life that has remained deeply rooted in the land.",
+    "paragraph2": "Within it lies the Langhe — a UNESCO-listed landscape shaped over centuries by vineyards, small villages, and agricultural traditions. This is where Barolo and Barbaresco are born, but the region is more than its wines."
+  },
+  "regionExperience": {
+    "top": {
+      "titleLine1": "The Langhe is not organised around",
+      "titleLine2": "landmarks, but around rhythm",
+      "paragraph1": "Distances are short, but the experience unfolds slowly — through winding roads, changing light, and places that reveal themselves gradually.",
+      "paragraph2": "To understand the Langhe is not to see everything, but to move through it in the right way."
+    },
+    "bottom": {
+      "leftTitleLine1": "How to experience",
+      "leftTitleLine2": "the region",
+      "rightTitleLine1": "There is no single",
+      "rightTitleLine2": "way to explore the Langhe",
+      "paragraph1": "Some follow the villages and their history, others the vineyards and their landscapes, others the traditions of food and local life.",
+      "paragraph2Line1": "What defines the experience is not the destination,",
+      "paragraph2Line2": "but the way these elements come together."
+    }
+  },
+  "regionWineLandscape": {
+    "title": "Wine & Landscape",
+    "paragraph1": "The Langhe is shaped by vineyards — not as scenery, but as a living system that defines the identity of the region.",
+    "paragraph2": "From panoramic viewpoints like La Morra Belvedere to the quiet roads around Verduno and Monvigliero, the landscape is something you move through, not simply observe.",
+    "paragraph3": "Rows of vines follow the contours of the hills, changing with the seasons — from the green of spring to the deep tones of autumn.",
+    "slides": {
+      "vineyardRoads": {
+        "title": "Scenic Vineyard Roads",
+        "subtitle": "Winding roads between Verduno and Barolo, where the landscape reveals itself gradually."
+      },
+      "laMorra": {
+        "title": "La Morra Belvedere",
+        "subtitle": "The most iconic panoramic view in the Langhe."
+      },
+      "cappella": {
+        "title": "Cappella delle Brunate",
+        "subtitle": "A small chapel transformed into a contemporary artwork by Sol LeWitt and David Tremlett."
+      },
+      "cedro": {
+        "title": "Il Cedro del Libano",
+        "subtitle": "A solitary tree over 160 years old, standing above the vineyards of La Morra — a quiet landmark in the landscape."
+      }
+    }
+  },
+  "regionVillagesHistory": {
+    "title": "Villages & History",
+    "paragraph1": "The villages of the Langhe define its structure — <br/>Barolo, Serralunga d’Alba, Verduno, La Morra.",
+    "paragraph2": "Many of them took shape in the Middle Ages, when castles, agricultural systems, and early wine production began to organise the landscape.",
+    "paragraph3": "Today, they remain small and unchanged in scale, each offering<br/> a different perspective on the region — from fortified hilltop towns<br/> to quiet residential villages.",
+    "paragraph4": "Walking through them is less about sightseeing, and more about understanding how the region has evolved over time.",
+    "slides": {
+      "cherasco": {
+        "title": "Cherasco",
+        "subtitle": "A refined town of wide streets and baroque architecture — known for antiques, chocolate, and a slower pace."
+      },
+      "barolo": {
+        "title": "Barolo",
+        "subtitle": "The historic center of the wine region, with the Wine Museum and castle."
+      },
+      "serralunga": {
+        "title": "Serralunga d’Alba",
+        "subtitle": "A medieval fortress rising above the vineyards."
+      },
+      "grinzane": {
+        "title": "Grinzane Cavour",
+        "subtitle": "A UNESCO-listed castle and home to one of the region’s oldest enotecas."
+      },
+      "monforte": {
+        "title": "Monforte d’Alba",
+        "subtitle": "Known for its open-air amphitheatre, where concerts take place during summer evenings."
+      }
+    }
+  },
+  "regionFoodTraditions": {
+    "title": "Food & Traditions",
+    "paragraph1": "Food in the Langhe is not an attraction — it is part of everyday life.<br/>From the white truffle of Alba to local dishes served in small trattorias,<br/>the region’s identity is deeply tied to its culinary traditions.",
+    "paragraph2": "Experiences such as the Merenda Sinoira — a traditional late-afternoon<br/>table of local dishes — reflect a way of eating that is social, generous,<br/>and rooted in the land.",
+    "paragraph3": "Here, gastronomy is not separate from the landscape —<br/>it is a direct expression of it.",
+    "slides": {
+      "hazelnuts": {
+        "title": "Tonda Gentile Hazelnuts",
+        "subtitle": "A defining product of the region, grown across the hills beyond the vineyards."
+      },
+      "albaMarket": {
+        "title": "Alba Market",
+        "subtitle": "A Saturday market that reflects the rhythm of local life — farmers, products, and everyday exchange."
+      },
+      "whiteTruffle": {
+        "title": "White Truffle Season",
+        "subtitle": "One of the most unique gastronomic experiences in Italy."
+      },
+      "merendaSinoira": {
+        "title": "Merenda Sinoira",
+        "subtitle": "A traditional table of local dishes, shared slowly in the afternoon."
+      }
+    }
+  },
+  "regionBeyondRoutes": {
+    "title": "Beyond the Main Routes",
+    "paragraph1": "Beyond the well-known villages, the Langhe extends<br/>into quieter, less explored areas.",
+    "paragraph2": "In places like Alta Langa, the landscape becomes wilder,<br/>and the pace even slower.",
+    "paragraph3": "Here, small producers continue traditions that define the region —<br/>from cheese making to hazelnut cultivation.",
+    "paragraph4": "These areas reveal another side of Piedmont — less visible,<br/>but equally essential to its identity.",
+    "slides": {
+      "hiddenVillages": {
+        "title": "Hidden Villages",
+        "subtitle": "Places that remain outside the main routes."
+      },
+      "altaLanga": {
+        "title": "Alta Langa",
+        "subtitle": "A wilder, less explored landscape beyond the main wine routes."
+      },
+      "sentieriBarolo": {
+        "title": "Sentieri del Barolo",
+        "subtitle": "Walking trails that pass directly through vineyard crus — a way to experience the land at a slower pace."
+      },
+      "ebikeRoutes": {
+        "title": "E-bike Routes",
+        "subtitle": "The hills around the villas offer natural routes between villages and vineyards."
+      }
+    }
+  },
+  "regionPlanStay": {
+    "experiencesText": "Many of these places can be explored independently, or through curated experiences designed to reveal deeper layers of the region.",
+    "experiencesButton": "Explore Experiences",
+    "stayTextLine1": "The Langhe is not a place to see all at once.",
+    "stayTextLine2": "It is a place to return to — and to experience in your own way.",
+    "stayButton": "Plan Your Stay"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"

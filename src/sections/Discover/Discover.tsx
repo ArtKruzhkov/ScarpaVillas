@@ -145,9 +145,9 @@ export function DiscoverLanghe() {
             }}
             breakpoints={{
               1024: {
-                slidesPerView: 1.95,
+                slidesPerView: 2,
                 centeredSlides: true,
-                spaceBetween: 189,
+                spaceBetween: 20,
               },
             }}
             grabCursor
@@ -155,7 +155,7 @@ export function DiscoverLanghe() {
             {langheSlides.map((slide, index) => (
               <SwiperSlide key={`${slide.title}-${index}`}>
                 <div
-                  className="text-center cursor-pointer"
+                  className="text-center cursor-pointer w-full"
                   onClick={() => {
                     swiperRef.current?.slideToLoop(index);
                   }}>
@@ -168,7 +168,7 @@ export function DiscoverLanghe() {
                   <AnimatePresence mode="wait">
                     <motion.h3
                       key={`${slide.title}-${i18n.language}`}
-                      className="mt-2 font-serif tracking-[0.05em] text-[#2C3654] text-[22px] leading-[30px] sm:text-[30px] sm:leading-[40px] lg:text-[27px] lg:leading-[50px] xl:text-[34px] xl:leading-[60px]"
+                      className="mt-2 font-serif tracking-[0.05em] text-[#2C3654] text-[22px] leading-[30px] sm:text-[30px] sm:leading-[40px] lg:text-[28px] lg:leading-[50px] xl:text-[32px] xl:leading-[50px] 2xl:text-[38px] 2xl:leading-[60px]"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
@@ -192,7 +192,7 @@ export function DiscoverLanghe() {
                   <AnimatePresence mode="wait">
                     <motion.p
                       key={`${slide.description}-${i18n.language}`}
-                      className="px-2 mx-auto mt-1 lg:mt-2 font-sans text-[#2C3654] text-[14px] leading-[18px] sm:text-[17px] sm:leading-[28px] lg:text-[16px] lg:leading-[22px] xl:text-[21px] xl:leading-[32px]"
+                      className="px-2 mx-auto mt-1 lg:mt-2 font-sans text-[#2C3654] text-[14px] leading-[18px] sm:text-[16px] sm:leading-[22px] xl:text-[18px] xl:leading-[26px]"
                       initial={{ opacity: 0, y: 6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}

@@ -16,6 +16,7 @@ import { PressPage } from './pages/PressPage/PressPage';
 import { ExperiencesPage } from './pages/ExperiencesPage/ExperiencesPage';
 import { StaysPage } from './pages/StaysPage/StaysPage';
 import { DiscoverPage } from './pages/DiscoverPage/DiscoverPage';
+import { RegionPage } from './pages/RegionPage/RegionPage';
 
 export default function App() {
   return (
@@ -58,6 +59,9 @@ export default function App() {
 
         <Route path="/discover" element={<DiscoverPage />} />
         <Route path="/:lang/discover" element={<DiscoverPage />} />
+
+        <Route path="/discover/region" element={<RegionPage />} />
+        <Route path="/:lang/discover/region" element={<RegionPage />} />
       </Routes>
 
       <Footer />
