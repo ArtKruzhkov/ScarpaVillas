@@ -1,4 +1,4 @@
-import type { RegionFeatureSectionProps } from '../sections/RegionPageSection/RegionFeatureSection/RegionFeatureSection';
+import type { RegionFeatureSectionProps } from '../sections/RegionPageSection/RegionFeature/RegionFeature';
 
 export const wineLandscapeSection: RegionFeatureSectionProps = {
   id: 'wine',

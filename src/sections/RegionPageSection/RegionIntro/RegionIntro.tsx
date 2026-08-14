@@ -12,7 +12,7 @@ export function RegionIntro() {
         <div className="grid overflow-hidden lg:grid-cols-2">
           {/* IMAGE */}
           <motion.div
-            className="overflow-hidden p-8"
+            className="overflow-hidden p-6 lg:p-8"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -36,7 +36,7 @@ export function RegionIntro() {
 
           {/* CONTENT */}
           <motion.div
-            className="flex items-center px-6 py-14 lg:py-20 lg:pr-6 lg:pl-0"
+            className="flex items-center px-6 pb-6 lg:py-20 lg:pr-6 lg:pl-0"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -56,7 +56,7 @@ export function RegionIntro() {
                     duration: 0.35,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="font-sans text-[18px] 2xl:text-[20px] font-semibold uppercase leading-[1.45] tracking-[0.2em] text-[#2C3654]">
+                  className="font-sans max-w-[327px] sm:max-w-none text-[13px] md:text-[18px] 2xl:text-[20px] font-semibold uppercase leading-[1.45] tracking-[0.04em] lg:tracking-[0.2em] text-[#2C3654]">
                   {t('regionIntro.titleLine1')}
                   <br className="hidden lg:block" /> {t('regionIntro.titleLine2')}
                   <br className="hidden lg:block" /> {t('regionIntro.titleLine3')}
@@ -64,7 +64,7 @@ export function RegionIntro() {
               </AnimatePresence>
 
               {/* LINE */}
-              <div className="my-8 h-[2px] w-[220px] bg-[#2C3654] lg:my-10" />
+              <div className="my-4 lg:my-8 h-[2px] w-[220px] bg-[#2C3654] lg:my-10" />
 
               {/* TEXT */}
               <AnimatePresence mode="wait">
@@ -77,7 +77,7 @@ export function RegionIntro() {
                     duration: 0.35,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="max-w-[780px] space-y-6 font-sans text-[15px] leading-[1.45] text-[#2C3654] sm:text-[16px] lg:text-[18px]">
+                  className="max-w-[780px] space-y-4 lg:space-y-6 font-sans text-[13px] leading-[1.45] text-[#2C3654] md:text-[16px] lg:text-[18px]">
                   <p>{t('regionIntro.paragraph1')}</p>
 
                   <p>{t('regionIntro.paragraph2')}</p>

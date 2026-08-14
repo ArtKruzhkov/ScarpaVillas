@@ -33,7 +33,7 @@ export function RegionHero() {
               }}>
               <h1 className="top-hero-title">{t('regionHero.title')}</h1>
 
-              <p className="mt-2 font-serif text-[22px] leading-[28px] text-white sm:text-[28px] sm:leading-normal lg:text-[32px] xl:mt-4">
+              <p className="max-w-[300px] mx-auto sm:max-w-none mt-2 font-serif text-[22px] leading-[28px] text-white sm:text-[28px] sm:leading-normal lg:text-[32px] xl:mt-4">
                 {t('regionHero.subtitle')}
               </p>
             </motion.div>

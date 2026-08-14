@@ -747,11 +747,11 @@
     "titleLine2": "and traditions — where every road leads",
     "titleLine3": "to a new perspective",
     "paragraph1": "Piedmont is a region in the north of Italy defined by contrast — between mountains and rolling hills, between cities and countryside, between history and a way of life that has remained deeply rooted in the land.",
-    "paragraph2": "Within it lies the Langhe — a UNESCO-listed landscape shaped over centuries by vineyards, small villages, and agricultural traditions. This is where Barolo and Barbaresco are born, but the region is more than its wines."
+    "paragraph2": "Within it lies the Langhe — a UNESCO-listed landscape shaped over centuries by vineyards, small villages, and agricultural traditions. This is where Barolo and Barbaresco are born, but the region is more than\u00A0its\u00A0wines."
   },
   "regionExperience": {
     "top": {
-      "titleLine1": "The Langhe is not organised around",
+      "titleLine1": "The Langhe is not organised around ",
       "titleLine2": "landmarks, but around rhythm",
       "paragraph1": "Distances are short, but the experience unfolds slowly — through winding roads, changing light, and places that reveal themselves gradually.",
       "paragraph2": "To understand the Langhe is not to see everything, but to move through it in the right way."
@@ -871,7 +871,7 @@
   "regionPlanStay": {
     "experiencesText": "Many of these places can be explored independently, or through curated experiences designed to reveal deeper layers of the region.",
     "experiencesButton": "Explore Experiences",
-    "stayTextLine1": "The Langhe is not a place to see all at once.",
+    "stayTextLine1": "The Langhe is not a place to see all at once. ",
     "stayTextLine2": "It is a place to return to — and to experience in your own way.",
     "stayButton": "Plan Your Stay"
   },

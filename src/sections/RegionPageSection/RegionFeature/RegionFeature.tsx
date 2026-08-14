@@ -7,7 +7,7 @@ import { Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
-import './regionFeatureSection.css';
+import './regionFeature.css';
 
 export type RegionFeatureSlide = {
   titleKey: string;
@@ -15,7 +15,7 @@ export type RegionFeatureSlide = {
   image: string;
 };
 
-export type RegionFeatureSectionProps = {
+export type RegionFeatureProps = {
   id: string;
   backgroundImage: string;
   titleKey: string;
@@ -24,14 +24,14 @@ export type RegionFeatureSectionProps = {
   sliderBackground?: 'white' | 'blue';
 };
 
-export function RegionFeatureSection({
+export function RegionFeature({
   id,
   backgroundImage,
   titleKey,
   paragraphKeys,
   slides,
   sliderBackground = 'white',
-}: RegionFeatureSectionProps) {
+}: RegionFeatureProps) {
   const { t, i18n } = useTranslation();
 
   const swiperRef = useRef<SwiperType | null>(null);
@@ -41,11 +41,11 @@ export function RegionFeatureSection({
   return (
     <section id={id} className="overflow-hidden scroll-mt-[73px] lg:scroll-mt-[86px]">
       {/* TOP */}
-      <div className="relative overflow-hidden lg:min-h-0">
+      <div className="relative overflow-hidden">
         {/* BACKGROUND */}
         <motion.img
           src={backgroundImage}
-          alt=""
+          alt="background-image"
           className="absolute inset-0 h-full w-full object-cover"
           initial={{ scale: 1.08 }}
           whileInView={{ scale: 1 }}
@@ -60,9 +60,9 @@ export function RegionFeatureSection({
         />
 
         {/* CARD */}
-        <div className="relative z-10 flex items-end justify-center px-5 pt-14 lg:min-h-0 lg:px-10 lg:py-0 lg:pt-14">
+        <div className="relative z-10 flex items-end justify-center px-5 pt-10 lg:px-10 lg:py-0 lg:pt-14">
           <motion.div
-            className="w-full max-w-[760px] bg-white px-6 py-12 text-center sm:px-10 sm:pt-14 lg:pt-16"
+            className="w-full text-center max-w-[760px] bg-white px-6 py-8 sm:px-10 sm:py-12 lg:py-14"
             initial={{
               opacity: 0,
               y: 30,
@@ -80,7 +80,7 @@ export function RegionFeatureSection({
               ease: [0.22, 1, 0.36, 1],
             }}>
             {/* DECORATION */}
-            <div className="mb-8 flex items-center justify-center gap-5">
+            <div className="mb-4 lg:mb-8 flex items-center justify-center gap-5">
               <div className="h-[2px] w-full bg-[#2C3654]" />
 
               <img
@@ -137,13 +137,13 @@ export function RegionFeatureSection({
                   duration: 0.3,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="mx-auto mt-8 max-w-[680px] space-y-5 font-sans text-[13px] leading-[18px] md:text-[16px] md:leading-[22px] lg:text-[18px] lg:leading-[28px] text-[#2C3654]">
+                className="mx-auto mt-4 lg:mt-8 max-w-[680px] space-y-3 lg:space-y-6 font-sans text-[13px] leading-[18px] md:text-[16px] md:leading-[22px] lg:text-[18px] lg:leading-[28px] text-[#2C3654]">
                 {paragraphKeys.map((paragraphKey) => (
                   <p key={paragraphKey}>
                     <Trans
                       i18nKey={paragraphKey}
                       components={{
-                        br: <br />,
+                        br: <br className="hidden md:block" />,
                       }}
                     />
                   </p>
@@ -155,7 +155,7 @@ export function RegionFeatureSection({
       </div>
 
       {/* SLIDER */}
-      <div className={`overflow-hidden py-12 ${isBlue ? 'bg-[#2C3654]' : 'bg-white'}`}>
+      <div className={`overflow-hidden py-6 lg:py-12 ${isBlue ? 'bg-[#2C3654]' : 'bg-white'}`}>
         <motion.div
           initial={{
             opacity: 0,
@@ -263,38 +263,12 @@ export function RegionFeatureSection({
                       transition={{
                         duration: 0.25,
                       }}
-                      className={`mx-auto mt-1 lg:mt-2 px-2 xl:px-8 font-sans text-[14px] leading-[18px] sm:text-[16px] sm:leading-[28px] lg:text-[16px] lg:leading-[22px] xl:text-[18px] xl:leading-[26px] ${
+                      className={`mx-auto mt-1 lg:mt-2 px-4 xl:px-8 font-sans text-[14px] leading-[18px] sm:text-[16px] sm:leading-[28px] lg:text-[16px] lg:leading-[22px] xl:text-[18px] xl:leading-[26px] ${
                         isBlue ? 'text-white' : 'text-[#2C3654]'
                       }`}>
                       {t(slide.subtitleKey)}
                     </motion.p>
                   </AnimatePresence>
-
-                  {/* DESCRIPTION */}
-                  {/* <AnimatePresence mode="wait">
-                    <motion.p
-                      key={`${slide.descriptionKey}-${i18n.language}`}
-                      initial={{
-                        opacity: 0,
-                        y: 6,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        y: 0,
-                      }}
-                      exit={{
-                        opacity: 0,
-                        y: -6,
-                      }}
-                      transition={{
-                        duration: 0.25,
-                      }}
-                      className={`mx-auto mt-1 px-2 font-sans text-[14px] leading-[18px] sm:text-[17px] sm:leading-[28px] lg:mt-2 lg:text-[16px] lg:leading-[22px] xl:text-[21px] xl:leading-[32px] ${
-                        isBlue ? 'text-white' : 'text-[#2C3654]'
-                      }`}>
-                      {t(slide.descriptionKey)}
-                    </motion.p>
-                  </AnimatePresence> */}
                 </div>
               </SwiperSlide>
             ))}

@@ -159,7 +159,7 @@ export function Footer() {
         </div>
 
         {/* Desktop */}
-        <div className="hidden xl:block bg-white px-6 py-20">
+        <div className="hidden xl:block bg-white px-6 py-16">
           <div className="flex items-center gap-8">
             {/* Image */}
             <div className="w-[45%] overflow-hidden">

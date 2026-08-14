@@ -3,7 +3,7 @@ import { ContactUs } from '../../components/ui/ContactUs';
 import { RegionHero } from '../../sections/RegionPageSection/RegionHero/RegionHero';
 import { RegionIntro } from '../../sections/RegionPageSection/RegionIntro/RegionIntro';
 import { RegionExperience } from '../../sections/RegionPageSection/RegionExperience/RegionExperience';
-import { RegionFeatureSection } from '../../sections/RegionPageSection/RegionFeatureSection/RegionFeatureSection';
+import { RegionFeature } from '../../sections/RegionPageSection/RegionFeature/RegionFeature';
 import {
   wineLandscapeSection,
   villagesHistorySection,
@@ -42,10 +42,10 @@ export function RegionPage() {
         <RegionHero />
         <RegionIntro />
         <RegionExperience />
-        <RegionFeatureSection {...wineLandscapeSection} />
-        <RegionFeatureSection {...villagesHistorySection} />
-        <RegionFeatureSection {...foodTraditionsSection} />
-        <RegionFeatureSection {...beyondRoutesSection} />
+        <RegionFeature {...wineLandscapeSection} />
+        <RegionFeature {...villagesHistorySection} />
+        <RegionFeature {...foodTraditionsSection} />
+        <RegionFeature {...beyondRoutesSection} />
         <RegionPlanStay />
       </main>
 

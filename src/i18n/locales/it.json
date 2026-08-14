@@ -750,7 +750,7 @@
   },
   "regionExperience": {
     "top": {
-      "titleLine1": "Le Langhe non si scoprono attraverso",
+      "titleLine1": "Le Langhe non si scoprono attraverso ",
       "titleLine2": "i luoghi, ma seguendone il ritmo",
       "paragraph1": "Le distanze sono brevi, ma l'esperienza si svela lentamente — tra strade sinuose, luci che cambiano e luoghi che si rivelano poco a poco.",
       "paragraph2": "Capire le Langhe non significa vedere tutto, ma attraversarle nel modo giusto."
@@ -870,7 +870,7 @@
   "regionPlanStay": {
     "experiencesText": "Molti di questi luoghi si esplorano in autonomia o attraverso esperienze curate, pensate per scoprire gli aspetti più profondi della regione.",
     "experiencesButton": "Scopri le Esperienze",
-    "stayTextLine1": "Le Langhe non sono un luogo da scoprire tutto in una volta.",
+    "stayTextLine1": "Le Langhe non sono un luogo da scoprire tutto in una volta. ",
     "stayTextLine2": "Sono un luogo in cui tornare — e da vivere a modo proprio.",
     "stayButton": "Pianifica il Soggiorno"
   },
