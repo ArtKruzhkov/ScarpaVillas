@@ -54,7 +54,7 @@ export function RegionPlanStay() {
           />
 
           {/* OVERLAY */}
-          {/* <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" /> */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent md:hidden" />
 
           {/* CONTENT */}
           <motion.div
