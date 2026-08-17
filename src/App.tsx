@@ -17,6 +17,8 @@ import { ExperiencesPage } from './pages/ExperiencesPage/ExperiencesPage';
 import { StaysPage } from './pages/StaysPage/StaysPage';
 import { DiscoverPage } from './pages/DiscoverPage/DiscoverPage';
 import { RegionPage } from './pages/RegionPage/RegionPage';
+import { JournalPage } from './pages/JournalPage/JournalPage';
+import { JournalArticlePage } from './pages/JournalArticlePage/JournalArticlePage';
 
 export default function App() {
   return (
@@ -62,6 +64,12 @@ export default function App() {
 
         <Route path="/discover/region" element={<RegionPage />} />
         <Route path="/:lang/discover/region" element={<RegionPage />} />
+
+        <Route path="/discover/journal" element={<JournalPage />} />
+        <Route path="/:lang/discover/journal" element={<JournalPage />} />
+
+        <Route path="/discover/journal/:articleId" element={<JournalArticlePage />} />
+        <Route path="/:lang/discover/journal/:articleId" element={<JournalArticlePage />} />
       </Routes>
 
       <Footer />

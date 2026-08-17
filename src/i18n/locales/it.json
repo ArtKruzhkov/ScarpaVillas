@@ -874,6 +874,19 @@
     "stayTextLine2": "Sono un luogo in cui tornare — e da vivere a modo proprio.",
     "stayButton": "Pianifica il Soggiorno"
   },
+  "journalHero": {
+    "title": "Giornale",
+    "subtitle": "Storie dalle Langhe e oltre"
+  },
+  "journalIntro": {
+    "textLine1": "Una raccolta di storie, luoghi e momenti che ",
+    "textLine2": "raccontano l’esperienza delle Langhe."
+  },
+  "journalArticles": {
+    "continueReading": "Continua a leggere",
+    "viewAll": "Vedi tutti gli articoli",
+    "closeAll": "Chiudi tutti gli articoli"
+  },
   "villasHero": {
     "title": "Ville",
     "subtitle": "Quattro modi diversi di vivere il Barolo"

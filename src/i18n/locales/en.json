@@ -875,6 +875,19 @@
     "stayTextLine2": "It is a place to return to — and to experience in your own way.",
     "stayButton": "Plan Your Stay"
   },
+  "journalHero": {
+    "title": "Journal",
+    "subtitle": "Stories from the Langhe and\u00A0beyond"
+  },
+  "journalIntro": {
+    "textLine1": "A collection of stories, places, and moments that ",
+    "textLine2": "shape the experience of\u00A0the\u00A0Langhe."
+  },
+  "journalArticles": {
+    "continueReading": "Continue Reading",
+    "viewAll": "View All Articles",
+    "closeAll": "Close All Articles"
+  },
   "villasHero": {
     "title": "Villas",
     "subtitle": "Four distinct ways to experience Barolo"
