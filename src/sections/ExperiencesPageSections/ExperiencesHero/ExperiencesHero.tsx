@@ -12,7 +12,7 @@ export function ExperiencesHero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/ExperiencesPage/experiences_hero/experiences_hero.png`}
+          src={`${process.env.PUBLIC_URL}/images/ExperiencesPage/experiences_hero/experiences_hero.webp`}
           alt={t('experiencesHero.title')}
           className="h-full w-full object-cover"
         />

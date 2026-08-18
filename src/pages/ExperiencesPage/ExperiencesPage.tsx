@@ -41,19 +41,19 @@ export function ExperiencesPage() {
     cards: [
       {
         translationKey: 'privateWineTastings',
-        image: '/images/ExperiencesPage/experiences_categories/private-wine-tastings.png',
+        image: '/images/ExperiencesPage/experiences_categories/private-wine-tastings.webp',
       },
       {
         translationKey: 'scarpaWinery',
-        image: '/images/ExperiencesPage/experiences_categories/scarpa-winery.png',
+        image: '/images/ExperiencesPage/experiences_categories/scarpa-winery.webp',
       },
       {
         translationKey: 'merendaSinoira',
-        image: '/images/ExperiencesPage/experiences_categories/merenda-sinoira.png',
+        image: '/images/ExperiencesPage/experiences_categories/merenda-sinoira.webp',
       },
       {
         translationKey: 'cookingClasses',
-        image: '/images/ExperiencesPage/experiences_categories/cooking-classes.png',
+        image: '/images/ExperiencesPage/experiences_categories/cooking-classes.webp',
       },
     ],
   };
@@ -65,15 +65,15 @@ export function ExperiencesPage() {
     cards: [
       {
         translationKey: 'langheBaroloTours',
-        image: '/images/ExperiencesPage/experiences_categories/langhe-barolo-tours.png',
+        image: '/images/ExperiencesPage/experiences_categories/langhe-barolo-tours.webp',
       },
       {
         translationKey: 'localProducers',
-        image: '/images/ExperiencesPage/experiences_categories/local-producers.png',
+        image: '/images/ExperiencesPage/experiences_categories/local-producers.webp',
       },
       {
         translationKey: 'turinExperiences',
-        image: '/images/ExperiencesPage/experiences_categories/turin-experiences.png',
+        image: '/images/ExperiencesPage/experiences_categories/turin-experiences.webp',
       },
     ],
   };
@@ -85,19 +85,19 @@ export function ExperiencesPage() {
     cards: [
       {
         translationKey: 'truffleHunting',
-        image: '/images/ExperiencesPage/experiences_categories/truffle-hunting.png',
+        image: '/images/ExperiencesPage/experiences_categories/truffle-hunting.webp',
       },
       {
         translationKey: 'hotAirBalloon',
-        image: '/images/ExperiencesPage/experiences_categories/hot-air-balloon.png',
+        image: '/images/ExperiencesPage/experiences_categories/hot-air-balloon.webp',
       },
       {
         translationKey: 'vineyardPicnics',
-        image: '/images/ExperiencesPage/experiences_categories/vineyard-picnics.png',
+        image: '/images/ExperiencesPage/experiences_categories/vineyard-picnics.webp',
       },
       {
         translationKey: 'vespaEbike',
-        image: '/images/ExperiencesPage/experiences_categories/vespa-ebike.png',
+        image: '/images/ExperiencesPage/experiences_categories/vespa-ebike.webp',
       },
     ],
   };

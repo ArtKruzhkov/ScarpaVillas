@@ -73,7 +73,7 @@ export function ScarpaWineryVillas() {
           }}>
           <div className="overflow-hidden">
             <motion.img
-              src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_villas/villas.png`}
+              src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_villas/villas.webp`}
               alt="Scarpa Villas"
               className="h-full w-full object-cover min-h-[240px] lg:min-h-[520px]"
               initial={{
@@ -94,7 +94,7 @@ export function ScarpaWineryVillas() {
           </div>
 
           <Link
-            to={`${langPrefix}/villas`}
+            to={`${langPrefix}/experiences#wine-taste`}
             className="mt-4 lg:mt-6 flex h-[44px] w-full items-center justify-center bg-[#2C3654] font-sans text-[12px] font-semibold uppercase tracking-[0.24em] text-white transition-opacity duration-300 hover:opacity-80 md:h-[57px] md:text-[18px] xl:w-[60%]">
             <AnimatePresence mode="wait">
               <motion.span

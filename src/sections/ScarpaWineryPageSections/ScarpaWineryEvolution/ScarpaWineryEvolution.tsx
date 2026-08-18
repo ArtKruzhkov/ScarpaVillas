@@ -52,7 +52,7 @@ export function ScarpaWineryEvolution() {
           </div>
 
           <motion.img
-            src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_evolution/postcard_left.png`}
+            src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_evolution/postcard_left.webp`}
             alt="Historic postcard"
             className="mt-6 lg:mt-10 w-full"
             initial={{ scale: 1.08 }}
@@ -76,7 +76,7 @@ export function ScarpaWineryEvolution() {
             ease: [0.22, 1, 0.36, 1],
           }}>
           <motion.img
-            src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_evolution/center.png`}
+            src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_evolution/center.webp`}
             alt="Scarpa Winery"
             className="h-full w-full object-cover min-h-[220px] xl:min-h-[620px]"
             initial={{
@@ -107,7 +107,7 @@ export function ScarpaWineryEvolution() {
             ease: [0.22, 1, 0.36, 1],
           }}>
           <motion.img
-            src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_evolution/postcard_right.png`}
+            src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_evolution/postcard_right.webp`}
             alt="Historic letter"
             className="w-full self-end"
             initial={{ scale: 1.08 }}

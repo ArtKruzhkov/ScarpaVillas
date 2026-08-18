@@ -18,106 +18,47 @@ export function PressArticles() {
       titleKey: 'pressArticles.articles.0.title',
       dateKey: 'pressArticles.articles.0.date',
       textKey: 'pressArticles.articles.0.text',
-      image: `${baseUrl}/images/PressPage/press_articles/article1.png`,
+      image: `${baseUrl}/images/PressPage/press_articles/article1.webp`,
     },
     {
       id: 2,
       titleKey: 'pressArticles.articles.1.title',
       dateKey: 'pressArticles.articles.1.date',
       textKey: 'pressArticles.articles.1.text',
-      image: `${baseUrl}/images/PressPage/press_articles/article2.png`,
+      image: `${baseUrl}/images/PressPage/press_articles/article2.webp`,
     },
     {
       id: 3,
       titleKey: 'pressArticles.articles.2.title',
       dateKey: 'pressArticles.articles.2.date',
       textKey: 'pressArticles.articles.2.text',
-      image: `${baseUrl}/images/PressPage/press_articles/article3.png`,
+      image: `${baseUrl}/images/PressPage/press_articles/article3.webp`,
     },
     {
       id: 4,
       titleKey: 'pressArticles.articles.3.title',
       dateKey: 'pressArticles.articles.3.date',
       textKey: 'pressArticles.articles.3.text',
-      image: `${baseUrl}/images/PressPage/press_articles/article4.png`,
+      image: `${baseUrl}/images/PressPage/press_articles/article4.webp`,
     },
     {
       id: 5,
       titleKey: 'pressArticles.articles.4.title',
       dateKey: 'pressArticles.articles.4.date',
       textKey: 'pressArticles.articles.4.text',
-      image: `${baseUrl}/images/PressPage/press_articles/article5.png`,
+      image: `${baseUrl}/images/PressPage/press_articles/article5.webp`,
     },
     {
       id: 6,
       titleKey: 'pressArticles.articles.5.title',
       dateKey: 'pressArticles.articles.5.date',
       textKey: 'pressArticles.articles.5.text',
-      image: `${baseUrl}/images/PressPage/press_articles/article6.png`,
+      image: `${baseUrl}/images/PressPage/press_articles/article6.webp`,
     },
   ];
 
   return (
-    // <section className="bg-[#2C3654] py-6 lg:pt-10 lg:pb-20">
-    //   <div className="mx-auto max-w-8xl px-4 lg:px-6">
-    //     <motion.div
-    //       className="grid md:grid-cols-2 xl:grid-cols-3 lg:divide-x lg:divide-white"
-    //       initial={{
-    //         opacity: 0,
-    //         y: 30,
-    //       }}
-    //       whileInView={{
-    //         opacity: 1,
-    //         y: 0,
-    //       }}
-    //       viewport={{
-    //         once: true,
-    //         amount: 0.15,
-    //       }}
-    //       transition={{
-    //         duration: 0.9,
-    //         ease: [0.22, 1, 0.36, 1],
-    //       }}>
-    //       {articles.map((article, index) => {
-    //         const column = index % 3;
-
-    //         const paddingClass =
-    //           column === 0
-    //             ? 'lg:pr-6 lg:pb-6'
-    //             : column === 1
-    //               ? 'lg:px-6 lg:pb-6'
-    //               : 'lg:pl-6 lg:pb-6';
-
-    //         return (
-    //           <motion.div
-    //             key={article.id}
-    //             className={paddingClass}
-    //             initial={{
-    //               opacity: 0,
-    //               y: 24,
-    //             }}
-    //             whileInView={{
-    //               opacity: 1,
-    //               y: 0,
-    //             }}
-    //             viewport={{
-    //               once: true,
-    //               amount: 0.15,
-    //             }}
-    //             transition={{
-    //               duration: 0.7,
-    //               delay: index * 0.1,
-    //               ease: [0.22, 1, 0.36, 1],
-    //             }}>
-    //             <PressCard article={article} />
-    //           </motion.div>
-    //         );
-    //       })}
-    //     </motion.div>
-    //   </div>
-    // </section>
-
-    <section className="bg-[#2C3654] py-8 px-6">
+    <section className="bg-[#2C3654] px-4 py-8 lg:px-6">
       <motion.div
         initial={{
           opacity: 0,

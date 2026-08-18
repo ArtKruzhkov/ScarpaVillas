@@ -92,7 +92,7 @@ export function Footer() {
                 ease: 'easeOut',
               }}>
               <img
-                src={`${process.env.PUBLIC_URL}/images/footer/stay-connected.png`}
+                src={`${process.env.PUBLIC_URL}/images/footer/stay-connected.webp`}
                 alt="Scarpa Villas"
                 className="w-full object-cover min-h-[400px] max-h-[460px] md:max-h-[540px]"
               />
@@ -181,7 +181,7 @@ export function Footer() {
                   ease: 'easeOut',
                 }}>
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/footer/stay-connected.png`}
+                  src={`${process.env.PUBLIC_URL}/images/footer/stay-connected.webp`}
                   alt="Scarpa Villas"
                   className="w-full max-h-[460px] object-cover"
                 />

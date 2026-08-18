@@ -8,7 +8,7 @@ export function PressIntro() {
 
   return (
     <section className="bg-white pt-8 lg:p-6 overflow-hidden">
-      <div className="mx-auto grid max-w-8xl lg:grid-cols-3 gap-6 lg:gap-6 2xl:gap-10">
+      <div className="mx-auto grid max-w-8xl lg:grid-cols-3 gap-4 lg:gap-6 2xl:gap-10">
         {/* LEFT IMAGE */}
         <motion.div
           viewport={{ once: true, amount: 0.25 }}
@@ -18,7 +18,7 @@ export function PressIntro() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="overflow-hidden order-2 lg:order-1 p-6 lg:p-0">
+          className="overflow-hidden order-2 lg:order-1 p-4 lg:p-0">
           <motion.picture
             initial={{ scale: 1.08 }}
             whileInView={{ scale: 1 }}
@@ -30,11 +30,11 @@ export function PressIntro() {
             className="block h-full w-full">
             <source
               media="(max-width: 1023px)"
-              srcSet={`${baseUrl}/images/PressPage/press_intro/left_mob.png`}
+              srcSet={`${baseUrl}/images/PressPage/press_intro/left_mob.webp`}
             />
 
             <motion.img
-              src={`${baseUrl}/images/PressPage/press_intro/left.png`}
+              src={`${baseUrl}/images/PressPage/press_intro/left.webp`}
               alt="Wine glass"
               className="h-full w-full object-cover max-h-[380px] md:max-h-[620px] lg:max-h-full min-[1440px]:min-h-[440px]"
             />
@@ -50,7 +50,7 @@ export function PressIntro() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="flex items-center justify-center px-6 lg:px-0 order-1 lg:order-2">
+          className="flex items-center justify-center px-4 lg:px-0 order-1 lg:order-2">
           <div className="relative flex flex-col items-center text-center w-full">
             {/* Logo + decorative lines */}
             <div className="mb-5 lg:mb-2 xl:mb-10 flex w-full items-center justify-center gap-4">
@@ -104,7 +104,7 @@ export function PressIntro() {
           }}
           className="overflow-hidden hidden lg:block order-3 min-[1440px]:min-h-[440px]">
           <motion.img
-            src={`${baseUrl}/images/PressPage/press_intro/right.png`}
+            src={`${baseUrl}/images/PressPage/press_intro/right.webp`}
             alt="Scarpa Villas"
             className="h-full w-full object-cover"
             initial={{ scale: 1.08 }}

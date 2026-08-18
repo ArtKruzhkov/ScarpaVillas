@@ -11,7 +11,7 @@ export function ExperiencesPlanStay() {
       <div className="relative mx-auto max-w-[1920px] overflow-hidden">
         {/* Background */}
         <motion.img
-          src={`${baseUrl}/images/ExperiencesPage/experiences_planStay/background.png`}
+          src={`${baseUrl}/images/ExperiencesPage/experiences_planStay/background.webp`}
           alt="Experiences in the Langhe"
           className="block h-auto w-full object-cover min-h-[460px] md:min-h-[620px]"
           initial={{

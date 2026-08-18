@@ -19,7 +19,7 @@ export function PeopleIntro() {
           }}
           className="overflow-hidden order-3 lg:order-1">
           <motion.img
-            src={`${baseUrl}/images/PeoplePage/people_intro/left.png`}
+            src={`${baseUrl}/images/PeoplePage/people_intro/left.webp`}
             alt="photo of people working in the vineyard"
             className="h-[440px] lg:h-full w-full object-cover"
             initial={{ scale: 1.08 }}
@@ -78,7 +78,7 @@ export function PeopleIntro() {
           }}
           className="overflow-hidden order-1 lg:order-3">
           <motion.img
-            src={`${baseUrl}/images/PeoplePage/people_intro/right.png`}
+            src={`${baseUrl}/images/PeoplePage/people_intro/right.webp`}
             alt="photo of people working with umbrella"
             className="h-[440px] lg:h-full w-full object-cover"
             initial={{ scale: 1.08 }}

@@ -27,11 +27,11 @@ export function ExperiencesIntro() {
         className="absolute inset-0">
         <source
           media="(max-width: 1023px)"
-          srcSet={`${baseUrl}/images/ExperiencesPage/experiences_intro/background_mob.png`}
+          srcSet={`${baseUrl}/images/ExperiencesPage/experiences_intro/background_mob.webp`}
         />
 
         <img
-          src={`${baseUrl}/images/ExperiencesPage/experiences_intro/background.png`}
+          src={`${baseUrl}/images/ExperiencesPage/experiences_intro/background.webp`}
           alt="Scarpa Villas experiences"
           className="h-full w-full object-cover object-[center_bottom] lg:object-center"
         />
@@ -134,132 +134,4 @@ export function ExperiencesIntro() {
       </div>
     </section>
   );
-
-  // return (
-  //   <section className="relative overflow-hidden">
-  //     {/* Background */}
-  //     <motion.picture
-  //       initial={{
-  //         scale: 1.08,
-  //       }}
-  //       whileInView={{
-  //         scale: 1,
-  //       }}
-  //       viewport={{
-  //         once: true,
-  //         amount: 0.25,
-  //       }}
-  //       transition={{
-  //         duration: 1.8,
-  //         ease: [0.22, 1, 0.36, 1],
-  //       }}
-  //       className="block w-full">
-  //       <source
-  //         media="(max-width: 1023px)"
-  //         srcSet={`${baseUrl}/images/ExperiencesPage/experiences_intro/background_mob.png`}
-  //       />
-
-  //       <img
-  //         src={`${baseUrl}/images/ExperiencesPage/experiences_intro/background.png`}
-  //         alt="Scarpa Villas experiences"
-  //         className="block h-auto w-full"
-  //       />
-  //     </motion.picture>
-
-  //     {/* White center panel */}
-  //     <div className="absolute inset-0 z-10 flex items-start justify-center">
-  //       <div className="flex w-[86%] max-w-[370px] flex-col items-center justify-center bg-white px-6 py-12 text-center sm:px-8 sm:py-12 md:max-w-[560px] lg:max-w-[710px] lg:px-16 lg:py-16 2xl:max-w-[960px]">
-  //         <motion.div
-  //           initial={{
-  //             opacity: 0,
-  //             y: 30,
-  //           }}
-  //           whileInView={{
-  //             opacity: 1,
-  //             y: 0,
-  //           }}
-  //           viewport={{
-  //             once: true,
-  //             amount: 0.35,
-  //           }}
-  //           transition={{
-  //             duration: 0.9,
-  //             ease: [0.22, 1, 0.36, 1],
-  //           }}
-  //           className="flex w-full flex-col items-center">
-  //           {/* Top decoration */}
-  //           <div className="flex w-full items-center gap-4 lg:gap-8">
-  //             <div className="h-[2px] flex-1 bg-[#2C3654]" />
-
-  //             <img
-  //               src={`${baseUrl}/images/ExperiencesPage/experiences_intro/logo.svg`}
-  //               alt=""
-  //               className="h-[54px] w-auto shrink-0 xl:h-[74px]"
-  //             />
-
-  //             <div className="h-[2px] flex-1 bg-[#2C3654]" />
-  //           </div>
-
-  //           {/* Title */}
-  //           <AnimatePresence mode="wait">
-  //             <motion.h2
-  //               key={t('experiencesIntro.titleLine1')}
-  //               initial={{
-  //                 opacity: 0,
-  //                 y: 12,
-  //               }}
-  //               animate={{
-  //                 opacity: 1,
-  //                 y: 0,
-  //               }}
-  //               exit={{
-  //                 opacity: 0,
-  //                 y: -12,
-  //               }}
-  //               transition={{
-  //                 duration: 0.35,
-  //                 ease: [0.22, 1, 0.36, 1],
-  //               }}
-  //               className="mt-6 font-serif text-[18px] leading-[22px] text-[#2C3654] md:mt-10 md:text-[22px] md:leading-[26px] lg:mt-12 lg:text-[26px] lg:leading-[32px] 2xl:text-[32px] 2xl:leading-[38px]">
-  //               {t('experiencesIntro.titleLine1')}
-  //               <br />
-  //               {t('experiencesIntro.titleLine2')}
-  //               <br />
-  //               {t('experiencesIntro.titleLine3')}
-  //             </motion.h2>
-  //           </AnimatePresence>
-
-  //           {/* Description */}
-  //           <AnimatePresence mode="wait">
-  //             <motion.div
-  //               key={t('experiencesIntro.text1')}
-  //               initial={{
-  //                 opacity: 0,
-  //                 y: 12,
-  //               }}
-  //               animate={{
-  //                 opacity: 1,
-  //                 y: 0,
-  //               }}
-  //               exit={{
-  //                 opacity: 0,
-  //                 y: -12,
-  //               }}
-  //               transition={{
-  //                 duration: 0.35,
-  //                 ease: [0.22, 1, 0.36, 1],
-  //               }}
-  //               className="mt-6 md:mt-8 max-w-[390px] font-sans text-[13px] leading-[18px] text-[#2C3654] lg:max-w-[450px] lg:text-[15px] lg:leading-[23px] xl:max-w-[490px] xl:text-[18px] xl:leading-[26px]">
-  //               <p>{t('experiencesIntro.text1')}</p>
-
-  //               <p className="mx-auto mt-6 md:mt-8 max-w-[250px] sm:max-w-none">
-  //                 {t('experiencesIntro.text2')}
-  //               </p>
-  //             </motion.div>
-  //           </AnimatePresence>
-  //         </motion.div>
-  //       </div>
-  //     </div>
-  //   </section>
-  // );
 }

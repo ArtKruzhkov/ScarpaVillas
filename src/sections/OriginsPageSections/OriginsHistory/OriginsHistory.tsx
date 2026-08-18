@@ -29,7 +29,7 @@ export function OriginsHistory() {
             ease: [0.22, 1, 0.36, 1],
           }}>
           <motion.img
-            src={`${baseUrl}/images/OriginsPage/origins_history/origins_history_left.png`}
+            src={`${baseUrl}/images/OriginsPage/origins_history/origins_history_left.webp`}
             alt="Historic village in the Langhe"
             className="absolute inset-0 h-full w-full object-cover"
             initial={{
@@ -115,7 +115,7 @@ export function OriginsHistory() {
                 ease: [0.22, 1, 0.36, 1],
               }}>
               <motion.img
-                src={`${baseUrl}/images/OriginsPage/origins_history/origins_history_right.png`}
+                src={`${baseUrl}/images/OriginsPage/origins_history/origins_history_right.webp`}
                 alt="Historic vineyards of the Langhe"
                 className="aspect-[2.3/1] min-h-[220px] w-full object-cover"
                 initial={{

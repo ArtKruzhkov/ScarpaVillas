@@ -22,7 +22,7 @@ export function StaysPage() {
 
     durationKey: 'staysLuxRetreat.duration',
 
-    image: `${baseUrl}/images/StaysPage/stays_programmes/lux-retreat.png`,
+    image: `${baseUrl}/images/StaysPage/stays_programmes/lux-retreat.webp`,
     imageAlt: 'The Lux Retreat at Scarpa Villas',
 
     imagePosition: 'left',
@@ -70,7 +70,7 @@ export function StaysPage() {
 
     durationKey: 'staysTasteOfLanghe.duration',
 
-    image: `${baseUrl}/images/StaysPage/stays_programmes/taste-of-langhe.png`,
+    image: `${baseUrl}/images/StaysPage/stays_programmes/taste-of-langhe.webp`,
     imageAlt: 'Taste of Langhe wine experience',
 
     imagePosition: 'right',
@@ -124,7 +124,7 @@ export function StaysPage() {
 
     durationKey: 'staysAutumnGems.duration',
 
-    image: `${baseUrl}/images/StaysPage/stays_programmes/autumn-gems.png`,
+    image: `${baseUrl}/images/StaysPage/stays_programmes/autumn-gems.webp`,
     imageAlt: 'Autumn Gems in the Langhe',
 
     imagePosition: 'left',
@@ -175,7 +175,7 @@ export function StaysPage() {
 
     durationKey: 'staysPiemonteEscape.duration',
 
-    image: `${baseUrl}/images/StaysPage/stays_programmes/piemonte-escape.png`,
+    image: `${baseUrl}/images/StaysPage/stays_programmes/piemonte-escape.webp`,
     imageAlt: 'Piemonte Escape at Scarpa Villas',
 
     imagePosition: 'right',

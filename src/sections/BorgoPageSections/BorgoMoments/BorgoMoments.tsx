@@ -7,7 +7,7 @@ export function BorgoMoments() {
     <section className="relative overflow-hidden">
       {/* Background */}
       <motion.img
-        src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_moments/borgo_moments.png`}
+        src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_moments/borgo_moments.webp`}
         alt="Life at The Borgo"
         className="h-[600px] lg:h-full max-h-[864px] w-full object-cover object-[85%_center] lg:object-center"
         initial={{

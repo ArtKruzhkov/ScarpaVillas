@@ -13,7 +13,7 @@ export function BorgoHero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_hero/borgo_hero.png`}
+          src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_hero/borgo_hero.webp`}
           alt="The Borgo"
           className="h-full w-full object-cover object-[center_bottom]"
         />

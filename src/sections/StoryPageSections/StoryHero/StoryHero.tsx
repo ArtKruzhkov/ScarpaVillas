@@ -13,7 +13,7 @@ export function StoryHero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/StoryPage/story_hero/story-hero.png`}
+          src={`${process.env.PUBLIC_URL}/images/StoryPage/story_hero/story_hero.webp`}
           alt="The Story"
           className="h-full w-full object-cover"
         />

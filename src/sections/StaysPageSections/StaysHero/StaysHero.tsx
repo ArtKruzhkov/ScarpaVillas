@@ -12,7 +12,7 @@ export function StaysHero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/StaysPage/stays_hero/stays_hero.png`}
+          src={`${process.env.PUBLIC_URL}/images/StaysPage/stays_hero/stays_hero.webp`}
           alt={t('staysHero.title')}
           className="h-full w-full object-cover"
         />

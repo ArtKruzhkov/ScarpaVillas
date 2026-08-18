@@ -8,22 +8,22 @@ export function BorgoAbout() {
     {
       id: 'corporate',
       title: t('borgoAbout.cards.corporate'),
-      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/corporate.png`,
+      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/corporate.webp`,
     },
     {
       id: 'weddings',
       title: t('borgoAbout.cards.weddings'),
-      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/weddings.png`,
+      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/weddings.webp`,
     },
     {
       id: 'celebrations',
       title: t('borgoAbout.cards.celebrations'),
-      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/celebrations.png`,
+      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/celebrations.webp`,
     },
     {
       id: 'family',
       title: t('borgoAbout.cards.family'),
-      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/family.png`,
+      image: `${process.env.PUBLIC_URL}/images/BorgoPage/borgo_about/family.webp`,
     },
   ];
 

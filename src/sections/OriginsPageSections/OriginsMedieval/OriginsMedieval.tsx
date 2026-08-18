@@ -27,11 +27,11 @@ export function OriginsMedieval() {
         className="absolute inset-0">
         <source
           media="(max-width: 1023px)"
-          srcSet={`${baseUrl}/images/OriginsPage/origins_medieval/background_mob.png`}
+          srcSet={`${baseUrl}/images/OriginsPage/origins_medieval/background_mob.webp`}
         />
 
         <img
-          src={`${baseUrl}/images/OriginsPage/origins_medieval/background.png`}
+          src={`${baseUrl}/images/OriginsPage/origins_medieval/background.webp`}
           alt="Barolo vineyards"
           className="h-full w-full object-cover"
         />

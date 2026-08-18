@@ -19,7 +19,7 @@ export function ScarpaWineryVineyards() {
         }}>
         {/* BACKGROUND */}
         <motion.img
-          src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_vineyards/background.png`}
+          src={`${baseUrl}/images/ScarpaWineryPage/scarpa_winery_vineyards/background.webp`}
           alt="Scarpa Vineyards"
           className="h-[480px] w-full object-cover md:h-[660px] lg:h-full lg:min-h-[730px]"
           initial={{

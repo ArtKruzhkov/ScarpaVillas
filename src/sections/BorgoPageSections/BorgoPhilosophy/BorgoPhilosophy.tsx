@@ -26,7 +26,7 @@ export function BorgoPhilosophy() {
           }}
           className="overflow-hidden order-2 lg:order-1">
           <img
-            src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_philosophy/philosophy.png`}
+            src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_philosophy/philosophy.webp`}
             alt="The Borgo"
             className="max-h-[520px] md:max-h-[580px] lg:max-h-none h-full w-full object-cover"
           />
@@ -102,68 +102,3 @@ export function BorgoPhilosophy() {
     </section>
   );
 }
-
-// import { useTranslation } from 'react-i18next';
-// import { motion, AnimatePresence } from 'framer-motion';
-
-// export function BorgoPhilosophy() {
-//   const { t } = useTranslation();
-
-//   return (
-//     <section className="relative overflow-hidden">
-//       {/* Background */}
-//       <motion.img
-//         src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_philosophy/philosophy_bg.png`}
-//         alt="The Borgo"
-//         className="h-[600px] lg:h-[720px] 2xl:h-[850px] w-full object-cover object-[40%_bottom] lg:object-[center_bottom]"
-//         initial={{
-//           scale: 1.08,
-//           opacity: 0,
-//         }}
-//         whileInView={{
-//           scale: 1,
-//           opacity: 1,
-//         }}
-//         viewport={{
-//           once: true,
-//           amount: 0.3,
-//         }}
-//         transition={{
-//           duration: 1.8,
-//           ease: [0.22, 1, 0.36, 1],
-//         }}
-//       />
-
-//       {/* Overlay */}
-//       <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/5 to-transparent" />
-
-//       {/* Content */}
-//       <div className="absolute inset-0 flex items-center justify-center px-[1.2rem] sm:px-6">
-//         <AnimatePresence mode="wait">
-//           <motion.div
-//             key={t('borgoPhilosophy.titleLine1')}
-//             initial={{ opacity: 0, y: 12 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             exit={{ opacity: 0, y: -12 }}
-//             transition={{
-//               duration: 0.35,
-//               ease: [0.22, 1, 0.36, 1],
-//             }}
-//             className="mx-auto flex flex-col items-center text-center">
-//             <h2 className="font-serif text-[16px] sm:text-[26px] lg:text-[38px] 2xl:text-[42px] leading-[1.15] lg:leading-[42px] 2xl:leading-[48px] text-white">
-//               {t('borgoPhilosophy.titleLine1')}
-//               <br />
-//               {t('borgoPhilosophy.titleLine2')}
-//             </h2>
-
-//             <p className="mt-10 lg:mt-20 max-w-[650px] font-sans text-[10px] sm:text-[12px] lg:text-[16px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.2em] leading-[1.5] text-white">
-//               {t('borgoPhilosophy.subtitleLine1')}
-//               <br />
-//               {t('borgoPhilosophy.subtitleLine2')}
-//             </p>
-//           </motion.div>
-//         </AnimatePresence>
-//       </div>
-//     </section>
-//   );
-// }

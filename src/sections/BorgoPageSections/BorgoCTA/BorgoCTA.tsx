@@ -41,7 +41,11 @@ export function BorgoCTA() {
             </motion.h2>
           </AnimatePresence>
 
-          <button className="mt-6 flex h-[44px] md:h-[57px] w-full max-w-[320px] md:max-w-[360px] items-center justify-center bg-white px-8 font-sans font-semibold uppercase tracking-[0.18em] text-[#2C3654] text-[13px] lg:text-[16px] transition-opacity duration-300 hover:opacity-80">
+          <a
+            href="https://www.simplebooking.it/ibe2/hotel/9131"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex h-[44px] md:h-[57px] w-full max-w-[320px] md:max-w-[360px] items-center justify-center bg-white px-8 font-sans font-semibold uppercase tracking-[0.18em] text-[#2C3654] text-[13px] lg:text-[16px] transition-opacity duration-300 hover:opacity-80">
             <AnimatePresence mode="wait">
               <motion.span
                 key={t('borgoCTA.button')}
@@ -56,7 +60,7 @@ export function BorgoCTA() {
                 {t('borgoCTA.button')}
               </motion.span>
             </AnimatePresence>
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

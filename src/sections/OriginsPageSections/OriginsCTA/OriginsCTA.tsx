@@ -32,11 +32,11 @@ export function OriginsCTA() {
         className="absolute inset-0">
         <source
           media="(max-width: 1023px)"
-          srcSet={`${baseUrl}/images/OriginsPage/origins_cta/background_mob.png`}
+          srcSet={`${baseUrl}/images/OriginsPage/origins_cta/background_mob.webp`}
         />
 
         <img
-          src={`${baseUrl}/images/OriginsPage/origins_cta/background.png`}
+          src={`${baseUrl}/images/OriginsPage/origins_cta/background.webp`}
           alt="Scarpa Villas"
           className="h-full w-full object-cover"
         />

@@ -80,7 +80,7 @@ export function JournalArticlePage() {
   return (
     <main className="bg-white text-[#2C3654]">
       {/* HEADER */}
-      <section className="px-4 py-12 lg:px-8 lg:py-12">
+      <section className="px-4 py-8 lg:px-8 lg:py-12">
         <motion.div
           viewport={{ once: true, amount: 0.25 }}
           initial={{ opacity: 0, y: 24 }}
@@ -119,10 +119,7 @@ export function JournalArticlePage() {
                 duration: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}>
-              {/* <h1 className="mx-auto mt-5 max-w-[1050px] font-serif text-[28px] md:text-[32px] lg:text-[38px] uppercase leading-[1.15] tracking-[0.1em] sm:text-[34px]">
-                {title}
-              </h1> */}
-              <h1 className="mx-auto mt-5 max-w-[1300px] font-serif text-[28px] uppercase leading-[1.15] tracking-[0.1em] sm:text-[34px] md:text-[32px] lg:text-[38px]">
+              <h1 className="mx-auto mt-5 max-w-[1300px] font-serif text-[22px] sm:text-[28px] md:text-[32px] 2xl:text-[38px] uppercase leading-[1.15] tracking-[0.1em]">
                 {articleTitleLine1 && articleTitleLine2 ? (
                   <>
                     {articleTitleLine1}
@@ -170,8 +167,8 @@ export function JournalArticlePage() {
       </section>
 
       {/* ARTICLE CONTENT */}
-      <section className="px-4 py-12 lg:px-8 lg:py-12">
-        <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-16 xl:gap-10">
+      <section className="px-4 py-8 lg:px-8 lg:py-12">
+        <div className="mx-auto grid max-w-[1500px] gap-8 lg:gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
           {/* TEXT */}
           <motion.div
             viewport={{ once: true, amount: 0.1 }}
@@ -198,14 +195,14 @@ export function JournalArticlePage() {
                   const paragraphs = isItalian ? block.paragraphs_ital : block.paragraphs;
 
                   return (
-                    <div key={blockIndex} className={blockIndex === 0 ? '' : 'mt-10 md:mt-12'}>
+                    <div key={blockIndex} className={blockIndex === 0 ? '' : 'mt-6 md:mt-10'}>
                       {blockTitle && (
-                        <h2 className="mb-5 font-sans text-[15px] font-semibold uppercase tracking-[0.18em] md:text-[17px]">
+                        <h2 className="mb-4 lg:mb-5 font-sans text-[14px] md:text-[17px] lg:text-[18px] font-semibold uppercase tracking-[0.18em]">
                           {blockTitle}
                         </h2>
                       )}
 
-                      <div className="space-y-5">
+                      <div className="space-y-4 lg:space-y-5">
                         {paragraphs.map((paragraph, paragraphIndex) => (
                           <p
                             key={paragraphIndex}
@@ -276,7 +273,7 @@ export function JournalArticlePage() {
                             duration: 0.3,
                             ease: [0.22, 1, 0.36, 1],
                           }}
-                          className="mt-3 font-serif text-[15px] leading-[1.35] md:text-[16px]">
+                          className="mt-2 lg:mt-3 font-serif text-[14px] leading-[1.35] md:text-[16px]">
                           {nextTitle}
                         </motion.h3>
                       </AnimatePresence>

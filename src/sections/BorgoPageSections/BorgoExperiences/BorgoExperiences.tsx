@@ -1,8 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export function BorgoExperiences() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const langPrefix = i18n.language === 'en' ? '' : `/${i18n.language}`;
 
   const experiences = [
     {
@@ -86,7 +89,9 @@ export function BorgoExperiences() {
               ))}
             </div>
 
-            <button className="mt-6 lg:mt-16 2xl:mt-28 h-[44px] md:h-[57px] w-full max-w-[620px] border-2 border-white bg-white py-3 md:py-[1.1rem] lg:py-4 font-sans text-[13px] lg:text-[16px] font-semibold uppercase tracking-[0.16em] text-[#2C3654] transition-opacity duration-300 hover:opacity-80">
+            <Link
+              to={`${langPrefix}/experiences`}
+              className="mt-6 lg:mt-16 2xl:mt-28 flex h-[44px] md:h-[57px] w-full max-w-[620px] items-center justify-center border-2 border-white bg-white py-3 md:py-[1.1rem] lg:py-4 font-sans text-[13px] lg:text-[16px] font-semibold uppercase tracking-[0.16em] text-[#2C3654] transition-opacity duration-300 hover:opacity-80">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={t('borgoExperiences.button')}
@@ -101,7 +106,7 @@ export function BorgoExperiences() {
                   {t('borgoExperiences.button')}
                 </motion.span>
               </AnimatePresence>
-            </button>
+            </Link>
           </motion.div>
 
           {/* RIGHT */}
@@ -115,7 +120,7 @@ export function BorgoExperiences() {
             }}
             className="overflow-hidden">
             <img
-              src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_experiences/experience.png`}
+              src={`${process.env.PUBLIC_URL}/images/BorgoPage/borgo_experiences/experience.webp`}
               alt="Experiences at The Borgo"
               className="h-full w-full object-cover"
             />

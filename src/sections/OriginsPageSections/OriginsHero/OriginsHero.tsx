@@ -12,7 +12,7 @@ export function OriginsHero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/OriginsPage/origins_hero/origins_hero.png`}
+          src={`${process.env.PUBLIC_URL}/images/OriginsPage/origins_hero/origins_hero.webp`}
           alt={t('originsHero.title')}
           className="h-full w-full object-cover"
         />

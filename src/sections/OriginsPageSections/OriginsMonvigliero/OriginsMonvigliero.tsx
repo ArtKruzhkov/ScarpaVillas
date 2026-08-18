@@ -11,7 +11,7 @@ export function OriginsMonvigliero() {
       {/* TOP IMAGE */}
       <div className="relative overflow-hidden">
         <motion.img
-          src={`${baseUrl}/images/OriginsPage/origins_monvigliero/top.png`}
+          src={`${baseUrl}/images/OriginsPage/origins_monvigliero/top.webp`}
           alt="Monvigliero vineyard"
           className="h-[440px] w-full object-cover sm:h-[460px] lg:h-full"
           initial={{
@@ -100,11 +100,11 @@ export function OriginsMonvigliero() {
             className="block h-[280px] sm:h-[440px] lg:h-full lg:max-h-[920px] w-full">
             <source
               media="(max-width: 1023px)"
-              srcSet={`${baseUrl}/images/OriginsPage/origins_monvigliero/monvigliero_mob.png`}
+              srcSet={`${baseUrl}/images/OriginsPage/origins_monvigliero/monvigliero_mob.webp`}
             />
 
             <img
-              src={`${baseUrl}/images/OriginsPage/origins_monvigliero/monvigliero.png`}
+              src={`${baseUrl}/images/OriginsPage/origins_monvigliero/monvigliero.webp`}
               alt="Monvigliero"
               className="h-full w-full object-cover"
             />
