@@ -220,7 +220,7 @@ export function JournalArticlePage() {
 
           {/* NEXT ARTICLES */}
           <aside className="border-l-2 border-[#2C3654] pl-2 lg:pl-4">
-            <div className="space-y-12">
+            <div className="space-y-6 lg:space-y-10">
               {nextArticles.map((nextArticle, index) => {
                 const nextTitle = isItalian ? nextArticle.title_ital : nextArticle.title;
 
