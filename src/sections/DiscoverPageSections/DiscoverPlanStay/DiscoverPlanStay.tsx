@@ -10,7 +10,7 @@ export function DiscoverPlanStay() {
     <section className="relative overflow-hidden">
       {/* BACKGROUND */}
       <motion.img
-        src={`${baseUrl}/images/DiscoverPage/discover_planStay/background.png`}
+        src={`${baseUrl}/images/DiscoverPage/discover_planStay/background.webp`}
         alt="The Langhe"
         className="block object-cover h-auto w-full min-h-[480px] md:min-h-[645px]"
         initial={{

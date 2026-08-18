@@ -14,7 +14,7 @@ export function DiscoverExplore() {
       title: t('discoverExplore.wine.title'),
       description: t('discoverExplore.wine.description'),
       button: t('discoverExplore.wine.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_explore/wine.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/wine.webp`,
       // href: '/experiences#wine-taste',
       href: '/discover/region#wine',
     },
@@ -23,7 +23,7 @@ export function DiscoverExplore() {
       title: t('discoverExplore.food.title'),
       description: t('discoverExplore.food.description'),
       button: t('discoverExplore.food.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_explore/food.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/food.webp`,
       href: '/discover/region#food',
     },
     {
@@ -31,7 +31,7 @@ export function DiscoverExplore() {
       title: t('discoverExplore.nature.title'),
       description: t('discoverExplore.nature.description'),
       button: t('discoverExplore.nature.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_explore/nature.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/nature.webp`,
       href: '/discover/region#routes',
     },
     {
@@ -39,7 +39,7 @@ export function DiscoverExplore() {
       title: t('discoverExplore.culture.title'),
       description: t('discoverExplore.culture.description'),
       button: t('discoverExplore.culture.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_explore/culture.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_explore/culture.webp`,
       href: '/discover/region#villages',
     },
   ];

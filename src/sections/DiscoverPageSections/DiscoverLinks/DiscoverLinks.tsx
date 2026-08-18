@@ -15,7 +15,7 @@ export function DiscoverLinks() {
       title: t('discoverLinks.region.title'),
       description: t('discoverLinks.region.description'),
       button: t('discoverLinks.region.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_links/region.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_links/region.webp`,
       href: '/discover/region',
     },
     {
@@ -23,7 +23,7 @@ export function DiscoverLinks() {
       title: t('discoverLinks.experiences.title'),
       description: t('discoverLinks.experiences.description'),
       button: t('discoverLinks.experiences.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_links/experiences.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_links/experiences.webp`,
       href: '/experiences',
     },
     {
@@ -31,7 +31,7 @@ export function DiscoverLinks() {
       title: t('discoverLinks.journal.title'),
       description: t('discoverLinks.journal.description'),
       button: t('discoverLinks.journal.button'),
-      image: `${baseUrl}/images/DiscoverPage/discover_links/journal.png`,
+      image: `${baseUrl}/images/DiscoverPage/discover_links/journal.webp`,
       href: '/discover/journal',
     },
   ];

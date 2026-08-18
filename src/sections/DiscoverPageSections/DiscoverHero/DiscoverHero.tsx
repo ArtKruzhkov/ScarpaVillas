@@ -12,7 +12,7 @@ export function DiscoverHero() {
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/DiscoverPage/discover_hero/discover_hero.png`}
+          src={`${process.env.PUBLIC_URL}/images/DiscoverPage/discover_hero/discover_hero.webp`}
           alt={t('discoverHero.title')}
           className="h-full w-full object-cover"
         />

@@ -27,11 +27,11 @@ export function DiscoverIntro() {
         className="absolute inset-0">
         <source
           media="(max-width: 1023px)"
-          srcSet={`${baseUrl}/images/DiscoverPage/discover_intro/background_mob.png`}
+          srcSet={`${baseUrl}/images/DiscoverPage/discover_intro/background_mob.webp`}
         />
 
         <img
-          src={`${baseUrl}/images/DiscoverPage/discover_intro/background.png`}
+          src={`${baseUrl}/images/DiscoverPage/discover_intro/background.webp`}
           alt="Scarpa Villas Stays"
           className="h-full w-full object-cover"
         />
