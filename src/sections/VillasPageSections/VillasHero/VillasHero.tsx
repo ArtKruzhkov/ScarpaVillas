@@ -11,16 +11,6 @@ export function VillasHero() {
       id="villas-top"
       className="relative flex section-height justify-center items-center overflow-hidden">
       {/* BACKGROUND */}
-      {/* <div className="absolute inset-0">
-        <img
-          src={`${process.env.PUBLIC_URL}/images/villas_hero/villas-hero.png`}
-          alt="The Villas"
-          className="h-full w-full object-cover"
-        />
-
-        <div className="absolute inset-0 hero-overlay" />
-      </div> */}
-
       <div className="absolute inset-0">
         {/* Mobile video */}
         <video
