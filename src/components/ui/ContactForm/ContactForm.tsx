@@ -250,7 +250,7 @@ export function ContactForm({ onClose }: ContactFormProps) {
         <button
           type="submit"
           disabled={isSending || status === 'success'}
-          className="min-w-full lg:min-w-[440px] bg-[#2C3654] px-10 py-3 lg:py-4 font-sans text-[14px] lg:text-[16px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 hover:bg-[#404B73]">
+          className="min-w-full lg:min-w-[440px] bg-[#2C3654] px-10 py-3 lg:py-4 font-sans text-[14px] lg:text-[16px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 hover:bg-[#404B73] disabled:bg-[#404B73]">
           <AnimatePresence mode="wait">
             <motion.span
               key={`contact-submit-${i18n.language}-${status}-${isSending}`}
