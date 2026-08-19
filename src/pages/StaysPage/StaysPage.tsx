@@ -11,20 +11,36 @@ export function StaysPage() {
   const baseUrl = process.env.PUBLIC_URL;
 
   useEffect(() => {
+    const hash = window.location.hash;
+
+    if (hash) {
+      const id = hash.replace('#', '');
+
+      requestAnimationFrame(() => {
+        const element = document.getElementById(id);
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      });
+
+      return;
+    }
+
     window.scrollTo(0, 0);
   }, []);
 
   const luxRetreat: StaysProgrammeProps = {
+    id: 'lux-retreat',
     titleKey: 'staysLuxRetreat.title',
     subtitleKey: 'staysLuxRetreat.subtitle',
-
     descriptionKeys: ['staysLuxRetreat.description1'],
-
     durationKey: 'staysLuxRetreat.duration',
-
     image: `${baseUrl}/images/StaysPage/stays_programmes/lux-retreat.webp`,
     imageAlt: 'The Lux Retreat at Scarpa Villas',
-
     imagePosition: 'left',
     background: 'white',
 
@@ -63,16 +79,13 @@ export function StaysPage() {
   };
 
   const tasteOfLanghe: StaysProgrammeProps = {
+    id: 'taste-of-langhe',
     titleKey: 'staysTasteOfLanghe.title',
     subtitleKey: 'staysTasteOfLanghe.subtitle',
-
     descriptionKeys: ['staysTasteOfLanghe.description1'],
-
     durationKey: 'staysTasteOfLanghe.duration',
-
     image: `${baseUrl}/images/StaysPage/stays_programmes/taste-of-langhe.webp`,
     imageAlt: 'Taste of Langhe wine experience',
-
     imagePosition: 'right',
     background: 'beige',
 
@@ -117,16 +130,13 @@ export function StaysPage() {
   };
 
   const autumnGems: StaysProgrammeProps = {
+    id: 'autumn-gems',
     titleKey: 'staysAutumnGems.title',
     subtitleKey: 'staysAutumnGems.subtitle',
-
     descriptionKeys: ['staysAutumnGems.description1'],
-
     durationKey: 'staysAutumnGems.duration',
-
     image: `${baseUrl}/images/StaysPage/stays_programmes/autumn-gems.webp`,
     imageAlt: 'Autumn Gems in the Langhe',
-
     imagePosition: 'left',
     background: 'white',
 
@@ -168,16 +178,13 @@ export function StaysPage() {
   };
 
   const piemonteEscape: StaysProgrammeProps = {
+    id: 'piemonte-escape',
     titleKey: 'staysPiemonteEscape.title',
     subtitleKey: 'staysPiemonteEscape.subtitle',
-
     descriptionKeys: ['staysPiemonteEscape.description1'],
-
     durationKey: 'staysPiemonteEscape.duration',
-
     image: `${baseUrl}/images/StaysPage/stays_programmes/piemonte-escape.webp`,
     imageAlt: 'Piemonte Escape at Scarpa Villas',
-
     imagePosition: 'right',
     background: 'beige',
 

@@ -56,7 +56,7 @@
     "tettineiveDescription": "A refined home base for exploration — and a gentle return at the end of the day.",
     "boglionaDescription": "A welcoming villa designed for comfort, conversation and easy gatherings.",
     "bricchiDescription": "A hillside vantage for long mornings, vineyard light and unhurried evenings.",
-    "tettimoraDescription": "An intimate retreat for quiet evenings, close company and the beauty of the Langhe all around."
+    "tettimorraDescription": "An intimate retreat for quiet evenings, close company and the beauty of the Langhe all around."
   },
   "borgo": {
     "title1": "The Borgo.",
@@ -191,7 +191,6 @@
     "interests": "What are you interested in?",
     "details": "Your Details",
     "message": "Message",
-    "submit": "Submit Inquiry",
     "name": "Name",
     "email": "Email",
     "phone": "Phone Number",
@@ -202,7 +201,11 @@
       "eventsCelebrations": "Events & Celebrations",
       "longTermStays": "Long-Term Stays",
       "other": "Other"
-    }
+    },
+    "submit": "Submit Inquiry",
+    "sending": "Sending...",
+    "success": "Request Sent",
+    "error": "Try Again"
   },
   "storyHero": {
     "title": "The Story",

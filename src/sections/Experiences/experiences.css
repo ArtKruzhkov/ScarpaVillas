@@ -1,4 +1,7 @@
 .experiences-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 3px solid #2c3654;
   padding: 12px 44px;
   font-family: 'Montserrat', sans-serif;

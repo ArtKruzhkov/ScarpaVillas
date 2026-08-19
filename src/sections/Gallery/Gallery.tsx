@@ -2,6 +2,7 @@ import { VillaGallery } from './VillaGallery';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './gallery.css';
 
 type Villa = {
@@ -13,26 +14,26 @@ type Villa = {
 
 const villas: Villa[] = [
   {
-    name: 'TETTIMORA',
-    href: '#',
-    className: 'villa-tettimora',
+    name: 'TETTIMORRA',
+    href: '/villas/tettimorra',
+    className: 'villa-tettimorra',
     lineHeight: 'h-[150px]',
   },
   {
     name: 'I BRICCHI',
-    href: '#',
+    href: '/villas/bricchi',
     className: 'villa-bricchi',
     lineHeight: 'h-[140px]',
   },
   {
     name: 'LA BOGLIONA',
-    href: '#',
+    href: '/villas/bogliona',
     className: 'villa-bogliona',
     lineHeight: 'h-[150px]',
   },
   {
     name: 'TETTINEIVE',
-    href: '#',
+    href: '/villas/tettineive',
     className: 'villa-tettineive',
     lineHeight: 'h-[140px]',
   },
@@ -40,7 +41,7 @@ const villas: Villa[] = [
 
 const villaMasks = {
   desktop: {
-    TETTIMORA: {
+    TETTIMORRA: {
       topX: 540,
       topY: 380,
 
@@ -94,7 +95,7 @@ const villaMasks = {
   },
 
   laptop: {
-    TETTIMORA: {
+    TETTIMORRA: {
       topX: 520,
       topY: 320,
 
@@ -154,6 +155,8 @@ export function Gallery() {
   const [isLaptop, setIsLaptop] = useState(false);
   const [shouldShowVillaMask, setShouldShowVillaMask] = useState(false);
 
+  const langPrefix = i18n.language === 'en' ? '' : `/${i18n.language}`;
+
   // useEffect(() => {
   //   const update = () => {
   //     setIsLaptop(window.innerWidth <= 1442);
@@ -190,8 +193,8 @@ export function Gallery() {
   const currentMasks = isLaptop ? villaMasks.laptop : villaMasks.desktop;
 
   const activeMask =
-    activeVilla === 'TETTIMORA'
-      ? currentMasks.TETTIMORA
+    activeVilla === 'TETTIMORRA'
+      ? currentMasks.TETTIMORRA
       : activeVilla === 'I BRICCHI'
         ? currentMasks.BRICCHI
         : activeVilla === 'LA BOGLIONA'
@@ -354,13 +357,13 @@ export function Gallery() {
                       duration: 0.6,
                       ease: [0.22, 1, 0.36, 1],
                     }}>
-                    <a
-                      href={villa.href}
+                    <Link
+                      to={`${langPrefix}${villa.href}`}
                       className="villa-label"
                       onMouseEnter={() => setActiveVilla(villa.name)}
                       onMouseLeave={() => setActiveVilla(null)}>
                       {villa.name}
-                    </a>
+                    </Link>
                   </motion.div>
 
                   <div className={`w-px bg-[#e7e2d7] ${villa.lineHeight}`} />

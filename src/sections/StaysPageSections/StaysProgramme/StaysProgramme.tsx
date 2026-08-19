@@ -9,14 +9,13 @@ export type StaysProgrammeDay = {
 };
 
 export type StaysProgrammeProps = {
+  id: string;
   titleKey: string;
   subtitleKey: string;
   descriptionKeys: string[];
   durationKey: string;
-
   image: string;
   imageAlt: string;
-
   imagePosition?: 'left' | 'right';
   background?: 'white' | 'beige';
 
@@ -24,6 +23,7 @@ export type StaysProgrammeProps = {
 };
 
 export function StaysProgramme({
+  id,
   titleKey,
   subtitleKey,
   descriptionKeys,
@@ -61,7 +61,7 @@ export function StaysProgramme({
   const daysGridClass = getGridCols(days.length);
 
   return (
-    <section className={`${backgroundClass}`}>
+    <section id={id} className={`scroll-mt-[73px] lg:scroll-mt-[86px] ${backgroundClass}`}>
       <div className="mx-auto max-w-8xl px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
         {/* TOP */}
         <div

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import './experiences.css';
 
@@ -85,6 +86,7 @@ export function Experiences() {
   const natureAndMovement = experiences.filter((item) => item.category === 'Nature & Movement');
 
   const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language === 'en' ? '' : `/${i18n.language}`;
 
   const fadeUp: Variants = {
     hidden: {
@@ -255,7 +257,7 @@ export function Experiences() {
                 <img
                   src={experience.image}
                   alt={t(`experienceCards.${experience.title}`)}
-                  className="w-full h-[480px] lg:h-[380px] xl:h-[480px] 2xl:h-[580px] object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+                  className="w-full h-[480px] lg:h-[380px] xl:h-[480px] 2xl:h-[580px] object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                 />
               </div>
 
@@ -379,7 +381,7 @@ export function Experiences() {
                 <img
                   src={experience.image}
                   alt={t(`experienceCards.${experience.title}`)}
-                  className="w-full h-[480px] lg:h-auto object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+                  className="w-full h-[480px] lg:h-auto object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                 />
               </div>
 
@@ -505,7 +507,7 @@ export function Experiences() {
                 <img
                   src={experience.image}
                   alt={t(`experienceCards.${experience.title}`)}
-                  className="w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+                  className="w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                 />
               </div>
 
@@ -538,13 +540,12 @@ export function Experiences() {
 
         {/* DISCOVER BTN */}
         <motion.div
-          className="mt-10 lg:mt-14 xl:mt-20 flex justify-center"
+          className="mt-10 lg:mt-14 2xl:mt-16 flex justify-center"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
-          {/* <button className="experiences-btn">Discover All Experiences</button> */}
-          <button className="experiences-btn">
+          <Link to={`${langPrefix}/experiences`} className="experiences-btn">
             <AnimatePresence mode="wait">
               <motion.span
                 key={`discover-all-${i18n.language}`}
@@ -555,7 +556,7 @@ export function Experiences() {
                 {t('experiences.discoverAll')}
               </motion.span>
             </AnimatePresence>
-          </button>
+          </Link>
         </motion.div>
       </Container>
     </section>

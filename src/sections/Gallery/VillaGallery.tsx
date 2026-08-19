@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './villaGallery.css';
 
 type VillaGalleryItem = {
@@ -14,6 +15,7 @@ const baseUrl = process.env.PUBLIC_URL;
 
 export function VillaGallery() {
   const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language === 'en' ? '' : `/${i18n.language}`;
 
   const villaSlides: VillaGalleryItem[] = [
     {
@@ -23,26 +25,26 @@ export function VillaGallery() {
       image: `${baseUrl}/images/gallery/tettineive.webp`,
     },
     {
-      id: 'la-bogliona',
+      id: 'bogliona',
       name: 'Villa La Bogliona',
       description: t('villaGallery.boglionaDescription'),
       image: `${baseUrl}/images/gallery/bogliona.webp`,
     },
     {
-      id: 'i-bricchi',
+      id: 'bricchi',
       name: 'Villa I Bricchi',
       description: t('villaGallery.bricchiDescription'),
       image: `${baseUrl}/images/gallery/bricchi.webp`,
     },
     {
-      id: 'tettimora',
-      name: 'Villa Tettimora',
-      description: t('villaGallery.tettimoraDescription'),
+      id: 'tettimorra',
+      name: 'Villa Tettimorra',
+      description: t('villaGallery.tettimorraDescription'),
       image: `${baseUrl}/images/gallery/tettimora.webp`,
     },
   ];
 
-  const [activeVillaId, setActiveVillaId] = useState('tettimora');
+  const [activeVillaId, setActiveVillaId] = useState('tettimorra');
   const activeVilla = villaSlides.find((villa) => villa.id === activeVillaId) ?? villaSlides[3];
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -104,7 +106,7 @@ export function VillaGallery() {
                 </AnimatePresence>
               </div>
 
-              <a href={process.env.PUBLIC_URL || '/'} className="discover-villa-btn">
+              <Link to={`${langPrefix}/villas/${activeVilla.id}`} className="discover-villa-btn">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={i18n.language}
@@ -115,7 +117,7 @@ export function VillaGallery() {
                     {t('villaGallery.discoverVilla')}
                   </motion.span>
                 </AnimatePresence>
-              </a>
+              </Link>
             </motion.div>
           </AnimatePresence>
         </motion.div>

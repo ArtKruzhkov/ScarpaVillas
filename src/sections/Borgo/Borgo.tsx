@@ -1,10 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './borgo.css';
 
 export function Borgo() {
   const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language === 'en' ? '' : `/${i18n.language}`;
 
   return (
     <section
@@ -107,7 +109,7 @@ export function Borgo() {
           </AnimatePresence>
 
           {/* BUTTON */}
-          <a href={process.env.PUBLIC_URL || '/'} className="borgo-btn">
+          <Link to={`${langPrefix}/borgo`} className="borgo-btn">
             <AnimatePresence mode="wait">
               <motion.span
                 key={t('borgo.button')}
@@ -118,7 +120,7 @@ export function Borgo() {
                 {t('borgo.button')}
               </motion.span>
             </AnimatePresence>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

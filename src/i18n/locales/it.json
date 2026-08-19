@@ -56,11 +56,11 @@
     "tettineiveDescription": "Una raffinata base di partenza per le esplorazioni — e un dolce ritorno a fine giornata.",
     "boglionaDescription": "Una villa accogliente progettata per il comfort, la conversazione e i ritrovi informali.",
     "bricchiDescription": "Un punto panoramico in collina per lunghe mattine, la luce dei vigneti e serate senza fretta.",
-    "tettimoraDescription": "Un rifugio intimo per serate tranquille, buona compagnia e tutta la bellezza delle Langhe intorno."
+    "tettimorraDescription": "Un rifugio intimo per serate tranquille, buona compagnia e tutta la bellezza delle Langhe intorno."
   },
   "borgo": {
     "title1": "Il Borgo.",
-    "title2": "Tutto per te",
+    "title2": "Un borgo collinare, tutto per te",
     "descriptionDesktop": "Il Borgo può essere prenotato nella sua interezza: quattro ville, una piscina panoramica e la tenuta circostante, tutto esclusivamente per te. Un luogo pensato per incontri significativi, dalle feste private e matrimoni intimi ai ritiri aziendali, dove privacy, spazio e il ritmo di Barolo si fondono.",
     "descriptionMobile1": "Prenotate l'intero Borgo: quattro ville, una piscina panoramica e la tenuta, tutti esclusivamente a vostra\u00A0disposizione.",
     "descriptionMobile2": "Progettato per incontri significativi, dalle celebrazioni private e dai matrimoni intimi ai ritiri aziendali, dove privacy, spazio e il ritmo di Barolo si fondono insieme.",
@@ -191,7 +191,6 @@
     "interests": "Cosa ti interessa?",
     "details": "I tuoi dati",
     "message": "Messaggio",
-    "submit": "Invia richiesta",
     "name": "Nome",
     "email": "Email",
     "phone": "Numero di telefono",
@@ -202,7 +201,11 @@
       "eventsCelebrations": "Eventi e celebrazioni",
       "longTermStays": "Soggiorni a lungo termine",
       "other": "Altro"
-    }
+    },
+    "submit": "Invia richiesta",
+    "sending": "Invio...",
+    "success": "Richiesta inviata",
+    "error": "Riprova"
   },
   "storyHero": {
     "title": "La Storia",

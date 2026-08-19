@@ -1,4 +1,4 @@
-.villa-tettimora {
+.villa-tettimorra {
   top: 41%;
   left: 23%;
 }
@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 1820px) {
-  .villa-tettimora {
+  .villa-tettimorra {
     top: 43.5%;
     left: 20.5%;
   }
@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 1440px) {
-  .villa-tettimora {
+  .villa-tettimorra {
     top: 35%;
     left: 22%;
   }
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 1200px) {
-  .villa-tettimora {
+  .villa-tettimorra {
     top: 41.5%;
     left: 11%;
   }
@@ -70,7 +70,7 @@
 }
 
 @media (max-width: 1023px) {
-  .villa-tettimora {
+  .villa-tettimorra {
     top: 43%;
     left: 2%;
   }
