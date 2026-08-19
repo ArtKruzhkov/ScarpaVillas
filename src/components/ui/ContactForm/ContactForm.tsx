@@ -159,10 +159,6 @@ export function ContactForm({ onClose }: ContactFormProps) {
             <label
               key={item}
               className="flex cursor-pointer items-center gap-3 text-[13px] sm:text-[14px] text-[#2C3654]">
-              {/* <input
-                type="checkbox"
-                className="h-[12px] w-[12px] sm:h-[16px] sm:w-[16px] border border-[#2C3654]"
-              /> */}
               <input
                 type="checkbox"
                 checked={selectedInterests.includes(item)}
@@ -193,11 +189,6 @@ export function ContactForm({ onClose }: ContactFormProps) {
         </AnimatePresence>
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 font-sans text-[#2C3654]">
-          {/* <input
-            type="text"
-            placeholder={t('contact.name')}
-            className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
-          /> */}
           <input
             type="text"
             name="name"
@@ -208,11 +199,6 @@ export function ContactForm({ onClose }: ContactFormProps) {
             className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
           />
 
-          {/* <input
-            type="email"
-            placeholder={t('contact.email')}
-            className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
-          /> */}
           <input
             type="email"
             name="email"
@@ -223,11 +209,6 @@ export function ContactForm({ onClose }: ContactFormProps) {
             className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
           />
 
-          {/* <input
-            type="tel"
-            placeholder={t('contact.phone')}
-            className="h-[42px] md:h-[48px] lg:h-[54px] text-[14px] md:text-[15px] lg:text-[16px] border border-[#2C3654] bg-transparent px-5 text-center placeholder:text-[#BFBFBF] focus:outline-none"
-          /> */}
           <input
             type="tel"
             name="phone"
@@ -253,11 +234,6 @@ export function ContactForm({ onClose }: ContactFormProps) {
           </motion.p>
         </AnimatePresence>
 
-        {/* <textarea
-          rows={2}
-          placeholder={t('contact.messagePlaceholder')}
-          className="text-[#2C3654] text-[14px] md:text-[15px] lg:text-[16px] w-full resize-none border border-[#2C3654] bg-transparent p-3 lg:p-5 placeholder:text-center placeholder:text-[#BFBFBF] focus:outline-none"
-        /> */}
         <textarea
           name="message"
           required
