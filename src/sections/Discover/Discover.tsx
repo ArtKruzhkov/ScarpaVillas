@@ -147,7 +147,7 @@ export function DiscoverLanghe() {
               1024: {
                 slidesPerView: 2,
                 centeredSlides: true,
-                spaceBetween: 20,
+                spaceBetween: 80,
               },
             }}
             grabCursor

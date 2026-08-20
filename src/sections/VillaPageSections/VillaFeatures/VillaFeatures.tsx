@@ -1,6 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Villa } from '../../../data/villas';
 import { Trans, useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 type VillaFeaturesProps = {
   features: Villa['features'];
@@ -76,7 +79,7 @@ export function VillaFeatures({ features }: VillaFeaturesProps) {
                 duration: 1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="min-h-[360px] overflow-hidden lg:min-h-[520px]">
+              className="min-h-[280px] sm:h-[500px] overflow-hidden lg:min-h-[520px]">
               <img
                 src={features.images.left}
                 alt="Villa interior and outdoor living space"
@@ -139,7 +142,7 @@ export function VillaFeatures({ features }: VillaFeaturesProps) {
         </div>
 
         {/* LARGE IMAGE */}
-        <motion.div
+        {/* <motion.div
           viewport={{ once: true, amount: 0.2 }}
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -156,6 +159,40 @@ export function VillaFeatures({ features }: VillaFeaturesProps) {
                 features.images.bottomObjectPosition ?? ''
               } lg:object-center`}
             />
+          </div>
+        </motion.div> */}
+
+        {/* LARGE IMAGE SLIDER */}
+        <motion.div
+          viewport={{ once: true, amount: 0.2 }}
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="p-0 lg:p-6">
+          <div className="overflow-hidden">
+            <Swiper
+              modules={[Autoplay]}
+              slidesPerView={1}
+              loop
+              grabCursor
+              speed={2000}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}>
+              {features.images.bottom.map((image, index) => (
+                <SwiperSlide key={image}>
+                  <img
+                    src={image}
+                    alt={`Villa interior ${index + 1}`}
+                    className={`min-h-[280px] sm:h-[500px] lg:h-full w-full object-cover lg:max-h-[720px]`}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </motion.div>
       </div>

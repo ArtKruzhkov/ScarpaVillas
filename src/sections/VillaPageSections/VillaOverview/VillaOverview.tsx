@@ -58,7 +58,7 @@ export function VillaOverview({ overview }: VillaOverviewProps) {
           }}
           className="mt-7 grid grid-cols-1 gap-5 lg:mt-14 lg:grid-cols-[1fr_2fr_1fr]">
           {/* Left */}
-          <div className="h-[380px] max-h-[620px] overflow-hidden sm:h-[500px] lg:h-auto">
+          <div className="h-[280px] max-h-[620px] overflow-hidden sm:h-[500px] lg:h-auto">
             <img
               src={overview.images.left}
               alt={`${overview.title} exterior`}
@@ -67,7 +67,7 @@ export function VillaOverview({ overview }: VillaOverviewProps) {
           </div>
 
           {/* Center */}
-          <div className="h-[380px] max-h-[620px] overflow-hidden sm:h-[500px] lg:h-auto">
+          <div className="h-[280px] max-h-[620px] overflow-hidden sm:h-[500px] lg:h-auto">
             <img
               src={overview.images.center}
               alt={`${overview.title} interior`}
@@ -76,7 +76,7 @@ export function VillaOverview({ overview }: VillaOverviewProps) {
           </div>
 
           {/* Right */}
-          <div className="h-[380px] max-h-[620px] overflow-hidden sm:h-[500px] lg:h-auto">
+          <div className="h-[280px] max-h-[620px] overflow-hidden sm:h-[500px] lg:h-auto">
             <img
               src={overview.images.right}
               alt={`${overview.title} view`}

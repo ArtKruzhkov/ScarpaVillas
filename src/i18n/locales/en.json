@@ -934,6 +934,9 @@
     "subtitle": "Our team can help you choose the right space based on your\u00A0plans\u00A0and\u00A0group",
     "placeholder": "Enter your e-mail",
     "button": "Get Personal Advice",
+    "sending": "Sending...",
+    "success": "Request Sent",
+    "error": "Try Again",
     "privacy": "I agree to the privacy statement"
   },
   "villasPlanStayCTA": {

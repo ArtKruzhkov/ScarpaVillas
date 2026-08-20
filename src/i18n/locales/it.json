@@ -933,6 +933,9 @@
     "subtitle": "Il nostro team può aiutarti a scegliere la soluzione più adatta ai tuoi piani e al tuo gruppo.",
     "placeholder": "Inserisci la tua e-mail",
     "button": "Ricevi una consulenza",
+    "sending": "Invio...",
+    "success": "Richiesta inviata",
+    "error": "Riprova",
     "privacy": "Accetto l'informativa sulla privacy"
   },
   "villasPlanStayCTA": {

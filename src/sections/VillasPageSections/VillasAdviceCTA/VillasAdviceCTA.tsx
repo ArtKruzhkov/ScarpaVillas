@@ -1,9 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 export function VillasAdviceCTA() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const [email, setEmail] = useState('');
+  const [isPrivacyAccepted, setIsPrivacyAccepted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  useEffect(() => {
+    if (status !== 'success') return;
+
+    const timeout = setTimeout(() => {
+      setStatus('idle');
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, [status]);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (isSending || !isPrivacyAccepted) return;
+
+    setIsSending(true);
+    setStatus('idle');
+
+    try {
+      await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        process.env.REACT_APP_EMAILJS_VILLA_ADVICE_TEMPLATE_ID!,
+        {
+          email,
+        },
+        {
+          publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY!,
+        },
+      );
+
+      setStatus('success');
+      setEmail('');
+      setIsPrivacyAccepted(false);
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setStatus('error');
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <section className="bg-white px-6 py-10 xl:py-20">
@@ -31,7 +78,7 @@ export function VillasAdviceCTA() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
                 transition={{
-                  duration: 0.55,
+                  duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}>
                 {t('villasAdviceCTA.title')}
@@ -52,6 +99,7 @@ export function VillasAdviceCTA() {
           </motion.div>
 
           <motion.form
+            onSubmit={handleSubmit}
             className="mt-12"
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -62,14 +110,23 @@ export function VillasAdviceCTA() {
               ease: [0.22, 1, 0.36, 1],
             }}>
             <div className="flex h-[57px]">
-              <input
+              {/* <input
                 key={t('villasAdviceCTA.placeholder')}
                 type="email"
                 placeholder={t('villasAdviceCTA.placeholder')}
                 className="h-full flex-1 border-2 border-[#2C3654] bg-white px-6 text-center font-sans text-[18px] text-[#2C3654] outline-none placeholder:text-[#A8ABB8] xl:min-w-[850.6px]"
+              /> */}
+              <input
+                type="email"
+                name="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('villasAdviceCTA.placeholder')}
+                className="h-full flex-1 border-2 border-[#2C3654] bg-white px-6 text-center font-sans text-[18px] text-[#2C3654] outline-none placeholder:text-[#A8ABB8] xl:min-w-[850.6px]"
               />
 
-              <button
+              {/* <button
                 type="submit"
                 className="h-full xl:min-w-[382px] bg-[#2C3654] px-8 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80">
                 <AnimatePresence mode="wait">
@@ -82,11 +139,39 @@ export function VillasAdviceCTA() {
                     {t('villasAdviceCTA.button')}
                   </motion.span>
                 </AnimatePresence>
+              </button> */}
+              <button
+                type="submit"
+                disabled={isSending || status === 'success'}
+                className="h-full xl:min-w-[382px] bg-[#2C3654] px-8 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-colors duration-300 hover:bg-[#404B73] disabled:bg-[#404B73] disabled:cursor-default">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={`villa-advice-submit-${i18n.language}-${status}-${isSending}`}
+                    className="block"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.25 }}>
+                    {isSending
+                      ? t('villasAdviceCTA.sending')
+                      : status === 'success'
+                        ? t('villasAdviceCTA.success')
+                        : status === 'error'
+                          ? t('villasAdviceCTA.error')
+                          : t('villasAdviceCTA.button')}
+                  </motion.span>
+                </AnimatePresence>
               </button>
             </div>
 
             <label className="mt-3 flex items-center gap-2 text-left font-sans text-[15px] text-[#2C3654]">
-              <input type="checkbox" />
+              {/* <input type="checkbox" /> */}
+              <input
+                type="checkbox"
+                required
+                checked={isPrivacyAccepted}
+                onChange={(e) => setIsPrivacyAccepted(e.target.checked)}
+              />
 
               <AnimatePresence mode="wait">
                 <motion.span
@@ -149,6 +234,7 @@ export function VillasAdviceCTA() {
 
           {/* Form */}
           <motion.form
+            onSubmit={handleSubmit}
             className="mt-8"
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -159,13 +245,22 @@ export function VillasAdviceCTA() {
               ease: [0.22, 1, 0.36, 1],
             }}>
             <div className="flex flex-col gap-4">
+              {/* <input
+                type="email"
+                placeholder={t('villasAdviceCTA.placeholder')}
+                className="h-[44px] border-2 border-[#2C3654] bg-white px-6 text-center font-sans text-[16px] text-[#2C3654] outline-none placeholder:text-[#A8ABB8] md:h-[57px] md:text-[18px]"
+              /> */}
               <input
                 type="email"
+                name="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('villasAdviceCTA.placeholder')}
                 className="h-[44px] border-2 border-[#2C3654] bg-white px-6 text-center font-sans text-[16px] text-[#2C3654] outline-none placeholder:text-[#A8ABB8] md:h-[57px] md:text-[18px]"
               />
 
-              <button
+              {/* <button
                 type="submit"
                 className="h-[44px] bg-[#2C3654] font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80 md:h-[57px] md:text-[18px]">
                 <AnimatePresence mode="wait">
@@ -178,11 +273,39 @@ export function VillasAdviceCTA() {
                     {t('villasAdviceCTA.button')}
                   </motion.span>
                 </AnimatePresence>
+              </button> */}
+              <button
+                type="submit"
+                disabled={isSending || status === 'success'}
+                className="h-[44px] bg-[#2C3654] font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-white transition-colors duration-300 hover:bg-[#404B73] disabled:bg-[#404B73] disabled:cursor-default md:h-[57px] md:text-[18px]">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={`villa-advice-submit-${i18n.language}-${status}-${isSending}`}
+                    className="block"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.25 }}>
+                    {isSending
+                      ? t('villasAdviceCTA.sending')
+                      : status === 'success'
+                        ? t('villasAdviceCTA.success')
+                        : status === 'error'
+                          ? t('villasAdviceCTA.error')
+                          : t('villasAdviceCTA.button')}
+                  </motion.span>
+                </AnimatePresence>
               </button>
             </div>
 
             <label className="mt-4 flex items-center gap-3 text-left font-sans text-[13px] leading-[20px] text-[#2C3654] md:mt-5 md:text-[14px] lg:text-[16px]">
-              <input type="checkbox" />
+              {/* <input type="checkbox" /> */}
+              <input
+                type="checkbox"
+                required
+                checked={isPrivacyAccepted}
+                onChange={(e) => setIsPrivacyAccepted(e.target.checked)}
+              />
 
               <AnimatePresence mode="wait">
                 <motion.span

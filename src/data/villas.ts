@@ -29,7 +29,7 @@ export type Villa = {
 
     images: {
       left: string;
-      bottom: string;
+      bottom: string[];
       bottomObjectPosition?: string;
     };
 
@@ -131,8 +131,12 @@ export const villas: Villa[] = [
 
       images: {
         left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-left.webp`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom.webp`,
-        bottomObjectPosition: 'object-[97%_center]',
+        bottom: [
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom-2.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom-3.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettineive-bottom-4.webp`,
+        ],
       },
 
       text: {
@@ -273,7 +277,12 @@ export const villas: Villa[] = [
 
       images: {
         left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-left.webp`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom.webp`,
+        bottom: [
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom-2.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom-3.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bogliona-bottom-4.webp`,
+        ],
       },
 
       text: {
@@ -414,7 +423,12 @@ export const villas: Villa[] = [
 
       images: {
         left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-left.webp`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom.webp`,
+        bottom: [
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom-2.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom-3.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/bricchi-bottom-4.webp`,
+        ],
       },
 
       text: {
@@ -551,7 +565,12 @@ export const villas: Villa[] = [
 
       images: {
         left: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-left.webp`,
-        bottom: `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom.webp`,
+        bottom: [
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom-2.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom-3.webp`,
+          `${process.env.PUBLIC_URL}/images/VillaPage/villa_features/tettimorra-bottom-4.webp`,
+        ],
       },
 
       text: {
