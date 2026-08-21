@@ -21,7 +21,7 @@ export function VillaPage() {
   //   });
   // }, [villaId]);
   useEffect(() => {
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, [villaId]);
 
   const villa = villas.find((villa) => villa.id === villaId);

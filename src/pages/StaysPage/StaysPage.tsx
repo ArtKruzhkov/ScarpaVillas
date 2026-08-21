@@ -32,7 +32,7 @@ export function StaysPage() {
     }
 
     // window.scrollTo(0, 0);
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, []);
 
   const luxRetreat: StaysProgrammeProps = {

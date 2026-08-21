@@ -19,7 +19,7 @@ export function JournalArticlePage() {
   //   window.scrollTo(0, 0);
   // }, [articleId]);
   useEffect(() => {
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, [articleId]);
 
   if (!article) {

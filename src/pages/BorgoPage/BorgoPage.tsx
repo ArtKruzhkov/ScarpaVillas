@@ -15,7 +15,7 @@ export function BorgoPage() {
   // }, []);
 
   useEffect(() => {
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, []);
 
   return (

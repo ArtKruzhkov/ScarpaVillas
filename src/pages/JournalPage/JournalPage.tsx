@@ -10,7 +10,7 @@ export function JournalPage() {
   //   window.scrollTo(0, 0);
   // }, []);
   useEffect(() => {
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, []);
 
   return (

@@ -35,7 +35,7 @@ export function RegionPage() {
     }
 
     // window.scrollTo(0, 0);
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, []);
 
   return (

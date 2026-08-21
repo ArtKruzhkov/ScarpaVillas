@@ -13,7 +13,7 @@ export function DiscoverPage() {
   // }, []);
 
   useEffect(() => {
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, []);
 
   return (

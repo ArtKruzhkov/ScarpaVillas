@@ -33,7 +33,7 @@ export function ExperiencesPage() {
     //   left: 0,
     //   behavior: 'auto',
     // });
-    smoothScrollToTop(1500);
+    smoothScrollToTop();
   }, [location.hash]);
 
   const wineAndTaste = {
