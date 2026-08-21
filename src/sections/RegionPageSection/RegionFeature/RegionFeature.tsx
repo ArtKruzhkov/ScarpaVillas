@@ -180,12 +180,12 @@ export function RegionFeature({
             centeredSlides={false}
             spaceBetween={20}
             loop
-            speed={1800}
+            speed={2000}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
             autoplay={{
-              delay: 5000,
+              delay: 4000,
               disableOnInteraction: false,
             }}
             breakpoints={{

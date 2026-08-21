@@ -1,6 +1,6 @@
-import type { RegionFeatureSectionProps } from '../sections/RegionPageSection/RegionFeature/RegionFeature';
+import type { RegionFeatureProps } from '../sections/RegionPageSection/RegionFeature/RegionFeature';
 
-export const wineLandscapeSection: RegionFeatureSectionProps = {
+export const wineLandscapeSection: RegionFeatureProps = {
   id: 'wine',
   backgroundImage: `${process.env.PUBLIC_URL}/images/RegionPage/region_feature/wine/wine.png`,
 
@@ -58,7 +58,7 @@ export const wineLandscapeSection: RegionFeatureSectionProps = {
   ],
 };
 
-export const villagesHistorySection: RegionFeatureSectionProps = {
+export const villagesHistorySection: RegionFeatureProps = {
   id: 'villages',
   backgroundImage: `${process.env.PUBLIC_URL}/images/RegionPage/region_feature/villages/villages.png`,
 
@@ -129,7 +129,7 @@ export const villagesHistorySection: RegionFeatureSectionProps = {
   ],
 };
 
-export const foodTraditionsSection: RegionFeatureSectionProps = {
+export const foodTraditionsSection: RegionFeatureProps = {
   id: 'food',
 
   backgroundImage: `${process.env.PUBLIC_URL}/images/RegionPage/region_feature/food/food.png`,
@@ -190,7 +190,7 @@ export const foodTraditionsSection: RegionFeatureSectionProps = {
   ],
 };
 
-export const beyondRoutesSection: RegionFeatureSectionProps = {
+export const beyondRoutesSection: RegionFeatureProps = {
   id: 'routes',
 
   backgroundImage: `${process.env.PUBLIC_URL}/images/RegionPage/region_feature/routes/routes.png`,

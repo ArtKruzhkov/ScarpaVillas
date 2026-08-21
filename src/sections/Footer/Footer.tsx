@@ -1,8 +1,62 @@
+import { SubmitEvent, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 export function Footer() {
   const { t, i18n } = useTranslation();
+
+  const [email, setEmail] = useState('');
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!email.trim() || !privacyAccepted || isSubmitting) {
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://api.brevo.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          accept: 'application/json',
+          'content-type': 'application/json',
+          'api-key': process.env.REACT_APP_BREVO_API_KEY!,
+        },
+        body: JSON.stringify({
+          email: email.trim(),
+          attributes: {
+            LANGUAGE: i18n.language.toUpperCase(),
+          },
+          listIds: [2],
+          updateEnabled: true,
+        }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message || 'Subscription failed');
+      }
+
+      setEmail('');
+      setPrivacyAccepted(false);
+      setIsSubmitted(true);
+
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 3000);
+
+      console.log('Successfully subscribed to Brevo');
+    } catch (error) {
+      console.error('Brevo subscription error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <footer className="text-white max-w-8xl 2xl:max-w-[1920px] mx-auto">
@@ -101,6 +155,7 @@ export function Footer() {
 
           {/* Form */}
           <motion.form
+            onSubmit={handleSubmit}
             className="mt-9"
             initial={{
               opacity: 0,
@@ -119,16 +174,25 @@ export function Footer() {
               ease: [0.22, 1, 0.36, 1],
             }}>
             <div className="flex flex-col gap-4">
-              <input
+              {/* <input
                 type="email"
                 placeholder={t('footer.emailPlaceholder')}
                 className="h-[44px] md:h-[57px] text-[#2C3654] border-2 border-[#2C3654] text-[15px] md:text-[18px] font-sans bg-transparent px-6 text-center text-[#2C3654] placeholder:text-[#A8ABB8]"
+              /> */}
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('footer.emailPlaceholder')}
+                required
+                className="h-[44px] md:h-[57px] text-[#2C3654] border-2 border-[#2C3654] text-[15px] md:text-[18px] font-sans bg-transparent px-6 text-center placeholder:text-[#A8ABB8]"
               />
 
               <button
                 type="submit"
+                disabled={isSubmitting || isSubmitted}
                 className="h-[44px] md:h-[57px] bg-[#2C3654] font-sans text-[13px] md:text-[18px] font-bold tracking-[0.18em] uppercase text-white">
-                <AnimatePresence mode="wait">
+                {/* <AnimatePresence mode="wait">
                   <motion.span
                     key={`footer-button-mobile-${i18n.language}`}
                     initial={{ opacity: 0, y: 6 }}
@@ -137,12 +201,34 @@ export function Footer() {
                     transition={{ duration: 0.25 }}>
                     {t('footer.button')}
                   </motion.span>
+                </AnimatePresence> */}
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={
+                      isSubmitting ? 'sending' : isSubmitted ? 'sent' : `default-${i18n.language}`
+                    }
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.2 }}>
+                    {isSubmitting
+                      ? t('footer.sending')
+                      : isSubmitted
+                        ? t('footer.sent')
+                        : t('footer.stayInTouch')}
+                  </motion.span>
                 </AnimatePresence>
               </button>
             </div>
 
             <label className="mt-3 md:mt-5 flex items-center gap-3 font-sans text-[13px] md:text-[14px] lg:text-[16px] leading-[20px] text-[#2C3654]">
-              <input type="checkbox" />
+              {/* <input type="checkbox" /> */}
+              <input
+                type="checkbox"
+                checked={privacyAccepted}
+                onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                required
+              />
 
               <AnimatePresence mode="wait">
                 <motion.span
@@ -252,6 +338,7 @@ export function Footer() {
 
               {/* Form */}
               <motion.form
+                onSubmit={handleSubmit}
                 className="mt-10"
                 initial={{
                   opacity: 0,
@@ -270,21 +357,25 @@ export function Footer() {
                   ease: [0.22, 1, 0.36, 1],
                 }}>
                 <div className="flex">
-                  <input
+                  {/* <input
                     type="email"
                     placeholder={t('footer.emailPlaceholder')}
                     className="h-[57px] text-[#2C3654] placeholder:text-[#A8ABB8] font-sans text-[18px] flex-1 border-2 border-[#2C3654] px-6 text-center"
+                  /> */}
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder={t('footer.emailPlaceholder')}
+                    required
+                    className="h-[57px] text-[#2C3654] placeholder:text-[#A8ABB8] font-sans text-[18px] flex-1 border-2 border-[#2C3654] px-6 text-center"
                   />
 
-                  {/* <button
-                    type="submit"
-                    className="h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold tracking-[0.18em] uppercase text-white transition-opacity duration-300 hover:opacity-80">
-                    {t('footer.button')}
-                  </button> */}
                   <button
                     type="submit"
-                    className="h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80">
-                    <AnimatePresence mode="wait">
+                    disabled={isSubmitting || isSubmitted}
+                    className="h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80 disabled:opacity-80">
+                    {/* <AnimatePresence mode="wait">
                       <motion.span
                         key={t('footer.button')}
                         initial={{ opacity: 0 }}
@@ -293,12 +384,38 @@ export function Footer() {
                         transition={{ duration: 0.25 }}>
                         {t('footer.button')}
                       </motion.span>
+                    </AnimatePresence> */}
+                    <AnimatePresence mode="wait">
+                      <motion.span
+                        key={
+                          isSubmitting
+                            ? 'sending'
+                            : isSubmitted
+                              ? 'sent'
+                              : `default-${i18n.language}`
+                        }
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.2 }}>
+                        {isSubmitting
+                          ? t('footer.sending')
+                          : isSubmitted
+                            ? t('footer.sent')
+                            : t('footer.stayInTouch')}
+                      </motion.span>
                     </AnimatePresence>
                   </button>
                 </div>
 
                 <label className="mt-3 flex items-center font-sans gap-2 text-[15px] text-[#2C3654]">
-                  <input type="checkbox" />
+                  {/* <input type="checkbox" /> */}
+                  <input
+                    type="checkbox"
+                    checked={privacyAccepted}
+                    onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                    required
+                  />
                   {t('footer.privacyAgree')}
                 </label>
               </motion.form>
