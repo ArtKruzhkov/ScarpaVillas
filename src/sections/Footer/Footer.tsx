@@ -65,7 +65,21 @@ export function Footer() {
       return;
     }
 
-    console.log('Newsletter subscription is temporarily disabled');
+    setIsSubmitting(true);
+
+    // Имитируем отправку
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+
+    setEmail('');
+    setPrivacyAccepted(false);
+
+    // Показываем "Sent" 3 секунды
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 3000);
   };
 
   return (
