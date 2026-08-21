@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ScarpaVillas/static/css/main.9a55fbf2.css",
-    "main.js": "/ScarpaVillas/static/js/main.89ef19cc.js",
+    "main.css": "/ScarpaVillas/static/css/main.1059cfe7.css",
+    "main.js": "/ScarpaVillas/static/js/main.d0e9ea13.js",
     "static/js/453.c797a217.chunk.js": "/ScarpaVillas/static/js/453.c797a217.chunk.js",
     "index.html": "/ScarpaVillas/index.html",
-    "main.9a55fbf2.css.map": "/ScarpaVillas/static/css/main.9a55fbf2.css.map",
-    "main.89ef19cc.js.map": "/ScarpaVillas/static/js/main.89ef19cc.js.map",
+    "main.1059cfe7.css.map": "/ScarpaVillas/static/css/main.1059cfe7.css.map",
+    "main.d0e9ea13.js.map": "/ScarpaVillas/static/js/main.d0e9ea13.js.map",
     "453.c797a217.chunk.js.map": "/ScarpaVillas/static/js/453.c797a217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a55fbf2.css",
-    "static/js/main.89ef19cc.js"
+    "static/css/main.1059cfe7.css",
+    "static/js/main.d0e9ea13.js"
   ]
 }
