@@ -196,11 +196,6 @@ export function Footer() {
               ease: [0.22, 1, 0.36, 1],
             }}>
             <div className="flex flex-col gap-4">
-              {/* <input
-                type="email"
-                placeholder={t('footer.emailPlaceholder')}
-                className="h-[44px] md:h-[57px] text-[#2C3654] border-2 border-[#2C3654] text-[15px] md:text-[18px] font-sans bg-transparent px-6 text-center text-[#2C3654] placeholder:text-[#A8ABB8]"
-              /> */}
               <input
                 type="email"
                 value={email}
@@ -214,16 +209,6 @@ export function Footer() {
                 type="submit"
                 disabled={isSubmitting || isSubmitted}
                 className="h-[44px] md:h-[57px] bg-[#2C3654] font-sans text-[13px] md:text-[18px] font-bold tracking-[0.18em] uppercase text-white">
-                {/* <AnimatePresence mode="wait">
-                  <motion.span
-                    key={`footer-button-mobile-${i18n.language}`}
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -6 }}
-                    transition={{ duration: 0.25 }}>
-                    {t('footer.button')}
-                  </motion.span>
-                </AnimatePresence> */}
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={
@@ -244,7 +229,6 @@ export function Footer() {
             </div>
 
             <label className="mt-3 md:mt-5 flex items-center gap-3 font-sans text-[13px] md:text-[14px] lg:text-[16px] leading-[20px] text-[#2C3654]">
-              {/* <input type="checkbox" /> */}
               <input
                 type="checkbox"
                 checked={privacyAccepted}
@@ -379,11 +363,6 @@ export function Footer() {
                   ease: [0.22, 1, 0.36, 1],
                 }}>
                 <div className="flex">
-                  {/* <input
-                    type="email"
-                    placeholder={t('footer.emailPlaceholder')}
-                    className="h-[57px] text-[#2C3654] placeholder:text-[#A8ABB8] font-sans text-[18px] flex-1 border-2 border-[#2C3654] px-6 text-center"
-                  /> */}
                   <input
                     type="email"
                     value={email}
@@ -397,16 +376,6 @@ export function Footer() {
                     type="submit"
                     disabled={isSubmitting || isSubmitted}
                     className="h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80 disabled:opacity-80">
-                    {/* <AnimatePresence mode="wait">
-                      <motion.span
-                        key={t('footer.button')}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.25 }}>
-                        {t('footer.button')}
-                      </motion.span>
-                    </AnimatePresence> */}
                     <AnimatePresence mode="wait">
                       <motion.span
                         key={
@@ -431,7 +400,6 @@ export function Footer() {
                 </div>
 
                 <label className="mt-3 flex items-center font-sans gap-2 text-[15px] text-[#2C3654]">
-                  {/* <input type="checkbox" /> */}
                   <input
                     type="checkbox"
                     checked={privacyAccepted}
