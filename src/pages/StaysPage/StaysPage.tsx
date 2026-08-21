@@ -6,6 +6,7 @@ import {
   StaysProgrammeProps,
   StaysProgramme,
 } from '../../sections/StaysPageSections/StaysProgramme/StaysProgramme';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function StaysPage() {
   const baseUrl = process.env.PUBLIC_URL;
@@ -30,7 +31,8 @@ export function StaysPage() {
       return;
     }
 
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   const luxRetreat: StaysProgrammeProps = {

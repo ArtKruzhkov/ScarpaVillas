@@ -11,10 +11,14 @@ import { DiscoverLanghe } from '../../sections/Discover/Discover';
 import { PlanStay } from '../../sections/Plan/PlanStay';
 import { ContactUs } from '../../components/ui/ContactUs';
 import { ScarpaLeadership } from '../../sections/ScarpaLeadership/ScarpaLeadership';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function HomePage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

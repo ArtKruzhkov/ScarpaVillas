@@ -3,10 +3,14 @@ import { StoryChapters } from '../../sections/StoryPageSections/StoryChapters/St
 import { StoryHero } from '../../sections/StoryPageSections/StoryHero/StoryHero';
 import { StoryVillasCTA } from '../../sections/StoryPageSections/StoryVillasCTA/StoryVillasCTA';
 import { ContactUs } from '../../components/ui/ContactUs';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function StoryPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

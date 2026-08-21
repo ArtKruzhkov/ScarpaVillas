@@ -3,10 +3,14 @@ import { ContactUs } from '../../components/ui/ContactUs';
 import { JournalHero } from '../../sections/JournalPageSections/JournalHero/JournalHero';
 import { JournalIntro } from '../../sections/JournalPageSections/JournalIntro/JournalIntro';
 import { JournalArticles } from '../../sections/JournalPageSections/JournalArticles/JournalArticles';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function JournalPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

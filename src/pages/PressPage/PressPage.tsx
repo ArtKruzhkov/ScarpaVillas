@@ -3,10 +3,14 @@ import { ContactUs } from '../../components/ui/ContactUs';
 import { PressHero } from '../../sections/PressPageSections/PressHero/PressHero';
 import { PressIntro } from '../../sections/PressPageSections/PressIntro/PressIntro';
 import { PressArticles } from '../../sections/PressPageSections/PressArticles/PressArticles';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function PressPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

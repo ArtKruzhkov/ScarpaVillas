@@ -11,6 +11,7 @@ import {
   beyondRoutesSection,
 } from '../../data/regionFeatureSections';
 import { RegionPlanStay } from '../../sections/RegionPageSection/RegionPlanStay/RegionPlanStay';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function RegionPage() {
   useEffect(() => {
@@ -33,7 +34,8 @@ export function RegionPage() {
       return;
     }
 
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { journalArticles } from '../../data/journalArticles';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function JournalArticlePage() {
   const { articleId } = useParams<{ articleId: string }>();
@@ -14,8 +15,11 @@ export function JournalArticlePage() {
 
   const article = articleIndex !== -1 ? journalArticles[articleIndex] : undefined;
 
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [articleId]);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, [articleId]);
 
   if (!article) {

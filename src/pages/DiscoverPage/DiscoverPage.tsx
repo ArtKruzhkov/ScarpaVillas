@@ -5,10 +5,15 @@ import { DiscoverIntro } from '../../sections/DiscoverPageSections/DiscoverIntro
 import { DiscoverExplore } from '../../sections/DiscoverPageSections/DiscoverExplore/DiscoverExplore';
 import { DiscoverLinks } from '../../sections/DiscoverPageSections/DiscoverLinks/DiscoverLinks';
 import { DiscoverPlanStay } from '../../sections/DiscoverPageSections/DiscoverPlanStay/DiscoverPlanStay';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function DiscoverPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

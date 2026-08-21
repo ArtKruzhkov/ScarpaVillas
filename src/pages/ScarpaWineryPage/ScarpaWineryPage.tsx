@@ -8,10 +8,14 @@ import { ScarpaWineryProcess } from '../../sections/ScarpaWineryPageSections/Sca
 import { ScarpaWineryVineyards } from '../../sections/ScarpaWineryPageSections/ScarpaWineryVineyards/ScarpaWineryVineyards';
 import { ScarpaWineryCellar } from '../../sections/ScarpaWineryPageSections/ScarpaWineryCellar/ScarpaWineryCellar';
 import { ScarpaWineryVillas } from '../../sections/ScarpaWineryPageSections/ScarpaWineryVillas/ScarpaWineryVillas';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function ScarpaWineryPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

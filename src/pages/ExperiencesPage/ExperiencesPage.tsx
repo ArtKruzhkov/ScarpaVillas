@@ -5,6 +5,7 @@ import { ExperiencesHero } from '../../sections/ExperiencesPageSections/Experien
 import { ExperiencesIntro } from '../../sections/ExperiencesPageSections/ExperiencesIntro/ExperiencesIntro';
 import { ExperiencesCategory } from '../../sections/ExperiencesPageSections/ExperiencesCategory/ExperiencesCategory';
 import { ExperiencesPlanStay } from '../../sections/ExperiencesPageSections/ExperiencesPlanStay/ExperiencesPlanStay';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function ExperiencesPage() {
   const location = useLocation();
@@ -27,11 +28,12 @@ export function ExperiencesPage() {
       return;
     }
 
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto',
-    });
+    // window.scrollTo({
+    //   top: 0,
+    //   left: 0,
+    //   behavior: 'auto',
+    // });
+    smoothScrollToTop(1500);
   }, [location.hash]);
 
   const wineAndTaste = {

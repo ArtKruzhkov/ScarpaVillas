@@ -3,10 +3,14 @@ import { ContactUs } from '../../components/ui/ContactUs';
 import { PeopleHero } from '../../sections/PeoplePageSections/PeopleHero/PeopleHero';
 import { PeopleIntro } from '../../sections/PeoplePageSections/PeopleIntro/PeopleIntro';
 import { PeopleTeam } from '../../sections/PeoplePageSections/PeopleTeam/PeopleTeam';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function PeoplePage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

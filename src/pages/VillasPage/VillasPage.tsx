@@ -5,10 +5,14 @@ import { VillasAdviceCTA } from '../../sections/VillasPageSections/VillasAdviceC
 import { VillasPlanStayCTA } from '../../sections/VillasPageSections/VillasPlanStay/VillasPlanStay';
 import { VillasGrid } from '../../sections/VillasPageSections/VillasGrid/VillasGrid';
 import { ContactUs } from '../../components/ui/ContactUs';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function VillasPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

@@ -7,10 +7,15 @@ import { BorgoExperiences } from '../../sections/BorgoPageSections/BorgoExperien
 import { BorgoPhilosophy } from '../../sections/BorgoPageSections/BorgoPhilosophy/BorgoPhilosophy';
 import { BorgoCTA } from '../../sections/BorgoPageSections/BorgoCTA/BorgoCTA';
 import { ContactUs } from '../../components/ui/ContactUs';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function BorgoPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

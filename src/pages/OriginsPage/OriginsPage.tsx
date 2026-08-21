@@ -6,10 +6,14 @@ import { OriginsHistory } from '../../sections/OriginsPageSections/OriginsHistor
 import { OriginsMedieval } from '../../sections/OriginsPageSections/OriginsMedieval/OriginsMedieval';
 import { OriginsMonvigliero } from '../../sections/OriginsPageSections/OriginsMonvigliero/OriginsMonvigliero';
 import { OriginsCTA } from '../../sections/OriginsPageSections/OriginsCTA/OriginsCTA';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 export function OriginsPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    smoothScrollToTop(1500);
   }, []);
 
   return (

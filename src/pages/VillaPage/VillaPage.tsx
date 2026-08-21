@@ -4,6 +4,7 @@ import { VillaBookingCTA } from '../../sections/VillaPageSections/VillaBookingCT
 import { VillaFeatures } from '../../sections/VillaPageSections/VillaFeatures/VillaFeatures';
 import { VillaHero } from '../../sections/VillaPageSections/VillaHero/VillaHero';
 import { VillaOverview } from '../../sections/VillaPageSections/VillaOverview/VillaOverview';
+import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
 
 import { villas } from '../../data/villas';
 import { useParams } from 'react-router-dom';
@@ -13,11 +14,14 @@ import { ContactUs } from '../../components/ui/ContactUs';
 export function VillaPage() {
   const { villaId } = useParams();
 
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // }, [villaId]);
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    smoothScrollToTop(1500);
   }, [villaId]);
 
   const villa = villas.find((villa) => villa.id === villaId);
