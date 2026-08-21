@@ -84,7 +84,7 @@ export function Footer() {
     <footer className="text-white max-w-8xl 2xl:max-w-[1920px] mx-auto">
       {/* Stay Connected */}
       <div>
-        {/* Mobile + Tablet*/}
+        {/* Mobile + Tablet */}
         <div className="xl:hidden bg-white px-6 pt-10 pb-10">
           {/* Title */}
           <motion.div
