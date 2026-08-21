@@ -67,7 +67,6 @@ export function Footer() {
 
     setIsSubmitting(true);
 
-    // Имитируем отправку
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     setIsSubmitting(false);
@@ -76,7 +75,6 @@ export function Footer() {
     setEmail('');
     setPrivacyAccepted(false);
 
-    // Показываем "Sent" 3 секунды
     setTimeout(() => {
       setIsSubmitted(false);
     }, 3000);
