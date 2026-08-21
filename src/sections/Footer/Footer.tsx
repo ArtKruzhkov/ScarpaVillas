@@ -10,6 +10,54 @@ export function Footer() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  // const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+
+  //   if (!email.trim() || !privacyAccepted || isSubmitting) {
+  //     return;
+  //   }
+
+  //   setIsSubmitting(true);
+
+  //   try {
+  //     const response = await fetch('https://api.brevo.com/v3/contacts', {
+  //       method: 'POST',
+  //       headers: {
+  //         accept: 'application/json',
+  //         'content-type': 'application/json',
+  //         'api-key': process.env.REACT_APP_BREVO_API_KEY!,
+  //       },
+  //       body: JSON.stringify({
+  //         email: email.trim(),
+  //         attributes: {
+  //           LANGUAGE: i18n.language.toUpperCase(),
+  //         },
+  //         listIds: [2],
+  //         updateEnabled: true,
+  //       }),
+  //     });
+
+  //     if (!response.ok) {
+  //       const error = await response.json();
+  //       throw new Error(error.message || 'Subscription failed');
+  //     }
+
+  //     setEmail('');
+  //     setPrivacyAccepted(false);
+  //     setIsSubmitted(true);
+
+  //     setTimeout(() => {
+  //       setIsSubmitted(false);
+  //     }, 3000);
+
+  //     console.log('Successfully subscribed to Brevo');
+  //   } catch (error) {
+  //     console.error('Brevo subscription error:', error);
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
   const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -17,45 +65,7 @@ export function Footer() {
       return;
     }
 
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch('https://api.brevo.com/v3/contacts', {
-        method: 'POST',
-        headers: {
-          accept: 'application/json',
-          'content-type': 'application/json',
-          'api-key': process.env.REACT_APP_BREVO_API_KEY!,
-        },
-        body: JSON.stringify({
-          email: email.trim(),
-          attributes: {
-            LANGUAGE: i18n.language.toUpperCase(),
-          },
-          listIds: [2],
-          updateEnabled: true,
-        }),
-      });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || 'Subscription failed');
-      }
-
-      setEmail('');
-      setPrivacyAccepted(false);
-      setIsSubmitted(true);
-
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 3000);
-
-      console.log('Successfully subscribed to Brevo');
-    } catch (error) {
-      console.error('Brevo subscription error:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    console.log('Newsletter subscription is temporarily disabled');
   };
 
   return (
