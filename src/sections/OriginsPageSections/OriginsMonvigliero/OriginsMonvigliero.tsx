@@ -35,8 +35,8 @@ export function OriginsMonvigliero() {
         {/* Mobile overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent lg:hidden" />
 
-        {/* Mobile title */}
-        <div className="absolute inset-x-0 bottom-8 flex justify-center lg:hidden pointer-events-none">
+        {/* Title */}
+        <div className="absolute inset-x-0 bottom-8 flex justify-center pointer-events-none">
           <motion.h2
             initial={{
               opacity: 0,
@@ -55,7 +55,7 @@ export function OriginsMonvigliero() {
               delay: 0.15,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="font-serif text-[32px] uppercase tracking-[0.18em] text-white sm:text-[38px]">
+            className="font-serif text-[32px] sm:text-[38px] lg:text-[52px] uppercase tracking-[0.18em] text-white">
             MONVIGLIERO
           </motion.h2>
         </div>
@@ -111,7 +111,7 @@ export function OriginsMonvigliero() {
           </motion.picture>
 
           {/* TITLE */}
-          <div className="hidden lg:flex pointer-events-none absolute inset-0 flex items-center justify-center">
+          {/* <div className="hidden lg:flex pointer-events-none absolute inset-0 flex items-center justify-center">
             <motion.h2
               initial={{
                 opacity: 0,
@@ -133,7 +133,7 @@ export function OriginsMonvigliero() {
               className="font-serif text-[42px] uppercase tracking-[0.2em] text-white sm:text-[56px] lg:text-[62px]">
               MONVIGLIERO
             </motion.h2>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* RIGHT CONTENT */}

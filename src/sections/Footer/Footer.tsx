@@ -10,6 +10,10 @@ export function Footer() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const [activePolicy, setActivePolicy] = useState<'cookie' | 'privacy' | null>(null);
+
+  const policyPrefix = activePolicy === 'cookie' ? 'cookiePolicyContent' : 'privacyPolicyContent';
+
   // const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
   //   e.preventDefault();
 
@@ -684,18 +688,207 @@ export function Footer() {
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.25 }}
                 className="flex gap-2 text-[#8B8E97]">
-                <a href="/" className="transition-opacity duration-300 hover:opacity-60">
+                {/* <a href="/" className="transition-opacity duration-300 hover:opacity-60">
                   {t('footer.cookiePolicy')}
                 </a>
                 <span>|</span>
                 <a href="/" className="transition-opacity duration-300 hover:opacity-60">
                   {t('footer.privacyPolicy')}
-                </a>
+                </a> */}
+                <button
+                  type="button"
+                  onClick={() => setActivePolicy('cookie')}
+                  className="transition-opacity duration-300 hover:opacity-60">
+                  {t('footer.cookiePolicy')}
+                </button>
+
+                <span>|</span>
+
+                <button
+                  type="button"
+                  onClick={() => setActivePolicy('privacy')}
+                  className="transition-opacity duration-300 hover:opacity-60">
+                  {t('footer.privacyPolicy')}
+                </button>
               </motion.div>
             </AnimatePresence>
           </div>
         </div>
       </div>
+
+      {/* POLICY PANEL */}
+      <AnimatePresence>
+        {activePolicy && (
+          <motion.div
+            key="policy-panel"
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            exit={{ y: '100%' }}
+            transition={{
+              duration: 0.7,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="fixed inset-x-0 bottom-0 z-[100] section-height bg-white text-[#2C3654]">
+            {/* Close */}
+            <button
+              type="button"
+              onClick={() => setActivePolicy(null)}
+              aria-label="Close"
+              className="absolute right-6 top-6 z-20 transition-opacity duration-300 hover:opacity-50 lg:right-12 lg:top-10">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round">
+                <path d="M6 6L18 18" />
+                <path d="M18 6L6 18" />
+              </svg>
+            </button>
+
+            {/* Scrollable content */}
+            <div className="mx-auto h-full max-w-8xl overflow-y-auto px-4 py-8 lg:px-8 lg:py-12">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`${activePolicy}-${i18n.language}`}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -15 }}
+                  transition={{ duration: 0.3 }}
+                  className="">
+                  {/* Title */}
+                  <h2 className="pr-14 font-serif text-[30px] lg:text-[38px]">
+                    {t(`${policyPrefix}.title`)}
+                  </h2>
+
+                  {/* Last updated */}
+                  <p className="mt-2 font-sans text-[12px] text-[#8B8E97] lg:text-[14px]">
+                    {t(`${policyPrefix}.lastUpdated`)}
+                  </p>
+
+                  {/* PRIVACY INTRO */}
+                  {activePolicy === 'privacy' && (
+                    <p className="mt-5 font-sans text-[14px] leading-[1.5] lg:text-[16px] 2xl:text-[18px]">
+                      {t('privacyPolicyContent.intro')}
+                    </p>
+                  )}
+
+                  {/* COOKIE POLICY */}
+                  {activePolicy === 'cookie' && (
+                    <div className="mt-6 space-y-6 font-sans text-[14px] leading-[1.5] lg:text-[16px] 2xl:text-[18px]">
+                      <div>
+                        <h3 className="font-semibold">
+                          {t('cookiePolicyContent.cookiesWeUseTitle')}
+                        </h3>
+                        <p className="mt-2">{t('cookiePolicyContent.cookiesWeUseText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('cookiePolicyContent.technicalTitle')}</h3>
+                        <p className="mt-2">{t('cookiePolicyContent.technicalText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">
+                          {t('cookiePolicyContent.thirdPartyTitle')}
+                        </h3>
+                        <p className="mt-2">{t('cookiePolicyContent.thirdPartyText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('cookiePolicyContent.manageTitle')}</h3>
+                        <p className="mt-2">{t('cookiePolicyContent.manageText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('cookiePolicyContent.contactTitle')}</h3>
+                        <p className="mt-2">
+                          {t('cookiePolicyContent.contactText')}{' '}
+                          <a
+                            href={`mailto:${t('cookiePolicyContent.contactEmail')}`}
+                            className="underline underline-offset-2 transition-opacity duration-300 hover:opacity-60">
+                            {t('cookiePolicyContent.contactEmail')}
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* PRIVACY POLICY */}
+                  {activePolicy === 'privacy' && (
+                    <div className="mt-6 space-y-6 font-sans text-[14px] leading-[1.5] lg:text-[16px] 2xl:text-[18px]">
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.dataTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.dataText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.purposeTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.purposeText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.formsTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.formsText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.servicesTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.servicesText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">
+                          {t('privacyPolicyContent.retentionTitle')}
+                        </h3>
+                        <p className="mt-2">{t('privacyPolicyContent.retentionText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.rightsTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.rightsText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.securityTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.securityText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">
+                          {t('privacyPolicyContent.thirdPartyTitle')}
+                        </h3>
+                        <p className="mt-2">{t('privacyPolicyContent.thirdPartyText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.changesTitle')}</h3>
+                        <p className="mt-2">{t('privacyPolicyContent.changesText')}</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold">{t('privacyPolicyContent.contactTitle')}</h3>
+                        <p className="mt-2">
+                          {t('privacyPolicyContent.contactText')}{' '}
+                          <a
+                            href={`mailto:${t('privacyPolicyContent.contactEmail')}`}
+                            className="underline underline-offset-2 transition-opacity duration-300 hover:opacity-60">
+                            {t('privacyPolicyContent.contactEmail')}
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </footer>
   );
 }

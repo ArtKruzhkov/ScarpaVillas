@@ -201,7 +201,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 relative bg-white backdrop-blur">
+    <header className="sticky top-0 z-[200] relative bg-white backdrop-blur">
       <Container className="py-4 2xl:max-w-[1920px] border-b border-[#2c3654]/70">
         {/* Desktop */}
         <div className="hidden items-center justify-between px-6 lg:grid lg:grid-cols-[1fr_auto_1fr]">

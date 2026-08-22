@@ -890,7 +890,7 @@
     "textLine2": "shape the experience of\u00A0the\u00A0Langhe."
   },
   "journalArticles": {
-    "continueReading": "Continue Reading",
+    "continueReading": "Read the Story",
     "viewAll": "View All Articles",
     "closeAll": "Close All Articles"
   },
@@ -1338,16 +1338,16 @@
     "title": "Not sure if this villa is the right fit?",
     "subtitle": "Explore other villas:"
   },
-  "storyLeadership": {
+  "scarpaLeadership": {
     "owner": {
       "quote": "Scarpa Villas was born from a love for this land and from the desire to preserve its identity. Every space tells the story of its beauty, its history, and the authentic bond it shares with those who experience it.",
-      "name": "Maison Eugene Rene",
-      "role": "Owner of Scarpa"
+      "name": "Evgeny Strzhalkovskiy",
+      "role": "Proprietor"
     },
     "ceo": {
       "quote": "Our goal is to transform every stay into a personal and memorable experience, defined by care, quality, and attention to every detail.",
       "name": "Davide Champion",
-      "role": "CEO of Scarpa"
+      "role": "Chief Executive"
     }
   },
   "borgoHero": {
@@ -1414,5 +1414,67 @@
     "titleLine1": "Tell us about your plans —",
     "titleLine2": "we’ll create a tailored proposal for your stay.",
     "button": "REQUEST AVAILABILITY"
+  },
+  "cookiePolicyContent": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: August 2026",
+
+    "cookiesWeUseTitle": "Cookies we use",
+    "cookiesWeUseText": "Scarpa Villas may use technical cookies that are necessary for the website to function correctly. Where analytics or other non-essential technologies are used, they are managed in accordance with applicable data protection and cookie regulations.",
+
+    "technicalTitle": "Technical cookies",
+    "technicalText": "Technical cookies are necessary for the operation of the website and for providing services requested by the user. These cookies do not require prior consent.",
+
+    "thirdPartyTitle": "Third-party services",
+    "thirdPartyText": "Some features of the website may rely on services provided by third parties. These services may process information according to their own privacy and cookie policies.",
+
+    "manageTitle": "Managing cookies",
+    "manageText": "You can manage or delete cookies through your browser settings. Disabling certain technical cookies may affect the correct functioning of some parts of the website.",
+
+    "contactTitle": "Contact",
+    "contactText": "For further information, please contact Scarpa Villas at ",
+    "contactEmail": "info@scarpa-villas.com"
+  },
+  "privacyPolicyContent": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: August 2026",
+
+    "intro": "Scarpa Villas respects your privacy and is committed to protecting the personal information you provide when using this website. This Privacy Policy explains what information may be collected, how it is used, and the choices available to you.",
+
+    "dataTitle": "Information we collect",
+    "dataText": "When you contact Scarpa Villas through the website, we may collect personal information that you voluntarily provide, including your name, email address, telephone number, areas of interest, travel details and any information included in your message.",
+
+    "purposeTitle": "How we use your information",
+    "purposeText": "The information you provide is used to respond to your enquiries, assist with villa selection, provide information about stays and experiences, and communicate with you regarding your request.",
+
+    "formsTitle": "Website forms",
+    "formsText": "Personal information submitted through our contact and villa enquiry forms is used solely for handling your request and communicating with you. Please do not include sensitive personal information in free-text message fields unless it is necessary for your enquiry.",
+
+    "servicesTitle": "Service providers",
+    "servicesText": "Scarpa Villas may use trusted third-party service providers to operate certain website features and process enquiries submitted through the website. These providers may process personal information only as necessary to provide their services.",
+
+    "retentionTitle": "Data retention",
+    "retentionText": "Personal information is retained only for as long as reasonably necessary to respond to your enquiry, manage our relationship with you, comply with applicable legal obligations, or establish, exercise or defend legal claims.",
+
+    "rightsTitle": "Your rights",
+    "rightsText": "Subject to applicable data protection law, you may have the right to request access to your personal data, request its correction or deletion, restrict or object to certain processing, request data portability where applicable, and withdraw consent where processing is based on consent.",
+
+    "securityTitle": "Data security",
+    "securityText": "Appropriate technical and organisational measures are used to protect personal information against unauthorised access, loss, misuse, alteration or disclosure.",
+
+    "thirdPartyTitle": "Third-party websites",
+    "thirdPartyText": "The Scarpa Villas website may contain links to external websites or services. Scarpa Villas is not responsible for the privacy practices or content of those third-party websites.",
+
+    "changesTitle": "Changes to this Privacy Policy",
+    "changesText": "This Privacy Policy may be updated from time to time to reflect changes to the website, our services or applicable legal requirements.",
+
+    "contactTitle": "Contact",
+    "contactText": "For questions regarding this Privacy Policy or the processing of your personal information, please contact Scarpa Villas at ",
+    "contactEmail": "info@scarpa-villas.com"
+  },
+  "cookieBanner": {
+    "text": "We use cookies to ensure the proper functioning of our website and improve your browsing experience.",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

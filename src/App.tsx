@@ -19,6 +19,7 @@ import { DiscoverPage } from './pages/DiscoverPage/DiscoverPage';
 import { RegionPage } from './pages/RegionPage/RegionPage';
 import { JournalPage } from './pages/JournalPage/JournalPage';
 import { JournalArticlePage } from './pages/JournalArticlePage/JournalArticlePage';
+import { CookieBanner } from './components/ui/CookieBanner/CookieBanner';
 
 export default function App() {
   return (
@@ -73,6 +74,8 @@ export default function App() {
       </Routes>
 
       <Footer />
+
+      <CookieBanner />
     </div>
   );
 }

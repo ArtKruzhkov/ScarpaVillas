@@ -115,7 +115,7 @@ export function JournalArticles() {
 
                     <Link
                       to={articleUrl}
-                      className="mt-6 mx-auto lg:mx-0 flex h-[40px] w-fit items-center justify-center border-y border-[#2C3654] font-sans text-[13px] font-semibold uppercase tracking-[0.2em] text-[#2C3654] transition-opacity duration-300 hover:opacity-60 md:h-[52px] md:text-[16px] 2xl:text-[18px]">
+                      className="mt-6 mx-auto lg:mx-0 flex h-[40px] w-fit items-center justify-center border-y border-[#2C3654] font-sans text-[13px] font-semibold uppercase tracking-[0.2em] text-[#2C3654] transition-opacity duration-300 hover:opacity-60 md:h-[50px] md:text-[16px] 2xl:text-[18px] 2xl:h-[52px]">
                       <AnimatePresence mode="wait">
                         <motion.span
                           key={`${i18n.language}-continue`}
@@ -150,7 +150,7 @@ export function JournalArticles() {
             <button
               type="button"
               onClick={handleToggleArticles}
-              className="flex h-[40px] w-fit items-center justify-center border-y border-[#2C3654] font-sans text-[13px] font-semibold uppercase tracking-[0.2em] text-[#2C3654] transition-opacity duration-300 hover:opacity-60 md:h-[52px] md:text-[16px] 2xl:text-[18px]">
+              className="flex h-[40px] w-fit items-center justify-center border-y border-[#2C3654] font-sans text-[13px] font-semibold uppercase tracking-[0.2em] text-[#2C3654] transition-opacity duration-300 hover:opacity-60 md:h-[50px] 2xl:h-[52px] md:text-[16px] 2xl:text-[18px]">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={`${showAll}-${i18n.language}`}

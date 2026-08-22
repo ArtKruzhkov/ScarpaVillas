@@ -47,7 +47,7 @@ export const LanguageSwitcher = () => {
         </button>
 
         {isOpen && (
-          <div className="absolute left-[-5px] top-full z-50 mt-2 min-w-[70px] bg-white shadow-lg">
+          <div className="absolute left-[-5px] top-full z-[200] mt-2 min-w-[70px] bg-white shadow-lg">
             <button
               onClick={() => handleSelect('EN')}
               className="language-switcher text-[#2C3654] block w-full px-4 py-2 text-left hover:bg-gray-100">

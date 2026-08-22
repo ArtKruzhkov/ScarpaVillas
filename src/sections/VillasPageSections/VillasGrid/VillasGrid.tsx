@@ -95,7 +95,7 @@ export function VillasGrid() {
                     <div className="mt-4 sm:mt-6 lg:mt-8 inline-block">
                       <Link
                         to={`${langPrefix}/villas/${villa.id}`}
-                        className="flex items-center justify-center h-[40px] md:h-[52px] border-y border-white font-sans text-[13px] md:text-[16px] 2xl:text-[18px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60">
+                        className="flex items-center justify-center h-[40px] md:h-[50px] 2xl:h-[52px] border-y border-white font-sans text-[13px] md:text-[16px] 2xl:text-[18px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60">
                         <AnimatePresence mode="wait">
                           <motion.span
                             key={t('villasGrid.discover')}

@@ -889,7 +889,7 @@
     "textLine2": "raccontano l’esperienza delle Langhe."
   },
   "journalArticles": {
-    "continueReading": "Continua a leggere",
+    "continueReading": "Leggi la storia",
     "viewAll": "Vedi tutti gli articoli",
     "closeAll": "Chiudi tutti gli articoli"
   },
@@ -1337,16 +1337,16 @@
     "title": "Non è la villa giusta per te?",
     "subtitle": "Scopri altre ville:"
   },
-  "storyLeadership": {
+  "scarpaLeadership": {
     "owner": {
       "quote": "Scarpa Villas nasce dall’amore per questa terra e dal desiderio di preservarne l’identità. Ogni spazio racconta la sua bellezza, la sua storia e il legame autentico che condivide con chi lo vive.",
-      "name": "Maison Eugene Rene",
-      "role": "Proprietario di Scarpa"
+      "name": "Evgeny Strzhalkovskiy",
+      "role": "Proprietario"
     },
     "ceo": {
       "quote": "Il nostro obiettivo è trasformare ogni soggiorno in un’esperienza personale e memorabile, definita dalla cura, dalla qualità e dall’attenzione a ogni dettaglio.",
       "name": "Davide Champion",
-      "role": "CEO di Scarpa"
+      "role": "Chief Executive"
     }
   },
   "borgoHero": {
@@ -1413,5 +1413,67 @@
     "titleLine1": "Raccontaci i tuoi progetti —",
     "titleLine2": "prepareremo una proposta su misura per il tuo soggiorno.",
     "button": "RICHIEDI DISPONIBILITÀ"
+  },
+  "cookiePolicyContent": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Ultimo aggiornamento: agosto 2026",
+
+    "cookiesWeUseTitle": "Cookie utilizzati",
+    "cookiesWeUseText": "Scarpa Villas può utilizzare cookie tecnici necessari al corretto funzionamento del sito. Qualora vengano utilizzati strumenti di analisi o altre tecnologie non essenziali, questi vengono gestiti nel rispetto della normativa applicabile in materia di protezione dei dati personali e cookie.",
+
+    "technicalTitle": "Cookie tecnici",
+    "technicalText": "I cookie tecnici sono necessari per il funzionamento del sito e per fornire i servizi richiesti dall’utente. Per l’utilizzo di tali cookie non è richiesto il consenso preventivo.",
+
+    "thirdPartyTitle": "Servizi di terze parti",
+    "thirdPartyText": "Alcune funzionalità del sito possono utilizzare servizi forniti da soggetti terzi. Tali servizi possono trattare informazioni secondo le rispettive informative sulla privacy e sui cookie.",
+
+    "manageTitle": "Gestione dei cookie",
+    "manageText": "È possibile gestire o eliminare i cookie attraverso le impostazioni del proprio browser. La disattivazione di alcuni cookie tecnici potrebbe compromettere il corretto funzionamento di alcune parti del sito.",
+
+    "contactTitle": "Contatti",
+    "contactText": "Per ulteriori informazioni, è possibile contattare Scarpa Villas all’indirizzo ",
+    "contactEmail": "info@scarpa-villas.com"
+  },
+  "privacyPolicyContent": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Ultimo aggiornamento: agosto 2026",
+
+    "intro": "Scarpa Villas rispetta la privacy degli utenti e si impegna a proteggere le informazioni personali fornite durante l’utilizzo del presente sito web. La presente Privacy Policy descrive quali informazioni possono essere raccolte, come vengono utilizzate e quali possibilità sono riconosciute agli utenti.",
+
+    "dataTitle": "Dati personali raccolti",
+    "dataText": "Quando contatti Scarpa Villas attraverso il sito web, possiamo raccogliere i dati personali che scegli volontariamente di fornire, tra cui nome, indirizzo email, numero di telefono, interessi, informazioni relative al soggiorno e qualsiasi altra informazione inserita nel messaggio.",
+
+    "purposeTitle": "Come utilizziamo i tuoi dati",
+    "purposeText": "Le informazioni fornite vengono utilizzate per rispondere alle richieste, assisterti nella scelta della villa, fornire informazioni relative a soggiorni ed esperienze e comunicare con te in merito alla tua richiesta.",
+
+    "formsTitle": "Moduli del sito",
+    "formsText": "I dati personali inviati attraverso i moduli di contatto e di richiesta informazioni sulle ville vengono utilizzati esclusivamente per gestire la richiesta e comunicare con l’utente. Ti invitiamo a non inserire dati personali sensibili nei campi di testo libero, salvo quando strettamente necessario per la richiesta.",
+
+    "servicesTitle": "Fornitori di servizi",
+    "servicesText": "Scarpa Villas può avvalersi di fornitori di servizi terzi affidabili per il funzionamento di alcune funzionalità del sito e per la gestione delle richieste inviate tramite il sito web. Tali fornitori possono trattare dati personali esclusivamente nella misura necessaria alla fornitura dei propri servizi.",
+
+    "retentionTitle": "Conservazione dei dati",
+    "retentionText": "I dati personali vengono conservati solo per il tempo ragionevolmente necessario a rispondere alla richiesta, gestire il rapporto con l’utente, adempiere agli obblighi di legge applicabili o accertare, esercitare o difendere un diritto in sede giudiziaria.",
+
+    "rightsTitle": "I tuoi diritti",
+    "rightsText": "Nei limiti previsti dalla normativa applicabile in materia di protezione dei dati personali, puoi avere il diritto di richiedere l’accesso ai tuoi dati personali, la loro rettifica o cancellazione, la limitazione o l’opposizione a determinati trattamenti, la portabilità dei dati ove applicabile e la revoca del consenso quando il trattamento è basato sul consenso.",
+
+    "securityTitle": "Sicurezza dei dati",
+    "securityText": "Vengono adottate misure tecniche e organizzative adeguate per proteggere i dati personali da accessi non autorizzati, perdita, uso improprio, alterazione o divulgazione.",
+
+    "thirdPartyTitle": "Siti web di terze parti",
+    "thirdPartyText": "Il sito di Scarpa Villas può contenere collegamenti a siti web o servizi esterni. Scarpa Villas non è responsabile delle pratiche in materia di privacy o dei contenuti di tali siti web di terze parti.",
+
+    "changesTitle": "Modifiche alla Privacy Policy",
+    "changesText": "La presente Privacy Policy può essere aggiornata periodicamente per riflettere eventuali modifiche al sito, ai servizi offerti o alla normativa applicabile.",
+
+    "contactTitle": "Contatti",
+    "contactText": "Per domande relative alla presente Privacy Policy o al trattamento dei dati personali, è possibile contattare Scarpa Villas all’indirizzo ",
+    "contactEmail": "info@scarpa-villas.com"
+  },
+  "cookieBanner": {
+    "text": "Utilizziamo i cookie per garantire il corretto funzionamento del sito e migliorare la tua esperienza di navigazione.",
+    "reject": "Rifiuta",
+    "accept": "Accetta"
   }
 }

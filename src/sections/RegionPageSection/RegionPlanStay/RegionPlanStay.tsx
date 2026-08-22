@@ -96,7 +96,7 @@ export function RegionPlanStay() {
             <div className="mt-4 inline-block lg:mt-6">
               <Link
                 to={`${langPrefix}/experiences`}
-                className="flex h-[40px] w-fit items-center justify-center overflow-hidden border-y border-white font-sans text-[13px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60 md:h-[52px] md:text-[16px] 2xl:text-[18px]">
+                className="flex h-[40px] w-fit items-center justify-center overflow-hidden border-y border-white font-sans text-[13px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60 md:h-[50px] 2xl:h-[52px] md:text-[16px] 2xl:text-[18px]">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={`experiences-button-${i18n.language}`}
@@ -202,7 +202,7 @@ export function RegionPlanStay() {
                 href="https://www.simplebooking.it/ibe2/hotel/9131"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-[40px] w-fit items-center justify-center overflow-hidden border-y border-white font-sans text-[13px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60 md:h-[52px] md:text-[16px] 2xl:text-[18px]">
+                className="flex h-[40px] w-fit items-center justify-center overflow-hidden border-y border-white font-sans text-[13px] font-semibold uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-60 md:h-[50px] 2xl:h-[52px] md:text-[16px] 2xl:text-[18px]">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={`stay-button-${i18n.language}`}

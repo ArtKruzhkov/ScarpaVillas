@@ -10,6 +10,7 @@ export function JournalArticlePage() {
   const { i18n } = useTranslation();
 
   const isItalian = i18n.language === 'it';
+  const langPrefix = isItalian ? '/it' : '';
 
   const articleIndex = journalArticles.findIndex((article) => article.id === articleId);
 
@@ -250,6 +251,25 @@ export function JournalArticlePage() {
             </div>
           </aside>
         </div>
+      </section>
+
+      {/* BACK TO JOURNAL */}
+      <section className="px-4 lg:px-8">
+        <motion.div
+          className="flex justify-center"
+          viewport={{ once: true, amount: 0.4 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: [0.22, 1, 0.36, 1],
+          }}>
+          <Link
+            to={`${langPrefix}/discover/journal`}
+            className="flex items-center justify-center h-[57px] xl:min-w-[330px] bg-[#2C3654] px-10 font-sans text-[18px] font-bold uppercase tracking-[0.18em] text-white transition-opacity duration-300 hover:opacity-80 disabled:opacity-80">
+            Back to Journal
+          </Link>
+        </motion.div>
       </section>
     </main>
   );
