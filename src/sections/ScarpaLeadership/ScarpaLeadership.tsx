@@ -10,7 +10,7 @@ export function ScarpaLeadership() {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-8xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
+        <div className="grid grid-cols-1 min-[1280px]:grid-cols-2 overflow-hidden">
           {/* OWNER */}
           <div className="bg-[#c09a60] p-4 sm:p-7 lg:p-[40px] h-full scarpaLeadership_image-height">
             <motion.article
@@ -56,7 +56,7 @@ export function ScarpaLeadership() {
                 <img
                   src={`${baseUrl}/images/scarpaLeadership/owner_photo.webp`}
                   alt={t('scarpaLeadership.owner.name')}
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center lg:object-[75%_center] 2xl:object-center"
                 />
               </motion.picture>
 
@@ -64,7 +64,7 @@ export function ScarpaLeadership() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent lg:hidden" />
 
               {/* Content */}
-              <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-8 sm:px-9 sm:pb-10 lg:bottom-auto lg:left-auto lg:right-[5%] 2xl:right-[8%] lg:top-[24%] lg:w-[190px] 2xl:w-[214px] lg:px-0 lg:pb-0">
+              <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-8 sm:px-9 sm:pb-10 lg:bottom-auto lg:left-auto lg:right-[12%] 2xl:right-[8%] lg:top-[24%] lg:w-[190px] 2xl:w-[214px] lg:px-0 lg:pb-0">
                 <div className="font-serif text-[60px] lg:text-[120px] leading-[0.2] text-white">
                   “
                 </div>
