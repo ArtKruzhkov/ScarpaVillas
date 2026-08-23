@@ -5,6 +5,7 @@ import { VillaFeatures } from '../../sections/VillaPageSections/VillaFeatures/Vi
 import { VillaHero } from '../../sections/VillaPageSections/VillaHero/VillaHero';
 import { VillaOverview } from '../../sections/VillaPageSections/VillaOverview/VillaOverview';
 import { smoothScrollToTop } from '../../utils/smoothScrollToTop/smoothScrollToTop';
+import { useTranslation } from 'react-i18next';
 
 import { villas } from '../../data/villas';
 import { useParams } from 'react-router-dom';
@@ -13,6 +14,7 @@ import { ContactUs } from '../../components/ui/ContactUs';
 
 export function VillaPage() {
   const { villaId } = useParams();
+  const { i18n } = useTranslation();
 
   // useEffect(() => {
   //   window.scrollTo({
@@ -27,7 +29,13 @@ export function VillaPage() {
   const villa = villas.find((villa) => villa.id === villaId);
 
   if (!villa) {
-    return <div>Villa not found</div>;
+    return (
+      <div>
+        <h1 className="text-[#2C3654] text-center mt-5 font-serif text-[28px] md:text-[36px] lg:text-[42px]">
+          {i18n.language === 'it' ? 'Villa non trovata' : 'Villa not found'}
+        </h1>
+      </div>
+    );
   }
 
   return (

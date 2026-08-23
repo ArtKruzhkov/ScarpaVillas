@@ -20,6 +20,7 @@ import { RegionPage } from './pages/RegionPage/RegionPage';
 import { JournalPage } from './pages/JournalPage/JournalPage';
 import { JournalArticlePage } from './pages/JournalArticlePage/JournalArticlePage';
 import { CookieBanner } from './components/ui/CookieBanner/CookieBanner';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
 export default function App() {
   return (
@@ -28,49 +29,51 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:lang" element={<HomePage />} />
+        <Route path="/it" element={<HomePage />} />
 
         <Route path="/villas" element={<VillasPage />} />
-        <Route path="/:lang/villas" element={<VillasPage />} />
+        <Route path="/it/villas" element={<VillasPage />} />
 
         <Route path="/villas/:villaId" element={<VillaPage />} />
-        <Route path="/:lang/villas/:villaId" element={<VillaPage />} />
+        <Route path="/it/villas/:villaId" element={<VillaPage />} />
 
         <Route path="/borgo" element={<BorgoPage />} />
-        <Route path="/:lang/borgo" element={<BorgoPage />} />
+        <Route path="/it/borgo" element={<BorgoPage />} />
 
         <Route path="/experiences" element={<ExperiencesPage />} />
-        <Route path="/:lang/experiences" element={<ExperiencesPage />} />
+        <Route path="/it/experiences" element={<ExperiencesPage />} />
 
         <Route path="/story" element={<StoryPage />} />
-        <Route path="/:lang/story" element={<StoryPage />} />
+        <Route path="/it/story" element={<StoryPage />} />
 
         <Route path="/story/origins" element={<OriginsPage />} />
-        <Route path="/:lang/story/origins" element={<OriginsPage />} />
+        <Route path="/it/story/origins" element={<OriginsPage />} />
 
         <Route path="/story/scarpa-winery" element={<ScarpaWineryPage />} />
-        <Route path="/:lang/story/scarpa-winery" element={<ScarpaWineryPage />} />
+        <Route path="/it/story/scarpa-winery" element={<ScarpaWineryPage />} />
 
         <Route path="/story/people" element={<PeoplePage />} />
-        <Route path="/:lang/story/people" element={<PeoplePage />} />
+        <Route path="/it/story/people" element={<PeoplePage />} />
 
         <Route path="/story/press" element={<PressPage />} />
-        <Route path="/:lang/story/press" element={<PressPage />} />
+        <Route path="/it/story/press" element={<PressPage />} />
 
         <Route path="/stays" element={<StaysPage />} />
-        <Route path="/:lang/stays" element={<StaysPage />} />
+        <Route path="/it/stays" element={<StaysPage />} />
 
         <Route path="/discover" element={<DiscoverPage />} />
-        <Route path="/:lang/discover" element={<DiscoverPage />} />
+        <Route path="/it/discover" element={<DiscoverPage />} />
 
         <Route path="/discover/region" element={<RegionPage />} />
-        <Route path="/:lang/discover/region" element={<RegionPage />} />
+        <Route path="/it/discover/region" element={<RegionPage />} />
 
         <Route path="/discover/journal" element={<JournalPage />} />
-        <Route path="/:lang/discover/journal" element={<JournalPage />} />
+        <Route path="/it/discover/journal" element={<JournalPage />} />
 
         <Route path="/discover/journal/:articleId" element={<JournalArticlePage />} />
-        <Route path="/:lang/discover/journal/:articleId" element={<JournalArticlePage />} />
+        <Route path="/it/discover/journal/:articleId" element={<JournalArticlePage />} />
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
       <Footer />

@@ -1476,5 +1476,10 @@
     "text": "We use cookies to ensure the proper functioning of our website and improve your browsing experience.",
     "reject": "Reject",
     "accept": "Accept"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "text": "The page you are looking for does not exist or may have been moved.",
+    "button": "Back to Home"
   }
 }
