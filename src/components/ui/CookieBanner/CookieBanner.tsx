@@ -1,5 +1,3 @@
-// components/ui/CookieBanner/CookieBanner.tsx
-
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
